@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs,0.1.3,draft,,RetinaConclusionCodesystem,Kodeverk for konklusjon etter KI-anlyse,"Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI","ValueSet/retina-conclusioncode-vs"
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs,0.1.3,active,,RetinaImageQualityCodesystem,Image Quality CodeSystem for Retinascreening,"Image quality as interpreted by an AI solution.","ValueSet/retina-imagequality-vs"
+http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs,0.1.3,draft,,TiltakStatusForrigeUndersokelseCodeSystem,Verdisett for tiltaksstatus neste undersøkelse,"Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening","ValueSet/tiltaksstatus-forrigeUndersokelse-vs"
+http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs,0.1.3,draft,,VidereForlopCodeSystem,Videre forløp etter fotografering,"Koder basert på hva fotografen velger i skjema.","ValueSet/videre-forlop-vs"
+http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660,0.1.3,draft,,NOKodeverk8660,NO Kodeverk 8660,"Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.","ValueSet/diagnosticreport-codes-vs"

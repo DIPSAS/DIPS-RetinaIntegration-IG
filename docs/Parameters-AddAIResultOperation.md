@@ -1,0 +1,225 @@
+# AddAIResultOperation - RetinaIntegration v0.1.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **AddAIResultOperation**
+
+## Example Parameters: AddAIResultOperation
+
+## Parameters
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "AddAIResultOperation",
+  "parameter" : [
+    {
+      "name" : "dme-right-eye",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "ObservationDmeRight-input",
+        "meta" : {
+          "profile" : [
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+          ]
+        },
+        "status" : "final",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "312912001",
+              "display" : "Diabetic macular edema"
+            }
+          ],
+          "text" : "Diabetisk makulaødem"
+        },
+        "valueBoolean" : true,
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "5597008",
+              "display" : "Retina of right eye"
+            }
+          ],
+          "text" : "Høyre retina"
+        }
+      }
+    },
+    {
+      "name" : "dr-right-eye",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "ObservationDrHoyre-input",
+        "meta" : {
+          "profile" : [
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+          ]
+        },
+        "status" : "final",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "4855003",
+              "display" : "DR - Diabetic retinopathy"
+            }
+          ],
+          "text" : "Diabetsk retinopati"
+        },
+        "valueQuantity" : {
+          "value" : 5
+        },
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "5597008",
+              "display" : "Retina of right eye"
+            }
+          ],
+          "text" : "Høyre retina"
+        }
+      }
+    },
+    {
+      "name" : "dme-left-eye",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "ObservationDmeLeft-input",
+        "meta" : {
+          "profile" : [
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+          ]
+        },
+        "status" : "final",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "312912001",
+              "display" : "Diabetic macular edema"
+            }
+          ],
+          "text" : "Diabetisk makulaødem"
+        },
+        "valueBoolean" : true,
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "58443009",
+              "display" : "Retina of left eye"
+            }
+          ],
+          "text" : "Venstre retina"
+        }
+      }
+    },
+    {
+      "name" : "dr-left-eye",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "ObservationDrLeft-input",
+        "meta" : {
+          "profile" : [
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+          ]
+        },
+        "status" : "final",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "4855003",
+              "display" : "DR - Diabetic retinopathy"
+            }
+          ],
+          "text" : "Diabetsk retinopati"
+        },
+        "dataAbsentReason" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code" : "not-asked",
+              "display" : "Not asked"
+            }
+          ],
+          "text" : "Ikke spurt"
+        },
+        "bodySite" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "58443009",
+              "display" : "Retina of left eye"
+            }
+          ],
+          "text" : "Venstre retina"
+        }
+      }
+    },
+    {
+      "name" : "days-until-next-examination",
+      "valueInteger" : 180
+    },
+    {
+      "name" : "ki-product-name",
+      "valueString" : "AwesomeAI for Retina"
+    },
+    {
+      "name" : "ki-version-algorithm",
+      "valueString" : "v2.1.0"
+    },
+    {
+      "name" : "ki-protocol",
+      "valueString" : "Standard protocol"
+    },
+    {
+      "name" : "effectiveTime",
+      "valueDateTime" : "2025-09-30T12:00:00Z"
+    },
+    {
+      "name" : "full-ki-report",
+      "valueAttachment" : {
+        "contentType" : "text/plain",
+        "data" : "Base64binary",
+        "title" : "Full AI report"
+      }
+    },
+    {
+      "name" : "imageDescriptions",
+      "resource" : {
+        "resourceType" : "ImagingStudy",
+        "id" : "ImagingStudySectra-1",
+        "status" : "available",
+        "subject" : {
+          "identifier" : {
+            "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+            "value" : "01015549145"
+          }
+        },
+        "description" : "Optic Disc Centered"
+      }
+    },
+    {
+      "name" : "conclusionCode",
+      "valueCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+            "code" : "1001",
+            "display" : "Ferdig etter KI"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

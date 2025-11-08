@@ -1,0 +1,1389 @@
+# Home - RetinaIntegration v0.1.3
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration | *Version*:0.1.3 |
+| Draft as of 2025-11-08 | *Computable Name*:RetinaIntegration |
+
+# RetinaIntegration
+
+RetinaIntegration is an API for integrating with the DIPS EyeCare-retinopathy application which is used in the process of screening diabetic patients for retinopathy.
+
+The purpose of the API is to for an AI solution to discover examinations that needs grading, get the details about those examinations, and report back any AI findings concerning those findings.
+
+## Queries
+
+### Query for a specific examination identified by the ID
+
+```
+{baseurl}/DiagnosticReport?_profile=RetinaDiagnosticReport&_id=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee&_include=DiagnosticReport:result
+
+```
+
+### Query for getting examinations in a given time interval
+
+```
+{baseurl}/DiagnosticReport?_profile=RetinaDiagnosticReport&status=preliminary&date=ge2025-10-02&date=le2025-10-03&_include=DiagnosticReport:result
+
+```
+
+## Operations
+
+### Append AI result
+
+Add ai result to an examination using the following operation:
+
+```
+{baseUrl}/DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/$append-retina-ai-result
+
+```
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "dips.fhir.retinaintegration",
+  "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
+  "version" : "0.1.3",
+  "name" : "RetinaIntegration",
+  "title" : "RetinaIntegration",
+  "status" : "draft",
+  "date" : "2025-11-08T17:39:22+01:00",
+  "publisher" : "DIPS AS",
+  "contact" : [
+    {
+      "name" : "DIPS AS",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://dips.no/"
+        },
+        {
+          "system" : "email",
+          "value" : "teamsolsiden@dips.no"
+        }
+      ]
+    }
+  ],
+  "description" : "RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system",
+  "packageId" : "dips.fhir.retinaintegration",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [
+    {
+      "id" : "hl7tx",
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
+      "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId" : "hl7.terminology.r4",
+      "version" : "6.5.0"
+    },
+    {
+      "id" : "hl7ext",
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+        }
+      ],
+      "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "packageId" : "hl7.fhir.uv.extensions.r4",
+      "version" : "5.2.0"
+    }
+  ],
+  "definition" : {
+    "extension" : [
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "copyrightyear"
+          },
+          {
+            "url" : "value",
+            "valueString" : "2025+"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "releaselabel"
+          },
+          {
+            "url" : "value",
+            "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "special-url"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "autoload-resources"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-qa"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/qa"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-temp"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/pages"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-output"
+          },
+          {
+            "url" : "value",
+            "valueString" : "output"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-suppressed-warnings"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/ignoreWarnings.txt"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://dips.no/fhir/RetinaIntegration/history.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "template-html"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "template-md"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page-md.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-context"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-copyright"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-license"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-publisher"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-version"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-wg"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "active-tables"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "fmm-definition"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "propagate-status"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "excludelogbinaryformat"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "tabbed-snapshots"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "copyrightyear"
+          },
+          {
+            "url" : "value",
+            "valueString" : "2025+"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "releaselabel"
+          },
+          {
+            "url" : "value",
+            "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "special-url"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "autoload-resources"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-qa"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/qa"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-temp"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/pages"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-output"
+          },
+          {
+            "url" : "value",
+            "valueString" : "output"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-suppressed-warnings"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/ignoreWarnings.txt"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://dips.no/fhir/RetinaIntegration/history.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "template-html"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "template-md"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page-md.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-context"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-copyright"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-license"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-publisher"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-version"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-wg"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "active-tables"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "fmm-definition"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "propagate-status"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "excludelogbinaryformat"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "tabbed-snapshots"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource" : [
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Parameters"
+          }
+        ],
+        "reference" : {
+          "reference" : "Parameters/AddAIResultOperation"
+        },
+        "name" : "AddAIResultOperation",
+        "description" : "Example request from client to append AI results to existing DiagnosticReport",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/BundleWithSingleExaminationAndAI-Example"
+        },
+        "name" : "BundleWithSingleExaminationAndAI-Example",
+        "description" : "Example response containing a single diagnostic report containing AI result.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/BundleWithSinglExamination-Example"
+        },
+        "name" : "BundleWithSinglExamination-Example",
+        "description" : "Result of query for a specific examination idfentified by ID containing no AI result.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/BundleWithTwoExaminations-Example"
+        },
+        "name" : "BundleWithTwoExaminations-Example",
+        "description" : "Result of query for examinations between two dates, not containing AI result. Note: The resource references in this example are not correct.",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/retina-conclusioncode-vs"
+        },
+        "name" : "Conclusion Code ValueSet for Retinascreening",
+        "description" : "Allowed conclusion codes for DiagnosticReport",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/dme-left-eye-observation"
+        },
+        "name" : "Diabetic Macular Edema Left Eye Observation",
+        "description" : "Observation for diabetic macular edema findings in the left eye",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/dme-right-eye-observation"
+        },
+        "name" : "Diabetic Macular Edema Right Eye Observation",
+        "description" : "Observation for diabetic macular edema findings in the right eye",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/dr-left-eye-observation"
+        },
+        "name" : "Diabetic Retinopathy Left Eye Observation",
+        "description" : "Observation for diabetic retinopathy findings in the left eye",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/dr-right-eye-observation"
+        },
+        "name" : "Diabetic Retinopathy Right Eye Observation",
+        "description" : "Observation for diabetic retinopathy findings in the right eye",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/RetinaDiagnosticReport"
+        },
+        "name" : "DiagnosticReport for Retinascreening",
+        "description" : "This report contains the results from a retina screening examination.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "OperationDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "OperationDefinition/append-retina-ai-result"
+        },
+        "name" : "DIPSRetinaAppendOperationDefinition",
+        "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CapabilityStatement"
+          }
+        ],
+        "reference" : {
+          "reference" : "CapabilityStatement/DIPSRetinaCapabilityStatement"
+        },
+        "name" : "DIPSRetinaCapabilityStatement",
+        "description" : "CapabilityStatement for DIPS Retinaflyt",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/frist-nesteundersokelse-extension"
+        },
+        "name" : "Frist neste undersøkelse",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fundus-foto-observation"
+        },
+        "name" : "FundusFotografiObservation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/hba1c-observation"
+        },
+        "name" : "HbA1cObservation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/retina-imagequality-extension"
+        },
+        "name" : "Image Quality",
+        "description" : "A coded extension representing the quality of a diagnostic image",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/retina-imagequality-cs"
+        },
+        "name" : "Image Quality CodeSystem for Retinascreening",
+        "description" : "Image quality as interpreted by an AI solution.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/retina-imagequality-vs"
+        },
+        "name" : "Image Quality ValueSet for Retinascreening",
+        "description" : "Image quality as interpreted by an AI solution.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/ki-productname-extension"
+        },
+        "name" : "KI Product Name extension",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/ki-protokoll-extension"
+        },
+        "name" : "KI protokoll",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/ki-versjon-algoritme-extension"
+        },
+        "name" : "KI versjon algoritme",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/retina-conclusioncode-cs"
+        },
+        "name" : "Kodeverk for konklusjon etter KI-anlyse",
+        "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/videre-forlop-extension"
+        },
+        "name" : "Neste skritt i forløpet.",
+        "description" : "Angir videre forløp",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/no-kodeverk-8660"
+        },
+        "name" : "NO Kodeverk 8660",
+        "description" : "Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144"
+        },
+        "name" : "NotificationFromDIPS-Example",
+        "description" : "Notifikasjon fra DIPS",
+        "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/RetinaObservation"
+        },
+        "name" : "Observation for retina screening",
+        "description" : "This is observations connected to RetinaDiagnosticReport",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/oct-observation"
+        },
+        "name" : "OCTObservation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/cdp1123122"
+        },
+        "name" : "Patient-cdp1123122",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/cdp1123123"
+        },
+        "name" : "Patient-cdp1123123",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/diagnosticreport-codes-vs"
+        },
+        "name" : "Rapport for Retina-screening",
+        "description" : "Rapporttype bildediagnsotikk fra Volven 8660",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/retina-examination-id"
+        },
+        "name" : "Retina examination identifier NamingSystem",
+        "description" : "NamingSystem that documents the canonical URL used for retina-examination-id identifiers in DIPS.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/retina-observation-id"
+        },
+        "name" : "Retina observation identifier NamingSystem",
+        "description" : "NamingSystem that documents the canonical URL used for retina-observation-id identifiers in DIPS.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tiltaksstatus-forrige-undersokelse-extension"
+        },
+        "name" : "Titaksstaus forrige undersøkelse Retina",
+        "description" : "Angir om et tiltak er primært eller sekundært",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/tiltaksstatus-forrigeUndersokelse-vs"
+        },
+        "name" : "Verdisett for tiltaksstatus neste undersøkelse",
+        "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/tiltakstatus-nesteundersokelse-cs"
+        },
+        "name" : "Verdisett for tiltaksstatus neste undersøkelse",
+        "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/videre-forlop-vs"
+        },
+        "name" : "Verdisett for videre forløpsstudie",
+        "description" : "Verdisett som beskriver videre forløp for Retinascreening.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/videre-forlop-cs"
+        },
+        "name" : "Videre forløp etter fotografering",
+        "description" : "Koder basert på hva fotografen velger i skjema.",
+        "exampleBoolean" : false
+      }
+    ],
+    "page" : {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "toc.html"
+        }
+      ],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "index.html"
+            }
+          ],
+          "nameUrl" : "index.html",
+          "title" : "Home",
+          "generation" : "markdown"
+        }
+      ]
+    },
+    "parameter" : [
+      {
+        "code" : "path-resource",
+        "value" : "input/capabilities"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/examples"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/extensions"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/models"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/operations"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/profiles"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/resources"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/vocabulary"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/maps"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/testing"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/history"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "fsh-generated/resources"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "template/config"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "input/images"
+      },
+      {
+        "code" : "path-tx-cache",
+        "value" : "input-cache/txcache"
+      }
+    ]
+  }
+}
+
+```

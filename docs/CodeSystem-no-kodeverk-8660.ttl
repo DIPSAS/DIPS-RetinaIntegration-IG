@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/CodeSystem/no-kodeverk-8660> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "no-kodeverk-8660"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem no-kodeverk-8660</b></p><a name=\"no-kodeverk-8660\"> </a><a name=\"hcno-kodeverk-8660\"> </a><p>This case-sensitive code system <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"no-kodeverk-8660-B\"> </a></td><td>Bildediagnostikk</td></tr><tr><td style=\"white-space:nowrap\">B06<a name=\"no-kodeverk-8660-B06\"> </a></td><td>Nukleærmedisin</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"no-kodeverk-8660-L\"> </a></td><td>Laboratoriefag</td></tr><tr><td style=\"white-space:nowrap\">L02<a name=\"no-kodeverk-8660-L02\"> </a></td><td>Transfusjonsmedisin og immunologi</td></tr><tr><td style=\"white-space:nowrap\">L03<a name=\"no-kodeverk-8660-L03\"> </a></td><td>Medisinsk biokjemi</td></tr><tr><td style=\"white-space:nowrap\">L04<a name=\"no-kodeverk-8660-L04\"> </a></td><td>Medisinsk mikrobiologi</td></tr><tr><td style=\"white-space:nowrap\">L06<a name=\"no-kodeverk-8660-L06\"> </a></td><td>Patologi</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"^^xsd:anyURI ;
+     fhir:l <http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.3"] ; # 
+  fhir:name [ fhir:v "NOKodeverk8660"] ; # 
+  fhir:title [ fhir:v "NO Kodeverk 8660"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-08T17:39:22+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "Bildediagnostikk" ]
+  ] [
+     fhir:code [ fhir:v "B06" ] ;
+     fhir:display [ fhir:v "Nukleærmedisin" ]
+  ] [
+     fhir:code [ fhir:v "L" ] ;
+     fhir:display [ fhir:v "Laboratoriefag" ]
+  ] [
+     fhir:code [ fhir:v "L02" ] ;
+     fhir:display [ fhir:v "Transfusjonsmedisin og immunologi" ]
+  ] [
+     fhir:code [ fhir:v "L03" ] ;
+     fhir:display [ fhir:v "Medisinsk biokjemi" ]
+  ] [
+     fhir:code [ fhir:v "L04" ] ;
+     fhir:display [ fhir:v "Medisinsk mikrobiologi" ]
+  ] [
+     fhir:code [ fhir:v "L06" ] ;
+     fhir:display [ fhir:v "Patologi" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

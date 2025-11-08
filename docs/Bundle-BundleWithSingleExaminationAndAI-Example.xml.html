@@ -1,0 +1,649 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BundleWithSingleExaminationAndAI-Example - XML Representation - RetinaIntegration v0.1.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.32"}
+    h3,h4,h5,h6{--heading-prefix:"2.32"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
+            <br/>
+            <span style="display:inline-block;">0.1.3 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BundleWithSingleExaminationAndAI-Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.1.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-BundleWithSingleExaminationAndAI-Example.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-BundleWithSingleExaminationAndAI-Example.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: BundleWithSingleExaminationAndAI-Example - XML Representation</h2>
+
+
+<p><a href="Bundle-BundleWithSingleExaminationAndAI-Example.xml" no-download="true">Raw xml</a> | <a href="Bundle-BundleWithSingleExaminationAndAI-Example.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BundleWithSingleExaminationAndAI-Example&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;searchset&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.total">total</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">DiagnosticReport</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DiagnosticReportWithAI&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;DiagnosticReport_DiagnosticReportWithAI&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: DiagnosticReport DiagnosticReportWithAI&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DiagnosticReportWithAI&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDiagnosticReportWithAI&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaDiagnosticReport.html&quot;&gt;DiagnosticReport for Retinascreening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=&quot;Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}&quot;&gt;Bildediagnostikk&lt;/span&gt; &lt;/h2&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;Subject&lt;/td&gt;&lt;td&gt;Pasient Eksempel  Female, DoB: 1970-01-01 ( urn:oid:2.16.578.1.12.4.1.4.1#01015549145)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;When For&lt;/td&gt;&lt;td&gt;2025-09-30 12:00:00+0000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Identifiers&lt;/td&gt;&lt;td&gt; &lt;a href=&quot;NamingSystem-retina-examination-id.html&quot; title=&quot;A naming system for retina examination identifiers used by DIPS integration services.&quot;&gt;RetinaExaminationIdentifierSystem&lt;/a&gt;/a4ee3f25-405b-4b3a-85ff-f530aedbb5b9 &lt;code&gt;http://sectra.no/identifiers&lt;/code&gt;/MMA94126079&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Flags&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;When For&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSinglExamination-Example.html#Observation_ObservationGlukose-1&quot;&gt;&lt;span title=&quot;Codes:{http://snomed.info/sct 167491000202108}&quot;&gt;HbA1c&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;63.2&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td&gt;2025-06-06 10:30:00+0000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSinglExamination-Example.html#Observation_ObservationPhoto-1&quot;&gt;&lt;span title=&quot;Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}&quot;&gt;Fundusfotografi&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSinglExamination-Example.html#Observation_ObservationOCT-1&quot;&gt;&lt;span title=&quot;Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}&quot;&gt;Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSingleExaminationAndAI-Example.html#Observation_ObservationDrRight-1&quot;&gt;&lt;span title=&quot;Codes:{http://snomed.info/sct 4855003}&quot;&gt;Diabetsk retinopati&lt;/span&gt;&lt;/a&gt; (&lt;span title=&quot;Codes:{http://snomed.info/sct 5597008}&quot;&gt;Høyre retina&lt;/span&gt;)&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSingleExaminationAndAI-Example.html#Observation_ObservationDmeRight-1&quot;&gt;&lt;span title=&quot;Codes:{http://snomed.info/sct 312912001}&quot;&gt;Diabetisk makulaødem&lt;/span&gt;&lt;/a&gt; (&lt;span title=&quot;Codes:{http://snomed.info/sct 5597008}&quot;&gt;Høyre retina&lt;/span&gt;)&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSingleExaminationAndAI-Example.html#Observation_ObservationDrLeft-1&quot;&gt;&lt;span title=&quot;Codes:{http://snomed.info/sct 4855003}&quot;&gt;Diabetsk retinopati&lt;/span&gt;&lt;/a&gt; (&lt;span title=&quot;Codes:{http://snomed.info/sct 58443009}&quot;&gt;Venstre retina&lt;/span&gt;)&lt;/td&gt;&lt;td&gt;&lt;span style=&quot;color: maroon&quot; title=&quot;Error&quot;&gt;Error: &lt;b&gt;&lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-asked}&quot;&gt;Ikke spurt&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;Bundle-BundleWithSingleExaminationAndAI-Example.html#Observation_ObservationDmeLeft-1&quot;&gt;&lt;span title=&quot;Codes:{http://snomed.info/sct 312912001}&quot;&gt;Diabetisk makulaødem&lt;/span&gt;&lt;/a&gt; (&lt;span title=&quot;Codes:{http://snomed.info/sct 58443009}&quot;&gt;Venstre retina&lt;/span&gt;)&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Coded Conclusions:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes:{http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs 1001}&quot;&gt;Ferdig etter KI&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4001&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KI-gradering&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;3001&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ny fotokontroll (primærgradering)&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;365&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ACME Retina AI&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;v2.1.0&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Standard protocol&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-examination-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;a4ee3f25-405b-4b3a-85ff-f530aedbb5b9&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://sectra.no/identifiers&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MMA94126079&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;B&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bildediagnostikk&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.subject">subject</a>&gt;<a href="Patient-cdp1123123.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/cdp1123123&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.578.1.12.4.1.4.1&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;01015549145&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.effective[x]">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-09-30T12:00:00Z&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationGlukose-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationPhoto-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationOCT-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationDrRight-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationDmeRight-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationDrLeft-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/ObservationDmeLeft-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.imagingStudy">imagingStudy</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ImagingStudy/ImagingStudySectra-1&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.imagingStudy">imagingStudy</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.conclusionCode">conclusionCode</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1001&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ferdig etter KI&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.conclusionCode">conclusionCode</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.presentedForm">presentedForm</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/plain&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a> <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;Base64binary&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Full plain text report&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.presentedForm">presentedForm</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">DiagnosticReport</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;match&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationGlukose-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationGlukose-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationGlukose-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationGlukose-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationGlukose-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/78772631-5e7f-4c2a-8c45-42ada291b1a4&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 167491000202108}&quot;&gt;HbA1c&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2025-06-06 10:30:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 63.2&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;78772631-5e7f-4c2a-8c45-42ada291b1a4&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;167491000202108&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HbA1c&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-06-06T10:30:00Z&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;63.2&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationPhoto-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationPhoto-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationPhoto-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationPhoto-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationPhoto-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/eb8ef81c-d8a5-4656-b44d-2f9b86a16903&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}&quot;&gt;Fundusfotografi&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;eb8ef81c-d8a5-4656-b44d-2f9b86a16903&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CKDP10&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Fundusfotografi&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationOCT-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationOCT-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationOCT-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationOCT-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationOCT-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/96f8e5bb-41be-4dae-bcc3-833b01b050ab&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}&quot;&gt;Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;96f8e5bb-41be-4dae-bcc3-833b01b050ab&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CKFX16&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationDrRight-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationDrRight-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationDrRight-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationDrRight-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationDrRight-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/ed4ea83b-de33-4ba2-8289-02d2ac75b736&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 4855003}&quot;&gt;Diabetsk retinopati&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 5&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 5597008}&quot;&gt;Høyre retina&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ed4ea83b-de33-4ba2-8289-02d2ac75b736&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4855003&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DR - Diabetic retinopathy&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diabetsk retinopati&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;5&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5597008&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Retina of right eye&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Høyre retina&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationDmeRight-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationDmeRight-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationDmeRight-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationDmeRight-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationDmeRight-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/0bbf7b71-3751-43d0-ab79-adb64fad6e08&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 312912001}&quot;&gt;Diabetisk makulaødem&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 5597008}&quot;&gt;Høyre retina&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0bbf7b71-3751-43d0-ab79-adb64fad6e08&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;312912001&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diabetic macular edema&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diabetisk makulaødem&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5597008&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Retina of right eye&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Høyre retina&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationDrLeft-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationDrLeft-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationDrLeft-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationDrLeft-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationDrLeft-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/8367e10c-ee7f-4a42-8bdd-44f628ab0a6f&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 4855003}&quot;&gt;Diabetsk retinopati&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dataAbsentReason&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-asked}&quot;&gt;Ikke spurt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 58443009}&quot;&gt;Venstre retina&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;8367e10c-ee7f-4a42-8bdd-44f628ab0a6f&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4855003&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DR - Diabetic retinopathy&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diabetsk retinopati&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.dataAbsentReason">dataAbsentReason</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/data-absent-reason&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;not-asked&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Not asked&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ikke spurt&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.dataAbsentReason">dataAbsentReason</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;58443009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Retina of left eye&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Venstre retina&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ObservationDmeLeft-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_ObservationDmeLeft-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation ObservationDmeLeft-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ObservationDmeLeft-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcObservationDmeLeft-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-RetinaObservation.html&quot;&gt;Observation for retina screening&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-retina-observation-id.html&quot; title=&quot;A naming system for retina observation identifiers used by DIPS integration services.&quot;&gt;RetinaObservationIdentifierSystem&lt;/a&gt;/dcb1005c-bb00-4d50-8784-829aff651086&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 312912001}&quot;&gt;Diabetisk makulaødem&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 58443009}&quot;&gt;Venstre retina&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://dips.no/fhir/NamingSystem/retina-observation-id&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dcb1005c-bb00-4d50-8784-829aff651086&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;312912001&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diabetic macular edema&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diabetisk makulaødem&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;58443009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Retina of left eye&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Venstre retina&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy">ImagingStudy</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ImagingStudySectra-1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;ImagingStudy_ImagingStudySectra-1&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ImagingStudy ImagingStudySectra-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ImagingStudySectra-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcImagingStudySectra-1&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Available&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: Identifier: &lt;code&gt;urn:oid:2.16.578.1.12.4.1.4.1&lt;/code&gt;/01015549145&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Optic Disc Centered&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;available&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.subject">subject</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.578.1.12.4.1.4.1&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;01015549145&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Optic Disc Centered&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy">ImagingStudy</a>&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 8, 2025 17:39+0100">2025-11-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

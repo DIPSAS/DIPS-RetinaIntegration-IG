@@ -1,0 +1,73 @@
+# dips.fhir.retinaintegration#0.1.3: RetinaIntegration
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [NO Kodeverk 8660](CodeSystem-no-kodeverk-8660.md)
+* [Kodeverk for konklusjon etter KI-anlyse](CodeSystem-retina-conclusioncode-cs.md)
+* [Image Quality CodeSystem for Retinascreening](CodeSystem-retina-imagequality-cs.md)
+* [Verdisett for tiltaksstatus neste undersøkelse](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)
+* [Videre forløp etter fotografering](CodeSystem-videre-forlop-cs.md)
+
+### ValueSets
+
+* [Rapport for Retina-screening](ValueSet-diagnosticreport-codes-vs.md)
+* [Conclusion Code ValueSet for Retinascreening](ValueSet-retina-conclusioncode-vs.md)
+* [Image Quality ValueSet for Retinascreening](ValueSet-retina-imagequality-vs.md)
+* [Verdisett for tiltaksstatus neste undersøkelse](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md)
+* [Verdisett for videre forløpsstudie](ValueSet-videre-forlop-vs.md)
+
+### Resource Profiles
+
+* [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* [Observation for retina screening](StructureDefinition-RetinaObservation.md)
+* [Diabetic Macular Edema Left Eye Observation](StructureDefinition-dme-left-eye-observation.md)
+* [Diabetic Macular Edema Right Eye Observation](StructureDefinition-dme-right-eye-observation.md)
+* [Diabetic Retinopathy Left Eye Observation](StructureDefinition-dr-left-eye-observation.md)
+* [Diabetic Retinopathy Right Eye Observation](StructureDefinition-dr-right-eye-observation.md)
+* [FundusFotografiObservation](StructureDefinition-fundus-foto-observation.md)
+* [HbA1cObservation](StructureDefinition-hba1c-observation.md)
+* [OCTObservation](StructureDefinition-oct-observation.md)
+
+### Extensions
+
+* [Frist neste undersøkelse](StructureDefinition-frist-nesteundersokelse-extension.md)
+* [KI Product Name extension](StructureDefinition-ki-productname-extension.md)
+* [KI protokoll](StructureDefinition-ki-protokoll-extension.md)
+* [KI versjon algoritme](StructureDefinition-ki-versjon-algoritme-extension.md)
+* [Image Quality](StructureDefinition-retina-imagequality-extension.md)
+* [Titaksstaus forrige undersøkelse Retina](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
+* [Neste skritt i forløpet.](StructureDefinition-videre-forlop-extension.md)
+
+### CapabilityStatements
+
+* [DIPSRetinaCapabilityStatement](CapabilityStatement-DIPSRetinaCapabilityStatement.md)
+
+### ImplementationGuides
+
+* [RetinaIntegration](index.md)
+
+### NamingSystems
+
+* [RetinaExaminationIdentifierSystem](NamingSystem-retina-examination-id.md)
+* [RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)
+
+### OperationDefinitions
+
+* [AppendRetinaAIResult](OperationDefinition-append-retina-ai-result.md)
+
+### Examples
+
+* [BundleWithSinglExamination-Example (Bundle)](Bundle-BundleWithSinglExamination-Example.md)
+* [BundleWithSingleExaminationAndAI-Example (Bundle)](Bundle-BundleWithSingleExaminationAndAI-Example.md)
+* [BundleWithTwoExaminations-Example (Bundle)](Bundle-BundleWithTwoExaminations-Example.md)
+* [bb2690e7-ca9f-4070-9c35-c7e36976b144 (DiagnosticReport)](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
+* [AddAIResultOperation (Parameters)](Parameters-AddAIResultOperation.md)
+* [cdp1123122 (Patient)](Patient-cdp1123122.md)
+* [cdp1123123 (Patient)](Patient-cdp1123123.md)

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="BundleWithTwoExaminations-Example"/>
+  <type value="searchset"/>
+  <total value="3"/>
+  <entry>
+    <resource>
+      <DiagnosticReport>
+        <id value="DiagnosticReportWithoutAI-1"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DiagnosticReport_DiagnosticReportWithoutAI-1"> </a><p class="res-header-id"><b>Generated Narrative: DiagnosticReport DiagnosticReportWithoutAI-1</b></p><a name="DiagnosticReportWithoutAI-1"> </a><a name="hcDiagnosticReportWithoutAI-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaDiagnosticReport.html">DiagnosticReport for Retinascreening</a></p></div><h2><span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}">Bildediagnostikk</span> </h2><table class="grid"><tr><td>Subject</td><td>Pasient Eksempel  Female, DoB: 1970-01-01 ( urn:oid:2.16.578.1.12.4.1.4.1#01015549145)</td></tr><tr><td>Identifiers</td><td> <a href="NamingSystem-retina-examination-id.html" title="A naming system for retina examination identifiers used by DIPS integration services.">RetinaExaminationIdentifierSystem</a>/6d2f4dbc-5f03-46e0-a302-606ae889df45 <code>http://sectra.no/identifiers</code>/MMA94126079</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href="Bundle-BundleWithSinglExamination-Example.html#Observation_ObservationGlukose-1"><span title="Codes:{http://snomed.info/sct 167491000202108}">HbA1c</span></a></td><td>63.2</td><td>Final</td><td>2025-06-06 10:30:00+0000</td></tr><tr><td><a href="Bundle-BundleWithSinglExamination-Example.html#Observation_ObservationPhoto-1"><span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}">Fundusfotografi</span></a></td><td>true</td><td>Final</td><td/></tr><tr><td><a href="Bundle-BundleWithSinglExamination-Example.html#Observation_ObservationOCT-1"><span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}">Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk</span></a></td><td>true</td><td>Final</td><td/></tr></table></div>
+        </text>
+        <extension url="http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+              <code value="3003"/>
+              <display value="Ingen registrert tidligere undersøkelser"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-examination-id"/>
+          <value value="6d2f4dbc-5f03-46e0-a302-606ae889df45"/>
+        </identifier>
+        <identifier>
+          <system value="http://sectra.no/identifiers"/>
+          <value value="MMA94126079"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"/>
+            <code value="B"/>
+            <display value="Bildediagnostikk"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/cdp1123123"/>
+          <identifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="01015549145"/>
+          </identifier>
+        </subject>
+        <result>
+          <reference value="Observation/ObservationGlukose-1"/>
+        </result>
+        <result>
+          <reference value="Observation/ObservationPhoto-1"/>
+        </result>
+        <result>
+          <reference value="Observation/ObservationOCT-1"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="ObservationGlukose-1"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ObservationGlukose-1"> </a><p class="res-header-id"><b>Generated Narrative: Observation ObservationGlukose-1</b></p><a name="ObservationGlukose-1"> </a><a name="hcObservationGlukose-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaObservation.html">Observation for retina screening</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for retina observation identifiers used by DIPS integration services.">RetinaObservationIdentifierSystem</a>/78772631-5e7f-4c2a-8c45-42ada291b1a4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 167491000202108}">HbA1c</span></p><p><b>effective</b>: 2025-06-06 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>
+        </text>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+          <value value="78772631-5e7f-4c2a-8c45-42ada291b1a4"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="167491000202108"/>
+            <display value="HbA1c"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-06-06T10:30:00Z"/>
+        <valueQuantity>
+          <value value="63.2"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="ObservationPhoto-1"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ObservationPhoto-1"> </a><p class="res-header-id"><b>Generated Narrative: Observation ObservationPhoto-1</b></p><a name="ObservationPhoto-1"> </a><a name="hcObservationPhoto-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaObservation.html">Observation for retina screening</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for retina observation identifiers used by DIPS integration services.">RetinaObservationIdentifierSystem</a>/eb8ef81c-d8a5-4656-b44d-2f9b86a16903</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}">Fundusfotografi</span></p><p><b>value</b>: true</p></div>
+        </text>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+          <value value="eb8ef81c-d8a5-4656-b44d-2f9b86a16903"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"/>
+            <code value="CKDP10"/>
+            <display value="Fundusfotografi"/>
+          </coding>
+        </code>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="ObservationOCT-1"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ObservationOCT-1"> </a><p class="res-header-id"><b>Generated Narrative: Observation ObservationOCT-1</b></p><a name="ObservationOCT-1"> </a><a name="hcObservationOCT-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaObservation.html">Observation for retina screening</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for retina observation identifiers used by DIPS integration services.">RetinaObservationIdentifierSystem</a>/96f8e5bb-41be-4dae-bcc3-833b01b050ab</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}">Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk</span></p><p><b>value</b>: true</p></div>
+        </text>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+          <value value="96f8e5bb-41be-4dae-bcc3-833b01b050ab"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"/>
+            <code value="CKFX16"/>
+            <display value="Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"/>
+          </coding>
+        </code>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <DiagnosticReport>
+        <id value="DiagnosticReportWithoutAI-2"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DiagnosticReport_DiagnosticReportWithoutAI-2"> </a><p class="res-header-id"><b>Generated Narrative: DiagnosticReport DiagnosticReportWithoutAI-2</b></p><a name="DiagnosticReportWithoutAI-2"> </a><a name="hcDiagnosticReportWithoutAI-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaDiagnosticReport.html">DiagnosticReport for Retinascreening</a></p></div><h2><span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}">Bildediagnostikk</span> </h2><table class="grid"><tr><td>Subject</td><td>Pasient2 Eksempel  Female, DoB: 1970-02-02 ( urn:oid:2.16.578.1.12.4.1.4.1#02025549122)</td></tr><tr><td>Identifiers</td><td> <a href="NamingSystem-retina-examination-id.html" title="A naming system for retina examination identifiers used by DIPS integration services.">RetinaExaminationIdentifierSystem</a>/9bee5eee-b15d-46b5-913e-d163833d7acd <code>http://sectra.no/identifiers</code>/MMA94126002</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href="Bundle-BundleWithTwoExaminations-Example.html#Observation_ObservationGlukose-2"><span title="Codes:{http://snomed.info/sct 167491000202108}">HbA1c</span></a></td><td>63.2</td><td>Final</td><td>2025-06-06 10:30:00+0000</td></tr><tr><td><a href="Bundle-BundleWithTwoExaminations-Example.html#Observation_ObservationPhoto-2"><span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}">Fundusfotagrafi</span></a></td><td>true</td><td>Final</td><td/></tr><tr><td><a href="Bundle-BundleWithTwoExaminations-Example.html#Observation_ObservationOCT-2"><span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}">OCT tatt</span></a></td><td>true</td><td>Final</td><td/></tr></table></div>
+        </text>
+        <extension url="http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+              <code value="3003"/>
+              <display value="Ingen registrert tidligere undersøkelser"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-examination-id"/>
+          <value value="9bee5eee-b15d-46b5-913e-d163833d7acd"/>
+        </identifier>
+        <identifier>
+          <system value="http://sectra.no/identifiers"/>
+          <value value="MMA94126002"/>
+        </identifier>
+        <status value="preliminary"/>
+        <code>
+          <coding>
+            <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"/>
+            <code value="B"/>
+            <display value="Bildediagnostikk"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/cdp1123122"/>
+          <identifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="01015549144"/>
+          </identifier>
+        </subject>
+        <result>
+          <reference value="Observation/ObservationGlukose-2"/>
+        </result>
+        <result>
+          <reference value="Observation/ObservationPhoto-2"/>
+        </result>
+        <result>
+          <reference value="Observation/ObservationOCT-2"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="ObservationGlukose-2"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ObservationGlukose-2"> </a><p class="res-header-id"><b>Generated Narrative: Observation ObservationGlukose-2</b></p><a name="ObservationGlukose-2"> </a><a name="hcObservationGlukose-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaObservation.html">Observation for retina screening</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for retina observation identifiers used by DIPS integration services.">RetinaObservationIdentifierSystem</a>/718af0c2-794c-4bb0-96f9-365af89b0c08</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 167491000202108}">HbA1c</span></p><p><b>effective</b>: 2025-06-06 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>
+        </text>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+          <value value="718af0c2-794c-4bb0-96f9-365af89b0c08"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="167491000202108"/>
+            <display value="HbA1c"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-06-06T10:30:00Z"/>
+        <valueQuantity>
+          <value value="63.2"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="ObservationPhoto-2"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ObservationPhoto-2"> </a><p class="res-header-id"><b>Generated Narrative: Observation ObservationPhoto-2</b></p><a name="ObservationPhoto-2"> </a><a name="hcObservationPhoto-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaObservation.html">Observation for retina screening</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for retina observation identifiers used by DIPS integration services.">RetinaObservationIdentifierSystem</a>/c8a8ecc8-6ba3-49a1-840e-883585535880</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}">Fundusfotagrafi</span></p><p><b>value</b>: true</p></div>
+        </text>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+          <value value="c8a8ecc8-6ba3-49a1-840e-883585535880"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"/>
+            <code value="CKDP10"/>
+            <display value="Fundusfotagrafi"/>
+          </coding>
+        </code>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="ObservationOCT-2"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ObservationOCT-2"> </a><p class="res-header-id"><b>Generated Narrative: Observation ObservationOCT-2</b></p><a name="ObservationOCT-2"> </a><a name="hcObservationOCT-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RetinaObservation.html">Observation for retina screening</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for retina observation identifiers used by DIPS integration services.">RetinaObservationIdentifierSystem</a>/f05024d6-d622-414b-a373-cce1a625baf7</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}">OCT tatt</span></p><p><b>value</b>: true</p></div>
+        </text>
+        <identifier>
+          <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+          <value value="f05024d6-d622-414b-a373-cce1a625baf7"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"/>
+            <code value="CKFX16"/>
+            <display value="OCT tatt"/>
+          </coding>
+        </code>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+</Bundle>

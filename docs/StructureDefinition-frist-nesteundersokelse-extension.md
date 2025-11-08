@@ -1,0 +1,116 @@
+# Frist neste undersøkelse - RetinaIntegration v0.1.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Frist neste undersøkelse**
+
+## Extension: Frist neste undersøkelse (Experimental) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension | *Version*:0.1.3 |
+| Draft as of 2025-11-08 | *Computable Name*:KIFristNesteUndersokelse |
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/frist-nesteundersokelse-extension)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-frist-nesteundersokelse-extension.csv), [Excel](StructureDefinition-frist-nesteundersokelse-extension.xlsx), [Schematron](StructureDefinition-frist-nesteundersokelse-extension.sch) 
+
+#### Constraints
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "frist-nesteundersokelse-extension",
+  "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
+  "version" : "0.1.3",
+  "name" : "KIFristNesteUndersokelse",
+  "title" : "Frist neste undersøkelse",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-11-08T17:39:22+01:00",
+  "publisher" : "DIPS AS",
+  "contact" : [
+    {
+      "name" : "DIPS AS",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://dips.no/"
+        },
+        {
+          "system" : "email",
+          "value" : "teamsolsiden@dips.no"
+        }
+      ]
+    }
+  ],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "DiagnosticReport"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Frist neste undersøkelse"
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "integer"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

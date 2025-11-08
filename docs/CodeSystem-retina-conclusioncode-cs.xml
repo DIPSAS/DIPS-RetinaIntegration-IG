@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="retina-conclusioncode-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem retina-conclusioncode-cs</b></p><a name="retina-conclusioncode-cs"> </a><a name="hcretina-conclusioncode-cs"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1001<a name="retina-conclusioncode-cs-1001"> </a></td><td>Ferdig etter KI</td></tr><tr><td style="white-space:nowrap">1002<a name="retina-conclusioncode-cs-1002"> </a></td><td>Til manuell primærgradering etter KI</td></tr><tr><td style="white-space:nowrap">1003<a name="retina-conclusioncode-cs-1003"> </a></td><td>Til sekundærgradering etter KI</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
+  <version value="0.1.3"/>
+  <name value="RetinaConclusionCodesystem"/>
+  <title value="Kodeverk for konklusjon etter KI-anlyse"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-11-08T17:39:22+01:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="1001"/>
+    <display value="Ferdig etter KI"/>
+  </concept>
+  <concept>
+    <code value="1002"/>
+    <display value="Til manuell primærgradering etter KI"/>
+  </concept>
+  <concept>
+    <code value="1003"/>
+    <display value="Til sekundærgradering etter KI"/>
+  </concept>
+</CodeSystem>

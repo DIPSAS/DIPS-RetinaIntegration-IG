@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tiltaksstatus-forrigeUndersokelse-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tiltaksstatus-forrigeUndersokelse-vs</b></p><a name="tiltaksstatus-forrigeUndersokelse-vs"> </a><a name="hctiltaksstatus-forrigeUndersokelse-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.3</span></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs"/>
+  <version value="0.1.3"/>
+  <name value="TiltaksstatusForrigeUndersokelseValueSet"/>
+  <title value="Verdisett for tiltaksstatus neste undersøkelse"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-11-08T17:39:22+01:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening"/>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+    </include>
+  </compose>
+</ValueSet>

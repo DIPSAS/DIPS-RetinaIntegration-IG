@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - RetinaIntegration v0.1.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
+            <br/>
+            <span style="display:inline-block;">0.1.3 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.1.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Behavior: Operation Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-DIPSRetinaCapabilityStatement.html"
+                  title="CapabilityStatement/DIPSRetinaCapabilityStatement">DIPSRetinaCapabilityStatement</a>
+            </td>
+            <td>
+<p>CapabilityStatement for DIPS Retinaflyt</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="OperationDefinition-append-retina-ai-result.html"
+                  title="OperationDefinition/append-retina-ai-result">DIPSRetinaAppendOperationDefinition</a>
+            </td>
+            <td>
+<p>OperationDefinition for appending retina AI results to existing DiagnosticReport</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dme-left-eye-observation.html"
+                  title="StructureDefinition/dme-left-eye-observation">Diabetic Macular Edema Left Eye Observation</a>
+            </td>
+            <td>
+<p>Observation for diabetic macular edema findings in the left eye</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dme-right-eye-observation.html"
+                  title="StructureDefinition/dme-right-eye-observation">Diabetic Macular Edema Right Eye Observation</a>
+            </td>
+            <td>
+<p>Observation for diabetic macular edema findings in the right eye</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dr-left-eye-observation.html"
+                  title="StructureDefinition/dr-left-eye-observation">Diabetic Retinopathy Left Eye Observation</a>
+            </td>
+            <td>
+<p>Observation for diabetic retinopathy findings in the left eye</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dr-right-eye-observation.html"
+                  title="StructureDefinition/dr-right-eye-observation">Diabetic Retinopathy Right Eye Observation</a>
+            </td>
+            <td>
+<p>Observation for diabetic retinopathy findings in the right eye</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RetinaDiagnosticReport.html"
+                  title="StructureDefinition/RetinaDiagnosticReport">DiagnosticReport for Retinascreening</a>
+            </td>
+            <td>
+<p>This report contains the results from a retina screening examination.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fundus-foto-observation.html"
+                  title="StructureDefinition/fundus-foto-observation">FundusFotografiObservation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hba1c-observation.html"
+                  title="StructureDefinition/hba1c-observation">HbA1cObservation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oct-observation.html"
+                  title="StructureDefinition/oct-observation">OCTObservation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RetinaObservation.html"
+                  title="StructureDefinition/RetinaObservation">Observation for retina screening</a>
+            </td>
+            <td>
+<p>This is observations connected to RetinaDiagnosticReport</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-frist-nesteundersokelse-extension.html"
+                  title="StructureDefinition/frist-nesteundersokelse-extension">Frist neste undersøkelse</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-retina-imagequality-extension.html"
+                  title="StructureDefinition/retina-imagequality-extension">Image Quality</a>
+            </td>
+            <td>
+<p>A coded extension representing the quality of a diagnostic image</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ki-productname-extension.html"
+                  title="StructureDefinition/ki-productname-extension">KI Product Name extension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ki-protokoll-extension.html"
+                  title="StructureDefinition/ki-protokoll-extension">KI protokoll</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ki-versjon-algoritme-extension.html"
+                  title="StructureDefinition/ki-versjon-algoritme-extension">KI versjon algoritme</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-videre-forlop-extension.html"
+                  title="StructureDefinition/videre-forlop-extension">Neste skritt i forløpet.</a>
+            </td>
+            <td>
+<p>Angir videre forløp</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html"
+                  title="StructureDefinition/tiltaksstatus-forrige-undersokelse-extension">Titaksstaus forrige undersøkelse Retina</a>
+            </td>
+            <td>
+<p>Angir om et tiltak er primært eller sekundært</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-retina-conclusioncode-vs.html"
+                  title="ValueSet/retina-conclusioncode-vs">Conclusion Code ValueSet for Retinascreening</a>
+            </td>
+            <td>
+<p>Allowed conclusion codes for DiagnosticReport</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-retina-imagequality-vs.html"
+                  title="ValueSet/retina-imagequality-vs">Image Quality ValueSet for Retinascreening</a>
+            </td>
+            <td>
+<p>Image quality as interpreted by an AI solution.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-diagnosticreport-codes-vs.html"
+                  title="ValueSet/diagnosticreport-codes-vs">Rapport for Retina-screening</a>
+            </td>
+            <td>
+<p>Rapporttype bildediagnsotikk fra Volven 8660</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tiltaksstatus-forrigeUndersokelse-vs.html"
+                  title="ValueSet/tiltaksstatus-forrigeUndersokelse-vs">Verdisett for tiltaksstatus neste undersøkelse</a>
+            </td>
+            <td>
+<p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-videre-forlop-vs.html" title="ValueSet/videre-forlop-vs">Verdisett for videre forløpsstudie</a>
+            </td>
+            <td>
+<p>Verdisett som beskriver videre forløp for Retinascreening.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-retina-imagequality-cs.html"
+                  title="CodeSystem/retina-imagequality-cs">Image Quality CodeSystem for Retinascreening</a>
+            </td>
+            <td>
+<p>Image quality as interpreted by an AI solution.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-retina-conclusioncode-cs.html"
+                  title="CodeSystem/retina-conclusioncode-cs">Kodeverk for konklusjon etter KI-anlyse</a>
+            </td>
+            <td>
+<p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-no-kodeverk-8660.html"
+                  title="CodeSystem/no-kodeverk-8660">NO Kodeverk 8660</a>
+            </td>
+            <td>
+<p>Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html"
+                  title="CodeSystem/tiltakstatus-nesteundersokelse-cs">Verdisett for tiltaksstatus neste undersøkelse</a>
+            </td>
+            <td>
+<p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-videre-forlop-cs.html"
+                  title="CodeSystem/videre-forlop-cs">Videre forløp etter fotografering</a>
+            </td>
+            <td>
+<p>Koder basert på hva fotografen velger i skjema.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-retina-examination-id.html"
+                  title="NamingSystem/retina-examination-id">Retina examination identifier NamingSystem</a>
+            </td>
+            <td>
+<p>NamingSystem that documents the canonical URL used for retina-examination-id identifiers in DIPS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-retina-observation-id.html"
+                  title="NamingSystem/retina-observation-id">Retina observation identifier NamingSystem</a>
+            </td>
+            <td>
+<p>NamingSystem that documents the canonical URL used for retina-observation-id identifiers in DIPS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-AddAIResultOperation.html"
+                  title="Parameters/AddAIResultOperation">AddAIResultOperation</a>
+            </td>
+            <td>
+<p>Example request from client to append AI results to existing DiagnosticReport</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleWithSinglExamination-Example.html"
+                  title="Bundle/BundleWithSinglExamination-Example">BundleWithSinglExamination-Example</a>
+            </td>
+            <td>
+<p>Result of query for a specific examination idfentified by ID containing no AI result.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html"
+                  title="Bundle/BundleWithSingleExaminationAndAI-Example">BundleWithSingleExaminationAndAI-Example</a>
+            </td>
+            <td>
+<p>Example response containing a single diagnostic report containing AI result.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleWithTwoExaminations-Example.html"
+                  title="Bundle/BundleWithTwoExaminations-Example">BundleWithTwoExaminations-Example</a>
+            </td>
+            <td>
+<p>Result of query for examinations between two dates, not containing AI result. Note: The resource references in this example are not correct.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.html"
+                  title="DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144">NotificationFromDIPS-Example</a>
+            </td>
+            <td>
+<p>Notifikasjon fra DIPS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1123122.html" title="Patient/cdp1123122">Patient-cdp1123122</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1123123.html" title="Patient/cdp1123123">Patient-cdp1123123</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 8, 2025 17:39+0100">2025-11-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

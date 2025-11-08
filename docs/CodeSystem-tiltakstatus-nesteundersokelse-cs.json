@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tiltakstatus-nesteundersokelse-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tiltakstatus-nesteundersokelse-cs</b></p><a name=\"tiltakstatus-nesteundersokelse-cs\"> </a><a name=\"hctiltakstatus-nesteundersokelse-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">3001<a name=\"tiltakstatus-nesteundersokelse-cs-3001\"> </a></td><td>Ny fotokontroll (primærgradering)</td></tr><tr><td style=\"white-space:nowrap\">3002<a name=\"tiltakstatus-nesteundersokelse-cs-3002\"> </a></td><td>Ny fotokontroll (sekundærgradering)</td></tr><tr><td style=\"white-space:nowrap\">3003<a name=\"tiltakstatus-nesteundersokelse-cs-3003\"> </a></td><td>Ingen registrert tidligere undersøkelser</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+  "version" : "0.1.3",
+  "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
+  "title" : "Verdisett for tiltaksstatus neste undersøkelse",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-11-08T17:39:22+01:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "3001",
+    "display" : "Ny fotokontroll (primærgradering)"
+  },
+  {
+    "code" : "3002",
+    "display" : "Ny fotokontroll (sekundærgradering)"
+  },
+  {
+    "code" : "3003",
+    "display" : "Ingen registrert tidligere undersøkelser"
+  }]
+}
