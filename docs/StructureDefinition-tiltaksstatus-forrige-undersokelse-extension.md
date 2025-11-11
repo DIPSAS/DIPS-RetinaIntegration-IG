@@ -1,17 +1,17 @@
-# Titaksstaus forrige undersøkelse Retina - RetinaIntegration v0.1.3
+# Next Step Previous Examination - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Titaksstaus forrige undersøkelse Retina**
+* **Next Step Previous Examination**
 
-## Extension: Titaksstaus forrige undersøkelse Retina (Experimental) 
+## Extension: Next Step Previous Examination (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension | *Version*:0.1.3 |
-| Active as of 2025-11-08 | *Computable Name*:RetinaTiltaksstausForrigeUndersokelseExtension |
+| Active as of 2025-11-11 | *Computable Name*:RetinaTiltaksstausForrigeUndersokelseExtension |
 
-Angir om et tiltak er primært eller sekundært
+The next step in the screening process after the previous examination. (3000-series)
 
 **Context of Use**
 
@@ -19,7 +19,7 @@ Angir om et tiltak er primært eller sekundært
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 * Examples for this Extension: [Bundle/BundleWithSinglExamination-Example](Bundle-BundleWithSinglExamination-Example.md), [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md), [Bundle/BundleWithTwoExaminations-Example](Bundle-BundleWithTwoExaminations-Example.md) and [DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension)
@@ -47,10 +47,10 @@ Other representations of profile: [CSV](StructureDefinition-tiltaksstatus-forrig
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
   "version" : "0.1.3",
   "name" : "RetinaTiltaksstausForrigeUndersokelseExtension",
-  "title" : "Titaksstaus forrige undersøkelse Retina",
+  "title" : "Next Step Previous Examination",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](StructureDefinition-tiltaksstatus-forrig
       ]
     }
   ],
-  "description" : "Angir om et tiltak er primært eller sekundært",
+  "description" : "The next step in the screening process after the previous examination. (3000-series)",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](StructureDefinition-tiltaksstatus-forrig
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Titaksstaus forrige undersøkelse Retina",
-        "definition" : "Angir om et tiltak er primært eller sekundært"
+        "short" : "Next Step Previous Examination",
+        "definition" : "The next step in the screening process after the previous examination. (3000-series)"
       },
       {
         "id" : "Extension.extension",

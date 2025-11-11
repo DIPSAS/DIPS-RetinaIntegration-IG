@@ -9,41 +9,39 @@
 
 ### CodeSystems
 
-* [NO Kodeverk 8660](CodeSystem-no-kodeverk-8660.md)
-* [Kodeverk for konklusjon etter KI-anlyse](CodeSystem-retina-conclusioncode-cs.md)
-* [Image Quality CodeSystem for Retinascreening](CodeSystem-retina-imagequality-cs.md)
-* [Verdisett for tiltaksstatus neste undersøkelse](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)
-* [Videre forløp etter fotografering](CodeSystem-videre-forlop-cs.md)
+* [Conclusion From External Client](CodeSystem-retina-conclusioncode-cs.md)
+* [Image Quality](CodeSystem-retina-imagequality-cs.md)
+* [Next Step After Grading](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)
+* [Next Step After Photography](CodeSystem-videre-forlop-cs.md)
 
 ### ValueSets
 
-* [Rapport for Retina-screening](ValueSet-diagnosticreport-codes-vs.md)
-* [Conclusion Code ValueSet for Retinascreening](ValueSet-retina-conclusioncode-vs.md)
-* [Image Quality ValueSet for Retinascreening](ValueSet-retina-imagequality-vs.md)
-* [Verdisett for tiltaksstatus neste undersøkelse](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md)
-* [Verdisett for videre forløpsstudie](ValueSet-videre-forlop-vs.md)
+* [Conclusion From External Client](ValueSet-retina-conclusioncode-vs.md)
+* [Image Quality](ValueSet-retina-imagequality-vs.md)
+* [Next Step After Grading](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md)
+* [Next Step After Photography](ValueSet-videre-forlop-vs.md)
 
 ### Resource Profiles
 
-* [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
-* [Observation for retina screening](StructureDefinition-RetinaObservation.md)
+* [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
+* [Retina Observation](StructureDefinition-RetinaObservation.md)
 * [Diabetic Macular Edema Left Eye Observation](StructureDefinition-dme-left-eye-observation.md)
 * [Diabetic Macular Edema Right Eye Observation](StructureDefinition-dme-right-eye-observation.md)
 * [Diabetic Retinopathy Left Eye Observation](StructureDefinition-dr-left-eye-observation.md)
 * [Diabetic Retinopathy Right Eye Observation](StructureDefinition-dr-right-eye-observation.md)
-* [FundusFotografiObservation](StructureDefinition-fundus-foto-observation.md)
-* [HbA1cObservation](StructureDefinition-hba1c-observation.md)
-* [OCTObservation](StructureDefinition-oct-observation.md)
+* [Fundus Photography Observation](StructureDefinition-fundus-foto-observation.md)
+* [HbA1c Observation](StructureDefinition-hba1c-observation.md)
+* [OCT Observation](StructureDefinition-oct-observation.md)
 
 ### Extensions
 
-* [Frist neste undersøkelse](StructureDefinition-frist-nesteundersokelse-extension.md)
-* [KI Product Name extension](StructureDefinition-ki-productname-extension.md)
-* [KI protokoll](StructureDefinition-ki-protokoll-extension.md)
-* [KI versjon algoritme](StructureDefinition-ki-versjon-algoritme-extension.md)
+* [Deadline Next Examination](StructureDefinition-frist-nesteundersokelse-extension.md)
+* [AI Product Name](StructureDefinition-ki-productname-extension.md)
+* [AI Protocol](StructureDefinition-ki-protokoll-extension.md)
+* [AI Algorithm Version](StructureDefinition-ki-versjon-algoritme-extension.md)
 * [Image Quality](StructureDefinition-retina-imagequality-extension.md)
-* [Titaksstaus forrige undersøkelse Retina](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
-* [Neste skritt i forløpet.](StructureDefinition-videre-forlop-extension.md)
+* [Next Step Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
+* [Next Step](StructureDefinition-videre-forlop-extension.md)
 
 ### CapabilityStatements
 

@@ -8,9 +8,9 @@
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
   "version" : "0.1.3",
   "name" : "DIPSRetinaIntegrationObservation",
-  "title" : "Observation for retina screening",
+  "title" : "Retina Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -23,7 +23,7 @@
       "value" : "teamsolsiden@dips.no"
     }]
   }],
-  "description" : "This is observations connected to RetinaDiagnosticReport",
+  "description" : "Observations connected to RetinaDiagnosticReport.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

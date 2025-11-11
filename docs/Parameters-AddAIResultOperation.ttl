@@ -246,7 +246,7 @@
            fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs>
          ] ;
          fhir:code [ fhir:v "1001" ] ;
-         fhir:display [ fhir:v "Ferdig etter KI" ]
+         fhir:display [ fhir:v "Grading completed" ]
        ] )
      ]
   ] ) . # 

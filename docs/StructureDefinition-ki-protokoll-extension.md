@@ -1,15 +1,23 @@
-# KI protokoll - RetinaIntegration v0.1.3
+# AI Protocol - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **KI protokoll**
+* **AI Protocol**
 
-## Extension: KI protokoll (Experimental) 
+## Extension: AI Protocol (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:KIProtokoll |
+| Draft as of 2025-11-11 | *Computable Name*:KIProtokoll |
+
+Protocol used by the AI solution for analysis.
+
+Purpose: For documentation of the used analysis protocol the algorithm used in the automated analysis of retinal images for the purpose of grading images for diabetic rethinopathy. An angorithm may have more than one analysis protocol.
+
+Origin: AI solution.
+
+Content: String with name of protocol used by the algorithm for the analysis of the specific examination.
 
 **Context of Use**
 
@@ -17,7 +25,7 @@
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 * Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/ki-protokoll-extension)
@@ -43,10 +51,10 @@ Other representations of profile: [CSV](StructureDefinition-ki-protokoll-extensi
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
   "version" : "0.1.3",
   "name" : "KIProtokoll",
-  "title" : "KI protokoll",
+  "title" : "AI Protocol",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -63,6 +71,8 @@ Other representations of profile: [CSV](StructureDefinition-ki-protokoll-extensi
       ]
     }
   ],
+  "description" : "Protocol used by the AI solution for analysis.",
+  "purpose" : "Purpose: For documentation of the used analysis protocol the algorithm used in the automated analysis of retinal images for the purpose of grading images for diabetic rethinopathy. An angorithm may have more than one analysis protocol.\n\nOrigin: AI solution.\n\nContent: String with name of protocol used by the algorithm for the analysis of the specific examination. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -87,7 +97,8 @@ Other representations of profile: [CSV](StructureDefinition-ki-protokoll-extensi
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "KI protokoll"
+        "short" : "AI Protocol",
+        "definition" : "Protocol used by the AI solution for analysis."
       },
       {
         "id" : "Extension.extension",

@@ -5,28 +5,28 @@
   "extensions": [
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
-      "title": "Frist neste undersøkelse",
+      "title": "Deadline Next Examination",
       "types": [
         "integer"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
-      "title": "KI Product Name extension",
+      "title": "AI Product Name",
       "types": [
         "string"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
-      "title": "KI protokoll",
+      "title": "AI Protocol",
       "types": [
         "string"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
-      "title": "KI versjon algoritme",
+      "title": "AI Algorithm Version",
       "types": [
         "string"
       ]
@@ -40,14 +40,14 @@
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
-      "title": "Titaksstaus forrige undersøkelse Retina",
+      "title": "Next Step Previous Examination",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
-      "title": "Neste skritt i forløpet.",
+      "title": "Next Step",
       "types": [
         "CodeableConcept"
       ]
@@ -57,13 +57,13 @@
     "DiagnosticReport": [
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport",
-        "title": "DiagnosticReport for Retinascreening"
+        "title": "Retina DiagnosticReport"
       }
     ],
     "Observation": [
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
-        "title": "Observation for retina screening"
+        "title": "Retina Observation"
       },
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation",
@@ -83,15 +83,15 @@
       },
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation",
-        "title": "FundusFotografiObservation"
+        "title": "Fundus Photography Observation"
       },
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation",
-        "title": "HbA1cObservation"
+        "title": "HbA1c Observation"
       },
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation",
-        "title": "OCTObservation"
+        "title": "OCT Observation"
       }
     ]
   },

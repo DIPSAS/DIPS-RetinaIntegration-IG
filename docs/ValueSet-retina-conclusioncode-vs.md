@@ -1,22 +1,22 @@
-# Conclusion Code ValueSet for Retinascreening - RetinaIntegration v0.1.3
+# Conclusion From External Client - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Conclusion Code ValueSet for Retinascreening**
+* **Conclusion From External Client**
 
-## ValueSet: Conclusion Code ValueSet for Retinascreening (Experimental) 
+## ValueSet: Conclusion From External Client (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:RetinaConclusionCodeValueset |
+| Draft as of 2025-11-11 | *Computable Name*:RetinaConclusionCodeValueset |
 
  
-Allowed conclusion codes for DiagnosticReport 
+Codes describing where the external client has landed in its assessment of the examination. (1000-series) 
 
  **References** 
 
-* [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 ### Logical Definition (CLD)
 
@@ -50,10 +50,10 @@ Allowed conclusion codes for DiagnosticReport
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
   "version" : "0.1.3",
   "name" : "RetinaConclusionCodeValueset",
-  "title" : "Conclusion Code ValueSet for Retinascreening",
+  "title" : "Conclusion From External Client",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,7 +70,7 @@ Allowed conclusion codes for DiagnosticReport
       ]
     }
   ],
-  "description" : "Allowed conclusion codes for DiagnosticReport",
+  "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
   "compose" : {
     "include" : [
       {

@@ -8,10 +8,10 @@
   <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs"/>
   <version value="0.1.3"/>
   <name value="RetinaImageQualityValueSet"/>
-  <title value="Image Quality ValueSet for Retinascreening"/>
+  <title value="Image Quality"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-08T17:39:22+01:00"/>
+  <date value="2025-11-11T17:38:50+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -24,7 +24,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
-  <description value="Image quality as interpreted by an AI solution."/>
+  <description value="Image quality as interpreted by an AI solution. (2000-series)"/>
   <purpose value="For documentation of image quality as interpreted by an AI solution for automated assessment of retinal images for DR, if applicable."/>
   <compose>
     <include>

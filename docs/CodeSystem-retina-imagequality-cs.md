@@ -1,18 +1,18 @@
-# Image Quality CodeSystem for Retinascreening - RetinaIntegration v0.1.3
+# Image Quality - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Image Quality CodeSystem for Retinascreening**
+* **Image Quality**
 
-## CodeSystem: Image Quality CodeSystem for Retinascreening (Experimental) 
+## CodeSystem: Image Quality (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs | *Version*:0.1.3 |
-| Active as of 2025-11-08 | *Computable Name*:RetinaImageQualityCodesystem |
+| Active as of 2025-11-11 | *Computable Name*:RetinaImageQualityCodesystem |
 
  
-Image quality as interpreted by an AI solution. 
+Image quality as interpreted by an AI solution. (2000-series) 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -29,10 +29,10 @@ Image quality as interpreted by an AI solution.
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
   "version" : "0.1.3",
   "name" : "RetinaImageQualityCodesystem",
-  "title" : "Image Quality CodeSystem for Retinascreening",
+  "title" : "Image Quality",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -49,7 +49,7 @@ Image quality as interpreted by an AI solution.
       ]
     }
   ],
-  "description" : "Image quality as interpreted by an AI solution.",
+  "description" : "Image quality as interpreted by an AI solution. (2000-series)",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 4,

@@ -1,19 +1,22 @@
-# HbA1cObservation - RetinaIntegration v0.1.3
+# HbA1c Observation - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HbA1cObservation**
+* **HbA1c Observation**
 
-## Resource Profile: HbA1cObservation 
+## Resource Profile: HbA1c Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:HbA1cObservation |
+| Draft as of 2025-11-11 | *Computable Name*:HbA1cObservation |
+
+ 
+HbA1c level as reported by patient prior to retina examination. 
 
 **Usages:**
 
-* Refer to this Profile: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/hba1c-observation)
 
@@ -36,8 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-hba1c-observation.cs
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation",
   "version" : "0.1.3",
   "name" : "HbA1cObservation",
+  "title" : "HbA1c Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -54,6 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-hba1c-observation.cs
       ]
     }
   ],
+  "description" : "HbA1c level as reported by patient prior to retina examination.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

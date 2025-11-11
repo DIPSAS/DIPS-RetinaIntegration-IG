@@ -1,15 +1,25 @@
-# Frist neste undersøkelse - RetinaIntegration v0.1.3
+# Deadline Next Examination - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Frist neste undersøkelse**
+* **Deadline Next Examination**
 
-## Extension: Frist neste undersøkelse (Experimental) 
+## Extension: Deadline Next Examination (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:KIFristNesteUndersokelse |
+| Draft as of 2025-11-11 | *Computable Name*:KIFristNesteUndersokelse |
+
+Number of days until next examination.
+
+The number indicates a clinically decided time interval between current retinal examination and next retinal examination based on a risk assessment of the patient during the current retinal examination.
+
+Content: String with a number. The number indicates number of days. The counting of the number of days starts at the date images of the patient's retinas are taken. The end date of the counting is the clinical deadline indicated for the next examination.
+
+1 year counts as 365 days, 2 years counts as 730 days. Used by the EMR to set correct deadline date in the patient's planned contact so that the patient will be recalled within the deadline.
+
+For documentation of a clinically decided time interval between current retinal examination and next retinal examination based on a risk assessment of the patient during the current retinal examination. Origin: Lookup in National Norwegian clinical guidelines for diabetic retinopathy screening [National Norwegian clinical guidelines for diabetic retinopathy screening](https://www.legeforeningen.no/contentassets/c7fccca0ee554d7d80fd8c4818cdd739/godkjente-retningslinjer-for-screening-for-diabetisk-retinopati-05.11.2022.pdf) based on the patient's relevant dataset.
 
 **Context of Use**
 
@@ -17,7 +27,7 @@
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 * Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/frist-nesteundersokelse-extension)
@@ -43,10 +53,10 @@ Other representations of profile: [CSV](StructureDefinition-frist-nesteundersoke
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
   "version" : "0.1.3",
   "name" : "KIFristNesteUndersokelse",
-  "title" : "Frist neste undersøkelse",
+  "title" : "Deadline Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -63,6 +73,8 @@ Other representations of profile: [CSV](StructureDefinition-frist-nesteundersoke
       ]
     }
   ],
+  "description" : "Number of days until next examination.",
+  "purpose" : "The number indicates a clinically decided time interval between current retinal examination and next retinal examination based on a risk assessment of the patient during the current retinal examination. \n\nContent: String with a number. The number indicates number of days. The counting of the number of days starts at the date images of the patient's retinas are taken. The end date of the counting is the clinical deadline indicated for the next examination.\n\n1 year counts as 365 days, 2 years counts as 730 days. Used by the EMR to set correct deadline date in the patient's planned contact so that the patient will be recalled within the deadline. \n\nFor documentation of a clinically decided time interval between current retinal examination and next retinal examination based on a risk assessment of the patient during the current retinal examination. Origin: Lookup in National Norwegian clinical guidelines for diabetic retinopathy screening [National Norwegian clinical guidelines for diabetic retinopathy screening](https://www.legeforeningen.no/contentassets/c7fccca0ee554d7d80fd8c4818cdd739/godkjente-retningslinjer-for-screening-for-diabetisk-retinopati-05.11.2022.pdf) based on the patient's relevant dataset.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -87,7 +99,8 @@ Other representations of profile: [CSV](StructureDefinition-frist-nesteundersoke
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Frist neste undersøkelse"
+        "short" : "Deadline Next Examination",
+        "definition" : "Number of days until next examination."
       },
       {
         "id" : "Extension.extension",

@@ -1,10 +1,10 @@
-# Retina examination identifier NamingSystem - RetinaIntegration v0.1.3
+# Retina Examination Id - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Retina examination identifier NamingSystem**
+* **Retina Examination Id**
 
-## NamingSystem: Retina examination identifier NamingSystem 
+## NamingSystem: Retina Examination Id 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-10-19 | *Computable Name*:RetinaExaminationIdentifierSystem |
 
  
-A naming system for retina examination identifiers used by DIPS integration services. 
+A naming system for examination identifiers in RetinaIntegration. 
 
 ### Summary
 
@@ -22,7 +22,7 @@ A naming system for retina examination identifiers used by DIPS integration serv
 | Version | 0.1.3 |
 | Name | RetinaExaminationIdentifierSystem |
 | Status | active |
-| Definition | A naming system for retina examination identifiers used by DIPS integration services. |
+| Definition | A naming system for examination identifiers in RetinaIntegration. |
 | Publisher | DIPS AS |
 
 ### Identifiers
@@ -69,7 +69,7 @@ A naming system for retina examination identifiers used by DIPS integration serv
       ]
     }
   ],
-  "description" : "A naming system for retina examination identifiers used by DIPS integration services.",
+  "description" : "A naming system for examination identifiers in RetinaIntegration.",
   "uniqueId" : [
     {
       "type" : "uri",

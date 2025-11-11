@@ -26,31 +26,31 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:retinaImageQualityExtension","DiagnosticReport.extension","retinaImageQualityExtension","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension]]} {[]}
-","Image Quality","A coded extension representing the quality of a diagnostic image","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Image Quality","A coded extension representing the quality of a diagnostic image.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:kiProductName","DiagnosticReport.extension","kiProductName","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension]]} {[]}
-","KI Product Name extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","AI Product Name","Name of the AI product used for analysis.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:kiVersionAlgoritme","DiagnosticReport.extension","kiVersionAlgoritme","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension]]} {[]}
-","KI versjon algoritme","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","AI Algorithm Version","Version of the AI algorithm used for analysis.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:kiFristNesteUndersokelse","DiagnosticReport.extension","kiFristNesteUndersokelse","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension]]} {[]}
-","Frist neste undersøkelse","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Deadline Next Examination","Number of days until next examination.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:kiProtokoll","DiagnosticReport.extension","kiProtokoll","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension]]} {[]}
-","KI protokoll","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","AI Protocol","Protocol used by the AI solution for analysis.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:videreForlop","DiagnosticReport.extension","videreForlop","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension]]} {[]}
-","Neste skritt i forløpet.","Angir videre forløp","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Next Step","Next step in the grading process after photography. (4000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:forrigeUndersokelse","DiagnosticReport.extension","forrigeUndersokelse","","",1,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension]]} {[]}
-","Titaksstaus forrige undersøkelse Retina","Angir om et tiltak er primært eller sekundært","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Next Step Previous Examination","The next step in the screening process after the previous examination. (3000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.modifierExtension","DiagnosticReport.modifierExtension","","extensions
@@ -66,7 +66,7 @@ Filler IDPlacer ID","",1,*,"","","Y","Identifier {[]} {[]}
 "
 "RetinaDiagnosticReport","DiagnosticReport.identifier:sectraStudyId","DiagnosticReport.identifier","sectraStudyId","ReportID
 Filler IDPlacer ID","",0,*,"","","Y","Identifier {[]} {[]}
-","Sectra Study Identifier","Uniquely identify a study within the Sectra system, facilitating accurate tracking and retrieval of imaging data associated with retinascreening.","There may be multiple Sectra Study Identifiers if the report is associated with multiple imaging studies.","The Sectra Study Identifier is essential for linking the DiagnosticReport to the corresponding imaging study in the Sectra system.","","","","","","","",,,,,"",,,,"DiagnosticReport.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Sectra Study Identifier","Uniquely identify a study within the Sectra system.","There may be multiple Sectra Study Identifiers if the report is associated with multiple imaging studies. If there are no Sectra studies it is not possible for AI to grade the examination.","Need to know what identifier to use when making queries about this report from the source laboratory, and for linking to the report outside FHIR context.","","","","","","","",,,,,"",,,,"DiagnosticReport.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RetinaDiagnosticReport","DiagnosticReport.identifier:sectraStudyId.id","DiagnosticReport.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -95,7 +95,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "RetinaDiagnosticReport","DiagnosticReport.identifier:retinaExaminationId","DiagnosticReport.identifier","retinaExaminationId","ReportID
 Filler IDPlacer ID","",1,1,"","","Y","Identifier {[]} {[]}
-","Retina Examination Identifier","Identifier for the retina examination.","Usually assigned by the Information System of the diagnostic service provider (filler id).","Need to know what identifier to use when making queries about this report from the source laboratory, and for linking to the report outside FHIR context.","","","","","","","",,,,,"",,,,"DiagnosticReport.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Retina Examination Identifier","Identifies the retina examination in RetinaIntegration.","Usually assigned by the Information System of the diagnostic service provider (filler id).","Need to know what identifier to use when making queries about this report from the source laboratory, and for linking to the report outside FHIR context.","","","","","","","",,,,,"",,,,"DiagnosticReport.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RetinaDiagnosticReport","DiagnosticReport.identifier:retinaExaminationId.id","DiagnosticReport.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -135,7 +135,13 @@ Sub-departmentServiceDiscipline","",0,*,"","","Y","CodeableConcept {[]} {[]}
 "
 "RetinaDiagnosticReport","DiagnosticReport.code","DiagnosticReport.code","","Type
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Name/Code for this diagnostic report","A code or name that describes this diagnostic report.","","","","","","","","","",,"required","","http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Name/Code for this diagnostic report","A code or name that describes this diagnostic report.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660""/>
+    <code value=""B""/>
+    <display value=""Bildediagnostikk""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes that describe Diagnostic Reports.","http://hl7.org/fhir/ValueSet/report-codes|4.0.1","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RetinaDiagnosticReport","DiagnosticReport.subject","DiagnosticReport.subject","","Patient
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}
@@ -171,7 +177,7 @@ Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"","","",
 "
 "RetinaDiagnosticReport","DiagnosticReport.result:fundusFotografiObservation","DiagnosticReport.result","fundusFotografiObservation","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"","","","Reference {[]} {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation]]}
-","Optional Fundus Photography Observation","An optional observation indicating that fundus photography was performed.","This slice is used to explicitly document when fundus photography has been performed during a retina screening examination. The observation should use the code CKDP10 from the Norwegian code system.","Used to track and document the completion of fundus photography procedures within the retina screening workflow.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Optional Fundus Photography Observation.","An optional observation indicating that fundus photography was performed.","This slice is used to explicitly document when fundus photography has been performed during a retina screening examination. The observation should use the code CKDP10 from the Norwegian code system.","Used to track and document the completion of fundus photography procedures within the retina screening workflow.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RetinaDiagnosticReport","DiagnosticReport.result:octObservation","DiagnosticReport.result","octObservation","Data
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,1,"","","","Reference {[]} {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation]]}
@@ -1172,7 +1178,7 @@ The alternate way is to use the value element for actual observations and use th
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "frist-nesteundersokelse-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Frist neste undersøkelse","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Deadline Next Examination","Number of days until next examination.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "frist-nesteundersokelse-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1555,7 +1561,7 @@ The alternate way is to use the value element for actual observations and use th
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ki-productname-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","KI Product Name extension","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","AI Product Name","Name of the AI product used for analysis.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ki-productname-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1570,7 +1576,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ki-protokoll-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","KI protokoll","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","AI Protocol","Protocol used by the AI solution for analysis.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ki-protokoll-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1585,7 +1591,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ki-versjon-algoritme-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","KI versjon algoritme","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","AI Algorithm Version","Version of the AI algorithm used for analysis.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ki-versjon-algoritme-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1784,7 +1790,7 @@ The alternate way is to use the value element for actual observations and use th
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "retina-imagequality-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Image Quality","A coded extension representing the quality of a diagnostic image","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Image Quality","A coded extension representing the quality of a diagnostic image.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "retina-imagequality-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1799,7 +1805,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tiltaksstatus-forrige-undersokelse-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Titaksstaus forrige undersøkelse Retina","Angir om et tiltak er primært eller sekundært","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Next Step Previous Examination","The next step in the screening process after the previous examination. (3000-series)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tiltaksstatus-forrige-undersokelse-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1814,7 +1820,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "videre-forlop-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Neste skritt i forløpet.","Angir videre forløp","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Next Step","Next step in the grading process after photography. (4000-series)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "videre-forlop-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

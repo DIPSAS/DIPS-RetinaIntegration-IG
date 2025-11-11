@@ -1,15 +1,23 @@
-# KI Product Name extension - RetinaIntegration v0.1.3
+# AI Product Name - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **KI Product Name extension**
+* **AI Product Name**
 
-## Extension: KI Product Name extension (Experimental) 
+## Extension: AI Product Name (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:KIProductName |
+| Draft as of 2025-11-11 | *Computable Name*:KIProductName |
+
+Name of the AI product used for analysis.
+
+For documentation of AI product used in automated analysis of retinal images for the purpose of grading images for diabetic rethinopathy.
+
+Origin: AI solution.
+
+Content: String with name of AI product.
 
 **Context of Use**
 
@@ -17,7 +25,7 @@
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 * Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/ki-productname-extension)
@@ -43,10 +51,10 @@ Other representations of profile: [CSV](StructureDefinition-ki-productname-exten
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
   "version" : "0.1.3",
   "name" : "KIProductName",
-  "title" : "KI Product Name extension",
+  "title" : "AI Product Name",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -63,6 +71,8 @@ Other representations of profile: [CSV](StructureDefinition-ki-productname-exten
       ]
     }
   ],
+  "description" : "Name of the AI product used for analysis.",
+  "purpose" : "For documentation of AI product used in automated analysis of retinal images for the purpose of grading images for diabetic rethinopathy.\n\nOrigin: AI solution.\n\nContent: String with name of AI product.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -87,7 +97,8 @@ Other representations of profile: [CSV](StructureDefinition-ki-productname-exten
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "KI Product Name extension"
+        "short" : "AI Product Name",
+        "definition" : "Name of the AI product used for analysis."
       },
       {
         "id" : "Extension.extension",

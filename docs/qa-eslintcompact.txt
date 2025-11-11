@@ -1,15 +1,6 @@
 RetinaIntegration
 =========================================
 
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/fundus-foto-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hba1c-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/oct-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/frist-nesteundersokelse-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ki-productname-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ki-protokoll-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ki-versjon-algoritme-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp1123122.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp1123123.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
@@ -203,11 +194,11 @@ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dme-
 C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dr-left-eye-observation.json: line 0, col 0, Info - The Implementation Guide contains no explicitly linked examples for this profile (BUSINESSRULE)
 C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dr-right-eye-observation.json: line 0, col 0, Info - The Implementation Guide contains no explicitly linked examples for this profile (BUSINESSRULE)
 C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-fundus-foto-observation.json: line 0, col 0, Info - The Implementation Guide contains no explicitly linked examples for this profile (BUSINESSRULE)
-C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-hba1c-observation.json: line 1, col 38718, Error - Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (CODEINVALID)
-C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-hba1c-observation.json: line 1, col 92926, Error - Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (CODEINVALID)
+C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-hba1c-observation.json: line 1, col 38826, Error - Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (CODEINVALID)
+C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-hba1c-observation.json: line 1, col 93034, Error - Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (CODEINVALID)
 C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-hba1c-observation.json: line 0, col 0, Info - The Implementation Guide contains no explicitly linked examples for this profile (BUSINESSRULE)
 C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-oct-observation.json: line 0, col 0, Info - The Implementation Guide contains no explicitly linked examples for this profile (BUSINESSRULE)
 C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-imagequality-extension.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 
-err = 56, warn = 127, info = 24
+err = 56, warn = 118, info = 24
 IG Publisher Version: 2.0.26

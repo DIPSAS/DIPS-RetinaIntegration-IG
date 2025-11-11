@@ -1,19 +1,22 @@
-# OCTObservation - RetinaIntegration v0.1.3
+# OCT Observation - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **OCTObservation**
+* **OCT Observation**
 
-## Resource Profile: OCTObservation 
+## Resource Profile: OCT Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:OCTObservation |
+| Draft as of 2025-11-11 | *Computable Name*:OCTObservation |
+
+ 
+Wether Optical Coherence Tomography (OCT) was performed or not. Will be true if OCT was performed. 
 
 **Usages:**
 
-* Refer to this Profile: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/oct-observation)
 
@@ -36,8 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-oct-observation.csv)
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation",
   "version" : "0.1.3",
   "name" : "OCTObservation",
+  "title" : "OCT Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -54,6 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-oct-observation.csv)
       ]
     }
   ],
+  "description" : "Wether Optical Coherence Tomography (OCT) was performed or not. Will be true if OCT was performed.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

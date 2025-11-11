@@ -1,20 +1,19 @@
 RetinaIntegration : Validation Results
 =========================================
 
-err = 56, warn = 127, info = 24
+err = 56, warn = 118, info = 24
 $--
 Generated $--. FHIR version $-- for dips.fhir.retinaintegration#$-- (canonical = http://dips.no/fhir/RetinaIntegration)
- Build Errors : 0 / 13 / 0
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSinglExamination-Example : 11 / 23 / 12
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSingleExaminationAndAI-Example : 21 / 48 / 23
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithTwoExaminations-Example : 22 / 45 / 23
+ Build Errors : 0 / 4 / 0
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSinglExamination-Example : 11 / 24 / 12
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSingleExaminationAndAI-Example : 21 / 49 / 23
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithTwoExaminations-Example : 22 / 47 / 23
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CapabilityStatement-DIPSRetinaCapabilityStatement : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-no-kodeverk-8660 : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-conclusioncode-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-imagequality-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-tiltakstatus-nesteundersokelse-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-videre-forlop-cs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144 : 0 / 1 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144 : 0 / 2 / 2
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-examination-id : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-observation-id : 0 / 0 / 1
@@ -22,7 +21,7 @@ Generated $--. FHIR version $-- for dips.fhir.retinaintegration#$-- (canonical =
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Parameters-AddAIResultOperation : 0 / 18 / 11
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Patient-cdp1123122 : 0 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Patient-cdp1123123 : 0 / 1 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-RetinaDiagnosticReport : 0 / 0 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-RetinaDiagnosticReport : 0 / 2 / 2
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-RetinaObservation : 0 / 0 / 2
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dme-left-eye-observation : 0 / 0 / 2
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dme-right-eye-observation : 0 / 0 / 2
@@ -38,22 +37,12 @@ Generated $--. FHIR version $-- for dips.fhir.retinaintegration#$-- (canonical =
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-imagequality-extension : 0 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-tiltaksstatus-forrige-undersokelse-extension : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-videre-forlop-extension : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-diagnosticreport-codes-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-conclusioncode-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-imagequality-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-tiltaksstatus-forrigeUndersokelse-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-videre-forlop-vs : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/fundus-foto-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hba1c-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/oct-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/frist-nesteundersokelse-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ki-productname-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ki-protokoll-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ki-versjon-algoritme-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp1123122.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cdp1123123.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -225,7 +214,6 @@ WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Bes
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated\resources\CapabilityStatement-DIPSRetinaCapabilityStatement.json ==
-== fsh-generated\resources\CodeSystem-no-kodeverk-8660.json ==
 == fsh-generated\resources\CodeSystem-retina-conclusioncode-cs.json ==
 == fsh-generated\resources\CodeSystem-retina-imagequality-cs.json ==
 == fsh-generated\resources\CodeSystem-tiltakstatus-nesteundersokelse-cs.json ==
@@ -285,7 +273,6 @@ INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegrat
 WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.json ==
 == fsh-generated\resources\StructureDefinition-videre-forlop-extension.json ==
-== fsh-generated\resources\ValueSet-diagnosticreport-codes-vs.json ==
 == fsh-generated\resources\ValueSet-retina-conclusioncode-vs.json ==
 == fsh-generated\resources\ValueSet-retina-imagequality-vs.json ==
 == fsh-generated\resources\ValueSet-tiltaksstatus-forrigeUndersokelse-vs.json ==

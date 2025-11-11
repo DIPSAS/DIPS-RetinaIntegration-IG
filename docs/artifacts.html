@@ -204,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/dme-left-eye-observation">Diabetic Macular Edema Left Eye Observation</a>
             </td>
             <td>
-<p>Observation for diabetic macular edema findings in the left eye</p>
+<p>Observation for diabetic macular edema findings in the left eye.</p>
 </td>
          </tr>
          <tr>
@@ -213,7 +213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/dme-right-eye-observation">Diabetic Macular Edema Right Eye Observation</a>
             </td>
             <td>
-<p>Observation for diabetic macular edema findings in the right eye</p>
+<p>Observation for diabetic macular edema findings in the right eye.</p>
 </td>
          </tr>
          <tr>
@@ -222,7 +222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/dr-left-eye-observation">Diabetic Retinopathy Left Eye Observation</a>
             </td>
             <td>
-<p>Observation for diabetic retinopathy findings in the left eye</p>
+<p>Observation for diabetic retinopathy findings in the left eye.</p>
 </td>
          </tr>
          <tr>
@@ -231,52 +231,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/dr-right-eye-observation">Diabetic Retinopathy Right Eye Observation</a>
             </td>
             <td>
-<p>Observation for diabetic retinopathy findings in the right eye</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-RetinaDiagnosticReport.html"
-                  title="StructureDefinition/RetinaDiagnosticReport">DiagnosticReport for Retinascreening</a>
-            </td>
-            <td>
-<p>This report contains the results from a retina screening examination.</p>
+<p>Observation for diabetic retinopathy findings in the right eye.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-fundus-foto-observation.html"
-                  title="StructureDefinition/fundus-foto-observation">FundusFotografiObservation</a>
+                  title="StructureDefinition/fundus-foto-observation">Fundus Photography Observation</a>
             </td>
             <td>
-
+<p>Wether fundus photography was performed or not. Will be true if fundus photos where taken.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-hba1c-observation.html"
-                  title="StructureDefinition/hba1c-observation">HbA1cObservation</a>
+                  title="StructureDefinition/hba1c-observation">HbA1c Observation</a>
             </td>
             <td>
-
+<p>HbA1c level as reported by patient prior to retina examination.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-oct-observation.html"
-                  title="StructureDefinition/oct-observation">OCTObservation</a>
+                  title="StructureDefinition/oct-observation">OCT Observation</a>
             </td>
             <td>
-
+<p>Wether Optical Coherence Tomography (OCT) was performed or not. Will be true if OCT was performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RetinaDiagnosticReport.html"
+                  title="StructureDefinition/RetinaDiagnosticReport">Retina DiagnosticReport</a>
+            </td>
+            <td>
+<p>This diagnostic report for the grading of a retina screening examination.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-RetinaObservation.html"
-                  title="StructureDefinition/RetinaObservation">Observation for retina screening</a>
+                  title="StructureDefinition/RetinaObservation">Retina Observation</a>
             </td>
             <td>
-<p>This is observations connected to RetinaDiagnosticReport</p>
+<p>Observations connected to RetinaDiagnosticReport.</p>
 </td>
          </tr>
       </tbody>
@@ -289,11 +289,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-frist-nesteundersokelse-extension.html"
-                  title="StructureDefinition/frist-nesteundersokelse-extension">Frist neste undersøkelse</a>
+               <a href="StructureDefinition-ki-versjon-algoritme-extension.html"
+                  title="StructureDefinition/ki-versjon-algoritme-extension">AI Algorithm Version</a>
             </td>
             <td>
-
+<p>Version of the AI algorithm used for analysis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ki-productname-extension.html"
+                  title="StructureDefinition/ki-productname-extension">AI Product Name</a>
+            </td>
+            <td>
+<p>Name of the AI product used for analysis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ki-protokoll-extension.html"
+                  title="StructureDefinition/ki-protokoll-extension">AI Protocol</a>
+            </td>
+            <td>
+<p>Protocol used by the AI solution for analysis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-frist-nesteundersokelse-extension.html"
+                  title="StructureDefinition/frist-nesteundersokelse-extension">Deadline Next Examination</a>
+            </td>
+            <td>
+<p>Number of days until next examination.</p>
 </td>
          </tr>
          <tr>
@@ -302,52 +329,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/retina-imagequality-extension">Image Quality</a>
             </td>
             <td>
-<p>A coded extension representing the quality of a diagnostic image</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ki-productname-extension.html"
-                  title="StructureDefinition/ki-productname-extension">KI Product Name extension</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ki-protokoll-extension.html"
-                  title="StructureDefinition/ki-protokoll-extension">KI protokoll</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ki-versjon-algoritme-extension.html"
-                  title="StructureDefinition/ki-versjon-algoritme-extension">KI versjon algoritme</a>
-            </td>
-            <td>
-
+<p>A coded extension representing the quality of a diagnostic image.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-videre-forlop-extension.html"
-                  title="StructureDefinition/videre-forlop-extension">Neste skritt i forløpet.</a>
+                  title="StructureDefinition/videre-forlop-extension">Next Step</a>
             </td>
             <td>
-<p>Angir videre forløp</p>
+<p>Next step in the grading process after photography. (4000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html"
-                  title="StructureDefinition/tiltaksstatus-forrige-undersokelse-extension">Titaksstaus forrige undersøkelse Retina</a>
+                  title="StructureDefinition/tiltaksstatus-forrige-undersokelse-extension">Next Step Previous Examination</a>
             </td>
             <td>
-<p>Angir om et tiltak er primært eller sekundært</p>
+<p>The next step in the screening process after the previous examination. (3000-series)</p>
 </td>
          </tr>
       </tbody>
@@ -361,45 +361,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-retina-conclusioncode-vs.html"
-                  title="ValueSet/retina-conclusioncode-vs">Conclusion Code ValueSet for Retinascreening</a>
+                  title="ValueSet/retina-conclusioncode-vs">Conclusion From External Client</a>
             </td>
             <td>
-<p>Allowed conclusion codes for DiagnosticReport</p>
+<p>Codes describing where the external client has landed in its assessment of the examination. (1000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-retina-imagequality-vs.html"
-                  title="ValueSet/retina-imagequality-vs">Image Quality ValueSet for Retinascreening</a>
+                  title="ValueSet/retina-imagequality-vs">Image Quality</a>
             </td>
             <td>
-<p>Image quality as interpreted by an AI solution.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-diagnosticreport-codes-vs.html"
-                  title="ValueSet/diagnosticreport-codes-vs">Rapport for Retina-screening</a>
-            </td>
-            <td>
-<p>Rapporttype bildediagnsotikk fra Volven 8660</p>
+<p>Image quality as interpreted by an AI solution. (2000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-tiltaksstatus-forrigeUndersokelse-vs.html"
-                  title="ValueSet/tiltaksstatus-forrigeUndersokelse-vs">Verdisett for tiltaksstatus neste undersøkelse</a>
+                  title="ValueSet/tiltaksstatus-forrigeUndersokelse-vs">Next Step After Grading</a>
             </td>
             <td>
-<p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening</p>
+<p>Valueset describing next step in the screening process after grading. (3000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-videre-forlop-vs.html" title="ValueSet/videre-forlop-vs">Verdisett for videre forløpsstudie</a>
+               <a href="ValueSet-videre-forlop-vs.html" title="ValueSet/videre-forlop-vs">Next Step After Photography</a>
             </td>
             <td>
-<p>Verdisett som beskriver videre forløp for Retinascreening.</p>
+<p>Valueset describing next step in the grading process after photography. (4000-series)</p>
 </td>
          </tr>
       </tbody>
@@ -412,47 +403,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-retina-imagequality-cs.html"
-                  title="CodeSystem/retina-imagequality-cs">Image Quality CodeSystem for Retinascreening</a>
-            </td>
-            <td>
-<p>Image quality as interpreted by an AI solution.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-retina-conclusioncode-cs.html"
-                  title="CodeSystem/retina-conclusioncode-cs">Kodeverk for konklusjon etter KI-anlyse</a>
+                  title="CodeSystem/retina-conclusioncode-cs">Conclusion From External Client</a>
             </td>
             <td>
-<p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI</p>
+<p>Codes describing where the external client has landed in its assessment of the examination. (1000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-no-kodeverk-8660.html"
-                  title="CodeSystem/no-kodeverk-8660">NO Kodeverk 8660</a>
+               <a href="CodeSystem-retina-imagequality-cs.html"
+                  title="CodeSystem/retina-imagequality-cs">Image Quality</a>
             </td>
             <td>
-<p>Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.</p>
+<p>Image quality as interpreted by an AI solution. (2000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html"
-                  title="CodeSystem/tiltakstatus-nesteundersokelse-cs">Verdisett for tiltaksstatus neste undersøkelse</a>
+                  title="CodeSystem/tiltakstatus-nesteundersokelse-cs">Next Step After Grading</a>
             </td>
             <td>
-<p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening</p>
+<p>Valueset describing next step in the screening process after grading. (3000-series)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-videre-forlop-cs.html"
-                  title="CodeSystem/videre-forlop-cs">Videre forløp etter fotografering</a>
+                  title="CodeSystem/videre-forlop-cs">Next Step After Photography</a>
             </td>
             <td>
-<p>Koder basert på hva fotografen velger i skjema.</p>
+<p>Next step in the grading process after photography. (4000-series)</p>
 </td>
          </tr>
       </tbody>
@@ -466,19 +448,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="NamingSystem-retina-examination-id.html"
-                  title="NamingSystem/retina-examination-id">Retina examination identifier NamingSystem</a>
+                  title="NamingSystem/retina-examination-id">Retina Examination Id</a>
             </td>
             <td>
-<p>NamingSystem that documents the canonical URL used for retina-examination-id identifiers in DIPS.</p>
+<p>ID identifying an examination.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="NamingSystem-retina-observation-id.html"
-                  title="NamingSystem/retina-observation-id">Retina observation identifier NamingSystem</a>
+                  title="NamingSystem/retina-observation-id">Retina Observation Id</a>
             </td>
             <td>
-<p>NamingSystem that documents the canonical URL used for retina-observation-id identifiers in DIPS.</p>
+<p>ID identifying an observation associated with an examination.</p>
 </td>
          </tr>
       </tbody>
@@ -500,17 +482,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-BundleWithSinglExamination-Example.html"
-                  title="Bundle/BundleWithSinglExamination-Example">BundleWithSinglExamination-Example</a>
-            </td>
-            <td>
-<p>Result of query for a specific examination idfentified by ID containing no AI result.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html"
-                  title="Bundle/BundleWithSingleExaminationAndAI-Example">BundleWithSingleExaminationAndAI-Example</a>
+                  title="Bundle/BundleWithSingleExaminationAndAI-Example">Bundle With Single Examination Containing AI Result</a>
             </td>
             <td>
 <p>Example response containing a single diagnostic report containing AI result.</p>
@@ -518,20 +491,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-BundleWithTwoExaminations-Example.html"
-                  title="Bundle/BundleWithTwoExaminations-Example">BundleWithTwoExaminations-Example</a>
+               <a href="Bundle-BundleWithSinglExamination-Example.html"
+                  title="Bundle/BundleWithSinglExamination-Example">Bundle With Single Examination Without AI Result</a>
             </td>
             <td>
-<p>Result of query for examinations between two dates, not containing AI result. Note: The resource references in this example are not correct.</p>
+<p>Result of query for a specific examination idfentified by ID containing no AI result.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleWithTwoExaminations-Example.html"
+                  title="Bundle/BundleWithTwoExaminations-Example">Bundle With Two Diagnostic Reports</a>
+            </td>
+            <td>
+<p>Result of query for examinations between two dates, not containing AI result.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.html"
-                  title="DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144">NotificationFromDIPS-Example</a>
+                  title="DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144">Notification From DIPS</a>
             </td>
             <td>
-<p>Notifikasjon fra DIPS</p>
+<p>Notification from DIPS to external client that new retina examination is ready for grading.</p>
 </td>
          </tr>
          <tr>
@@ -539,7 +521,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="Patient-cdp1123122.html" title="Patient/cdp1123122">Patient-cdp1123122</a>
             </td>
             <td>
-
+<p>Example patient 2</p>
 </td>
          </tr>
          <tr>
@@ -547,7 +529,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="Patient-cdp1123123.html" title="Patient/cdp1123123">Patient-cdp1123123</a>
             </td>
             <td>
-
+<p>Example patient 1</p>
 </td>
          </tr>
       </tbody>
@@ -570,7 +552,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 8, 2025 17:39+0100">2025-11-08</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 11, 2025 17:38+0100">2025-11-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

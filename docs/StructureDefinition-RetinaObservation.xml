@@ -9,9 +9,9 @@
   <url value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
   <version value="0.1.3"/>
   <name value="DIPSRetinaIntegrationObservation"/>
-  <title value="Observation for retina screening"/>
+  <title value="Retina Observation"/>
   <status value="draft"/>
-  <date value="2025-11-08T17:39:22+01:00"/>
+  <date value="2025-11-11T17:38:50+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -24,7 +24,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
-  <description value="This is observations connected to RetinaDiagnosticReport"/>
+  <description value="Observations connected to RetinaDiagnosticReport."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

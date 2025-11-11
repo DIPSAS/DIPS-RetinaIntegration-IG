@@ -1,22 +1,22 @@
-# Observation for retina screening - RetinaIntegration v0.1.3
+# Retina Observation - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Observation for retina screening**
+* **Retina Observation**
 
-## Resource Profile: Observation for retina screening 
+## Resource Profile: Retina Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:DIPSRetinaIntegrationObservation |
+| Draft as of 2025-11-11 | *Computable Name*:DIPSRetinaIntegrationObservation |
 
  
-This is observations connected to RetinaDiagnosticReport 
+Observations connected to RetinaDiagnosticReport. 
 
 **Usages:**
 
-* Derived from this Profile: [Diabetic Macular Edema Left Eye Observation](StructureDefinition-dme-left-eye-observation.md), [Diabetic Macular Edema Right Eye Observation](StructureDefinition-dme-right-eye-observation.md), [Diabetic Retinopathy Left Eye Observation](StructureDefinition-dr-left-eye-observation.md), [Diabetic Retinopathy Right Eye Observation](StructureDefinition-dr-right-eye-observation.md)...Show 3 more,[FundusFotografiObservation](StructureDefinition-fundus-foto-observation.md),[HbA1cObservation](StructureDefinition-hba1c-observation.md)and[OCTObservation](StructureDefinition-oct-observation.md)
+* Derived from this Profile: [Diabetic Macular Edema Left Eye Observation](StructureDefinition-dme-left-eye-observation.md), [Diabetic Macular Edema Right Eye Observation](StructureDefinition-dme-right-eye-observation.md), [Diabetic Retinopathy Left Eye Observation](StructureDefinition-dr-left-eye-observation.md), [Diabetic Retinopathy Right Eye Observation](StructureDefinition-dr-right-eye-observation.md)...Show 3 more,[Fundus Photography Observation](StructureDefinition-fundus-foto-observation.md),[HbA1c Observation](StructureDefinition-hba1c-observation.md)and[OCT Observation](StructureDefinition-oct-observation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/RetinaObservation)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-RetinaObservation.cs
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
   "version" : "0.1.3",
   "name" : "DIPSRetinaIntegrationObservation",
-  "title" : "Observation for retina screening",
+  "title" : "Retina Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaObservation.cs
       ]
     }
   ],
-  "description" : "This is observations connected to RetinaDiagnosticReport",
+  "description" : "Observations connected to RetinaDiagnosticReport.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

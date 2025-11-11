@@ -1,22 +1,22 @@
-# Verdisett for tiltaksstatus neste undersøkelse - RetinaIntegration v0.1.3
+# Next Step After Grading - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Verdisett for tiltaksstatus neste undersøkelse**
+* **Next Step After Grading**
 
-## ValueSet: Verdisett for tiltaksstatus neste undersøkelse (Experimental) 
+## ValueSet: Next Step After Grading (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
+| Draft as of 2025-11-11 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
 
  
-Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening 
+Valueset describing next step in the screening process after grading. (3000-series) 
 
  **References** 
 
-* [Titaksstaus forrige undersøkelse Retina](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
+* [Next Step Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
 
 ### Logical Definition (CLD)
 
@@ -50,10 +50,10 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
   "version" : "0.1.3",
   "name" : "TiltaksstatusForrigeUndersokelseValueSet",
-  "title" : "Verdisett for tiltaksstatus neste undersøkelse",
+  "title" : "Next Step After Grading",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,7 +70,7 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
       ]
     }
   ],
-  "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+  "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
   "compose" : {
     "include" : [
       {

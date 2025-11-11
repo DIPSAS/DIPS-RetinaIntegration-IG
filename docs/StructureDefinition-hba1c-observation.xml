@@ -13,8 +13,9 @@
   <url value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation"/>
   <version value="0.1.3"/>
   <name value="HbA1cObservation"/>
+  <title value="HbA1c Observation"/>
   <status value="draft"/>
-  <date value="2025-11-08T17:39:22+01:00"/>
+  <date value="2025-11-11T17:38:50+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -27,6 +28,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
+  <description value="HbA1c level as reported by patient prior to retina examination."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

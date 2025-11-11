@@ -177,7 +177,7 @@
       <coding>
         <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
         <code value="1001"/>
-        <display value="Ferdig etter KI"/>
+        <display value="Grading completed"/>
       </coding>
     </valueCodeableConcept>
   </parameter>

@@ -1,17 +1,17 @@
-# Neste skritt i forløpet. - RetinaIntegration v0.1.3
+# Next Step - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Neste skritt i forløpet.**
+* **Next Step**
 
-## Extension: Neste skritt i forløpet. (Experimental) 
+## Extension: Next Step (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension | *Version*:0.1.3 |
-| Active as of 2025-11-08 | *Computable Name*:RetinaVidereForlopExtension |
+| Active as of 2025-11-11 | *Computable Name*:RetinaVidereForlopExtension |
 
-Angir videre forløp
+Next step in the grading process after photography. (4000-series)
 
 **Context of Use**
 
@@ -19,7 +19,7 @@ Angir videre forløp
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 * Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/videre-forlop-extension)
@@ -47,10 +47,10 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
   "version" : "0.1.3",
   "name" : "RetinaVidereForlopExtension",
-  "title" : "Neste skritt i forløpet.",
+  "title" : "Next Step",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
       ]
     }
   ],
-  "description" : "Angir videre forløp",
+  "description" : "Next step in the grading process after photography. (4000-series)",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Neste skritt i forløpet.",
-        "definition" : "Angir videre forløp"
+        "short" : "Next Step",
+        "definition" : "Next step in the grading process after photography. (4000-series)"
       },
       {
         "id" : "Extension.extension",

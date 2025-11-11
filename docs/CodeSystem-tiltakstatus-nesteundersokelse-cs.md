@@ -1,18 +1,18 @@
-# Verdisett for tiltaksstatus neste undersøkelse - RetinaIntegration v0.1.3
+# Next Step After Grading - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Verdisett for tiltaksstatus neste undersøkelse**
+* **Next Step After Grading**
 
-## CodeSystem: Verdisett for tiltaksstatus neste undersøkelse (Experimental) 
+## CodeSystem: Next Step After Grading (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:TiltakStatusForrigeUndersokelseCodeSystem |
+| Draft as of 2025-11-11 | *Computable Name*:TiltakStatusForrigeUndersokelseCodeSystem |
 
  
-Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening 
+Valueset describing next step in the screening process after grading. (3000-series) 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -29,10 +29,10 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
   "version" : "0.1.3",
   "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
-  "title" : "Verdisett for tiltaksstatus neste undersøkelse",
+  "title" : "Next Step After Grading",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -49,7 +49,7 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
       ]
     }
   ],
-  "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+  "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,

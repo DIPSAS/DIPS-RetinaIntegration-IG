@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "DRLeftEyeObservation"] ; # 
   fhir:title [ fhir:v "Diabetic Retinopathy Left Eye Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-08T17:39:22+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-11T17:38:50+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -34,7 +34,7 @@
        fhir:value [ fhir:v "teamsolsiden@dips.no" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Observation for diabetic retinopathy findings in the left eye"] ; # 
+  fhir:description [ fhir:v "Observation for diabetic retinopathy findings in the left eye."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;

@@ -56,7 +56,7 @@ The summary table lists the resources that are part of this configuration, and f
 
 Base System Profile
 
-[DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+[Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 Profile Conformance
 

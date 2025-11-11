@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:DRRightEyeObservation |
+| Draft as of 2025-11-11 | *Computable Name*:DRRightEyeObservation |
 
  
-Observation for diabetic retinopathy findings in the right eye 
+Observation for diabetic retinopathy findings in the right eye. 
 
 **Usages:**
 
-* Refer to this Profile: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/dr-right-eye-observation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-dr-right-eye-observa
   "name" : "DRRightEyeObservation",
   "title" : "Diabetic Retinopathy Right Eye Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-dr-right-eye-observa
       ]
     }
   ],
-  "description" : "Observation for diabetic retinopathy findings in the right eye",
+  "description" : "Observation for diabetic retinopathy findings in the right eye.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

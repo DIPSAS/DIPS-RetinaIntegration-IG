@@ -1,18 +1,18 @@
-# Image Quality ValueSet for Retinascreening - RetinaIntegration v0.1.3
+# Image Quality - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Image Quality ValueSet for Retinascreening**
+* **Image Quality**
 
-## ValueSet: Image Quality ValueSet for Retinascreening (Experimental) 
+## ValueSet: Image Quality (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:RetinaImageQualityValueSet |
+| Draft as of 2025-11-11 | *Computable Name*:RetinaImageQualityValueSet |
 
  
-Image quality as interpreted by an AI solution. 
+Image quality as interpreted by an AI solution. (2000-series) 
 
  
 For documentation of image quality as interpreted by an AI solution for automated assessment of retinal images for DR, if applicable. 
@@ -53,10 +53,10 @@ For documentation of image quality as interpreted by an AI solution for automate
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
   "version" : "0.1.3",
   "name" : "RetinaImageQualityValueSet",
-  "title" : "Image Quality ValueSet for Retinascreening",
+  "title" : "Image Quality",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -73,7 +73,7 @@ For documentation of image quality as interpreted by an AI solution for automate
       ]
     }
   ],
-  "description" : "Image quality as interpreted by an AI solution.",
+  "description" : "Image quality as interpreted by an AI solution. (2000-series)",
   "purpose" : "For documentation of image quality as interpreted by an AI solution for automated assessment of retinal images for DR, if applicable.",
   "compose" : {
     "include" : [

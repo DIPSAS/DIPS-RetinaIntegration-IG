@@ -1,10 +1,10 @@
-# Retina observation identifier NamingSystem - RetinaIntegration v0.1.3
+# Retina Observation Id - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Retina observation identifier NamingSystem**
+* **Retina Observation Id**
 
-## NamingSystem: Retina observation identifier NamingSystem 
+## NamingSystem: Retina Observation Id 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-10-19 | *Computable Name*:RetinaObservationIdentifierSystem |
 
  
-A naming system for retina observation identifiers used by DIPS integration services. 
+A naming system for observation identifiers in RetinaIntegration. 
 
 ### Summary
 
@@ -22,7 +22,7 @@ A naming system for retina observation identifiers used by DIPS integration serv
 | Version | 0.1.3 |
 | Name | RetinaObservationIdentifierSystem |
 | Status | active |
-| Definition | A naming system for retina observation identifiers used by DIPS integration services. |
+| Definition | A naming system for observation identifiers in RetinaIntegration. |
 | Publisher | DIPS AS |
 
 ### Identifiers
@@ -69,7 +69,7 @@ A naming system for retina observation identifiers used by DIPS integration serv
       ]
     }
   ],
-  "description" : "A naming system for retina observation identifiers used by DIPS integration services.",
+  "description" : "A naming system for observation identifiers in RetinaIntegration.",
   "uniqueId" : [
     {
       "type" : "uri",

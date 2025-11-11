@@ -1,22 +1,22 @@
-# Verdisett for videre forløpsstudie - RetinaIntegration v0.1.3
+# Next Step After Photography - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Verdisett for videre forløpsstudie**
+* **Next Step After Photography**
 
-## ValueSet: Verdisett for videre forløpsstudie (Experimental) 
+## ValueSet: Next Step After Photography (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:VidereForlopValueSet |
+| Draft as of 2025-11-11 | *Computable Name*:VidereForlopValueSet |
 
  
-Verdisett som beskriver videre forløp for Retinascreening. 
+Valueset describing next step in the grading process after photography. (4000-series) 
 
  **References** 
 
-* [Neste skritt i forløpet.](StructureDefinition-videre-forlop-extension.md)
+* [Next Step](StructureDefinition-videre-forlop-extension.md)
 
 ### Logical Definition (CLD)
 
@@ -50,10 +50,10 @@ Verdisett som beskriver videre forløp for Retinascreening.
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
   "version" : "0.1.3",
   "name" : "VidereForlopValueSet",
-  "title" : "Verdisett for videre forløpsstudie",
+  "title" : "Next Step After Photography",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,7 +70,7 @@ Verdisett som beskriver videre forløp for Retinascreening.
       ]
     }
   ],
-  "description" : "Verdisett som beskriver videre forløp for Retinascreening.",
+  "description" : "Valueset describing next step in the grading process after photography. (4000-series)",
   "compose" : {
     "include" : [
       {

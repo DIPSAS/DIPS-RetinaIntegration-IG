@@ -214,7 +214,7 @@
           {
             "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
             "code" : "1001",
-            "display" : "Ferdig etter KI"
+            "display" : "Grading completed"
           }
         ]
       }

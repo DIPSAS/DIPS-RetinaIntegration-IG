@@ -10,7 +10,7 @@
   "name" : "DRLeftEyeObservation",
   "title" : "Diabetic Retinopathy Left Eye Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -23,7 +23,7 @@
       "value" : "teamsolsiden@dips.no"
     }]
   }],
-  "description" : "Observation for diabetic retinopathy findings in the left eye",
+  "description" : "Observation for diabetic retinopathy findings in the left eye.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

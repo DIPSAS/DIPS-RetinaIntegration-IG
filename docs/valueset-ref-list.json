@@ -1,38 +1,26 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs",
-      "version" : "0.1.3",
-      "status" : "draft",
-      "name" : "DiagnosticReportCodes",
-      "title" : "Rapport for Retina-screening",
-      "description" : "Rapporttype bildediagnsotikk fra Volven 8660",
-      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"],
-      "uses" : {
-      },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
-    },
-    {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaConclusionCodeValueset",
-      "title" : "Conclusion Code ValueSet for Retinascreening",
-      "description" : "Allowed conclusion codes for DiagnosticReport",
+      "title" : "Conclusion From External Client",
+      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
+      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaImageQualityValueSet",
-      "title" : "Image Quality ValueSet for Retinascreening",
-      "description" : "Image quality as interpreted by an AI solution.",
+      "title" : "Image Quality",
+      "description" : "Image quality as interpreted by an AI solution. (2000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"
       ],
@@ -45,28 +33,28 @@
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "TiltaksstatusForrigeUndersokelseValueSet",
-      "title" : "Verdisett for tiltaksstatus neste undersøkelse",
-      "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+      "title" : "Next Step After Grading",
+      "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html" : "Titaksstaus forrige undersøkelse Retina"
+      "StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html" : "Next Step Previous Examination"
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "VidereForlopValueSet",
-      "title" : "Verdisett for videre forløpsstudie",
-      "description" : "Verdisett som beskriver videre forløp for Retinascreening.",
+      "title" : "Next Step After Photography",
+      "description" : "Valueset describing next step in the grading process after photography. (4000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-videre-forlop-extension.html" : "Neste skritt i forløpet."
+      "StructureDefinition-videre-forlop-extension.html" : "Next Step"
     }
   ]
 }

@@ -1,15 +1,23 @@
-# KI versjon algoritme - RetinaIntegration v0.1.3
+# AI Algorithm Version - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **KI versjon algoritme**
+* **AI Algorithm Version**
 
-## Extension: KI versjon algoritme (Experimental) 
+## Extension: AI Algorithm Version (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:KIVersionAlgoritme |
+| Draft as of 2025-11-11 | *Computable Name*:KIVersionAlgoritme |
+
+Version of the AI algorithm used for analysis.
+
+For documentation of the algorithm version used by the AI product in automated analysis of retinal images for the purpose of grading images for diabetic rethinopathy.
+
+Origin: AI solution.
+
+Content: String with AI product's algorithm version.
 
 **Context of Use**
 
@@ -17,7 +25,7 @@
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 * Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/ki-versjon-algoritme-extension)
@@ -43,10 +51,10 @@ Other representations of profile: [CSV](StructureDefinition-ki-versjon-algoritme
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
   "version" : "0.1.3",
   "name" : "KIVersionAlgoritme",
-  "title" : "KI versjon algoritme",
+  "title" : "AI Algorithm Version",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -63,6 +71,8 @@ Other representations of profile: [CSV](StructureDefinition-ki-versjon-algoritme
       ]
     }
   ],
+  "description" : "Version of the AI algorithm used for analysis.",
+  "purpose" : "For documentation of the algorithm version used by the AI product in automated analysis of retinal images for the purpose of grading images for diabetic rethinopathy.\n\nOrigin: AI solution.\n\nContent: String with AI product's algorithm version.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -87,7 +97,8 @@ Other representations of profile: [CSV](StructureDefinition-ki-versjon-algoritme
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "KI versjon algoritme"
+        "short" : "AI Algorithm Version",
+        "definition" : "Version of the AI algorithm used for analysis."
       },
       {
         "id" : "Extension.extension",

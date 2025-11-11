@@ -8,10 +8,10 @@
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
   "version" : "0.1.3",
   "name" : "RetinaConclusionCodeValueset",
-  "title" : "Conclusion Code ValueSet for Retinascreening",
+  "title" : "Conclusion From External Client",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -24,7 +24,7 @@
       "value" : "teamsolsiden@dips.no"
     }]
   }],
-  "description" : "Allowed conclusion codes for DiagnosticReport",
+  "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
   "compose" : {
     "include" : [{
       "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"

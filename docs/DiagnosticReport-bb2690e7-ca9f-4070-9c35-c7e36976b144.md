@@ -1,12 +1,12 @@
-# NotificationFromDIPS-Example - RetinaIntegration v0.1.3
+# Notification From DIPS - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **NotificationFromDIPS-Example**
+* **Notification From DIPS**
 
-## Example DiagnosticReport: NotificationFromDIPS-Example
+## Example DiagnosticReport: Notification From DIPS
 
-Profile: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 ## Bildediagnostikk 
 

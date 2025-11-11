@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:DMELeftEyeObservation |
+| Draft as of 2025-11-11 | *Computable Name*:DMELeftEyeObservation |
 
  
-Observation for diabetic macular edema findings in the left eye 
+Observation for diabetic macular edema findings in the left eye. 
 
 **Usages:**
 
-* Refer to this Profile: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/dme-left-eye-observation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-dme-left-eye-observa
   "name" : "DMELeftEyeObservation",
   "title" : "Diabetic Macular Edema Left Eye Observation",
   "status" : "draft",
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-dme-left-eye-observa
       ]
     }
   ],
-  "description" : "Observation for diabetic macular edema findings in the left eye",
+  "description" : "Observation for diabetic macular edema findings in the left eye.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

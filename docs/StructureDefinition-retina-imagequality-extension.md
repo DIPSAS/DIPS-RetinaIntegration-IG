@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension | *Version*:0.1.3 |
-| Active as of 2025-11-08 | *Computable Name*:RetinaImageQualityExtension |
+| Active as of 2025-11-11 | *Computable Name*:RetinaImageQualityExtension |
 
-A coded extension representing the quality of a diagnostic image
+A coded extension representing the quality of a diagnostic image.
 
 **Context of Use**
 
@@ -19,7 +19,7 @@ A coded extension representing the quality of a diagnostic image
 
 **Usages:**
 
-* Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
+* Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-imagequality-extension)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-imagequality-
   "title" : "Image Quality",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-imagequality-
       ]
     }
   ],
-  "description" : "A coded extension representing the quality of a diagnostic image",
+  "description" : "A coded extension representing the quality of a diagnostic image.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-imagequality-
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Image Quality",
-        "definition" : "A coded extension representing the quality of a diagnostic image"
+        "definition" : "A coded extension representing the quality of a diagnostic image."
       },
       {
         "id" : "Extension.extension",

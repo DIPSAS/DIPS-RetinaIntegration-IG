@@ -1,21 +1,21 @@
-# DiagnosticReport for Retinascreening - RetinaIntegration v0.1.3
+# Retina DiagnosticReport - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DiagnosticReport for Retinascreening**
+* **Retina DiagnosticReport**
 
-## Resource Profile: DiagnosticReport for Retinascreening ( Experimental ) 
+## Resource Profile: Retina DiagnosticReport ( Experimental ) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:DIPSRetinaIntegrationDiagnosticReport |
+| Draft as of 2025-11-11 | *Computable Name*:DIPSRetinaIntegrationDiagnosticReport |
 
  
-This report contains the results from a retina screening examination. 
+This diagnostic report for the grading of a retina screening examination. 
 
  
-The purpose of RetinaIntegrationDiagnosticReport is to standardize the reporting of retina screening results, including AI analysis, to ensure consistent communication and interoperability between healthcare systems involved in diabetic retinopathy management. 
+The purpose of RetinaIntegrationDiagnosticReport is for a client to examine the state of a retina screening examination grading. This includes documenting which observations were made (e.g., fundus photography, OCT), any laboratory results relevant to the examination (e.g., HbA1c), and the results of AI analysis or manual grading for diabetic retinopathy (DR) and diabetic macular edema (DME). Additionally, it captures metadata about the examination, such as identifiers, image quality, and recommended follow-up actions. 
 
 **Usages:**
 
@@ -43,10 +43,10 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport",
   "version" : "0.1.3",
   "name" : "DIPSRetinaIntegrationDiagnosticReport",
-  "title" : "DiagnosticReport for Retinascreening",
+  "title" : "Retina DiagnosticReport",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -63,8 +63,8 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
       ]
     }
   ],
-  "description" : "This report contains the results from a retina screening examination.",
-  "purpose" : "The purpose of RetinaIntegrationDiagnosticReport is to standardize the reporting of retina screening results, including AI analysis, to ensure consistent communication and interoperability between healthcare systems involved in diabetic retinopathy management.",
+  "description" : "This diagnostic report for the grading of a retina screening examination.",
+  "purpose" : "The purpose of RetinaIntegrationDiagnosticReport is for a client to examine the state of a retina screening examination grading. This includes documenting which observations were made (e.g., fundus photography, OCT), any laboratory results relevant to the examination (e.g., HbA1c), and the results of AI analysis or manual grading for diabetic retinopathy (DR) and diabetic macular edema (DME). Additionally, it captures metadata about the examination, such as identifiers, image quality, and recommended follow-up actions.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -238,9 +238,8 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
         "path" : "DiagnosticReport.identifier",
         "sliceName" : "sectraStudyId",
         "short" : "Sectra Study Identifier",
-        "definition" : "Uniquely identify a study within the Sectra system, facilitating accurate tracking and retrieval of imaging data associated with retinascreening.",
-        "comment" : "There may be multiple Sectra Study Identifiers if the report is associated with multiple imaging studies.",
-        "requirements" : "The Sectra Study Identifier is essential for linking the DiagnosticReport to the corresponding imaging study in the Sectra system.",
+        "definition" : "Uniquely identify a study within the Sectra system.",
+        "comment" : "There may be multiple Sectra Study Identifiers if the report is associated with multiple imaging studies. If there are no Sectra studies it is not possible for AI to grade the examination.",
         "min" : 0,
         "max" : "*"
       },
@@ -255,7 +254,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
         "path" : "DiagnosticReport.identifier",
         "sliceName" : "retinaExaminationId",
         "short" : "Retina Examination Identifier",
-        "definition" : "Identifier for the retina examination.",
+        "definition" : "Identifies the retina examination in RetinaIntegration.",
         "min" : 1,
         "max" : "1"
       },
@@ -268,9 +267,14 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
       {
         "id" : "DiagnosticReport.code",
         "path" : "DiagnosticReport.code",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs"
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
+              "code" : "B",
+              "display" : "Bildediagnostikk"
+            }
+          ]
         }
       },
       {
@@ -290,7 +294,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
         "id" : "DiagnosticReport.result:fundusFotografiObservation",
         "path" : "DiagnosticReport.result",
         "sliceName" : "fundusFotografiObservation",
-        "short" : "Optional Fundus Photography Observation",
+        "short" : "Optional Fundus Photography Observation.",
         "definition" : "An optional observation indicating that fundus photography was performed.",
         "comment" : "This slice is used to explicitly document when fundus photography has been performed during a retina screening examination. The observation should use the code CKDP10 from the Norwegian code system.",
         "requirements" : "Used to track and document the completion of fundus photography procedures within the retina screening workflow.",

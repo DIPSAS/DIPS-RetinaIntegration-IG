@@ -1,18 +1,18 @@
-# Kodeverk for konklusjon etter KI-anlyse - RetinaIntegration v0.1.3
+# Conclusion From External Client - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Kodeverk for konklusjon etter KI-anlyse**
+* **Conclusion From External Client**
 
-## CodeSystem: Kodeverk for konklusjon etter KI-anlyse (Experimental) 
+## CodeSystem: Conclusion From External Client (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-08 | *Computable Name*:RetinaConclusionCodesystem |
+| Draft as of 2025-11-11 | *Computable Name*:RetinaConclusionCodesystem |
 
  
-Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI 
+Codes describing where the external client has landed in its assessment of the examination. (1000-series) 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -29,10 +29,10 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
   "version" : "0.1.3",
   "name" : "RetinaConclusionCodesystem",
-  "title" : "Kodeverk for konklusjon etter KI-anlyse",
+  "title" : "Conclusion From External Client",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-08T17:39:22+01:00",
+  "date" : "2025-11-11T17:38:50+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -49,22 +49,22 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
       ]
     }
   ],
-  "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening etter KI",
+  "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,
   "concept" : [
     {
       "code" : "1001",
-      "display" : "Ferdig etter KI"
+      "display" : "Grading completed"
     },
     {
       "code" : "1002",
-      "display" : "Til manuell primærgradering etter KI"
+      "display" : "To primary grading"
     },
     {
       "code" : "1003",
-      "display" : "Til sekundærgradering etter KI"
+      "display" : "To secondary grading"
     }
   ]
 }
