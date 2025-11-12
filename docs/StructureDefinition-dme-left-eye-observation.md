@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:DMELeftEyeObservation |
+| Draft as of 2025-11-12 | *Computable Name*:DMELeftEyeObservation |
 
  
 Observation for diabetic macular edema findings in the left eye. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-dme-left-eye-observa
   "name" : "DMELeftEyeObservation",
   "title" : "Diabetic Macular Edema Left Eye Observation",
   "status" : "draft",
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

@@ -9,17 +9,17 @@
 
 ### CodeSystems
 
-* [Conclusion From External Client](CodeSystem-retina-conclusioncode-cs.md)
+* [Grading Conclusion](CodeSystem-retina-conclusioncode-cs.md)
 * [Image Quality](CodeSystem-retina-imagequality-cs.md)
-* [Next Step After Grading](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)
-* [Next Step After Photography](CodeSystem-videre-forlop-cs.md)
+* [Next Examination](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)
+* [Pending Grading Step](CodeSystem-videre-forlop-cs.md)
 
 ### ValueSets
 
-* [Conclusion From External Client](ValueSet-retina-conclusioncode-vs.md)
+* [Grading Conclusion](ValueSet-retina-conclusioncode-vs.md)
 * [Image Quality](ValueSet-retina-imagequality-vs.md)
-* [Next Step After Grading](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md)
-* [Next Step After Photography](ValueSet-videre-forlop-vs.md)
+* [Next Examination](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md)
+* [Pending Grading Step](ValueSet-videre-forlop-vs.md)
 
 ### Resource Profiles
 

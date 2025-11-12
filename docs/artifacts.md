@@ -59,10 +59,10 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [Conclusion From External Client](ValueSet-retina-conclusioncode-vs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
+| [Grading Conclusion](ValueSet-retina-conclusioncode-vs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
 | [Image Quality](ValueSet-retina-imagequality-vs.md) | Image quality as interpreted by an AI solution. (2000-series) |
-| [Next Step After Grading](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md) | Valueset describing next step in the screening process after grading. (3000-series) |
-| [Next Step After Photography](ValueSet-videre-forlop-vs.md) | Valueset describing next step in the grading process after photography. (4000-series) |
+| [Next Examination](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md) | Next step for this patient is a new examination. (3000-series) |
+| [Pending Grading Step](ValueSet-videre-forlop-vs.md) | Next step in grading this examination. (4000-series) |
 
 ### Terminology: Code Systems 
 
@@ -70,10 +70,10 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [Conclusion From External Client](CodeSystem-retina-conclusioncode-cs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
+| [Grading Conclusion](CodeSystem-retina-conclusioncode-cs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
 | [Image Quality](CodeSystem-retina-imagequality-cs.md) | Image quality as interpreted by an AI solution. (2000-series) |
-| [Next Step After Grading](CodeSystem-tiltakstatus-nesteundersokelse-cs.md) | Valueset describing next step in the screening process after grading. (3000-series) |
-| [Next Step After Photography](CodeSystem-videre-forlop-cs.md) | Next step in the grading process after photography. (4000-series) |
+| [Next Examination](CodeSystem-tiltakstatus-nesteundersokelse-cs.md) | Next step for this patient is a new examination. (3000-series) |
+| [Pending Grading Step](CodeSystem-videre-forlop-cs.md) | Next step in grading this examination. (4000-series) |
 
 ### Terminology: Naming Systems 
 

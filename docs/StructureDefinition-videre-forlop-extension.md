@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension | *Version*:0.1.3 |
-| Active as of 2025-11-11 | *Computable Name*:RetinaVidereForlopExtension |
+| Active as of 2025-11-12 | *Computable Name*:RetinaVidereForlopExtension |
 
 Next step in the grading process after photography. (4000-series)
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
   "title" : "Next Step",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

@@ -1,18 +1,18 @@
-# Next Step After Photography - RetinaIntegration v0.1.3
+# Pending Grading Step - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Next Step After Photography**
+* **Pending Grading Step**
 
-## CodeSystem: Next Step After Photography (Experimental) 
+## CodeSystem: Pending Grading Step (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:VidereForlopCodeSystem |
+| Draft as of 2025-11-12 | *Computable Name*:VidereForlopCodeSystem |
 
  
-Next step in the grading process after photography. (4000-series) 
+Next step in grading this examination. (4000-series) 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -29,10 +29,10 @@ Next step in the grading process after photography. (4000-series)
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
   "version" : "0.1.3",
   "name" : "VidereForlopCodeSystem",
-  "title" : "Next Step After Photography",
+  "title" : "Pending Grading Step",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -49,7 +49,7 @@ Next step in the grading process after photography. (4000-series)
       ]
     }
   ],
-  "description" : "Next step in the grading process after photography. (4000-series)",
+  "description" : "Next step in grading this examination. (4000-series)",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,

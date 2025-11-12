@@ -1,18 +1,18 @@
-# Next Step After Photography - RetinaIntegration v0.1.3
+# Pending Grading Step - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Next Step After Photography**
+* **Pending Grading Step**
 
-## ValueSet: Next Step After Photography (Experimental) 
+## ValueSet: Pending Grading Step (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:VidereForlopValueSet |
+| Draft as of 2025-11-12 | *Computable Name*:VidereForlopValueSet |
 
  
-Valueset describing next step in the grading process after photography. (4000-series) 
+Next step in grading this examination. (4000-series) 
 
  **References** 
 
@@ -50,10 +50,10 @@ Valueset describing next step in the grading process after photography. (4000-se
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
   "version" : "0.1.3",
   "name" : "VidereForlopValueSet",
-  "title" : "Next Step After Photography",
+  "title" : "Pending Grading Step",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,7 +70,7 @@ Valueset describing next step in the grading process after photography. (4000-se
       ]
     }
   ],
-  "description" : "Valueset describing next step in the grading process after photography. (4000-series)",
+  "description" : "Next step in grading this examination. (4000-series)",
   "compose" : {
     "include" : [
       {

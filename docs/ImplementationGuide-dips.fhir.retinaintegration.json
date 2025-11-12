@@ -10,7 +10,7 @@
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -711,30 +711,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/retina-conclusioncode-vs"
-      },
-      "name" : "Conclusion From External Client",
-      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/retina-conclusioncode-cs"
-      },
-      "name" : "Conclusion From External Client",
-      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -831,6 +807,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/retina-conclusioncode-vs"
+      },
+      "name" : "Grading Conclusion",
+      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/retina-conclusioncode-cs"
+      },
+      "name" : "Grading Conclusion",
+      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -879,25 +879,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/videre-forlop-extension"
-      },
-      "name" : "Next Step",
-      "description" : "Next step in the grading process after photography. (4000-series)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/tiltaksstatus-forrigeUndersokelse-vs"
       },
-      "name" : "Next Step After Grading",
-      "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
+      "name" : "Next Examination",
+      "description" : "Next step for this patient is a new examination. (3000-series)",
       "exampleBoolean" : false
     },
     {
@@ -908,31 +896,19 @@
       "reference" : {
         "reference" : "CodeSystem/tiltakstatus-nesteundersokelse-cs"
       },
-      "name" : "Next Step After Grading",
-      "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
+      "name" : "Next Examination",
+      "description" : "Next step for this patient is a new examination. (3000-series)",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "ValueSet/videre-forlop-vs"
+        "reference" : "StructureDefinition/videre-forlop-extension"
       },
-      "name" : "Next Step After Photography",
-      "description" : "Valueset describing next step in the grading process after photography. (4000-series)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/videre-forlop-cs"
-      },
-      "name" : "Next Step After Photography",
+      "name" : "Next Step",
       "description" : "Next step in the grading process after photography. (4000-series)",
       "exampleBoolean" : false
     },
@@ -995,6 +971,30 @@
       "name" : "Patient-cdp1123123",
       "description" : "Example patient 1",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/videre-forlop-vs"
+      },
+      "name" : "Pending Grading Step",
+      "description" : "Next step in grading this examination. (4000-series)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/videre-forlop-cs"
+      },
+      "name" : "Pending Grading Step",
+      "description" : "Next step in grading this examination. (4000-series)",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

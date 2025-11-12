@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="18569c01-b7fd-4f73-ab06-e19b32cc0c84"/>
+  <id value="dad1d770-9431-4e65-af09-3256aa609cda"/>
   <meta>
-    <lastUpdated value="2025-11-11T17:38:50.798+01:00"/>
+    <lastUpdated value="2025-11-12T18:21:01.246+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-retina-conclusioncode-cs.html">codesystem Conclusion From External Client v0.1.3 (CodeSystem)</a>
+              <a href="CodeSystem-retina-conclusioncode-cs.html">codesystem Grading Conclusion v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -111,13 +111,13 @@
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"/>
         <version value="0.1.3"/>
         <name value="RetinaConclusionCodeValueset"/>
-        <title value="Conclusion From External Client"/>
+        <title value="Grading Conclusion"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-11T17:38:50+01:00"/>
+        <date value="2025-11-12T18:21:01+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:897bbd5e-cc54-4731-a3ed-7d35cc40e3eb"/>
-          <timestamp value="2025-11-11T17:39:57+01:00"/>
+          <identifier value="urn:uuid:c40196e0-bb10-4240-82d2-30edb5568fcc"/>
+          <timestamp value="2025-11-12T18:22:43+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -281,10 +281,10 @@
         <title value="Image Quality"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-11T17:38:50+01:00"/>
+        <date value="2025-11-12T18:21:01+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:dc284b1d-90f8-4a82-aa6b-36ef7e05347a"/>
-          <timestamp value="2025-11-11T17:39:57+01:00"/>
+          <identifier value="urn:uuid:9b329972-71de-4de4-bf99-04ccb432b014"/>
+          <timestamp value="2025-11-12T18:22:43+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -340,7 +340,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html">codesystem Next Step After Grading v0.1.3 (CodeSystem)</a>
+              <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html">codesystem Next Examination v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -436,13 +436,13 @@
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs"/>
         <version value="0.1.3"/>
         <name value="TiltaksstatusForrigeUndersokelseValueSet"/>
-        <title value="Next Step After Grading"/>
+        <title value="Next Examination"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-11T17:38:50+01:00"/>
+        <date value="2025-11-12T18:21:01+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:f7a749df-c19f-449b-bc07-7f58ed4120ae"/>
-          <timestamp value="2025-11-11T17:39:57+01:00"/>
+          <identifier value="urn:uuid:a7740bc1-debf-43df-abe8-43f9ddf552b0"/>
+          <timestamp value="2025-11-12T18:22:43+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -493,7 +493,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-videre-forlop-cs.html">codesystem Next Step After Photography v0.1.3 (CodeSystem)</a>
+              <a href="CodeSystem-videre-forlop-cs.html">codesystem Pending Grading Step v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -589,13 +589,13 @@
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs"/>
         <version value="0.1.3"/>
         <name value="VidereForlopValueSet"/>
-        <title value="Next Step After Photography"/>
+        <title value="Pending Grading Step"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-11T17:38:50+01:00"/>
+        <date value="2025-11-12T18:21:01+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:9805998a-1fe1-4993-8a44-87c6a5c53e7a"/>
-          <timestamp value="2025-11-11T17:39:57+01:00"/>
+          <identifier value="urn:uuid:f981dece-ec27-4893-804e-28b407e8f036"/>
+          <timestamp value="2025-11-12T18:22:43+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

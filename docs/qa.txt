@@ -3,7 +3,7 @@ RetinaIntegration : Validation Results
 
 err = 56, warn = 118, info = 24
 IG Publisher Version: 2.0.26
-Generated Tue Nov 11 17:40:51 CET 2025. FHIR version 4.0.1 for dips.fhir.retinaintegration#0.1.3 (canonical = http://dips.no/fhir/RetinaIntegration)
+Generated Wed Nov 12 18:23:44 CET 2025. FHIR version 4.0.1 for dips.fhir.retinaintegration#0.1.3 (canonical = http://dips.no/fhir/RetinaIntegration)
  Build Errors : 0 / 4 / 0
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSinglExamination-Example : 11 / 24 / 12
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSingleExaminationAndAI-Example : 21 / 49 / 23

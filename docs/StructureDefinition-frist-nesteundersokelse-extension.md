@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:KIFristNesteUndersokelse |
+| Draft as of 2025-11-12 | *Computable Name*:KIFristNesteUndersokelse |
 
 Number of days until next examination.
 
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-frist-nesteundersoke
   "title" : "Deadline Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

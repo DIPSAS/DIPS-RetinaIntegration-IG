@@ -8,10 +8,10 @@
   <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
   <version value="0.1.3"/>
   <name value="TiltakStatusForrigeUndersokelseCodeSystem"/>
-  <title value="Next Step After Grading"/>
+  <title value="Next Examination"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-11T17:38:50+01:00"/>
+  <date value="2025-11-12T18:21:01+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -24,7 +24,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
-  <description value="Valueset describing next step in the screening process after grading. (3000-series)"/>
+  <description value="Next step for this patient is a new examination. (3000-series)"/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="3"/>

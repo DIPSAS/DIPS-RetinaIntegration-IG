@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:KIProtokoll |
+| Draft as of 2025-11-12 | *Computable Name*:KIProtokoll |
 
 Protocol used by the AI solution for analysis.
 
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-ki-protokoll-extensi
   "title" : "AI Protocol",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-12T18:21:01+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
