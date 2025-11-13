@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:RetinaConclusionCodesystem |
+| Draft as of 2025-11-13 | *Computable Name*:RetinaConclusionCodesystem |
 
  
 Codes describing where the external client has landed in its assessment of the examination. (1000-series) 
@@ -32,7 +32,7 @@ Codes describing where the external client has landed in its assessment of the e
   "title" : "Grading Conclusion",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

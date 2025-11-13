@@ -1,15 +1,15 @@
-# Next Step Previous Examination - RetinaIntegration v0.1.3
+# Next Examination Previous Examination - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Next Step Previous Examination**
+* **Next Examination Previous Examination**
 
-## Extension: Next Step Previous Examination (Experimental) 
+## Extension: Next Examination Previous Examination (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension | *Version*:0.1.3 |
-| Active as of 2025-11-12 | *Computable Name*:RetinaTiltaksstausForrigeUndersokelseExtension |
+| Active as of 2025-11-13 | *Computable Name*:RetinaTiltaksstausForrigeUndersokelseExtension |
 
 The next step in the screening process after the previous examination. (3000-series)
 
@@ -47,10 +47,10 @@ Other representations of profile: [CSV](StructureDefinition-tiltaksstatus-forrig
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
   "version" : "0.1.3",
   "name" : "RetinaTiltaksstausForrigeUndersokelseExtension",
-  "title" : "Next Step Previous Examination",
+  "title" : "Next Examination Previous Examination",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-tiltaksstatus-forrig
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Next Step Previous Examination",
+        "short" : "Next Examination Previous Examination",
         "definition" : "The next step in the screening process after the previous examination. (3000-series)"
       },
       {

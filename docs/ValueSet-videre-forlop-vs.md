@@ -1,22 +1,22 @@
-# Pending Grading Step - RetinaIntegration v0.1.3
+# Grading Pending - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Pending Grading Step**
+* **Grading Pending**
 
-## ValueSet: Pending Grading Step (Experimental) 
+## ValueSet: Grading Pending (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:VidereForlopValueSet |
+| Draft as of 2025-11-13 | *Computable Name*:VidereForlopValueSet |
 
  
 Next step in grading this examination. (4000-series) 
 
  **References** 
 
-* [Next Step](StructureDefinition-videre-forlop-extension.md)
+* [Grading Pending](StructureDefinition-videre-forlop-extension.md)
 
 ### Logical Definition (CLD)
 
@@ -50,10 +50,10 @@ Next step in grading this examination. (4000-series)
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
   "version" : "0.1.3",
   "name" : "VidereForlopValueSet",
-  "title" : "Pending Grading Step",
+  "title" : "Grading Pending",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

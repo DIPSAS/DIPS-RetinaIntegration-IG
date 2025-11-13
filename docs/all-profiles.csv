@@ -46,11 +46,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:videreForlop","DiagnosticReport.extension","videreForlop","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension]]} {[]}
-","Next Step","Next step in the grading process after photography. (4000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Grading Pending","Next step in grading this examination. (4000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.extension:forrigeUndersokelse","DiagnosticReport.extension","forrigeUndersokelse","","",1,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension]]} {[]}
-","Next Step Previous Examination","The next step in the screening process after the previous examination. (3000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Next Examination Previous Examination","The next step in the screening process after the previous examination. (3000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RetinaDiagnosticReport","DiagnosticReport.modifierExtension","DiagnosticReport.modifierExtension","","extensions
@@ -1805,7 +1805,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "tiltaksstatus-forrige-undersokelse-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Next Step Previous Examination","The next step in the screening process after the previous examination. (3000-series)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Next Examination Previous Examination","The next step in the screening process after the previous examination. (3000-series)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "tiltaksstatus-forrige-undersokelse-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1820,7 +1820,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "videre-forlop-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Next Step","Next step in the grading process after photography. (4000-series)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Grading Pending","Next step in grading this examination. (4000-series)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "videre-forlop-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

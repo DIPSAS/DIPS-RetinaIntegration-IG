@@ -166,6 +166,21 @@
     }
   },
   {
+    "name" : "imageDescriptions",
+    "resource" : {
+      "resourceType" : "ImagingStudy",
+      "id" : "ImagingStudySectra-2",
+      "status" : "available",
+      "subject" : {
+        "identifier" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "value" : "01015549145"
+        }
+      },
+      "description" : "Macula Centered"
+    }
+  },
+  {
     "name" : "conclusionCode",
     "valueCodeableConcept" : {
       "coding" : [{

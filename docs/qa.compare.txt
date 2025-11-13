@@ -1,7 +1,7 @@
 RetinaIntegration : Validation Results
 =========================================
 
-err = 56, warn = 118, info = 24
+err = 56, warn = 42, info = 24
 $--
 Generated $--. FHIR version $-- for dips.fhir.retinaintegration#$-- (canonical = http://dips.no/fhir/RetinaIntegration)
  Build Errors : 0 / 4 / 0
@@ -18,7 +18,7 @@ Generated $--. FHIR version $-- for dips.fhir.retinaintegration#$-- (canonical =
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-examination-id : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-observation-id : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\OperationDefinition-append-retina-ai-result : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Parameters-AddAIResultOperation : 0 / 18 / 11
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Parameters-AddAIResultOperation : 0 / 20 / 12
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Patient-cdp1123122 : 0 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Patient-cdp1123123 : 0 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-RetinaDiagnosticReport : 0 / 2 / 2
@@ -49,7 +49,6 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated\resources\Bundle-BundleWithSinglExamination-Example.json ==
 INFORMATION: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.identifier[1].system: No definition could be found for URL value 'http://sectra.no/identifiers'
 INFORMATION: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0]: Bundle entry missing fullUrl
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -57,33 +56,20 @@ ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*Diag
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/BundleWithSinglExamination-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated\resources\Bundle-BundleWithSingleExaminationAndAI-Example.json ==
 INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3
 INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.identifier[1].system: No definition could be found for URL value 'http://sectra.no/identifiers'
 INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0]: Bundle entry missing fullUrl
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -97,61 +83,32 @@ ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.conclusionCode[0]: Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3
 INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource/*Observation/ObservationDrRight-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource/*Observation/ObservationDrRight-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource/*Observation/ObservationDrRight-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource/*Observation/ObservationDmeRight-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource/*Observation/ObservationDmeRight-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource/*Observation/ObservationDmeRight-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource/*Observation/ObservationDrLeft-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource/*Observation/ObservationDrLeft-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource/*Observation/ObservationDrLeft-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource/*Observation/ObservationDmeLeft-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource/*Observation/ObservationDmeLeft-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource/*Observation/ObservationDmeLeft-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[8]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 == fsh-generated\resources\Bundle-BundleWithTwoExaminations-Example.json ==
 INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.identifier[1].system: No definition could be found for URL value 'http://sectra.no/identifiers'
 INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0]: Bundle entry missing fullUrl
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -159,18 +116,11 @@ ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*Diagn
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.identifier[1].system: No definition could be found for URL value 'http://sectra.no/identifiers'
 INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4]: Bundle entry missing fullUrl
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -178,40 +128,22 @@ ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*Diagn
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource/*Observation/ObservationGlukose-2*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource/*Observation/ObservationGlukose-2*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource/*Observation/ObservationGlukose-2*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource/*Observation/ObservationPhoto-2*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource/*Observation/ObservationPhoto-2*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource/*Observation/ObservationPhoto-2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource/*Observation/ObservationOCT-2*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource/*Observation/ObservationOCT-2*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource/*Observation/ObservationOCT-2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated\resources\CapabilityStatement-DIPSRetinaCapabilityStatement.json ==
 == fsh-generated\resources\CodeSystem-retina-conclusioncode-cs.json ==
@@ -220,30 +152,22 @@ WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Bes
 == fsh-generated\resources\CodeSystem-videre-forlop-cs.json ==
 == fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.json ==
 INFORMATION: DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144: DiagnosticReport.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-WARNING: DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144: DiagnosticReport.identifier[1].system: No definition could be found for URL value 'http://sectra.no/identifiers'
 == fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration.json ==
 == fsh-generated\resources\NamingSystem-retina-examination-id.json ==
 == fsh-generated\resources\NamingSystem-retina-observation-id.json ==
 == fsh-generated\resources\OperationDefinition-append-retina-ai-result.json ==
 == fsh-generated\resources\Parameters-AddAIResultOperation.json ==
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[0].resource/*Observation/ObservationDmeRight-input*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[0].resource/*Observation/ObservationDmeRight-input*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[0].resource/*Observation/ObservationDmeRight-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[0].resource/*Observation/ObservationDmeRight-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[1].resource/*Observation/ObservationDrHoyre-input*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[1].resource/*Observation/ObservationDrHoyre-input*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[1].resource/*Observation/ObservationDrHoyre-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[1].resource/*Observation/ObservationDrHoyre-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[2].resource/*Observation/ObservationDmeLeft-input*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[2].resource/*Observation/ObservationDmeLeft-input*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[2].resource/*Observation/ObservationDmeLeft-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[2].resource/*Observation/ObservationDmeLeft-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[3].resource/*Observation/ObservationDrLeft-input*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[3].resource/*Observation/ObservationDrLeft-input*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[3].resource/*Observation/ObservationDrLeft-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[3].resource/*Observation/ObservationDrLeft-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/AddAIResultOperation: Parameters.parameter[10].resource/*ImagingStudy/ImagingStudySectra-1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/AddAIResultOperation: Parameters.parameter[11].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3
+WARNING: Parameters/AddAIResultOperation: Parameters.parameter[11].resource/*ImagingStudy/ImagingStudySectra-2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: Parameters/AddAIResultOperation: Parameters.parameter[12].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3
 == fsh-generated\resources\Patient-cdp1123122.json ==
 == fsh-generated\resources\Patient-cdp1123123.json ==
 == fsh-generated\resources\StructureDefinition-RetinaDiagnosticReport.json ==

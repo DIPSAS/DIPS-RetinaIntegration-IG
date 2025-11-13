@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:KIVersionAlgoritme |
+| Draft as of 2025-11-13 | *Computable Name*:KIVersionAlgoritme |
 
 Version of the AI algorithm used for analysis.
 
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-ki-versjon-algoritme
   "title" : "AI Algorithm Version",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

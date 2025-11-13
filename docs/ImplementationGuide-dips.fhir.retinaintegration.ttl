@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "RetinaIntegration"] ; # 
   fhir:title [ fhir:v "RetinaIntegration"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-12T18:21:01+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-13T17:39:30+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -1601,7 +1601,7 @@
          fhir:reference [ fhir:v "OperationDefinition/append-retina-ai-result" ]
        ] ;
        fhir:name [ fhir:v "DIPSRetinaAppendOperationDefinition" ] ;
-       fhir:description [ fhir:v "OperationDefinition for appending retina AI results to existing DiagnosticReport" ] ;
+       fhir:description [ fhir:v "OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1686,6 +1686,69 @@
        ] ;
        fhir:name [ fhir:v "Grading Conclusion" ] ;
        fhir:description [ fhir:v "Codes describing where the external client has landed in its assessment of the examination. (1000-series)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/videre-forlop-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Grading Pending" ] ;
+       fhir:description [ fhir:v "Next step in grading this examination. (4000-series)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs> ;
+         fhir:reference [ fhir:v "ValueSet/videre-forlop-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Grading Pending" ] ;
+       fhir:description [ fhir:v "Next step in grading this examination. (4000-series)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/videre-forlop-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Grading Pending" ] ;
+       fhir:description [ fhir:v "Next step in grading this examination. (4000-series)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1828,31 +1891,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/videre-forlop-extension" ]
-       ] ;
-       fhir:name [ fhir:v "Next Step" ] ;
-       fhir:description [ fhir:v "Next step in the grading process after photography. (4000-series)" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension> ;
          fhir:reference [ fhir:v "StructureDefinition/tiltaksstatus-forrige-undersokelse-extension" ]
        ] ;
-       fhir:name [ fhir:v "Next Step Previous Examination" ] ;
+       fhir:name [ fhir:v "Next Examination Previous Examination" ] ;
        fhir:description [ fhir:v "The next step in the screening process after the previous examination. (3000-series)" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -1942,48 +1984,6 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs> ;
-         fhir:reference [ fhir:v "ValueSet/videre-forlop-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Pending Grading Step" ] ;
-       fhir:description [ fhir:v "Next step in grading this examination. (4000-series)" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/videre-forlop-cs" ]
-       ] ;
-       fhir:name [ fhir:v "Pending Grading Step" ] ;
-       fhir:description [ fhir:v "Next step in grading this examination. (4000-series)" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
        ]
      ] [
        fhir:extension ( [

@@ -10,7 +10,7 @@
   "name" : "AppendRetinaAIResult",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -23,7 +23,7 @@
       "value" : "teamsolsiden@dips.no"
     }]
   }],
-  "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport",
+  "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters.",
   "purpose" : "Append results from AI analysis of retina images to a existing DiagnosticReport",
   "code" : "append-retina-ai-result",
   "resource" : ["DiagnosticReport"],

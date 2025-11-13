@@ -8,10 +8,10 @@
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
   "version" : "0.1.3",
   "name" : "VidereForlopValueSet",
-  "title" : "Pending Grading Step",
+  "title" : "Grading Pending",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:OCTObservation |
+| Draft as of 2025-11-13 | *Computable Name*:OCTObservation |
 
  
 Wether Optical Coherence Tomography (OCT) was performed or not. Will be true if OCT was performed. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-oct-observation.csv)
   "name" : "OCTObservation",
   "title" : "OCT Observation",
   "status" : "draft",
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

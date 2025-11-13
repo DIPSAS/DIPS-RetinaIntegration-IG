@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:KIProductName |
+| Draft as of 2025-11-13 | *Computable Name*:KIProductName |
 
 Name of the AI product used for analysis.
 
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-ki-productname-exten
   "title" : "AI Product Name",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

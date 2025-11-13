@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "AI Algorithm Version"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-11-12T18:21:01+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-13T17:39:30+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;

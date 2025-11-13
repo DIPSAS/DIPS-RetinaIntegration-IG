@@ -22,7 +22,7 @@
   <name value="AppendRetinaAIResult"/>
   <status value="active"/>
   <kind value="operation"/>
-  <date value="2025-11-12T18:21:01+01:00"/>
+  <date value="2025-11-13T17:39:30+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -35,7 +35,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
-  <description value="OperationDefinition for appending retina AI results to existing DiagnosticReport"/>
+  <description value="OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters."/>
   <purpose value="Append results from AI analysis of retina images to a existing DiagnosticReport"/>
   <code value="append-retina-ai-result"/>
   <resource value="DiagnosticReport"/>

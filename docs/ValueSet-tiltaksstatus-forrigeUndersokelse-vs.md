@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
+| Draft as of 2025-11-13 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
 
  
 Next step for this patient is a new examination. (3000-series) 
 
  **References** 
 
-* [Next Step Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
+* [Next Examination Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
 
 ### Logical Definition (CLD)
 
@@ -53,7 +53,7 @@ Next step for this patient is a new examination. (3000-series)
   "title" : "Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

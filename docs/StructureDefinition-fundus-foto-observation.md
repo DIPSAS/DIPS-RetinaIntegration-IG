@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:FundusFotografiObservation |
+| Draft as of 2025-11-13 | *Computable Name*:FundusFotografiObservation |
 
  
 Wether fundus photography was performed or not. Will be true if fundus photos where taken. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fundus-foto-observat
   "name" : "FundusFotografiObservation",
   "title" : "Fundus Photography Observation",
   "status" : "draft",
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

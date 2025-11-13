@@ -11,7 +11,7 @@
   <name value="RetinaIntegration"/>
   <title value="RetinaIntegration"/>
   <status value="draft"/>
-  <date value="2025-11-12T18:21:01+01:00"/>
+  <date value="2025-11-13T17:39:30+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -604,7 +604,7 @@
         <reference value="OperationDefinition/append-retina-ai-result"/>
       </reference>
       <name value="DIPSRetinaAppendOperationDefinition"/>
-      <description value="OperationDefinition for appending retina AI results to existing DiagnosticReport"/>
+      <description value="OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -649,6 +649,39 @@
       </reference>
       <name value="Grading Conclusion"/>
       <description value="Codes describing where the external client has landed in its assessment of the examination. (1000-series)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/videre-forlop-extension"/>
+      </reference>
+      <name value="Grading Pending"/>
+      <description value="Next step in grading this examination. (4000-series)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/videre-forlop-vs"/>
+      </reference>
+      <name value="Grading Pending"/>
+      <description value="Next step in grading this examination. (4000-series)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/videre-forlop-cs"/>
+      </reference>
+      <name value="Grading Pending"/>
+      <description value="Next step in grading this examination. (4000-series)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -722,20 +755,9 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/videre-forlop-extension"/>
-      </reference>
-      <name value="Next Step"/>
-      <description value="Next step in the grading process after photography. (4000-series)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/tiltaksstatus-forrige-undersokelse-extension"/>
       </reference>
-      <name value="Next Step Previous Examination"/>
+      <name value="Next Examination Previous Examination"/>
       <description value="The next step in the screening process after the previous examination. (3000-series)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -782,28 +804,6 @@
       <name value="Patient-cdp1123123"/>
       <description value="Example patient 1"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/videre-forlop-vs"/>
-      </reference>
-      <name value="Pending Grading Step"/>
-      <description value="Next step in grading this examination. (4000-series)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/videre-forlop-cs"/>
-      </reference>
-      <name value="Pending Grading Step"/>
-      <description value="Next step in grading this examination. (4000-series)"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

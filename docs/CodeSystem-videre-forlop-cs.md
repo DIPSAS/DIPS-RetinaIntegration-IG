@@ -1,15 +1,15 @@
-# Pending Grading Step - RetinaIntegration v0.1.3
+# Grading Pending - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Pending Grading Step**
+* **Grading Pending**
 
-## CodeSystem: Pending Grading Step (Experimental) 
+## CodeSystem: Grading Pending (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-12 | *Computable Name*:VidereForlopCodeSystem |
+| Draft as of 2025-11-13 | *Computable Name*:VidereForlopCodeSystem |
 
  
 Next step in grading this examination. (4000-series) 
@@ -29,10 +29,10 @@ Next step in grading this examination. (4000-series)
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
   "version" : "0.1.3",
   "name" : "VidereForlopCodeSystem",
-  "title" : "Pending Grading Step",
+  "title" : "Grading Pending",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T18:21:01+01:00",
+  "date" : "2025-11-13T17:39:30+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
