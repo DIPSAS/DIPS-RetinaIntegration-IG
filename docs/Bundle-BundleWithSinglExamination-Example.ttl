@@ -42,6 +42,22 @@
              fhir:display [ fhir:v "Ingen registrert tidligere undersøkelser" ]
            ] )
          ]
+       ] [
+         fhir:url [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension>
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"^^xsd:anyURI ;
+               fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs>
+             ] ;
+             fhir:code [ fhir:v "4001" ] ;
+             fhir:display [ fhir:v "KI-gradering" ]
+           ] )
+         ]
        ] ) ;
        fhir:identifier ( [
          fhir:system [

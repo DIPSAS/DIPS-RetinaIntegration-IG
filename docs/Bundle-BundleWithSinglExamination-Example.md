@@ -121,6 +121,18 @@ Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
                 }
               ]
             }
+          },
+          {
+            "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+                  "code" : "4001",
+                  "display" : "KI-gradering"
+                }
+              ]
+            }
           }
         ],
         "identifier" : [

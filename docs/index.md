@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:RetinaIntegration |
+| Draft as of 2025-11-15 | *Computable Name*:RetinaIntegration |
 
 # RetinaIntegration
 
@@ -56,7 +56,7 @@ Add ai result to an examination using the following operation:
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -889,34 +889,6 @@ Add ai result to an examination using the following operation:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/retina-conclusioncode-vs"
-        },
-        "name" : "Conclusion From External Client",
-        "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/retina-conclusioncode-cs"
-        },
-        "name" : "Conclusion From External Client",
-        "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -994,7 +966,7 @@ Add ai result to an examination using the following operation:
           "reference" : "OperationDefinition/append-retina-ai-result"
         },
         "name" : "DIPSRetinaAppendOperationDefinition",
-        "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport",
+        "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters.",
         "exampleBoolean" : false
       },
       {
@@ -1023,6 +995,76 @@ Add ai result to an examination using the following operation:
         },
         "name" : "Fundus Photography Observation",
         "description" : "Wether fundus photography was performed or not. Will be true if fundus photos where taken.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/retina-conclusioncode-vs"
+        },
+        "name" : "Grading Conclusion",
+        "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/retina-conclusioncode-cs"
+        },
+        "name" : "Grading Conclusion",
+        "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/videre-forlop-extension"
+        },
+        "name" : "Grading Pending",
+        "description" : "Next step in grading this examination. (4000-series)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/videre-forlop-vs"
+        },
+        "name" : "Grading Pending",
+        "description" : "Next step in grading this examination. (4000-series)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/videre-forlop-cs"
+        },
+        "name" : "Grading Pending",
+        "description" : "Next step in grading this examination. (4000-series)",
         "exampleBoolean" : false
       },
       {
@@ -1085,28 +1127,14 @@ Add ai result to an examination using the following operation:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/videre-forlop-extension"
-        },
-        "name" : "Next Step",
-        "description" : "Next step in the grading process after photography. (4000-series)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
         "reference" : {
           "reference" : "ValueSet/tiltaksstatus-forrigeUndersokelse-vs"
         },
-        "name" : "Next Step After Grading",
-        "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
+        "name" : "Next Examination",
+        "description" : "Next step for this patient is a new examination. (3000-series)",
         "exampleBoolean" : false
       },
       {
@@ -1119,36 +1147,8 @@ Add ai result to an examination using the following operation:
         "reference" : {
           "reference" : "CodeSystem/tiltakstatus-nesteundersokelse-cs"
         },
-        "name" : "Next Step After Grading",
-        "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/videre-forlop-vs"
-        },
-        "name" : "Next Step After Photography",
-        "description" : "Valueset describing next step in the grading process after photography. (4000-series)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/videre-forlop-cs"
-        },
-        "name" : "Next Step After Photography",
-        "description" : "Next step in the grading process after photography. (4000-series)",
+        "name" : "Next Examination",
+        "description" : "Next step for this patient is a new examination. (3000-series)",
         "exampleBoolean" : false
       },
       {
@@ -1161,7 +1161,7 @@ Add ai result to an examination using the following operation:
         "reference" : {
           "reference" : "StructureDefinition/tiltaksstatus-forrige-undersokelse-extension"
         },
-        "name" : "Next Step Previous Examination",
+        "name" : "Next Examination Previous Examination",
         "description" : "The next step in the screening process after the previous examination. (3000-series)",
         "exampleBoolean" : false
       },

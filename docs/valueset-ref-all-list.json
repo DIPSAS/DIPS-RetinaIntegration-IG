@@ -5,7 +5,7 @@
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaConclusionCodeValueset",
-      "title" : "Conclusion From External Client",
+      "title" : "Grading Conclusion",
       "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"
@@ -33,28 +33,28 @@
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "TiltaksstatusForrigeUndersokelseValueSet",
-      "title" : "Next Step After Grading",
-      "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
+      "title" : "Next Examination",
+      "description" : "Next step for this patient is a new examination. (3000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html" : "Next Step Previous Examination"
+      "StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html" : "Next Examination Previous Examination"
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
       "version" : "0.1.3",
       "status" : "draft",
       "name" : "VidereForlopValueSet",
-      "title" : "Next Step After Photography",
-      "description" : "Valueset describing next step in the grading process after photography. (4000-series)",
+      "title" : "Grading Pending",
+      "description" : "Next step in grading this examination. (4000-series)",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-videre-forlop-extension.html" : "Next Step"
+      "StructureDefinition-videre-forlop-extension.html" : "Grading Pending"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -68,14 +68,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -89,14 +89,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -166,15 +166,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
       "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
+      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -188,14 +188,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -209,14 +209,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -232,14 +232,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -253,14 +253,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -274,14 +274,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -298,14 +298,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -321,14 +321,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
       "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-oct-observation.html" : "OCT Observation",
+      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
       "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation"
+      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
+      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
+      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/report-codes",

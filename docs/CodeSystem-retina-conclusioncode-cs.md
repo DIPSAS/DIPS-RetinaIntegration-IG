@@ -1,15 +1,15 @@
-# Conclusion From External Client - RetinaIntegration v0.1.3
+# Grading Conclusion - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Conclusion From External Client**
+* **Grading Conclusion**
 
-## CodeSystem: Conclusion From External Client (Experimental) 
+## CodeSystem: Grading Conclusion (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:RetinaConclusionCodesystem |
+| Draft as of 2025-11-15 | *Computable Name*:RetinaConclusionCodesystem |
 
  
 Codes describing where the external client has landed in its assessment of the examination. (1000-series) 
@@ -29,10 +29,10 @@ Codes describing where the external client has landed in its assessment of the e
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
   "version" : "0.1.3",
   "name" : "RetinaConclusionCodesystem",
-  "title" : "Conclusion From External Client",
+  "title" : "Grading Conclusion",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

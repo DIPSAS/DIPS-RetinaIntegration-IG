@@ -23,6 +23,16 @@
             "display" : "Ingen registrert tidligere undersøkelser"
           }]
         }
+      },
+      {
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+            "code" : "4001",
+            "display" : "KI-gradering"
+          }]
+        }
       }],
       "identifier" : [{
         "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",

@@ -1,22 +1,22 @@
-# Next Step After Grading - RetinaIntegration v0.1.3
+# Next Examination - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Next Step After Grading**
+* **Next Examination**
 
-## ValueSet: Next Step After Grading (Experimental) 
+## ValueSet: Next Examination (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
+| Draft as of 2025-11-15 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
 
  
-Valueset describing next step in the screening process after grading. (3000-series) 
+Next step for this patient is a new examination. (3000-series) 
 
  **References** 
 
-* [Next Step Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
+* [Next Examination Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md)
 
 ### Logical Definition (CLD)
 
@@ -50,10 +50,10 @@ Valueset describing next step in the screening process after grading. (3000-seri
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
   "version" : "0.1.3",
   "name" : "TiltaksstatusForrigeUndersokelseValueSet",
-  "title" : "Next Step After Grading",
+  "title" : "Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,7 +70,7 @@ Valueset describing next step in the screening process after grading. (3000-seri
       ]
     }
   ],
-  "description" : "Valueset describing next step in the screening process after grading. (3000-series)",
+  "description" : "Next step for this patient is a new examination. (3000-series)",
   "compose" : {
     "include" : [
       {

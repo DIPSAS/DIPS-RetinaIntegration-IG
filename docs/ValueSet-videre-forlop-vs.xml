@@ -8,10 +8,10 @@
   <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs"/>
   <version value="0.1.3"/>
   <name value="VidereForlopValueSet"/>
-  <title value="Next Step After Photography"/>
+  <title value="Grading Pending"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-11T17:38:50+01:00"/>
+  <date value="2025-11-15T17:14:08+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -24,7 +24,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
-  <description value="Valueset describing next step in the grading process after photography. (4000-series)"/>
+  <description value="Next step in grading this examination. (4000-series)"/>
   <compose>
     <include>
       <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:HbA1cObservation |
+| Draft as of 2025-11-15 | *Computable Name*:HbA1cObservation |
 
  
 HbA1c level as reported by patient prior to retina examination. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-hba1c-observation.cs
   "name" : "HbA1cObservation",
   "title" : "HbA1c Observation",
   "status" : "draft",
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

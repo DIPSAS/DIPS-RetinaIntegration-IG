@@ -198,6 +198,18 @@ Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
                 }
               ]
             }
+          },
+          {
+            "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+                  "code" : "4001",
+                  "display" : "KI-gradering"
+                }
+              ]
+            }
           }
         ],
         "identifier" : [
@@ -371,8 +383,20 @@ Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
               "coding" : [
                 {
                   "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-                  "code" : "3003",
-                  "display" : "Ingen registrert tidligere undersøkelser"
+                  "code" : "3001",
+                  "display" : "Ny fotokontroll (primærgradering)"
+                }
+              ]
+            }
+          },
+          {
+            "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+                  "code" : "4002",
+                  "display" : "Primærgradering manuell"
                 }
               ]
             }

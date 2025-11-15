@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.1.3 |
-| Active as of 2025-11-11 | *Computable Name*:AppendRetinaAIResult |
+| Active as of 2025-11-15 | *Computable Name*:AppendRetinaAIResult |
 
  
-OperationDefinition for appending retina AI results to existing DiagnosticReport 
+OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters. 
 
  
 Append results from AI analysis of retina images to a existing DiagnosticReport 
@@ -119,7 +119,7 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
   "name" : "AppendRetinaAIResult",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -136,7 +136,7 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
       ]
     }
   ],
-  "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport",
+  "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters.",
   "purpose" : "Append results from AI analysis of retina images to a existing DiagnosticReport",
   "code" : "append-retina-ai-result",
   "resource" : ["DiagnosticReport"],

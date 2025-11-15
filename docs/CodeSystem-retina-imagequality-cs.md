@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs | *Version*:0.1.3 |
-| Active as of 2025-11-11 | *Computable Name*:RetinaImageQualityCodesystem |
+| Active as of 2025-11-15 | *Computable Name*:RetinaImageQualityCodesystem |
 
  
 Image quality as interpreted by an AI solution. (2000-series) 
@@ -32,7 +32,7 @@ Image quality as interpreted by an AI solution. (2000-series)
   "title" : "Image Quality",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

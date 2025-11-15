@@ -1,17 +1,17 @@
-# Next Step - RetinaIntegration v0.1.3
+# Grading Pending - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Next Step**
+* **Grading Pending**
 
-## Extension: Next Step (Experimental) 
+## Extension: Grading Pending (Experimental) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension | *Version*:0.1.3 |
-| Active as of 2025-11-11 | *Computable Name*:RetinaVidereForlopExtension |
+| Active as of 2025-11-15 | *Computable Name*:RetinaVidereForlopExtension |
 
-Next step in the grading process after photography. (4000-series)
+Next step in grading this examination. (4000-series)
 
 **Context of Use**
 
@@ -20,7 +20,7 @@ Next step in the grading process after photography. (4000-series)
 **Usages:**
 
 * Use this Extension: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
-* Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
+* Examples for this Extension: [Bundle/BundleWithSinglExamination-Example](Bundle-BundleWithSinglExamination-Example.md), [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md) and [Bundle/BundleWithTwoExaminations-Example](Bundle-BundleWithTwoExaminations-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/videre-forlop-extension)
 
@@ -47,10 +47,10 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
   "version" : "0.1.3",
   "name" : "RetinaVidereForlopExtension",
-  "title" : "Next Step",
+  "title" : "Grading Pending",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
       ]
     }
   ],
-  "description" : "Next step in the grading process after photography. (4000-series)",
+  "description" : "Next step in grading this examination. (4000-series)",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Next Step",
-        "definition" : "Next step in the grading process after photography. (4000-series)"
+        "short" : "Grading Pending",
+        "definition" : "Next step in grading this examination. (4000-series)"
       },
       {
         "id" : "Extension.extension",

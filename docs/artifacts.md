@@ -21,7 +21,7 @@ These are custom operations that can be supported by and/or invoked by systems c
 
 | | |
 | :--- | :--- |
-| [DIPSRetinaAppendOperationDefinition](OperationDefinition-append-retina-ai-result.md) | OperationDefinition for appending retina AI results to existing DiagnosticReport |
+| [DIPSRetinaAppendOperationDefinition](OperationDefinition-append-retina-ai-result.md) | OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters. |
 
 ### Structures: Resource Profiles 
 
@@ -49,9 +49,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [AI Product Name](StructureDefinition-ki-productname-extension.md) | Name of the AI product used for analysis. |
 | [AI Protocol](StructureDefinition-ki-protokoll-extension.md) | Protocol used by the AI solution for analysis. |
 | [Deadline Next Examination](StructureDefinition-frist-nesteundersokelse-extension.md) | Number of days until next examination. |
+| [Grading Pending](StructureDefinition-videre-forlop-extension.md) | Next step in grading this examination. (4000-series) |
 | [Image Quality](StructureDefinition-retina-imagequality-extension.md) | A coded extension representing the quality of a diagnostic image. |
-| [Next Step](StructureDefinition-videre-forlop-extension.md) | Next step in the grading process after photography. (4000-series) |
-| [Next Step Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md) | The next step in the screening process after the previous examination. (3000-series) |
+| [Next Examination Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md) | The next step in the screening process after the previous examination. (3000-series) |
 
 ### Terminology: Value Sets 
 
@@ -59,10 +59,10 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [Conclusion From External Client](ValueSet-retina-conclusioncode-vs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
+| [Grading Conclusion](ValueSet-retina-conclusioncode-vs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
+| [Grading Pending](ValueSet-videre-forlop-vs.md) | Next step in grading this examination. (4000-series) |
 | [Image Quality](ValueSet-retina-imagequality-vs.md) | Image quality as interpreted by an AI solution. (2000-series) |
-| [Next Step After Grading](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md) | Valueset describing next step in the screening process after grading. (3000-series) |
-| [Next Step After Photography](ValueSet-videre-forlop-vs.md) | Valueset describing next step in the grading process after photography. (4000-series) |
+| [Next Examination](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md) | Next step for this patient is a new examination. (3000-series) |
 
 ### Terminology: Code Systems 
 
@@ -70,10 +70,10 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [Conclusion From External Client](CodeSystem-retina-conclusioncode-cs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
+| [Grading Conclusion](CodeSystem-retina-conclusioncode-cs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
+| [Grading Pending](CodeSystem-videre-forlop-cs.md) | Next step in grading this examination. (4000-series) |
 | [Image Quality](CodeSystem-retina-imagequality-cs.md) | Image quality as interpreted by an AI solution. (2000-series) |
-| [Next Step After Grading](CodeSystem-tiltakstatus-nesteundersokelse-cs.md) | Valueset describing next step in the screening process after grading. (3000-series) |
-| [Next Step After Photography](CodeSystem-videre-forlop-cs.md) | Next step in the grading process after photography. (4000-series) |
+| [Next Examination](CodeSystem-tiltakstatus-nesteundersokelse-cs.md) | Next step for this patient is a new examination. (3000-series) |
 
 ### Terminology: Naming Systems 
 

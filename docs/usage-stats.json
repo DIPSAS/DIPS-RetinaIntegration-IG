@@ -40,14 +40,14 @@
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
-      "title": "Next Step Previous Examination",
+      "title": "Next Examination Previous Examination",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
-      "title": "Next Step",
+      "title": "Grading Pending",
       "types": [
         "CodeableConcept"
       ]

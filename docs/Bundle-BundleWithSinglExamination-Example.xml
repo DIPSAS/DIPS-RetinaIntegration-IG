@@ -23,6 +23,15 @@
             </coding>
           </valueCodeableConcept>
         </extension>
+        <extension url="http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+              <code value="4001"/>
+              <display value="KI-gradering"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
         <identifier>
           <system value="http://dips.no/fhir/NamingSystem/retina-examination-id"/>
           <value value="6d2f4dbc-5f03-46e0-a302-606ae889df45"/>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation | *Version*:0.1.3 |
-| Draft as of 2025-11-11 | *Computable Name*:DRRightEyeObservation |
+| Draft as of 2025-11-15 | *Computable Name*:DRRightEyeObservation |
 
  
 Observation for diabetic retinopathy findings in the right eye. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-dr-right-eye-observa
   "name" : "DRRightEyeObservation",
   "title" : "Diabetic Retinopathy Right Eye Observation",
   "status" : "draft",
-  "date" : "2025-11-11T17:38:50+01:00",
+  "date" : "2025-11-15T17:14:08+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
