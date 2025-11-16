@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
+| Draft as of 2025-11-16 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
 
  
 Next step for this patient is a new examination. (3000-series) 
@@ -53,7 +53,7 @@ Next step for this patient is a new examination. (3000-series)
   "title" : "Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

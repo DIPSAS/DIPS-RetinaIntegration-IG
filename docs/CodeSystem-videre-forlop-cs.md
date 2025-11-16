@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:VidereForlopCodeSystem |
+| Draft as of 2025-11-16 | *Computable Name*:VidereForlopCodeSystem |
 
  
 Next step in grading this examination. (4000-series) 
@@ -32,7 +32,7 @@ Next step in grading this examination. (4000-series)
   "title" : "Grading Pending",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -56,15 +56,18 @@ Next step in grading this examination. (4000-series)
   "concept" : [
     {
       "code" : "4001",
-      "display" : "KI-gradering"
+      "display" : "KI-gradering",
+      "definition" : "Skal til KI-gradering."
     },
     {
       "code" : "4002",
-      "display" : "Primærgradering manuell"
+      "display" : "Primærgradering manuell",
+      "definition" : "Fotograf har konkludert at bildene skal vurderes av en primærgraderer."
     },
     {
       "code" : "4003",
-      "display" : "Sekundærgradering manuell"
+      "display" : "Sekundærgradering manuell",
+      "definition" : "Fotograf har konkludert at bildene skal vurderes av en sekundærgraderer."
     }
   ]
 }

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:RetinaIntegration |
+| Draft as of 2025-11-16 | *Computable Name*:RetinaIntegration |
 
 # RetinaIntegration
 
@@ -56,7 +56,7 @@ Add ai result to an examination using the following operation:
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -88,7 +88,7 @@ Add ai result to an examination using the following operation:
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7ext",
@@ -1001,6 +1001,20 @@ Add ai result to an examination using the following operation:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/grading-caution-cs"
+        },
+        "name" : "Grading Cautions",
+        "description" : "Cautions to consider when grading examinations. (5000-series)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -1050,7 +1064,7 @@ Add ai result to an examination using the following operation:
           "reference" : "ValueSet/videre-forlop-vs"
         },
         "name" : "Grading Pending",
-        "description" : "Next step in grading this examination. (4000-series)",
+        "description" : "Next step in grading this examination. (4000-series and 5000-series)",
         "exampleBoolean" : false
       },
       {

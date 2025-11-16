@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "RetinaIntegration"] ; # 
   fhir:title [ fhir:v "RetinaIntegration"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-15T17:14:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-16T16:39:43+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -54,7 +54,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.5.0" ]
+     fhir:version [ fhir:v "7.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -1656,6 +1656,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/grading-caution-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Grading Cautions" ] ;
+       fhir:description [ fhir:v "Cautions to consider when grading examinations. (5000-series)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1727,7 +1748,7 @@
          fhir:reference [ fhir:v "ValueSet/videre-forlop-vs" ]
        ] ;
        fhir:name [ fhir:v "Grading Pending" ] ;
-       fhir:description [ fhir:v "Next step in grading this examination. (4000-series)" ] ;
+       fhir:description [ fhir:v "Next step in grading this examination. (4000-series and 5000-series)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

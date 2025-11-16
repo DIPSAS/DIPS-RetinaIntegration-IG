@@ -6,6 +6,13 @@
     "version" : "0.1.3"
   },
   {
+    "id" : "grading-caution-cs",
+    "type" : "CodeSystem",
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs",
+    "version" : "0.1.3",
+    "name" : "GradingCautionCodeSystem"
+  },
+  {
     "id" : "retina-conclusioncode-cs",
     "type" : "CodeSystem",
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",

@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "videre-forlop-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem videre-forlop-cs</b></p><a name=\"videre-forlop-cs\"> </a><a name=\"hcvidere-forlop-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"videre-forlop-cs-4001\"> </a></td><td>KI-gradering</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"videre-forlop-cs-4002\"> </a></td><td>Primærgradering manuell</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"videre-forlop-cs-4003\"> </a></td><td>Sekundærgradering manuell</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem videre-forlop-cs</b></p><a name=\"videre-forlop-cs\"> </a><a name=\"hcvidere-forlop-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"videre-forlop-cs-4001\"> </a></td><td>KI-gradering</td><td>Skal til KI-gradering.</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"videre-forlop-cs-4002\"> </a></td><td>Primærgradering manuell</td><td>Fotograf har konkludert at bildene skal vurderes av en primærgraderer.</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"videre-forlop-cs-4003\"> </a></td><td>Sekundærgradering manuell</td><td>Fotograf har konkludert at bildene skal vurderes av en sekundærgraderer.</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"^^xsd:anyURI ;
@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Grading Pending"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-11-15T17:14:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-16T16:39:43+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -40,13 +40,16 @@
   fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "4001" ] ;
-     fhir:display [ fhir:v "KI-gradering" ]
+     fhir:display [ fhir:v "KI-gradering" ] ;
+     fhir:definition [ fhir:v "Skal til KI-gradering." ]
   ] [
      fhir:code [ fhir:v "4002" ] ;
-     fhir:display [ fhir:v "Primærgradering manuell" ]
+     fhir:display [ fhir:v "Primærgradering manuell" ] ;
+     fhir:definition [ fhir:v "Fotograf har konkludert at bildene skal vurderes av en primærgraderer." ]
   ] [
      fhir:code [ fhir:v "4003" ] ;
-     fhir:display [ fhir:v "Sekundærgradering manuell" ]
+     fhir:display [ fhir:v "Sekundærgradering manuell" ] ;
+     fhir:definition [ fhir:v "Fotograf har konkludert at bildene skal vurderes av en sekundærgraderer." ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:RetinaImageQualityValueSet |
+| Draft as of 2025-11-16 | *Computable Name*:RetinaImageQualityValueSet |
 
  
 Image quality as interpreted by an AI solution. (2000-series) 
@@ -56,7 +56,7 @@ For documentation of image quality as interpreted by an AI solution for automate
   "title" : "Image Quality",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

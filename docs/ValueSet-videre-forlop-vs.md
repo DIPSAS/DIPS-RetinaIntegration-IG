@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:VidereForlopValueSet |
+| Draft as of 2025-11-16 | *Computable Name*:VidereForlopValueSet |
 
  
-Next step in grading this examination. (4000-series) 
+Next step in grading this examination. (4000-series and 5000-series) 
 
  **References** 
 
@@ -20,11 +20,16 @@ Next step in grading this examination. (4000-series)
 
 ### Logical Definition (CLD)
 
+This value set includes codes based on the following rules:
+
 * Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs`](CodeSystem-videre-forlop-cs.md)version 📦0.1.3
+* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs`](CodeSystem-grading-caution-cs.md)version 📦0.1.3
 
  
 
 ### Expansion
+
+This value set contains 4 concepts
 
 -------
 
@@ -53,7 +58,7 @@ Next step in grading this examination. (4000-series)
   "title" : "Grading Pending",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,11 +75,14 @@ Next step in grading this examination. (4000-series)
       ]
     }
   ],
-  "description" : "Next step in grading this examination. (4000-series)",
+  "description" : "Next step in grading this examination. (4000-series and 5000-series)",
   "compose" : {
     "include" : [
       {
         "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"
+      },
+      {
+        "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs"
       }
     ]
   }

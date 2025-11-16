@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension | *Version*:0.1.3 |
-| Active as of 2025-11-15 | *Computable Name*:RetinaVidereForlopExtension |
+| Active as of 2025-11-16 | *Computable Name*:RetinaVidereForlopExtension |
 
 Next step in grading this examination. (4000-series)
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
   "title" : "Grading Pending",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

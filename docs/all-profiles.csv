@@ -45,7 +45,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","AI Protocol","Protocol used by the AI solution for analysis.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"RetinaDiagnosticReport","DiagnosticReport.extension:videreForlop","DiagnosticReport.extension","videreForlop","","",0,1,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension]]} {[]}
+"RetinaDiagnosticReport","DiagnosticReport.extension:videreForlop","DiagnosticReport.extension","videreForlop","","",0,*,"","","","Extension {[CanonicalType[http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension]]} {[]}
 ","Grading Pending","Next step in grading this examination. (4000-series)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

@@ -72,7 +72,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [HbA1c Observation](StructureDefinition-hba1c-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/78772631-5e7f-4c2a-8c45-42ada291b1a4**status**: Final**code**:HbA1c**effective**: 2025-06-06 10:30:00+0000**value**: 63.2
 
@@ -86,7 +86,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [Fundus Photography Observation](StructureDefinition-fundus-foto-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/eb8ef81c-d8a5-4656-b44d-2f9b86a16903**status**: Final**code**:Fundusfotografi**value**: true
 
@@ -100,7 +100,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [OCT Observation](StructureDefinition-oct-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/96f8e5bb-41be-4dae-bcc3-833b01b050ab**status**: Final**code**:Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk**value**: true
 
@@ -114,7 +114,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [Diabetic Retinopathy Right Eye Observation](StructureDefinition-dr-right-eye-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/ed4ea83b-de33-4ba2-8289-02d2ac75b736**status**: Final**code**:Diabetsk retinopati**value**: 5**bodySite**:Høyre retina
 
@@ -128,7 +128,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [Diabetic Macular Edema Right Eye Observation](StructureDefinition-dme-right-eye-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/0bbf7b71-3751-43d0-ab79-adb64fad6e08**status**: Final**code**:Diabetisk makulaødem**value**: true**bodySite**:Høyre retina
 
@@ -142,7 +142,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [Diabetic Retinopathy Left Eye Observation](StructureDefinition-dr-left-eye-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/8367e10c-ee7f-4a42-8bdd-44f628ab0a6f**status**: Final**code**:Diabetsk retinopati**dataAbsentReason**:Ikke spurt**bodySite**:Venstre retina
 
@@ -156,7 +156,7 @@ Resource Observation:
 
 > 
 
-Profile: [Retina Observation](StructureDefinition-RetinaObservation.md)
+Profile: [Diabetic Macular Edema Left Eye Observation](StructureDefinition-dme-left-eye-observation.md)
 
 **identifier**:[RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/dcb1005c-bb00-4d50-8784-829aff651086**status**: Final**code**:Diabetisk makulaødem**value**: true**bodySite**:Venstre retina
 
@@ -321,12 +321,12 @@ Resource ImagingStudy:
         "id" : "ObservationGlukose-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationGlukose-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationGlukose-1</b></p><a name=\"ObservationGlukose-1\"> </a><a name=\"hcObservationGlukose-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/78772631-5e7f-4c2a-8c45-42ada291b1a4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></p><p><b>effective</b>: 2025-06-06 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationGlukose-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationGlukose-1</b></p><a name=\"ObservationGlukose-1\"> </a><a name=\"hcObservationGlukose-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hba1c-observation.html\">HbA1c Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/78772631-5e7f-4c2a-8c45-42ada291b1a4</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></p><p><b>effective</b>: 2025-06-06 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>"
         },
         "identifier" : [
           {
@@ -359,12 +359,12 @@ Resource ImagingStudy:
         "id" : "ObservationPhoto-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationPhoto-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationPhoto-1</b></p><a name=\"ObservationPhoto-1\"> </a><a name=\"hcObservationPhoto-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/eb8ef81c-d8a5-4656-b44d-2f9b86a16903</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotografi</span></p><p><b>value</b>: true</p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationPhoto-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationPhoto-1</b></p><a name=\"ObservationPhoto-1\"> </a><a name=\"hcObservationPhoto-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fundus-foto-observation.html\">Fundus Photography Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/eb8ef81c-d8a5-4656-b44d-2f9b86a16903</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotografi</span></p><p><b>value</b>: true</p></div>"
         },
         "identifier" : [
           {
@@ -394,12 +394,12 @@ Resource ImagingStudy:
         "id" : "ObservationOCT-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationOCT-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationOCT-1</b></p><a name=\"ObservationOCT-1\"> </a><a name=\"hcObservationOCT-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/96f8e5bb-41be-4dae-bcc3-833b01b050ab</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk</span></p><p><b>value</b>: true</p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationOCT-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationOCT-1</b></p><a name=\"ObservationOCT-1\"> </a><a name=\"hcObservationOCT-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oct-observation.html\">OCT Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/96f8e5bb-41be-4dae-bcc3-833b01b050ab</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk</span></p><p><b>value</b>: true</p></div>"
         },
         "identifier" : [
           {
@@ -429,12 +429,12 @@ Resource ImagingStudy:
         "id" : "ObservationDrRight-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDrRight-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDrRight-1</b></p><a name=\"ObservationDrRight-1\"> </a><a name=\"hcObservationDrRight-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/ed4ea83b-de33-4ba2-8289-02d2ac75b736</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>value</b>: 5</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDrRight-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDrRight-1</b></p><a name=\"ObservationDrRight-1\"> </a><a name=\"hcObservationDrRight-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dr-right-eye-observation.html\">Diabetic Retinopathy Right Eye Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/ed4ea83b-de33-4ba2-8289-02d2ac75b736</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>value</b>: 5</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"
         },
         "identifier" : [
           {
@@ -477,12 +477,12 @@ Resource ImagingStudy:
         "id" : "ObservationDmeRight-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDmeRight-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDmeRight-1</b></p><a name=\"ObservationDmeRight-1\"> </a><a name=\"hcObservationDmeRight-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/0bbf7b71-3751-43d0-ab79-adb64fad6e08</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDmeRight-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDmeRight-1</b></p><a name=\"ObservationDmeRight-1\"> </a><a name=\"hcObservationDmeRight-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dme-right-eye-observation.html\">Diabetic Macular Edema Right Eye Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/0bbf7b71-3751-43d0-ab79-adb64fad6e08</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"
         },
         "identifier" : [
           {
@@ -523,12 +523,12 @@ Resource ImagingStudy:
         "id" : "ObservationDrLeft-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDrLeft-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDrLeft-1</b></p><a name=\"ObservationDrLeft-1\"> </a><a name=\"hcObservationDrLeft-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/8367e10c-ee7f-4a42-8bdd-44f628ab0a6f</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>dataAbsentReason</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-asked}\">Ikke spurt</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDrLeft-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDrLeft-1</b></p><a name=\"ObservationDrLeft-1\"> </a><a name=\"hcObservationDrLeft-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dr-left-eye-observation.html\">Diabetic Retinopathy Left Eye Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/8367e10c-ee7f-4a42-8bdd-44f628ab0a6f</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>dataAbsentReason</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-asked}\">Ikke spurt</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"
         },
         "identifier" : [
           {
@@ -578,12 +578,12 @@ Resource ImagingStudy:
         "id" : "ObservationDmeLeft-1",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDmeLeft-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDmeLeft-1</b></p><a name=\"ObservationDmeLeft-1\"> </a><a name=\"hcObservationDmeLeft-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Retina Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/dcb1005c-bb00-4d50-8784-829aff651086</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationDmeLeft-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationDmeLeft-1</b></p><a name=\"ObservationDmeLeft-1\"> </a><a name=\"hcObservationDmeLeft-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dme-left-eye-observation.html\">Diabetic Macular Edema Left Eye Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/dcb1005c-bb00-4d50-8784-829aff651086</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"
         },
         "identifier" : [
           {

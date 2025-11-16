@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:DIPSRetinaIntegrationDiagnosticReport |
+| Draft as of 2025-11-16 | *Computable Name*:DIPSRetinaIntegrationDiagnosticReport |
 
  
 This diagnostic report for the grading of a retina screening examination. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
   "title" : "Retina DiagnosticReport",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -194,7 +194,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
         "path" : "DiagnosticReport.extension",
         "sliceName" : "videreForlop",
         "min" : 0,
-        "max" : "1",
+        "max" : "*",
         "type" : [
           {
             "code" : "Extension",

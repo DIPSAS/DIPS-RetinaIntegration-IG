@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ee4315d2-8124-4b49-a108-d800e5a8a11c",
+  "id" : "958549e1-6c52-45ab-a797-8738dde6dfff",
   "meta" : {
-    "lastUpdated" : "2025-11-15T17:14:08.458+01:00"
+    "lastUpdated" : "2025-11-16T16:39:43.149+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Grading Conclusion",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-15T17:14:08+01:00",
+      "date" : "2025-11-16T16:39:43+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:cdb84f38-9489-40ae-9194-b701b9060f8b",
-        "timestamp" : "2025-11-15T17:15:40+01:00",
+        "identifier" : "urn:uuid:84b0a863-e3c5-4962-80d2-34841278794f",
+        "timestamp" : "2025-11-16T16:40:50+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -77,10 +77,10 @@
       "title" : "Image Quality",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-15T17:14:08+01:00",
+      "date" : "2025-11-16T16:39:43+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d3e313b1-d5a0-4250-8df0-7c049b150002",
-        "timestamp" : "2025-11-15T17:15:41+01:00",
+        "identifier" : "urn:uuid:55418d5a-d02c-409d-ad0a-6f134370faa0",
+        "timestamp" : "2025-11-16T16:40:50+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -140,10 +140,10 @@
       "title" : "Next Examination",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-15T17:14:08+01:00",
+      "date" : "2025-11-16T16:39:43+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fee4ac6b-811e-4931-b3c6-cfa284621c36",
-        "timestamp" : "2025-11-15T17:15:41+01:00",
+        "identifier" : "urn:uuid:bdb54c36-1c54-442b-a0b7-ed1f2d64ff5e",
+        "timestamp" : "2025-11-16T16:40:50+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -190,7 +190,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-videre-forlop-cs.html\">codesystem Grading Pending v0.1.3 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4001\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4001\">4001</a></td><td>KI-gradering</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4001&quot;, &quot;display&quot;: &quot;KI-gradering&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4001&quot;&gt;&lt;display value=&quot;KI-gradering&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4002\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4002\">4002</a></td><td>Primærgradering manuell</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4002&quot;, &quot;display&quot;: &quot;Primærgradering manuell&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4002&quot;&gt;&lt;display value=&quot;Primærgradering manuell&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4003\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4003\">4003</a></td><td>Sekundærgradering manuell</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4003&quot;, &quot;display&quot;: &quot;Sekundærgradering manuell&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4003&quot;&gt;&lt;display value=&quot;Sekundærgradering manuell&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion performed internally based on:</p><ul><li><a href=\"CodeSystem-grading-caution-cs.html\">codesystem Grading Cautions v0.1.3 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs|0.1.3\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"CodeSystem-videre-forlop-cs.html\">codesystem Grading Pending v0.1.3 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4001\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4001\">4001</a></td><td>KI-gradering</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4001&quot;, &quot;display&quot;: &quot;KI-gradering&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4001&quot;&gt;&lt;display value=&quot;KI-gradering&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4002\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4002\">4002</a></td><td>Primærgradering manuell</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4002&quot;, &quot;display&quot;: &quot;Primærgradering manuell&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4002&quot;&gt;&lt;display value=&quot;Primærgradering manuell&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4003\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4003\">4003</a></td><td>Sekundærgradering manuell</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4003&quot;, &quot;display&quot;: &quot;Sekundærgradering manuell&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4003&quot;&gt;&lt;display value=&quot;Sekundærgradering manuell&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs-5001\"> </a><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-grading-caution-cs.html#grading-caution-cs-5001\">5001</a></td><td>Ønsker ikke KI-svar</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;5001&quot;, &quot;display&quot;: &quot;Ønsker ikke KI-svar&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;5001&quot;&gt;&lt;display value=&quot;Ønsker ikke KI-svar&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
       "version" : "0.1.3",
@@ -198,11 +198,11 @@
       "title" : "Grading Pending",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-15T17:14:08+01:00",
+      "date" : "2025-11-16T16:39:43+01:00",
       "expansion" : {
-        "identifier" : "urn:uuid:002b523a-5f56-4e49-86e6-e4225b818fa4",
-        "timestamp" : "2025-11-15T17:15:41+01:00",
-        "total" : 3,
+        "identifier" : "urn:uuid:e2ab8840-0e79-420a-8962-fb1f24d46747",
+        "timestamp" : "2025-11-16T16:40:51+01:00",
+        "total" : 4,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -223,6 +223,10 @@
         {
           "name" : "used-codesystem",
           "valueUri" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs|0.1.3"
         }],
         "contains" : [{
           "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
@@ -238,6 +242,11 @@
           "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
           "code" : "4003",
           "display" : "Sekundærgradering manuell"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs",
+          "code" : "5001",
+          "display" : "Ønsker ikke KI-svar"
         }]
       }
     }

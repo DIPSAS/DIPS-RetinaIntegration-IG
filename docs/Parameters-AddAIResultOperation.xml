@@ -8,7 +8,7 @@
       <Observation>
         <id value="ObservationDmeRight-input"/>
         <meta>
-          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation"/>
         </meta>
         <status value="final"/>
         <code>
@@ -37,7 +37,7 @@
       <Observation>
         <id value="ObservationDrHoyre-input"/>
         <meta>
-          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation"/>
         </meta>
         <status value="final"/>
         <code>
@@ -68,7 +68,7 @@
       <Observation>
         <id value="ObservationDmeLeft-input"/>
         <meta>
-          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation"/>
         </meta>
         <status value="final"/>
         <code>
@@ -97,7 +97,7 @@
       <Observation>
         <id value="ObservationDrLeft-input"/>
         <meta>
-          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation"/>
         </meta>
         <status value="final"/>
         <code>

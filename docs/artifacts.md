@@ -60,7 +60,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [Grading Conclusion](ValueSet-retina-conclusioncode-vs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
-| [Grading Pending](ValueSet-videre-forlop-vs.md) | Next step in grading this examination. (4000-series) |
+| [Grading Pending](ValueSet-videre-forlop-vs.md) | Next step in grading this examination. (4000-series and 5000-series) |
 | [Image Quality](ValueSet-retina-imagequality-vs.md) | Image quality as interpreted by an AI solution. (2000-series) |
 | [Next Examination](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md) | Next step for this patient is a new examination. (3000-series) |
 
@@ -70,6 +70,7 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
+| [Grading Cautions](CodeSystem-grading-caution-cs.md) | Cautions to consider when grading examinations. (5000-series) |
 | [Grading Conclusion](CodeSystem-retina-conclusioncode-cs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
 | [Grading Pending](CodeSystem-videre-forlop-cs.md) | Next step in grading this examination. (4000-series) |
 | [Image Quality](CodeSystem-retina-imagequality-cs.md) | Image quality as interpreted by an AI solution. (2000-series) |

@@ -17,8 +17,8 @@
        fhir:id [ fhir:v "ObservationDmeRight-input" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation>
          ] )
        ] ;
        fhir:status [ fhir:v "final" ] ;
@@ -58,8 +58,8 @@
        fhir:id [ fhir:v "ObservationDrHoyre-input" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation>
          ] )
        ] ;
        fhir:status [ fhir:v "final" ] ;
@@ -99,8 +99,8 @@
        fhir:id [ fhir:v "ObservationDmeLeft-input" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation>
          ] )
        ] ;
        fhir:status [ fhir:v "final" ] ;
@@ -140,8 +140,8 @@
        fhir:id [ fhir:v "ObservationDrLeft-input" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation>
          ] )
        ] ;
        fhir:status [ fhir:v "final" ] ;

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation | *Version*:0.1.3 |
-| Draft as of 2025-11-15 | *Computable Name*:DIPSRetinaIntegrationObservation |
+| Draft as of 2025-11-16 | *Computable Name*:DIPSRetinaIntegrationObservation |
 
  
 Observations connected to RetinaDiagnosticReport. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaObservation.cs
   "name" : "DIPSRetinaIntegrationObservation",
   "title" : "Retina Observation",
   "status" : "draft",
-  "date" : "2025-11-15T17:14:08+01:00",
+  "date" : "2025-11-16T16:39:43+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

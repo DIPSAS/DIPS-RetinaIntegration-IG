@@ -1,4 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs,0.1.3,draft,,GradingCautionCodeSystem,Grading Cautions,"Cautions to consider when grading examinations. (5000-series)",
 http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs,0.1.3,draft,,RetinaConclusionCodesystem,Grading Conclusion,"Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
 http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs,0.1.3,active,,RetinaImageQualityCodesystem,Image Quality,"Image quality as interpreted by an AI solution. (2000-series)",
 http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs,0.1.3,draft,,TiltakStatusForrigeUndersokelseCodeSystem,Next Examination,"Next step for this patient is a new examination. (3000-series)",

@@ -39,8 +39,9 @@
       "status" : "draft",
       "name" : "VidereForlopValueSet",
       "title" : "Grading Pending",
-      "description" : "Next step in grading this examination. (4000-series)",
+      "description" : "Next step in grading this examination. (4000-series and 5000-series)",
       "systems" : [
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs",
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"
       ]
     }

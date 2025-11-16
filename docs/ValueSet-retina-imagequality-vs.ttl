@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Image Quality"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-11-15T17:14:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-16T16:39:43+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;

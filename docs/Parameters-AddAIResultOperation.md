@@ -24,7 +24,7 @@
         "id" : "ObservationDmeRight-input",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation"
           ]
         },
         "status" : "final",
@@ -58,7 +58,7 @@
         "id" : "ObservationDrHoyre-input",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation"
           ]
         },
         "status" : "final",
@@ -94,7 +94,7 @@
         "id" : "ObservationDmeLeft-input",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation"
           ]
         },
         "status" : "final",
@@ -128,7 +128,7 @@
         "id" : "ObservationDrLeft-input",
         "meta" : {
           "profile" : [
-            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"
+            "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation"
           ]
         },
         "status" : "final",
