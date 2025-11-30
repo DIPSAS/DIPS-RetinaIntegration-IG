@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - RetinaIntegration v0.1.3</title>
+    <title>Home - RetinaIntegration v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.1.3 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -117,7 +117,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.1.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -132,7 +132,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration|0.1.3"/></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration|0.2.0"/></span>
       </td>
     </tr>
 
@@ -148,7 +148,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-11-13
+            as of 2025-11-30
           
         
       </td>
@@ -174,47 +174,90 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#retinaintegration" id="markdown-toc-retinaintegration">RetinaIntegration</a>    <ul>
-      <li><a href="#queries" id="markdown-toc-queries">Queries</a>        <ul>
-          <li><a href="#query-for-a-specific-examination-identified-by-the-id" id="markdown-toc-query-for-a-specific-examination-identified-by-the-id">Query for a specific examination identified by the ID</a></li>
-          <li><a href="#query-for-getting-examinations-in-a-given-time-interval" id="markdown-toc-query-for-getting-examinations-in-a-given-time-interval">Query for getting examinations in a given time interval</a></li>
-        </ul>
-      </li>
-      <li><a href="#operations" id="markdown-toc-operations">Operations</a>        <ul>
-          <li><a href="#append-ai-result" id="markdown-toc-append-ai-result">Append AI result</a></li>
-        </ul>
-      </li>
+  <li><a href="#retinaintegration-api" id="markdown-toc-retinaintegration-api">RetinaIntegration API</a>    <ul>
+      <li><a href="#workflow-integration" id="markdown-toc-workflow-integration">Workflow Integration</a></li>
+      <li><a href="#system-components" id="markdown-toc-system-components">System Components</a></li>
+    </ul>
+  </li>
+  <li><a href="#retina-diagnosticreport-model" id="markdown-toc-retina-diagnosticreport-model">Retina DiagnosticReport Model</a>    <ul>
+      <li><a href="#queries" id="markdown-toc-queries">Queries</a></li>
+      <li><a href="#operations" id="markdown-toc-operations">Operations</a></li>
     </ul>
   </li>
 </ul>
 
 </div>
-<h1 id="retinaintegration">RetinaIntegration</h1>
+<h2 id="retinaintegration-api">RetinaIntegration API</h2>
 
-<p>RetinaIntegration is an API for integrating with the DIPS EyeCare-retinopathy application which is used in the process of screening diabetic patients for retinopathy.</p>
+<p>RetinaIntegration is an API for integrating with the DIPS EyeCare-retinopathy application which is used in the retinopathy screening of diabetic patients.</p>
 
-<p>The purpose of the API is to for an AI solution to discover examinations that needs grading, get the details about those examinations, and report back any AI findings concerning those findings.</p>
+<p>The purpose of the API is to for an AI solution to discover examinations that is waiting for grading, get the details about those examinations, and report back any AI findings concerning those findings and what the next step should be.</p>
 
-<h2 id="queries">Queries</h2>
+<h3 id="workflow-integration">Workflow Integration</h3>
 
-<h3 id="query-for-a-specific-examination-identified-by-the-id">Query for a specific examination identified by the ID</h3>
+<ol>
+  <li>DIPS creates a DiagnosticReport for a new retina examination</li>
+  <li>External AI system queries for DiagnosticReports pending grading
+    <ul>
+      <li>DiagnosticReport.status = TODO</li>
+      <li>DiagnosticReport have ImagingStudy with status = registered</li>
+    </ul>
+  </li>
+  <li>AI system analyses the retinal images</li>
+  <li>AI system calls this operation to append results</li>
+  <li>DIPS updates the DiagnosticReport with the AI findings
+    <ul>
+      <li>ImagingStudy will get status available</li>
+      <li>DiagnosticReport.status will be partial or final depending on what the next step is.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="system-components">System Components</h3>
+
+<p>The following diagram shows the components and workflow of the RetinaIntegration system:</p>
+
+<p><img src="component-diagram.svg" alt="Component Diagram" /></p>
+
+<div style="clear: both;"></div>
+
+<h2 id="retina-diagnosticreport-model">Retina DiagnosticReport Model</h2>
+
+<p>A DiagnosticReport after AI result is added.</p>
+
+<p><img src="diagnostic-report-with-ai.svg" alt="DiagnosticReport with AI" /></p>
+
+<div style="clear: both;"></div>
+
+<h3 id="queries">Queries</h3>
+
+<h4 id="query-for-a-specific-examination-identified-by-the-id">Query for a specific examination identified by the ID</h4>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{baseurl}/DiagnosticReport?_profile=RetinaDiagnosticReport&amp;_id=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee&amp;_include=DiagnosticReport:result
 </code></pre></div></div>
 
-<h3 id="query-for-getting-examinations-in-a-given-time-interval">Query for getting examinations in a given time interval</h3>
+<h4 id="query-for-getting-examinations-in-a-given-time-interval">Query for getting examinations in a given time interval</h4>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{baseurl}/DiagnosticReport?_profile=RetinaDiagnosticReport&amp;status=preliminary&amp;date=ge2025-10-02&amp;date=le2025-10-03&amp;_include=DiagnosticReport:result
 </code></pre></div></div>
 
-<h2 id="operations">Operations</h2>
+<h4 id="find-examinations-waiting-for-ai-grading-diagnosticreports-with-registered-imaging-studies">Find examinations waiting for AI grading (DiagnosticReports with registered imaging studies)</h4>
 
-<h3 id="append-ai-result">Append AI result</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET {baseUrl}/DiagnosticReport?_profile=RetinaDiagnosticReport&amp;imagingStudy.status=registered&amp;_include=DiagnosticReport:imaging-study
+</code></pre></div></div>
+
+<h3 id="operations">Operations</h3>
+
+<h4 id="append-ai-result">Append AI result</h4>
 
 <p>Add ai result to an examination using the following operation:</p>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{baseUrl}/DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/$append-retina-ai-result
 </code></pre></div></div>
+
+<p>The operation accepts multiple parameters including observation resources, AI metadata, imaging studies, and workflow tags.</p>
+
+<p>For detailed parameter specifications, see the <a href="OperationDefinition-append-retina-ai-result.html">AppendRetinaAIResult OperationDefinition</a>.</p>
 
 
 
@@ -235,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 13, 2025 17:39+0100">2025-11-13</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 30, 2025 22:57+0100">2025-11-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

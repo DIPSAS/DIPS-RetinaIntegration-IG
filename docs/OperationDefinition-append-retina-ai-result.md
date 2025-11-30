@@ -1,82 +1,108 @@
-# DIPSRetinaAppendOperationDefinition - RetinaIntegration v0.1.3
+# Retina Append AI Result Operation - RetinaIntegration v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DIPSRetinaAppendOperationDefinition**
+* **Retina Append AI Result Operation**
 
-## OperationDefinition: DIPSRetinaAppendOperationDefinition 
+## OperationDefinition: Retina Append AI Result Operation 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.1.3 |
-| Active as of 2025-11-13 | *Computable Name*:AppendRetinaAIResult |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.2.0 |
+| Draft as of 2025-11-30 | *Computable Name*:AppendRetinaAIResult |
 
  
-OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters. 
+OperationDefinition for appending retina AI results to an existing DiagnosticReport. 
 
  
 Append results from AI analysis of retina images to a existing DiagnosticReport 
+
+### Overview
+
+The `$append-retina-ai-result` operation is used to add AI analysis results to an existing DiagnosticReport. This operation is invoked after an AI system has analyzed retinal images and needs to submit its findings back to the DIPS system.
+
+### Usage
+
+```
+POST {baseUrl}/DiagnosticReport/{id}/$append-retina-ai-result
+
+```
+
+Where `{id}` is the identifier of the DiagnosticReport to update.
+
+### Parameters Overview
+
+The operation accepts multiple types of parameters organized into logical groups:
+
+#### Input references
+
+* **sectraStudyId** (1..1): The image study that was input for the AI system
+
+#### Observation Resources (0..1 each)
+
+These observations contain the AI's clinical findings:
+
+* **rightEye**: Combined observation for the right eye with DR and DME as components.
+* **leftEye**: Combined observation for the left eye with DR and DME as components.
+* **imageDescriptions** (1..*): ImagingStudy resources describing the analyzed images
+
+#### Conclusion
+
+* **conclusionCode** (1..1): Overall conclusion code for the analysis
+* **daysUntilNextExamination** (0..1): Recommended days until next examination
+
+#### AI Metadata (1..1 required)
+
+Required information about the AI system and analysis:
+
+* **aiDevice** (1..1): The AI device that performed the analysis in the `device` element. We assume that alle the observations (the EyeObservations gradings) are performed by the same AI device. (TODO: Verify this assumption.)
+* **effectiveTime** (1..1): When the AI analysis was performed
+* **fullReport** (1..1): Complete report of AI and supporting system an Attachment.
+* **metaTags** (0..*): Workflow tags, such as `VALIDATION` to indicate data for validation review
+
+### Example
+
+See [RetinaAppendAIResultOperation-Example](Parameters-RetinaAppendAIResultOperation-Example.md) for a complete example of the operation parameters.
 
 URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
 
 ### Parameters
 
 * **Use**: IN
-  * **Name**: dme-right-eye
+  * **Name**: sectraStudyId
+  * **Scope**: 
+  * **Cardinality**: 1..1
+  * **Type**: [Identifier](http://hl7.org/fhir/R4/datatypes.html#Identifier)
+  * **Binding**: 
+  * **Documentation**: Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)
+* **Use**: IN
+  * **Name**: rightEye
   * **Scope**: 
   * **Cardinality**: 0..1
   * **Type**: [Observation](http://hl7.org/fhir/R4/observation.html)
   * **Binding**: 
-  * **Documentation**: Diabetisk makulaødem høyre øye
+  * **Documentation**: Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.
 * **Use**: IN
-  * **Name**: dr-right-eye
+  * **Name**: leftEye
   * **Scope**: 
   * **Cardinality**: 0..1
   * **Type**: [Observation](http://hl7.org/fhir/R4/observation.html)
   * **Binding**: 
-  * **Documentation**: Diabetisk retinopati høyre øye
+  * **Documentation**: Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.
 * **Use**: IN
-  * **Name**: dme-left-eye
+  * **Name**: conclusion
   * **Scope**: 
-  * **Cardinality**: 0..1
-  * **Type**: [Observation](http://hl7.org/fhir/R4/observation.html)
+  * **Cardinality**: 1..1
+  * **Type**: [CodeableConcept](http://hl7.org/fhir/R4/datatypes.html#CodeableConcept)
   * **Binding**: 
-  * **Documentation**: Diabetisk makulaødem venstre øye
+  * **Documentation**: Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode. MUST use codes from RetinaDiagnosticReportConclusionCodeValueSet (http://dips.no/fhir/RetinaIntegration/ValueSet/retina-diagnosticreport-conclusioncode-vs)
 * **Use**: IN
-  * **Name**: dr-left-eye
-  * **Scope**: 
-  * **Cardinality**: 0..1
-  * **Type**: [Observation](http://hl7.org/fhir/R4/observation.html)
-  * **Binding**: 
-  * **Documentation**: Diabetisk retinopati venstre øye
-* **Use**: IN
-  * **Name**: days-until-next-examination
+  * **Name**: daysUntilNextExamination
   * **Scope**: 
   * **Cardinality**: 0..1
   * **Type**: [integer](http://hl7.org/fhir/R4/datatypes.html#integer)
   * **Binding**: 
-  * **Documentation**: Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/frist-nesteundersokelse-extension
-* **Use**: IN
-  * **Name**: ki-product-name
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [string](http://hl7.org/fhir/R4/datatypes.html#string)
-  * **Binding**: 
-  * **Documentation**: Name of the AI product, stored in extension http://dips.no/fhir/StructureDefinition/ki-productname-extension
-* **Use**: IN
-  * **Name**: ki-version-algorithm
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [string](http://hl7.org/fhir/R4/datatypes.html#string)
-  * **Binding**: 
-  * **Documentation**: Version of the AI algorithm, stored in extension http://dips.no/fhir/StructureDefinition/ki-versjon-algoritme-extension
-* **Use**: IN
-  * **Name**: ki-protocol
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [string](http://hl7.org/fhir/R4/datatypes.html#string)
-  * **Binding**: 
-  * **Documentation**: Protocol of the AI analysis, stored in extension http://dips.no/fhir/StructureDefinition/ki-protokoll-extension
+  * **Documentation**: Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/days-until-next-examination-extension
 * **Use**: IN
   * **Name**: effectiveTime
   * **Scope**: 
@@ -85,26 +111,26 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
   * **Binding**: 
   * **Documentation**: Time when the AI analysis was performed
 * **Use**: IN
-  * **Name**: full-ki-report
+  * **Name**: aiDevice
+  * **Scope**: 
+  * **Cardinality**: 1..1
+  * **Type**: [Device](http://hl7.org/fhir/R4/device.html)
+  * **Binding**: 
+  * **Documentation**: AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.
+* **Use**: IN
+  * **Name**: fullReport
   * **Scope**: 
   * **Cardinality**: 1..1
   * **Type**: [Attachment](http://hl7.org/fhir/R4/datatypes.html#Attachment)
   * **Binding**: 
-  * **Documentation**: Full report from the AI analysis, stored in presentedForm of the DiagnosticReport
+  * **Documentation**: Technical details for further reference about the AI grading, stored in DiagnosticReport.presentedForm
 * **Use**: IN
-  * **Name**: imageDescriptions
+  * **Name**: metaTags
   * **Scope**: 
-  * **Cardinality**: 1..*
-  * **Type**: [ImagingStudy](http://hl7.org/fhir/R4/imagingstudy.html)
+  * **Cardinality**: 0..*
+  * **Type**: [Coding](http://hl7.org/fhir/R4/datatypes.html#Coding)
   * **Binding**: 
-  * **Documentation**: Descriptions of the images, diagnosticreport.imagingStudy
-* **Use**: IN
-  * **Name**: conclusionCode
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [CodeableConcept](http://hl7.org/fhir/R4/datatypes.html#CodeableConcept)
-  * **Binding**: 
-  * **Documentation**: Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode
+  * **Documentation**: Workflow tags. Add code http://terminology.hl7.org/CodeSystem/v3-ActReason#VALIDATION when data is for validation purposes only and the result from the AI analysis will not be used in clinical decision making.
 
 
 
@@ -115,11 +141,12 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.1.3",
+  "version" : "0.2.0",
   "name" : "AppendRetinaAIResult",
-  "status" : "active",
+  "title" : "Retina Append AI Result Operation",
+  "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-11-13T17:39:30+01:00",
+  "date" : "2025-11-30T22:57:21+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -136,7 +163,7 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
       ]
     }
   ],
-  "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters.",
+  "description" : "OperationDefinition for appending retina AI results to an existing DiagnosticReport.",
   "purpose" : "Append results from AI analysis of retina images to a existing DiagnosticReport",
   "code" : "append-retina-ai-result",
   "resource" : ["DiagnosticReport"],
@@ -145,68 +172,44 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
   "instance" : true,
   "parameter" : [
     {
-      "name" : "dme-right-eye",
+      "name" : "sectraStudyId",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "rightEye",
       "use" : "in",
       "min" : 0,
       "max" : "1",
-      "documentation" : "Diabetisk makulaødem høyre øye",
+      "documentation" : "Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.",
       "type" : "Observation"
     },
     {
-      "name" : "dr-right-eye",
+      "name" : "leftEye",
       "use" : "in",
       "min" : 0,
       "max" : "1",
-      "documentation" : "Diabetisk retinopati høyre øye",
+      "documentation" : "Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.",
       "type" : "Observation"
     },
     {
-      "name" : "dme-left-eye",
+      "name" : "conclusion",
       "use" : "in",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
-      "documentation" : "Diabetisk makulaødem venstre øye",
-      "type" : "Observation"
+      "documentation" : "Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode. MUST use codes from RetinaDiagnosticReportConclusionCodeValueSet (http://dips.no/fhir/RetinaIntegration/ValueSet/retina-diagnosticreport-conclusioncode-vs)",
+      "type" : "CodeableConcept"
     },
     {
-      "name" : "dr-left-eye",
+      "name" : "daysUntilNextExamination",
       "use" : "in",
       "min" : 0,
       "max" : "1",
-      "documentation" : "Diabetisk retinopati venstre øye",
-      "type" : "Observation"
-    },
-    {
-      "name" : "days-until-next-examination",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/frist-nesteundersokelse-extension",
+      "documentation" : "Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/days-until-next-examination-extension",
       "type" : "integer"
-    },
-    {
-      "name" : "ki-product-name",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Name of the AI product, stored in extension http://dips.no/fhir/StructureDefinition/ki-productname-extension",
-      "type" : "string"
-    },
-    {
-      "name" : "ki-version-algorithm",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Version of the AI algorithm, stored in extension http://dips.no/fhir/StructureDefinition/ki-versjon-algoritme-extension",
-      "type" : "string"
-    },
-    {
-      "name" : "ki-protocol",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Protocol of the AI analysis, stored in extension http://dips.no/fhir/StructureDefinition/ki-protokoll-extension",
-      "type" : "string"
     },
     {
       "name" : "effectiveTime",
@@ -217,28 +220,28 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
       "type" : "dateTime"
     },
     {
-      "name" : "full-ki-report",
+      "name" : "aiDevice",
       "use" : "in",
       "min" : 1,
       "max" : "1",
-      "documentation" : "Full report from the AI analysis, stored in presentedForm of the DiagnosticReport",
+      "documentation" : "AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.",
+      "type" : "Device"
+    },
+    {
+      "name" : "fullReport",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Technical details for further reference about the AI grading, stored in DiagnosticReport.presentedForm",
       "type" : "Attachment"
     },
     {
-      "name" : "imageDescriptions",
+      "name" : "metaTags",
       "use" : "in",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
-      "documentation" : "Descriptions of the images, diagnosticreport.imagingStudy",
-      "type" : "ImagingStudy"
-    },
-    {
-      "name" : "conclusionCode",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode",
-      "type" : "CodeableConcept"
+      "documentation" : "Workflow tags. \n    Add code http://terminology.hl7.org/CodeSystem/v3-ActReason#VALIDATION when data is for validation purposes only\n    and the result from the AI analysis will not be used in clinical decision making.",
+      "type" : "Coding"
     }
   ]
 }

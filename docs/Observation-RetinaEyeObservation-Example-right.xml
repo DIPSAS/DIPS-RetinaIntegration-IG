@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="RetinaEyeObservation-Example-right"/>
+  <meta>
+    <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation RetinaEyeObservation-Example-right</b></p><a name="RetinaEyeObservation-Example-right"> </a><a name="hcRetinaEyeObservation-Example-right"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-retina-eye-observation.html">Retina Eye Observation</a></p></div><p><b>identifier</b>: <a href="NamingSystem-retina-observation-id.html" title="A naming system for observation identifiers in RetinaIntegration.">RetinaObservationIdentifierSystem</a>/ed4ea83b-de33-4ba2-8289-02d2ac75b736</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 134395001}">Retinal examination</span></p><p><b>effective</b>: 2025-11-30 10:21:00+0000</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 5597008}">Høyre retina</span></p><p><b>device</b>: <a href="Device-RetinaAIDevice-Example.html">Device</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 4855003}">Diabetic retinopathy</span></p><p><b>value</b>: 5</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 312912001}">Diabetic macular edema</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 133887000}">Computer assisted image analysis for image quality</span></p><p><b>value</b>: <span title="Codes:{http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs 2001}">Good</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://dips.no/fhir/NamingSystem/retina-observation-id"/>
+    <value value="ed4ea83b-de33-4ba2-8289-02d2ac75b736"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="134395001"/>
+      <display value="Diabetic retinopathy screening"/>
+    </coding>
+    <text value="Retinal examination"/>
+  </code>
+  <effectiveDateTime value="2025-11-30T10:21:00Z"/>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5597008"/>
+      <display value="Retina of right eye"/>
+    </coding>
+    <text value="Høyre retina"/>
+  </bodySite>
+  <device>
+    <reference value="Device/RetinaAIDevice-Example"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="4855003"/>
+        <display value="Diabetic retinopathy"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="5"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="312912001"/>
+        <display value="Diabetic macular edema"/>
+      </coding>
+    </code>
+    <valueBoolean value="true"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="133887000"/>
+        <display value="Computer assisted image analysis for image quality"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"/>
+        <code value="2001"/>
+        <display value="Good"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

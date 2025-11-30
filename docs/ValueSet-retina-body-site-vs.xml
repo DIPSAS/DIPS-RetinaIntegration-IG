@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="retina-body-site-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-body-site-vs</b></p><a name="retina-body-site-vs"> </a><a name="hcretina-body-site-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/5597008">5597008</a></td><td>Retina of right eye</td></tr><tr><td><a href="http://snomed.info/id/58443009">58443009</a></td><td>Retina of left eye</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs"/>
+  <version value="0.2.0"/>
+  <name value="RetinaBodySiteValueSet"/>
+  <title value="Retina Body Site"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-11-30T22:57:21+01:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Body site codes for retinal observations (right or left retina)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="5597008"/>
+        <display value="Retina of right eye"/>
+      </concept>
+      <concept>
+        <code value="58443009"/>
+        <display value="Retina of left eye"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,17 @@
+{
+  "resourceType" : "Device",
+  "id" : "RetinaCameraDevice-Example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device RetinaCameraDevice-Example</b></p><a name=\"RetinaCameraDevice-Example\"> </a><a name=\"hcRetinaCameraDevice-Example\"> </a><p><b>identifier</b>: <code>http://helse-sorost.no/fhir/NamingSystem/device-ids</code>/TPNW35634798</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>AK_TOPCON_2</td><td>Model name</td></tr></table><p><b>modelNumber</b>: NW500</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://helse-sorost.no/fhir/NamingSystem/device-ids",
+    "value" : "TPNW35634798"
+  }],
+  "deviceName" : [{
+    "name" : "AK_TOPCON_2",
+    "type" : "model-name"
+  }],
+  "modelNumber" : "NW500"
+}

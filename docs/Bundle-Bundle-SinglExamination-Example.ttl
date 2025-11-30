@@ -1,0 +1,178 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/Bundle/Bundle-SinglExamination-Example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Bundle-SinglExamination-Example"] ; # 
+  fhir:type [ fhir:v "searchset"] ; # 
+  fhir:total [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:DiagnosticReport ;
+       fhir:id [ fhir:v "RetinaDiagnosticReport-Example-PendingAI" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_RetinaDiagnosticReport-Example-PendingAI\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport RetinaDiagnosticReport-Example-PendingAI</b></p><a name=\"RetinaDiagnosticReport-Example-PendingAI\"> </a><a name=\"hcRetinaDiagnosticReport-Example-PendingAI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-diagnostic-report.html\">Retina DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}\">Bildediagnostikk</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier</td><td> <a href=\"NamingSystem-retina-examination-id.html\" title=\"A naming system for examination identifiers in RetinaIntegration.\">RetinaExaminationIdentifierSystem</a>/6d2f4dbc-5f03-46e0-a302-606ae889df45</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-RetinaHbA1cObservation-Example.html\"><span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></a></td><td>63.2</td><td>Final</td><td>2025-11-29 10:30:00+0000</td></tr></table></div>"^^rdf:XMLLiteral ]
+       ] ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension>
+         ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"^^xsd:anyURI ;
+               fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs>
+             ] ;
+             fhir:code [ fhir:v "1001" ] ;
+             fhir:display [ fhir:v "KI-gradering (basert på nåværende bilder)" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:identifier ( [
+         fhir:system [
+           fhir:v "http://dips.no/fhir/NamingSystem/retina-examination-id"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/NamingSystem/retina-examination-id>
+         ] ;
+         fhir:value [ fhir:v "6d2f4dbc-5f03-46e0-a302-606ae889df45" ]
+       ] ) ;
+       fhir:status [ fhir:v "preliminary" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"^^xsd:anyURI ;
+             fhir:l <http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660>
+           ] ;
+           fhir:code [ fhir:v "B" ] ;
+           fhir:display [ fhir:v "Bildediagnostikk" ]
+         ] )
+       ] ;
+       fhir:subject [
+         fhir:identifier [
+           fhir:system [
+             fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ;
+             fhir:l <urn:oid:2.16.578.1.12.4.1.4.1>
+           ] ;
+           fhir:value [ fhir:v "01015549145" ]
+         ]
+       ] ;
+       fhir:result ( [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaHbA1cObservation-Example> ;
+         fhir:reference [ fhir:v "Observation/RetinaHbA1cObservation-Example" ]
+       ] ) ;
+       fhir:imagingStudy ( [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/ImagingStudy/RetinaImagingStudy-registered-Example> ;
+         fhir:reference [ fhir:v "ImagingStudy/RetinaImagingStudy-registered-Example" ]
+       ] )
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "match" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaHbA1cObservation-Example" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RetinaHbA1cObservation-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RetinaHbA1cObservation-Example</b></p><a name=\"RetinaHbA1cObservation-Example\"> </a><a name=\"hcRetinaHbA1cObservation-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-hba1c-observation.html\">Retina HbA1c Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></p><p><b>effective</b>: 2025-11-29 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>"^^rdf:XMLLiteral ]
+       ] ;
+       fhir:identifier ( [
+         fhir:system [
+           fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/NamingSystem/retina-observation-id>
+         ] ;
+         fhir:value [ fhir:v "a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:167491000202108 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "167491000202108" ] ;
+           fhir:display [ fhir:v "HbA1c" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-11-29T10:30:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 63.2 ]
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:ImagingStudy ;
+       fhir:id [ fhir:v "RetinaImagingStudy-registered-Example" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ImagingStudy_RetinaImagingStudy-registered-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy RetinaImagingStudy-registered-Example</b></p><a name=\"RetinaImagingStudy-registered-Example\"> </a><a name=\"hcRetinaImagingStudy-registered-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-imagingstudy.html\">Retina ImagingStudy</a></p></div><p><b>identifier</b>: <code>http://sectra.no/identifiers</code>/MMA94126079</p><p><b>status</b>: Registered</p><p><b>subject</b>: Identifier: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/01015549145</p><p><b>procedureCode</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotografi</span></p></div>"^^rdf:XMLLiteral ]
+       ] ;
+       fhir:identifier ( [
+         fhir:system [
+           fhir:v "http://sectra.no/identifiers"^^xsd:anyURI ;
+           fhir:l <http://sectra.no/identifiers>
+         ] ;
+         fhir:value [ fhir:v "MMA94126079" ]
+       ] ) ;
+       fhir:status [ fhir:v "registered" ] ;
+       fhir:subject [
+         fhir:identifier [
+           fhir:system [
+             fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ;
+             fhir:l <urn:oid:2.16.578.1.12.4.1.4.1>
+           ] ;
+           fhir:value [ fhir:v "01015549145" ]
+         ]
+       ] ;
+       fhir:procedureCode ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"^^xsd:anyURI ;
+             fhir:l <http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275>
+           ] ;
+           fhir:code [ fhir:v "CKDP10" ] ;
+           fhir:display [ fhir:v "Fundusfotografi" ]
+         ] )
+       ] )
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Device",
+  "id" : "RetinaAIDevice-input",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device RetinaAIDevice-input</b></p><a name=\"RetinaAIDevice-input\"> </a><a name=\"hcRetinaAIDevice-input\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-ai-device.html\">Retina AI Device</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>AwesomeAI for Retina</td><td>Model name</td></tr></table><blockquote><p><b>version</b></p><p><b>type</b>: <span title=\"Codes:\">model-number</span></p><p><b>value</b>: v2.1.0</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: <span title=\"Codes:\">software</span></p><p><b>value</b>: Standard protocol</p></blockquote></div>"
+  },
+  "deviceName" : [{
+    "name" : "AwesomeAI for Retina",
+    "type" : "model-name"
+  }],
+  "version" : [{
+    "type" : {
+      "coding" : [{
+        "code" : "model-number"
+      }]
+    },
+    "value" : "v2.1.0"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "code" : "software"
+      }]
+    },
+    "value" : "Standard protocol"
+  }]
+}

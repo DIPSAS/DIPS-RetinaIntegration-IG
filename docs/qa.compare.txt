@@ -1,203 +1,122 @@
 RetinaIntegration : Validation Results
 =========================================
 
-err = 56, warn = 42, info = 24
+err = 28, warn = 6, info = 3
 $--
 Generated $--. FHIR version $-- for dips.fhir.retinaintegration#$-- (canonical = http://dips.no/fhir/RetinaIntegration)
  Build Errors : 0 / 4 / 0
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSinglExamination-Example : 11 / 24 / 12
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithSingleExaminationAndAI-Example : 21 / 49 / 23
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-BundleWithTwoExaminations-Example : 22 / 47 / 23
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CapabilityStatement-DIPSRetinaCapabilityStatement : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-Bundle-SinglExamination-Example : 8 / 12 / 10
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-Bundle-TwoExaminations-Example : 16 / 23 / 21
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CapabilityStatement-RetinaCapabilityStatement : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-caution-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-conclusioncode-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-imagequality-cs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-tiltakstatus-nesteundersokelse-cs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-videre-forlop-cs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144 : 0 / 2 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Device-RetinaAIDevice-Example : 0 / 2 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Device-RetinaAIDevice-input : 0 / 2 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Device-RetinaCameraDevice-Example : 0 / 1 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-RetinaDiagnosticReport-Example : 0 / 2 / 4
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI : 0 / 2 / 3
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144 : 0 / 1 / 3
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImagingStudy-RetinaImagingStudy-available-Example : 0 / 3 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImagingStudy-RetinaImagingStudy-registered-Example : 0 / 3 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-examination-id : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-observation-id : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Observation-RetinaEyeObservation-Example-left : 0 / 2 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Observation-RetinaEyeObservation-Example-right : 0 / 2 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Observation-RetinaEyeObservation-input-left : 0 / 2 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Observation-RetinaEyeObservation-input-right : 0 / 2 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Observation-RetinaHbA1cObservation-Example : 1 / 2 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\OperationDefinition-append-retina-ai-result : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Parameters-AddAIResultOperation : 0 / 20 / 12
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Patient-cdp1123122 : 0 / 1 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Patient-cdp1123123 : 0 / 1 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-RetinaDiagnosticReport : 0 / 2 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-RetinaObservation : 0 / 0 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dme-left-eye-observation : 0 / 0 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dme-right-eye-observation : 0 / 0 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dr-left-eye-observation : 0 / 0 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-dr-right-eye-observation : 0 / 0 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-frist-nesteundersokelse-extension : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-fundus-foto-observation : 0 / 2 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-hba1c-observation : 2 / 0 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-ki-productname-extension : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-ki-protokoll-extension : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-ki-versjon-algoritme-extension : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-oct-observation : 0 / 2 / 2
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-imagequality-extension : 0 / 1 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-tiltaksstatus-forrige-undersokelse-extension : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-videre-forlop-extension : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Parameters-RetinaAppendAIResultOperation-Example : 0 / 10 / 8
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-days-until-next-examination-extension : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-initial-instructions-extension : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-previous-examination-conclusion-extension : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-ai-device : 0 / 4 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-diagnostic-report : 0 / 2 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-eye-observation : 0 / 1 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-hba1c-observation : 2 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-imagingstudy : 0 / 1 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-observation : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-body-site-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-conclusioncode-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-imagequality-vs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-tiltaksstatus-forrigeUndersokelse-vs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-videre-forlop-vs : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-imaging-procedure-vs : 1 / 1 / 2
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-initial-instructions-vs : 0 / 0 / 4
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated\resources\Bundle-BundleWithSinglExamination-Example.json ==
-INFORMATION: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-INFORMATION: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0]: Bundle entry missing fullUrl
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSinglExamination-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-== fsh-generated\resources\Bundle-BundleWithSingleExaminationAndAI-Example.json ==
-INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3
-INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0]: Bundle entry missing fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[3]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[4]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[5]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[6]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.conclusionCode[0]: Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3
-INFORMATION: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithAI*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource/*Observation/ObservationDrRight-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource/*Observation/ObservationDmeRight-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource/*Observation/ObservationDrLeft-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource/*Observation/ObservationDmeLeft-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithSingleExaminationAndAI-Example: Bundle.entry[8]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-== fsh-generated\resources\Bundle-BundleWithTwoExaminations-Example.json ==
-INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0]: Bundle entry missing fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/DiagnosticReportWithoutAI-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource/*Observation/ObservationGlukose-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource/*Observation/ObservationPhoto-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource/*Observation/ObservationOCT-1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
-INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4]: Bundle entry missing fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4].resource/*DiagnosticReport/DiagnosticReportWithoutAI-2*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport|0.1.3 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource/*Observation/ObservationGlukose-2*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource/*Observation/ObservationPhoto-2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource/*Observation/ObservationOCT-2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
-WARNING: Bundle/BundleWithTwoExaminations-Example: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-== fsh-generated\resources\CapabilityStatement-DIPSRetinaCapabilityStatement.json ==
+== fsh-generated\resources\Bundle-Bundle-SinglExamination-Example.json ==
+INFORMATION: Bundle/Bundle-SinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[1].resource/*Observation/RetinaHbA1cObservation-Example*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: Bundle/Bundle-SinglExamination-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-SinglExamination-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+== fsh-generated\resources\Bundle-Bundle-TwoExaminations-Example.json ==
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1].resource/*Observation/RetinaHbA1cObservation-Example*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660#B)
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3]: Bundle entry missing fullUrl
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[4].resource/*Observation/RetinaHbA1cObservation-2*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[4].resource.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: Bundle/Bundle-TwoExaminations-Example: Bundle: SearchSet Bundles should have a self link that specifies what the search was
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+== fsh-generated\resources\CapabilityStatement-RetinaCapabilityStatement.json ==
+== fsh-generated\resources\CodeSystem-retina-caution-cs.json ==
 == fsh-generated\resources\CodeSystem-retina-conclusioncode-cs.json ==
 == fsh-generated\resources\CodeSystem-retina-imagequality-cs.json ==
-== fsh-generated\resources\CodeSystem-tiltakstatus-nesteundersokelse-cs.json ==
-== fsh-generated\resources\CodeSystem-videre-forlop-cs.json ==
+== fsh-generated\resources\Device-RetinaAIDevice-Example.json ==
+== fsh-generated\resources\Device-RetinaAIDevice-input.json ==
+== fsh-generated\resources\Device-RetinaCameraDevice-Example.json ==
+== fsh-generated\resources\DiagnosticReport-RetinaDiagnosticReport-Example.json ==
+== fsh-generated\resources\DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.json ==
 == fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.json ==
-INFORMATION: DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144: DiagnosticReport.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3
+== fsh-generated\resources\ImagingStudy-RetinaImagingStudy-available-Example.json ==
+== fsh-generated\resources\ImagingStudy-RetinaImagingStudy-registered-Example.json ==
 == fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration.json ==
 == fsh-generated\resources\NamingSystem-retina-examination-id.json ==
 == fsh-generated\resources\NamingSystem-retina-observation-id.json ==
+== fsh-generated\resources\Observation-RetinaEyeObservation-Example-left.json ==
+== fsh-generated\resources\Observation-RetinaEyeObservation-Example-right.json ==
+== fsh-generated\resources\Observation-RetinaEyeObservation-input-left.json ==
+== fsh-generated\resources\Observation-RetinaEyeObservation-input-right.json ==
+== fsh-generated\resources\Observation-RetinaHbA1cObservation-Example.json ==
+ERROR: Observation/RetinaHbA1cObservation-Example: Observation.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 == fsh-generated\resources\OperationDefinition-append-retina-ai-result.json ==
-== fsh-generated\resources\Parameters-AddAIResultOperation.json ==
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[0].resource/*Observation/ObservationDmeRight-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[0].resource/*Observation/ObservationDmeRight-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[1].resource/*Observation/ObservationDrHoyre-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[1].resource/*Observation/ObservationDrHoyre-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[2].resource/*Observation/ObservationDmeLeft-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[2].resource/*Observation/ObservationDmeLeft-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[3].resource/*Observation/ObservationDrLeft-input*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[3].resource/*Observation/ObservationDrLeft-input*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[10].resource/*ImagingStudy/ImagingStudySectra-1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/AddAIResultOperation: Parameters.parameter[11].resource/*ImagingStudy/ImagingStudySectra-2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/AddAIResultOperation: Parameters.parameter[12].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3
-== fsh-generated\resources\Patient-cdp1123122.json ==
-== fsh-generated\resources\Patient-cdp1123123.json ==
-== fsh-generated\resources\StructureDefinition-RetinaDiagnosticReport.json ==
-== fsh-generated\resources\StructureDefinition-RetinaObservation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-dme-left-eye-observation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-dme-right-eye-observation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-dr-left-eye-observation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-dr-right-eye-observation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-frist-nesteundersokelse-extension.json ==
-== fsh-generated\resources\StructureDefinition-fundus-foto-observation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-hba1c-observation.json ==
-ERROR: StructureDefinition/hba1c-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: StructureDefinition/hba1c-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-ki-productname-extension.json ==
-== fsh-generated\resources\StructureDefinition-ki-protokoll-extension.json ==
-== fsh-generated\resources\StructureDefinition-ki-versjon-algoritme-extension.json ==
-== fsh-generated\resources\StructureDefinition-oct-observation.json ==
-INFORMATION: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation'): The Implementation Guide contains no explicitly linked examples for this profile
-== fsh-generated\resources\StructureDefinition-retina-imagequality-extension.json ==
-WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.json ==
-== fsh-generated\resources\StructureDefinition-videre-forlop-extension.json ==
+== fsh-generated\resources\Parameters-RetinaAppendAIResultOperation-Example.json ==
+== fsh-generated\resources\StructureDefinition-days-until-next-examination-extension.json ==
+== fsh-generated\resources\StructureDefinition-initial-instructions-extension.json ==
+== fsh-generated\resources\StructureDefinition-previous-examination-conclusion-extension.json ==
+== fsh-generated\resources\StructureDefinition-retina-ai-device.json ==
+== fsh-generated\resources\StructureDefinition-retina-diagnostic-report.json ==
+== fsh-generated\resources\StructureDefinition-retina-eye-observation.json ==
+== fsh-generated\resources\StructureDefinition-retina-hba1c-observation.json ==
+ERROR: StructureDefinition/retina-hba1c-observation: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/retina-hba1c-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+== fsh-generated\resources\StructureDefinition-retina-imagingstudy.json ==
+== fsh-generated\resources\StructureDefinition-retina-observation.json ==
+== fsh-generated\resources\ValueSet-retina-body-site-vs.json ==
 == fsh-generated\resources\ValueSet-retina-conclusioncode-vs.json ==
 == fsh-generated\resources\ValueSet-retina-imagequality-vs.json ==
-== fsh-generated\resources\ValueSet-tiltaksstatus-forrigeUndersokelse-vs.json ==
-== fsh-generated\resources\ValueSet-videre-forlop-vs.json ==
+== fsh-generated\resources\ValueSet-retina-imaging-procedure-vs.json ==
+ERROR: ValueSet.where(id = 'retina-imaging-procedure-vs'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded
+== fsh-generated\resources\ValueSet-retina-initial-instructions-vs.json ==

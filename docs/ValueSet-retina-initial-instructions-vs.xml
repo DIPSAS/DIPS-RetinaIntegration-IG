@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="retina-initial-instructions-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-initial-instructions-vs</b></p><a name="retina-initial-instructions-vs"> </a><a name="hcretina-initial-instructions-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-retina-conclusioncode-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1001">1001</a></td><td>KI-gradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by the AI system.</td></tr><tr><td><a href="CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1002">1002</a></td><td>Primærgradering (basert på nåværende bilder)</td><td>This examintions is waiting to be graded by a primary grader.</td></tr><tr><td><a href="CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1003">1003</a></td><td>Sekundærgradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by a secondary grader.</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-retina-caution-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-initial-instructions-vs"/>
+  <version value="0.2.0"/>
+  <name value="InitialInstructionsValueSet"/>
+  <title value="Retina Initial Instructions"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-11-30T22:57:21+01:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Initial routing decisions and cautions for grading this examination (1000-series and 5000-series)."/>
+  <purpose value="The diagnostic report will include the inital routing decision the photographer made when capturing the images, &#xD;&#xA;as well as any cautions that should be considered by the graders when performing the grading of the examination."/>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
+      <concept>
+        <code value="1001"/>
+        <display value="KI-gradering (basert på nåværende bilder)"/>
+      </concept>
+      <concept>
+        <code value="1002"/>
+        <display value="Primærgradering (basert på nåværende bilder)"/>
+      </concept>
+      <concept>
+        <code value="1003"/>
+        <display value="Sekundærgradering (basert på nåværende bilder)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"/>
+    </include>
+  </compose>
+</ValueSet>

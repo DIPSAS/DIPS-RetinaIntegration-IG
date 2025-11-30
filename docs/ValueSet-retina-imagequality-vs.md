@@ -1,29 +1,29 @@
-# Image Quality - RetinaIntegration v0.1.3
+# Retina Image Quality - RetinaIntegration v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Image Quality**
+* **Retina Image Quality**
 
-## ValueSet: Image Quality (Experimental) 
+## ValueSet: Retina Image Quality (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-13 | *Computable Name*:RetinaImageQualityValueSet |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs | *Version*:0.2.0 |
+| Draft as of 2025-11-30 | *Computable Name*:RetinaImageQualityValueSet |
 
  
-Image quality as interpreted by an AI solution. (2000-series) 
+Image quality as assessed by AI (2000-series). 
 
  
-For documentation of image quality as interpreted by an AI solution for automated assessment of retinal images for DR, if applicable. 
+For documentation of image quality as assessed by an AI solution. 
 
  **References** 
 
-* [Image Quality](StructureDefinition-retina-imagequality-extension.md)
+* [Retina Eye Observation](StructureDefinition-retina-eye-observation.md)
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs`](CodeSystem-retina-imagequality-cs.md)version 📦0.1.3
+* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs`](CodeSystem-retina-imagequality-cs.md)version 📦0.2.0
 
  
 
@@ -51,12 +51,12 @@ For documentation of image quality as interpreted by an AI solution for automate
   "resourceType" : "ValueSet",
   "id" : "retina-imagequality-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-  "version" : "0.1.3",
+  "version" : "0.2.0",
   "name" : "RetinaImageQualityValueSet",
-  "title" : "Image Quality",
+  "title" : "Retina Image Quality",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-13T17:39:30+01:00",
+  "date" : "2025-11-30T22:57:21+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -73,8 +73,8 @@ For documentation of image quality as interpreted by an AI solution for automate
       ]
     }
   ],
-  "description" : "Image quality as interpreted by an AI solution. (2000-series)",
-  "purpose" : "For documentation of image quality as interpreted by an AI solution for automated assessment of retinal images for DR, if applicable.",
+  "description" : "Image quality as assessed by AI (2000-series).",
+  "purpose" : "For documentation of image quality as assessed by an AI solution.",
   "compose" : {
     "include" : [
       {

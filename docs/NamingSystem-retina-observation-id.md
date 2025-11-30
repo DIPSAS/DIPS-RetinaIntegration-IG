@@ -1,4 +1,4 @@
-# Retina Observation Id - RetinaIntegration v0.1.3
+# Retina Observation Id - RetinaIntegration v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-id | *Version*:0.1.3 |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-id | *Version*:0.2.0 |
 | Active as of 2025-10-19 | *Computable Name*:RetinaObservationIdentifierSystem |
 
  
@@ -19,7 +19,7 @@ A naming system for observation identifiers in RetinaIntegration.
 | | |
 | :--- | :--- |
 | Defining URL | http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-id |
-| Version | 0.1.3 |
+| Version | 0.2.0 |
 | Name | RetinaObservationIdentifierSystem |
 | Status | active |
 | Definition | A naming system for observation identifiers in RetinaIntegration. |
@@ -46,7 +46,7 @@ A naming system for observation identifiers in RetinaIntegration.
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-      "valueString" : "0.1.3"
+      "valueString" : "0.2.0"
     }
   ],
   "name" : "RetinaObservationIdentifierSystem",

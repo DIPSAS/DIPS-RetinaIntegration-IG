@@ -1,18 +1,18 @@
-# Image Quality - RetinaIntegration v0.1.3
+# Retina Image Quality - RetinaIntegration v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Image Quality**
+* **Retina Image Quality**
 
-## CodeSystem: Image Quality (Experimental) 
+## CodeSystem: Retina Image Quality (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs | *Version*:0.1.3 |
-| Active as of 2025-11-13 | *Computable Name*:RetinaImageQualityCodesystem |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs | *Version*:0.2.0 |
+| Draft as of 2025-11-30 | *Computable Name*:RetinaImageQualityCodesystem |
 
  
-Image quality as interpreted by an AI solution. (2000-series) 
+Image quality as asessed by AI solution (2000-series). 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -27,12 +27,12 @@ Image quality as interpreted by an AI solution. (2000-series)
   "resourceType" : "CodeSystem",
   "id" : "retina-imagequality-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-  "version" : "0.1.3",
+  "version" : "0.2.0",
   "name" : "RetinaImageQualityCodesystem",
-  "title" : "Image Quality",
-  "status" : "active",
+  "title" : "Retina Image Quality",
+  "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-13T17:39:30+01:00",
+  "date" : "2025-11-30T22:57:21+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -49,7 +49,7 @@ Image quality as interpreted by an AI solution. (2000-series)
       ]
     }
   ],
-  "description" : "Image quality as interpreted by an AI solution. (2000-series)",
+  "description" : "Image quality as asessed by AI solution (2000-series).",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 4,

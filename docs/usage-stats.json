@@ -1,125 +1,65 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
-      "title": "Deadline Next Examination",
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension",
+      "title": "Days Until Next Examination",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
-      "title": "AI Product Name",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
-      "title": "AI Protocol",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
-      "title": "AI Algorithm Version",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension",
-      "title": "Image Quality",
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension",
+      "title": "Initial Instructions",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
-      "title": "Next Examination Previous Examination",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
-      "title": "Grading Pending",
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
+      "title": "Previous Examination Conclusion",
       "types": [
         "CodeableConcept"
       ]
     }
   ],
   "profiles": {
+    "Device": [
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device",
+        "title": "Retina AI Device"
+      }
+    ],
     "DiagnosticReport": [
       {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport",
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
         "title": "Retina DiagnosticReport"
       }
     ],
     "Observation": [
       {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation",
         "title": "Retina Observation"
-      },
+      }
+    ],
+    "ImagingStudy": [
       {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation",
-        "title": "Diabetic Macular Edema Left Eye Observation"
-      },
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation",
-        "title": "Diabetic Macular Edema Right Eye Observation"
-      },
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation",
-        "title": "Diabetic Retinopathy Left Eye Observation"
-      },
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation",
-        "title": "Diabetic Retinopathy Right Eye Observation"
-      },
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation",
-        "title": "Fundus Photography Observation"
-      },
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation",
-        "title": "HbA1c Observation"
-      },
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation",
-        "title": "OCT Observation"
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy",
+        "title": "Retina ImagingStudy"
       }
     ]
   },
   "usage": {
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension": [
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension": [
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension": [
       "Bundle.entry.resource",
       "DiagnosticReport"
     ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension": [
-      "Bundle.entry.resource",
-      "DiagnosticReport"
-    ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension": [
-      "Bundle.entry.resource",
-      "DiagnosticReport"
-    ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension": [
-      "Bundle.entry.resource",
-      "DiagnosticReport"
-    ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension": [
-      "DiagnosticReport"
-    ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension": [
-      "Bundle.entry.resource",
-      "DiagnosticReport"
-    ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension": [
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension": [
       "Bundle.entry.resource",
       "DiagnosticReport"
     ],
@@ -140,6 +80,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"

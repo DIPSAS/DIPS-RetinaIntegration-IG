@@ -1,26 +1,27 @@
-# Grading Conclusion - RetinaIntegration v0.1.3
+# Retina Conclusion - RetinaIntegration v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Grading Conclusion**
+* **Retina Conclusion**
 
-## ValueSet: Grading Conclusion (Experimental) 
+## ValueSet: Retina Conclusion (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs | *Version*:0.1.3 |
-| Draft as of 2025-11-13 | *Computable Name*:RetinaConclusionCodeValueset |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs | *Version*:0.2.0 |
+| Draft as of 2025-11-30 | *Computable Name*:RetinaDiagnosticReportConclusionCodeValueSet |
 
  
-Codes describing where the external client has landed in its assessment of the examination. (1000-series) 
+Codes describing the current or final conclusion of the examination (1000-series). 
 
  **References** 
 
-* [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
+* [Previous Examination Conclusion](StructureDefinition-previous-examination-conclusion-extension.md)
+* [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs`](CodeSystem-retina-conclusioncode-cs.md)version 📦0.1.3
+* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs`](CodeSystem-retina-conclusioncode-cs.md)version 📦0.2.0
 
  
 
@@ -48,12 +49,12 @@ Codes describing where the external client has landed in its assessment of the e
   "resourceType" : "ValueSet",
   "id" : "retina-conclusioncode-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-  "version" : "0.1.3",
-  "name" : "RetinaConclusionCodeValueset",
-  "title" : "Grading Conclusion",
+  "version" : "0.2.0",
+  "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
+  "title" : "Retina Conclusion",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-13T17:39:30+01:00",
+  "date" : "2025-11-30T22:57:21+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -70,7 +71,7 @@ Codes describing where the external client has landed in its assessment of the e
       ]
     }
   ],
-  "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
+  "description" : "Codes describing the current or final conclusion of the examination (1000-series).",
   "compose" : {
     "include" : [
       {

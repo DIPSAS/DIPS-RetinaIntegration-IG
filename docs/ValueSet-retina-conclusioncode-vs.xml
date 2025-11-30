@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="retina-conclusioncode-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-conclusioncode-vs</b></p><a name="retina-conclusioncode-vs"> </a><a name="hcretina-conclusioncode-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-retina-conclusioncode-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.3</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-conclusioncode-vs</b></p><a name="retina-conclusioncode-vs"> </a><a name="hcretina-conclusioncode-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-retina-conclusioncode-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
   </text>
   <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"/>
-  <version value="0.1.3"/>
-  <name value="RetinaConclusionCodeValueset"/>
-  <title value="Grading Conclusion"/>
+  <version value="0.2.0"/>
+  <name value="RetinaDiagnosticReportConclusionCodeValueSet"/>
+  <title value="Retina Conclusion"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-13T17:39:30+01:00"/>
+  <date value="2025-11-30T22:57:21+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -24,7 +24,7 @@
       <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
-  <description value="Codes describing where the external client has landed in its assessment of the examination. (1000-series)"/>
+  <description value="Codes describing the current or final conclusion of the examination (1000-series)."/>
   <compose>
     <include>
       <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>

@@ -1,4 +1,4 @@
-# Artifacts Summary - RetinaIntegration v0.1.3
+# Artifacts Summary - RetinaIntegration v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -13,7 +13,7 @@ The following artifacts define the specific capabilities that different types of
 
 | | |
 | :--- | :--- |
-| [DIPSRetinaCapabilityStatement](CapabilityStatement-DIPSRetinaCapabilityStatement.md) | CapabilityStatement for DIPS Retinaflyt |
+| [Retina CapabilityStatement](CapabilityStatement-RetinaCapabilityStatement.md) | CapabilityStatement for DIPS Retina Integration FHIR API. |
 
 ### Behavior: Operation Definitions 
 
@@ -21,7 +21,15 @@ These are custom operations that can be supported by and/or invoked by systems c
 
 | | |
 | :--- | :--- |
-| [DIPSRetinaAppendOperationDefinition](OperationDefinition-append-retina-ai-result.md) | OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters. |
+| [Retina Append AI Result Operation](OperationDefinition-append-retina-ai-result.md) | OperationDefinition for appending retina AI results to an existing DiagnosticReport. |
+
+### Structures: Abstract Profiles 
+
+These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly. I.e. instances can conform to profiles **based** on these abstract profiles but do not declare conformance to the abstract profiles themselves.
+
+| | |
+| :--- | :--- |
+| [Retina Observation](StructureDefinition-retina-observation.md) | Base observation profile for observations connected to RetinaDiagnosticReport. |
 
 ### Structures: Resource Profiles 
 
@@ -29,15 +37,11 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [Diabetic Macular Edema Left Eye Observation](StructureDefinition-dme-left-eye-observation.md) | Observation for diabetic macular edema findings in the left eye. |
-| [Diabetic Macular Edema Right Eye Observation](StructureDefinition-dme-right-eye-observation.md) | Observation for diabetic macular edema findings in the right eye. |
-| [Diabetic Retinopathy Left Eye Observation](StructureDefinition-dr-left-eye-observation.md) | Observation for diabetic retinopathy findings in the left eye. |
-| [Diabetic Retinopathy Right Eye Observation](StructureDefinition-dr-right-eye-observation.md) | Observation for diabetic retinopathy findings in the right eye. |
-| [Fundus Photography Observation](StructureDefinition-fundus-foto-observation.md) | Wether fundus photography was performed or not. Will be true if fundus photos where taken. |
-| [HbA1c Observation](StructureDefinition-hba1c-observation.md) | HbA1c level as reported by patient prior to retina examination. |
-| [OCT Observation](StructureDefinition-oct-observation.md) | Wether Optical Coherence Tomography (OCT) was performed or not. Will be true if OCT was performed. |
-| [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md) | This diagnostic report for the grading of a retina screening examination. |
-| [Retina Observation](StructureDefinition-RetinaObservation.md) | Observations connected to RetinaDiagnosticReport. |
+| [Retina AI Device](StructureDefinition-retina-ai-device.md) | AI device/software system used for automated retina screening analysis. |
+| [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md) | Diagnostic report for the grading process of a single examination which is part of a screening program. |
+| [Retina Eye Observation](StructureDefinition-retina-eye-observation.md) | The result of AI grading for one eye. The bodySite element identifies which eye (right or left). |
+| [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation.md) | HbA1c level as reported by patient prior to retina examination. |
+| [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md) | Profile for imaging studies related to retina examinations, including fundus photography and OCT imaging. |
 
 ### Structures: Extension Definitions 
 
@@ -45,13 +49,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
-| [AI Algorithm Version](StructureDefinition-ki-versjon-algoritme-extension.md) | Version of the AI algorithm used for analysis. |
-| [AI Product Name](StructureDefinition-ki-productname-extension.md) | Name of the AI product used for analysis. |
-| [AI Protocol](StructureDefinition-ki-protokoll-extension.md) | Protocol used by the AI solution for analysis. |
-| [Deadline Next Examination](StructureDefinition-frist-nesteundersokelse-extension.md) | Number of days until next examination. |
-| [Grading Pending](StructureDefinition-videre-forlop-extension.md) | Next step in grading this examination. (4000-series) |
-| [Image Quality](StructureDefinition-retina-imagequality-extension.md) | A coded extension representing the quality of a diagnostic image. |
-| [Next Examination Previous Examination](StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.md) | The next step in the screening process after the previous examination. (3000-series) |
+| [Days Until Next Examination](StructureDefinition-days-until-next-examination-extension.md) | Number of days until next examination. |
+| [Initial Instructions](StructureDefinition-initial-instructions-extension.md) | Initial routing instruction and optional cautions for grading this examination (4000-series and 5000-series). |
+| [Previous Examination Conclusion](StructureDefinition-previous-examination-conclusion-extension.md) | The conclusion from the previous examination (1000 series). If this is the first examination, this extension is not present. |
 
 ### Terminology: Value Sets 
 
@@ -59,10 +59,11 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [Grading Conclusion](ValueSet-retina-conclusioncode-vs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
-| [Grading Pending](ValueSet-videre-forlop-vs.md) | Next step in grading this examination. (4000-series) |
-| [Image Quality](ValueSet-retina-imagequality-vs.md) | Image quality as interpreted by an AI solution. (2000-series) |
-| [Next Examination](ValueSet-tiltaksstatus-forrigeUndersokelse-vs.md) | Next step for this patient is a new examination. (3000-series) |
+| [Retina Body Site](ValueSet-retina-body-site-vs.md) | Body site codes for retinal observations (right or left retina). |
+| [Retina Conclusion](ValueSet-retina-conclusioncode-vs.md) | Codes describing the current or final conclusion of the examination (1000-series). |
+| [Retina Image Quality](ValueSet-retina-imagequality-vs.md) | Image quality as assessed by AI (2000-series). |
+| [Retina Imaging Procedures](ValueSet-retina-imaging-procedure-vs.md) | Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique. |
+| [Retina Initial Instructions](ValueSet-retina-initial-instructions-vs.md) | Initial routing decisions and cautions for grading this examination (1000-series and 5000-series). |
 
 ### Terminology: Code Systems 
 
@@ -70,10 +71,9 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [Grading Conclusion](CodeSystem-retina-conclusioncode-cs.md) | Codes describing where the external client has landed in its assessment of the examination. (1000-series) |
-| [Grading Pending](CodeSystem-videre-forlop-cs.md) | Next step in grading this examination. (4000-series) |
-| [Image Quality](CodeSystem-retina-imagequality-cs.md) | Image quality as interpreted by an AI solution. (2000-series) |
-| [Next Examination](CodeSystem-tiltakstatus-nesteundersokelse-cs.md) | Next step for this patient is a new examination. (3000-series) |
+| [Retina Cautions](CodeSystem-retina-caution-cs.md) | Cautions to consider when grading examinations (5000-series). |
+| [Retina Conclusion](CodeSystem-retina-conclusioncode-cs.md) | Codes for the current or final conclusion of the grading process (1000-series). |
+| [Retina Image Quality](CodeSystem-retina-imagequality-cs.md) | Image quality as asessed by AI solution (2000-series). |
 
 ### Terminology: Naming Systems 
 
@@ -90,11 +90,20 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [AddAIResultOperation](Parameters-AddAIResultOperation.md) | Example request from client to append AI results to existing DiagnosticReport |
-| [Bundle With Single Examination Containing AI Result](Bundle-BundleWithSingleExaminationAndAI-Example.md) | Example response containing a single diagnostic report containing AI result. |
-| [Bundle With Single Examination Without AI Result](Bundle-BundleWithSinglExamination-Example.md) | Result of query for a specific examination idfentified by ID containing no AI result. |
-| [Bundle With Two Diagnostic Reports](Bundle-BundleWithTwoExaminations-Example.md) | Result of query for examinations between two dates, not containing AI result. |
-| [Notification From DIPS](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md) | Notification from DIPS to external client that new retina examination is ready for grading. |
-| [Patient-cdp1123122](Patient-cdp1123122.md) | Example patient 2 |
-| [Patient-cdp1123123](Patient-cdp1123123.md) | Example patient 1 |
+| [Bundle-SinglExamination-Example](Bundle-Bundle-SinglExamination-Example.md) | Result of query for a specific examination idfentified by ID containing no AI result. |
+| [Bundle-TwoExaminations-Example](Bundle-Bundle-TwoExaminations-Example.md) | Result of query for examinations between two dates, not containing AI result. |
+| [RetinaAIDevice-Example](Device-RetinaAIDevice-Example.md) | AI device that performed the automated retina analysis. |
+| [RetinaAIDevice-input](Device-RetinaAIDevice-input.md) | AI device used for this analysis. |
+| [RetinaAppendAIResultOperation-Example](Parameters-RetinaAppendAIResultOperation-Example.md) | Example request from client to append AI results to existing DiagnosticReport. |
+| [RetinaCameraDevice-Example](Device-RetinaCameraDevice-Example.md) | TODO: Camera profile not defined yet. Camera device not used yet. |
+| [RetinaDiagnosticReport-Example](DiagnosticReport-RetinaDiagnosticReport-Example.md) | Example after AI result is appended. Only one eye. |
+| [RetinaDiagnosticReport-Example-PendingAI](DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.md) | Example of DiagnosticReport pending AI result. Does not have a previous examination. |
+| [RetinaDiagnosticReport-Notification-Example](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md) | Notification from DIPS to external system that new retina examination is ready for AI grading. |
+| [RetinaEyeObservation-Example-left](Observation-RetinaEyeObservation-Example-left.md) | Left eye assessment with DR, DME and image quality components. |
+| [RetinaEyeObservation-Example-right](Observation-RetinaEyeObservation-Example-right.md) | Right eye assessment with DR, DME and image quality components. |
+| [RetinaEyeObservation-input-left](Observation-RetinaEyeObservation-input-left.md) | Left eye assessment with DR and DME components. TODO: Why is 'not-asked' used in this example? |
+| [RetinaEyeObservation-input-right](Observation-RetinaEyeObservation-input-right.md) | Right eye assessment with DR and DME components. |
+| [RetinaHbA1cObservation-Example](Observation-RetinaHbA1cObservation-Example.md) | HbA1c level observation example. |
+| [RetinaImagingStudy-available-Example](ImagingStudy-RetinaImagingStudy-available-Example.md) | An 'available' ImagingStudy updated by AI system. |
+| [RetinaImagingStudy-registered-Example](ImagingStudy-RetinaImagingStudy-registered-Example.md) | A 'registered' ImagingStudy awaiting AI grading. |
 

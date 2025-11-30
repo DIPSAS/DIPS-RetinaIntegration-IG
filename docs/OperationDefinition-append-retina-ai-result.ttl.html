@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DIPSRetinaAppendOperationDefinition - TTL Representation - RetinaIntegration v0.1.3</title>
+    <title>Retina Append AI Result Operation - TTL Representation - RetinaIntegration v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.1.3 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -99,7 +99,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DIPSRetinaAppendOperationDefinition</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Retina Append AI Result Operation</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -112,7 +112,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.1.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -130,12 +130,6 @@
 
 
 
-  
-    <li>
-      <a href="OperationDefinition-append-retina-ai-result.xml.html">XML</a>
-    </li>
-  
-
 
   
     <li>
@@ -143,12 +137,6 @@
     </li>
   
 
-
-  
-    <li class="active">
-      <a href="#">TTL</a>
-    </li>
-  
 
 
 
@@ -158,16 +146,16 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: DIPSRetinaAppendOperationDefinition - TTL Representation</h2>
+<h2 id="root">: Retina Append AI Result Operation - TTL Representation</h2>
 
-  <table class="colsi">
+  <table class="colsd">
     <tr>
 
       <td colspan="2">
         
-          Active
+          Draft
           
-            as of 2025-11-13
+            as of 2025-11-30
           
         
       </td>
@@ -194,20 +182,21 @@
 
  a fhir:OperationDefinition ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;append-retina-ai-result&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.text">fhir:text</a> [
+  <a href="http://hl7.org/fhir/R4/resource.html#OperationDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;append-retina-ai-result&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/domainresource.html#OperationDefinition.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition append-retina-ai-result&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;append-retina-ai-result\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcappend-retina-ai-result\&quot;&gt; &lt;/a&gt;&lt;p&gt;URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result&lt;/p&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;dme-right-eye&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Diabetisk makulaødem høyre øye&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;dr-right-eye&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Diabetisk retinopati høyre øye&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;dme-left-eye&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Diabetisk makulaødem venstre øye&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;dr-left-eye&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Diabetisk retinopati venstre øye&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;days-until-next-examination&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/frist-nesteundersokelse-extension&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ki-product-name&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Name of the AI product, stored in extension http://dips.no/fhir/StructureDefinition/ki-productname-extension&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ki-version-algorithm&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Version of the AI algorithm, stored in extension http://dips.no/fhir/StructureDefinition/ki-versjon-algoritme-extension&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ki-protocol&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Protocol of the AI analysis, stored in extension http://dips.no/fhir/StructureDefinition/ki-protokoll-extension&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;effectiveTime&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Time when the AI analysis was performed&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;full-ki-report&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Attachment\&quot;&gt;Attachment&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Full report from the AI analysis, stored in presentedForm of the DiagnosticReport&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;imageDescriptions&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/imagingstudy.html\&quot;&gt;ImagingStudy&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Descriptions of the images, diagnosticreport.imagingStudy&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;conclusionCode&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition append-retina-ai-result&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;append-retina-ai-result\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcappend-retina-ai-result\&quot;&gt; &lt;/a&gt;&lt;p&gt;URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result&lt;/p&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;sectraStudyId&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;rightEye&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;leftEye&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;conclusion&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode. MUST use codes from RetinaDiagnosticReportConclusionCodeValueSet (http://dips.no/fhir/RetinaIntegration/ValueSet/retina-diagnosticreport-conclusioncode-vs)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;daysUntilNextExamination&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/days-until-next-examination-extension&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;effectiveTime&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Time when the AI analysis was performed&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;aiDevice&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/device.html\&quot;&gt;Device&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;fullReport&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Attachment\&quot;&gt;Attachment&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Technical details for further reference about the AI grading, stored in DiagnosticReport.presentedForm&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;metaTags&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Coding\&quot;&gt;Coding&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Workflow tags.\nAdd code http://terminology.hl7.org/CodeSystem/v3-ActReason#VALIDATION when data is for validation purposes only\nand the result from the AI analysis will not be used in clinical decision making.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">fhir:url</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result&gt;
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.2.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AppendRetinaAIResult&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Retina Append AI Result Operation&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;operation&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-11-13T17:39:30+01:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-11-30T22:57:21+01:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DIPS AS&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DIPS AS&quot; ] ;
@@ -217,7 +206,7 @@
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;teamsolsiden@dips.no&quot; ]     ] )
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;OperationDefinition for appending retina AI results to an existing DiagnosticReport.&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.purpose">fhir:purpose</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Append results from AI analysis of retina images to a existing DiagnosticReport&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;append-retina-ai-result&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.resource">fhir:resource</a> ( [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport&quot;] ) ; # 
@@ -225,61 +214,40 @@
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">fhir:instance</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">fhir:parameter</a> ( [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dme-right-eye&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;sectraStudyId&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Identifier&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;rightEye&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diabetisk makulaødem høyre øye&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation&quot; ]
   ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dr-right-eye&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;leftEye&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diabetisk retinopati høyre øye&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation&quot; ]
   ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dme-left-eye&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;conclusion&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diabetisk makulaødem venstre øye&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation&quot; ]
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode. MUST use codes from RetinaDiagnosticReportConclusionCodeValueSet (http://dips.no/fhir/RetinaIntegration/ValueSet/retina-diagnosticreport-conclusioncode-vs)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CodeableConcept&quot; ]
   ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dr-left-eye&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;daysUntilNextExamination&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diabetisk retinopati venstre øye&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;days-until-next-examination&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/frist-nesteundersokelse-extension&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/days-until-next-examination-extension&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;integer&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ki-product-name&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Name of the AI product, stored in extension http://dips.no/fhir/StructureDefinition/ki-productname-extension&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ki-version-algorithm&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Version of the AI algorithm, stored in extension http://dips.no/fhir/StructureDefinition/ki-versjon-algoritme-extension&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ki-protocol&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Protocol of the AI analysis, stored in extension http://dips.no/fhir/StructureDefinition/ki-protokoll-extension&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveTime&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
@@ -288,26 +256,26 @@
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Time when the AI analysis was performed&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dateTime&quot; ]
   ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;full-ki-report&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;aiDevice&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Full report from the AI analysis, stored in presentedForm of the DiagnosticReport&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Device&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fullReport&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Technical details for further reference about the AI grading, stored in DiagnosticReport.presentedForm&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Attachment&quot; ]
   ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;imageDescriptions&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;metaTags&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Descriptions of the images, diagnosticreport.imagingStudy&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ImagingStudy&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;conclusionCode&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CodeableConcept&quot; ]
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Workflow tags. \n    Add code http://terminology.hl7.org/CodeSystem/v3-ActReason#VALIDATION when data is for validation purposes only\n    and the result from the AI analysis will not be used in clinical decision making.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Coding&quot; ]
   ] ) . # 
 
 </code></pre>
@@ -335,7 +303,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 13, 2025 17:39+0100">2025-11-13</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 30, 2025 22:57+0100">2025-11-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

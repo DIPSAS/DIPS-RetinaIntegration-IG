@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="RetinaEyeObservation-input-right"/>
+  <meta>
+    <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation RetinaEyeObservation-input-right</b></p><a name="RetinaEyeObservation-input-right"> </a><a name="hcRetinaEyeObservation-input-right"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-retina-eye-observation.html">Retina Eye Observation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 134395001}">Retinal examination</span></p><p><b>effective</b>: 2025-09-30 12:00:00+0000</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 5597008}">Høyre retina</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 4855003}">Diabetic retinopathy</span></p><p><b>value</b>: 5</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 312912001}">Diabetic macular edema</span></p><p><b>value</b>: true</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="134395001"/>
+      <display value="Diabetic retinopathy screening"/>
+    </coding>
+    <text value="Retinal examination"/>
+  </code>
+  <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="5597008"/>
+      <display value="Retina of right eye"/>
+    </coding>
+    <text value="Høyre retina"/>
+  </bodySite>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="4855003"/>
+        <display value="Diabetic retinopathy"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="5"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="312912001"/>
+        <display value="Diabetic macular edema"/>
+      </coding>
+    </code>
+    <valueBoolean value="true"/>
+  </component>
+</Observation>

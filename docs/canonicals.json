@@ -1,204 +1,155 @@
 [
   {
-    "id" : "DIPSRetinaCapabilityStatement",
+    "id" : "RetinaCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement",
-    "version" : "0.1.3"
+    "url" : "http://dips.no/fhir/RetinaIntegration/CapabilityStatement/RetinaCapabilityStatement",
+    "version" : "0.2.0"
+  },
+  {
+    "id" : "retina-caution-cs",
+    "type" : "CodeSystem",
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
+    "version" : "0.2.0",
+    "name" : "RetinaCautionCodeSystem"
   },
   {
     "id" : "retina-conclusioncode-cs",
     "type" : "CodeSystem",
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "RetinaConclusionCodesystem"
   },
   {
     "id" : "retina-imagequality-cs",
     "type" : "CodeSystem",
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "RetinaImageQualityCodesystem"
-  },
-  {
-    "id" : "tiltakstatus-nesteundersokelse-cs",
-    "type" : "CodeSystem",
-    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-    "version" : "0.1.3",
-    "name" : "TiltakStatusForrigeUndersokelseCodeSystem"
-  },
-  {
-    "id" : "videre-forlop-cs",
-    "type" : "CodeSystem",
-    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
-    "version" : "0.1.3",
-    "name" : "VidereForlopCodeSystem"
   },
   {
     "id" : "dips.fhir.retinaintegration",
     "type" : "ImplementationGuide",
     "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "RetinaIntegration"
   },
   {
     "id" : "retina-examination-id",
     "type" : "NamingSystem",
     "url" : "http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-examination-id",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "RetinaExaminationIdentifierSystem"
   },
   {
     "id" : "retina-observation-id",
     "type" : "NamingSystem",
     "url" : "http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-id",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "RetinaObservationIdentifierSystem"
   },
   {
     "id" : "append-retina-ai-result",
     "type" : "OperationDefinition",
     "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "AppendRetinaAIResult"
   },
   {
-    "id" : "RetinaDiagnosticReport",
+    "id" : "days-until-next-examination-extension",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport",
-    "version" : "0.1.3",
-    "name" : "DIPSRetinaIntegrationDiagnosticReport"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension",
+    "version" : "0.2.0",
+    "name" : "DaysUntilNextExamination"
   },
   {
-    "id" : "RetinaObservation",
+    "id" : "initial-instructions-extension",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
-    "version" : "0.1.3",
-    "name" : "DIPSRetinaIntegrationObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension",
+    "version" : "0.2.0",
+    "name" : "InitialInstructionsExtension"
   },
   {
-    "id" : "dme-left-eye-observation",
+    "id" : "previous-examination-conclusion-extension",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-left-eye-observation",
-    "version" : "0.1.3",
-    "name" : "DMELeftEyeObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
+    "version" : "0.2.0",
+    "name" : "PreviousExaminationConclusionExtension"
   },
   {
-    "id" : "dme-right-eye-observation",
+    "id" : "retina-ai-device",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dme-right-eye-observation",
-    "version" : "0.1.3",
-    "name" : "DMERightEyeObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device",
+    "version" : "0.2.0",
+    "name" : "RetinaAIDevice"
   },
   {
-    "id" : "dr-left-eye-observation",
+    "id" : "retina-diagnostic-report",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-left-eye-observation",
-    "version" : "0.1.3",
-    "name" : "DRLeftEyeObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
+    "version" : "0.2.0",
+    "name" : "RetinaDiagnosticReport"
   },
   {
-    "id" : "dr-right-eye-observation",
+    "id" : "retina-eye-observation",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/dr-right-eye-observation",
-    "version" : "0.1.3",
-    "name" : "DRRightEyeObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation",
+    "version" : "0.2.0",
+    "name" : "RetinaEyeObservation"
   },
   {
-    "id" : "frist-nesteundersokelse-extension",
+    "id" : "retina-hba1c-observation",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
-    "version" : "0.1.3",
-    "name" : "KIFristNesteUndersokelse"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation",
+    "version" : "0.2.0",
+    "name" : "RetinaHbA1cObservation"
   },
   {
-    "id" : "fundus-foto-observation",
+    "id" : "retina-imagingstudy",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation",
-    "version" : "0.1.3",
-    "name" : "FundusFotografiObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy",
+    "version" : "0.2.0",
+    "name" : "RetinaImagingStudy"
   },
   {
-    "id" : "hba1c-observation",
+    "id" : "retina-observation",
     "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation",
-    "version" : "0.1.3",
-    "name" : "HbA1cObservation"
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation",
+    "version" : "0.2.0",
+    "name" : "RetinaObservation"
   },
   {
-    "id" : "ki-productname-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
-    "version" : "0.1.3",
-    "name" : "KIProductName"
-  },
-  {
-    "id" : "ki-protokoll-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
-    "version" : "0.1.3",
-    "name" : "KIProtokoll"
-  },
-  {
-    "id" : "ki-versjon-algoritme-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
-    "version" : "0.1.3",
-    "name" : "KIVersionAlgoritme"
-  },
-  {
-    "id" : "oct-observation",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation",
-    "version" : "0.1.3",
-    "name" : "OCTObservation"
-  },
-  {
-    "id" : "retina-imagequality-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension",
-    "version" : "0.1.3",
-    "name" : "RetinaImageQualityExtension"
-  },
-  {
-    "id" : "tiltaksstatus-forrige-undersokelse-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
-    "version" : "0.1.3",
-    "name" : "RetinaTiltaksstausForrigeUndersokelseExtension"
-  },
-  {
-    "id" : "videre-forlop-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
-    "version" : "0.1.3",
-    "name" : "RetinaVidereForlopExtension"
+    "id" : "retina-body-site-vs",
+    "type" : "ValueSet",
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
+    "version" : "0.2.0",
+    "name" : "RetinaBodySiteValueSet"
   },
   {
     "id" : "retina-conclusioncode-vs",
     "type" : "ValueSet",
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-    "version" : "0.1.3",
-    "name" : "RetinaConclusionCodeValueset"
+    "version" : "0.2.0",
+    "name" : "RetinaDiagnosticReportConclusionCodeValueSet"
   },
   {
     "id" : "retina-imagequality-vs",
     "type" : "ValueSet",
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-    "version" : "0.1.3",
+    "version" : "0.2.0",
     "name" : "RetinaImageQualityValueSet"
   },
   {
-    "id" : "tiltaksstatus-forrigeUndersokelse-vs",
+    "id" : "retina-imaging-procedure-vs",
     "type" : "ValueSet",
-    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
-    "version" : "0.1.3",
-    "name" : "TiltaksstatusForrigeUndersokelseValueSet"
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
+    "version" : "0.2.0",
+    "name" : "RetinaImagingProcedureValueSet"
   },
   {
-    "id" : "videre-forlop-vs",
+    "id" : "retina-initial-instructions-vs",
     "type" : "ValueSet",
-    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
-    "version" : "0.1.3",
-    "name" : "VidereForlopValueSet"
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-initial-instructions-vs",
+    "version" : "0.2.0",
+    "name" : "InitialInstructionsValueSet"
   }
 ]

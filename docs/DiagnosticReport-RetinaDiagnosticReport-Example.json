@@ -1,0 +1,78 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "RetinaDiagnosticReport-Example",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport RetinaDiagnosticReport-Example</b></p><a name=\"RetinaDiagnosticReport-Example\"> </a><a name=\"hcRetinaDiagnosticReport-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-diagnostic-report.html\">Retina DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}\">Bildediagnostikk</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-09-30 12:00:00+0000</td></tr><tr><td>Identifier</td><td> <a href=\"NamingSystem-retina-examination-id.html\" title=\"A naming system for examination identifiers in RetinaIntegration.\">RetinaExaminationIdentifierSystem</a>/a4ee3f25-405b-4b3a-85ff-f530aedbb5b9</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-RetinaHbA1cObservation-Example.html\"><span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></a></td><td>63.2</td><td>Final</td><td>2025-11-29 10:30:00+0000</td></tr><tr><td><a href=\"Observation-RetinaEyeObservation-Example-right.html\"><span title=\"Codes:{http://snomed.info/sct 134395001}\">Retinal examination</span></a> (<span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span>)</td><td/><td>Final</td><td>2025-11-30 10:21:00+0000</td></tr><tr><td><a href=\"Observation-RetinaEyeObservation-Example-left.html\"><span title=\"Codes:{http://snomed.info/sct 134395001}\">Retinal examination</span></a> (<span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span>)</td><td/><td>Final</td><td>2025-11-30 10:21:00+0000</td></tr></table><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs 1004}\">Ny fotokontroll (primærgradering)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+        "code" : "1001",
+        "display" : "KI-gradering (basert på nåværende bilder)"
+      }]
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+        "code" : "1004",
+        "display" : "Ny fotokontroll (primærgradering)"
+      }]
+    }
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension",
+    "valueInteger" : 365
+  }],
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",
+    "value" : "a4ee3f25-405b-4b3a-85ff-f530aedbb5b9"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
+      "code" : "B",
+      "display" : "Bildediagnostikk"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+      "value" : "01015549145"
+    }
+  },
+  "effectiveDateTime" : "2025-09-30T12:00:00Z",
+  "result" : [{
+    "reference" : "Observation/RetinaHbA1cObservation-Example"
+  },
+  {
+    "reference" : "Observation/RetinaEyeObservation-Example-right"
+  },
+  {
+    "reference" : "Observation/RetinaEyeObservation-Example-left"
+  }],
+  "imagingStudy" : [{
+    "reference" : "ImagingStudy/RetinaImagingStudy-available-Example"
+  }],
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+      "code" : "1004",
+      "display" : "Ny fotokontroll (primærgradering)"
+    }]
+  }],
+  "presentedForm" : [{
+    "contentType" : "text/plain",
+    "data" : "Base64binary",
+    "title" : "Full report"
+  }]
+}

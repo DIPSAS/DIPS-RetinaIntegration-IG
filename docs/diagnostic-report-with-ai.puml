@@ -1,0 +1,91 @@
+@startuml diagnostic-report-with-ai
+
+!theme plain
+skinparam backgroundColor #FFFFFF
+
+' --- Skin Parameters for a Clean Look ---
+
+' Hides the circular 'C' icon in the class title
+hide class stereotype
+
+' This is the correct command to hide all visibility markers (+, -, #)
+' It's the standard way to achieve a diagram without these icons.
+hide circle
+
+' Use orthogonal lines for cleaner relationships
+' skinparam linetype ortho
+
+' Add spacing between elements
+skinparam nodesep 120
+skinparam ranksep 120
+
+' --- Define FHIR Resources as Classes ---
+
+class DiagnosticReport {
+  {field} id: MyEyeScreeningExaminationReport
+  {field} conclusionCode: 1000 series
+  {field} extension: initialInstructions: 1000 + 5000 series
+  {field} extension: previousExaminationConclusion: 1000 series
+  {field} extension: daysUntilNextExamination: integer
+  {field} imagingStudy: Reference(ImagingStudy)
+  {field} result: Reference(EyeObservation)[]
+  {field} subject: Reference(Patient)
+  {field} status: registered | partial | preliminary | final
+}
+
+class ImagingStudy {
+  {field} id: example-eye-study
+  {field} identifier: SectraStudyId
+  {field} procedureCode: FundusPhotography | OCT
+  {field} subject: Reference(Patient)
+  {field} status: registered | available
+}
+
+class EyeObservation {
+  {field} id
+  {field} subject: Reference(Patient)
+  {field} partOf: Reference(DiagnosticReport)
+  {field} derivedFrom: Reference(ImagingStudy)
+  {field} status
+}
+
+class Device {
+  id: MyAISystem
+  model-name: AI Product Name
+  model-number: AI Version
+  software: AI Protocol
+}
+
+class DrComponent{
+  code : "Diabetic retinopathy"
+  value: Quantity : 0.0 - 5.0 
+}
+
+class DmeComponent{
+  code: "Diabetic macular edema"
+  value: bool 
+}
+
+class ImageQualityComponent{
+  code: "2000 series"
+  status: "registered" | "available"
+}
+
+class HbA1cObservation{
+  code: snomed "HbA1c"
+  value: Quantity
+}
+
+
+' --- Define the relationships ---
+
+DiagnosticReport --> ImagingStudy : "imagingStudy"
+DiagnosticReport o-- HbA1cObservation
+DiagnosticReport --> EyeObservation : "result 0..2\nleftEye, rigthEye"
+EyeObservation ..> DiagnosticReport : "partOf"
+EyeObservation -- Device : "aiDevice"
+EyeObservation --> ImagingStudy : "derived from"
+EyeObservation *-- DrComponent
+EyeObservation *-- DmeComponent
+EyeObservation *-- ImageQualityComponent
+@enduml

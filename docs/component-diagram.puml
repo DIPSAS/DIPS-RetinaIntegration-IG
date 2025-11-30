@@ -1,0 +1,27 @@
+@startuml component-diagram
+!theme plain
+
+component "DIPS EyeCare Retinopathy\nand RetinaIntegration API" as dips
+component "Sectra\nRegional Media Archive" as sectra
+component "Regional AI\nand Business Logic" as aibl
+actor "Photographer" as photo
+actor "Grader" as grader1
+actor "Secondary Grader" as grader2
+
+
+() "Query API" as queryapi
+() "AddAIResultOperation" as addapi
+
+dips -up- queryapi 
+dips -up- addapi
+
+photo --> sectra : 1. store images\n(using camera)
+sectra --> dips : 2. CDA message\n(Sectra Study ID)
+sectra --> aibl : 3. AI grades images
+photo --> dips : 4. form saved\n(examination done)
+aibl --> queryapi : 5. get patient info & Sectra study IDs
+aibl --> addapi : 6. submit grading results
+grader1 --> dips : do grading
+grader2 --> dips : do secondary grading
+
+@enduml

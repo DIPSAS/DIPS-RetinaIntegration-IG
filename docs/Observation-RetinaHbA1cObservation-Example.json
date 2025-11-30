@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Observation",
+  "id" : "RetinaHbA1cObservation-Example",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation RetinaHbA1cObservation-Example</b></p><a name=\"RetinaHbA1cObservation-Example\"> </a><a name=\"hcRetinaHbA1cObservation-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-hba1c-observation.html\">Retina HbA1c Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-observation-id.html\" title=\"A naming system for observation identifiers in RetinaIntegration.\">RetinaObservationIdentifierSystem</a>/a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></p><p><b>effective</b>: 2025-11-29 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+    "value" : "a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "167491000202108",
+      "display" : "HbA1c"
+    }]
+  },
+  "effectiveDateTime" : "2025-11-29T10:30:00Z",
+  "valueQuantity" : {
+    "value" : 63.2
+  }
+}
