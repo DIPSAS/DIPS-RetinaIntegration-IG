@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - RetinaIntegration v0.2.0</title>
+    <title>Artifacts Summary - RetinaIntegration v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -84,6 +84,9 @@
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -117,7 +120,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -229,6 +232,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-retina-diabetic-macular-edema-finding.html"
+                  title="StructureDefinition/retina-diabetic-macular-edema-finding">Retina Diabetic Macular Edema Finding</a>
+            </td>
+            <td>
+<p>Observation profile for documenting findings related to diabetic macular edema (DME) in retina examinations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-retina-diabetic-retinopathy-finding.html"
+                  title="StructureDefinition/retina-diabetic-retinopathy-finding">Retina Diabetic Retinopathy Finding</a>
+            </td>
+            <td>
+<p>Observation profile for documenting findings related to diabetic retinopathy (DR) in retina examinations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-retina-diagnostic-report.html"
                   title="StructureDefinition/retina-diagnostic-report">Retina DiagnosticReport</a>
             </td>
@@ -238,20 +259,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-retina-eye-observation.html"
-                  title="StructureDefinition/retina-eye-observation">Retina Eye Observation</a>
-            </td>
-            <td>
-<p>The result of AI grading for one eye. The bodySite element identifies which eye (right or left).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-retina-hba1c-observation.html"
                   title="StructureDefinition/retina-hba1c-observation">Retina HbA1c Observation</a>
             </td>
             <td>
 <p>HbA1c level as reported by patient prior to retina examination.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-retina-image-quality-asessment.html"
+                  title="StructureDefinition/retina-image-quality-asessment">Retina Image Quality Assessment</a>
+            </td>
+            <td>
+<p>The image quality as assesed by AI (2000-series).</p>
 </td>
          </tr>
          <tr>
@@ -273,6 +294,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-cautions-extension.html"
+                  title="StructureDefinition/cautions-extension">Cautions</a>
+            </td>
+            <td>
+<p>Special considerations or cautions for grading this examination (5000-series).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-days-until-next-examination-extension.html"
                   title="StructureDefinition/days-until-next-examination-extension">Days Until Next Examination</a>
             </td>
@@ -282,20 +312,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-initial-instructions-extension.html"
-                  title="StructureDefinition/initial-instructions-extension">Initial Instructions</a>
-            </td>
-            <td>
-<p>Initial routing instruction and optional cautions for grading this examination (4000-series and 5000-series).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-previous-examination-conclusion-extension.html"
                   title="StructureDefinition/previous-examination-conclusion-extension">Previous Examination Conclusion</a>
             </td>
             <td>
 <p>The conclusion from the previous examination (1000 series). If this is the first examination, this extension is not present.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-retinal-image-view.html"
+                  title="StructureDefinition/retinal-image-view">Retinal Image View</a>
+            </td>
+            <td>
+<p>The centering or anatomical focus of a retinal image.</p>
 </td>
          </tr>
       </tbody>
@@ -317,8 +347,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-retina-conclusioncode-vs.html"
-                  title="ValueSet/retina-conclusioncode-vs">Retina Conclusion</a>
+               <a href="ValueSet-retina-caution-vs.html"
+                  title="ValueSet/retina-caution-vs">Retina Cautions</a>
+            </td>
+            <td>
+<p>Special considerations or cautions for grading this examination (5000-series).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-retina-conclusion-code-vs.html"
+                  title="ValueSet/retina-conclusion-code-vs">Retina Conclusion</a>
             </td>
             <td>
 <p>Codes describing the current or final conclusion of the examination (1000-series).</p>
@@ -326,11 +365,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-retina-imagequality-vs.html"
-                  title="ValueSet/retina-imagequality-vs">Retina Image Quality</a>
+               <a href="ValueSet-retina-image-quality-vs.html"
+                  title="ValueSet/retina-image-quality-vs">Retina Image Quality</a>
             </td>
             <td>
 <p>Image quality as assessed by AI (2000-series).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-retina-image-view-vs.html"
+                  title="ValueSet/retina-image-view-vs">Retina Image View</a>
+            </td>
+            <td>
+<p>Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series).</p>
 </td>
          </tr>
          <tr>
@@ -340,15 +388,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-retina-initial-instructions-vs.html"
-                  title="ValueSet/retina-initial-instructions-vs">Retina Initial Instructions</a>
-            </td>
-            <td>
-<p>Initial routing decisions and cautions for grading this examination (1000-series and 5000-series).</p>
 </td>
          </tr>
       </tbody>
@@ -370,8 +409,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-retina-conclusioncode-cs.html"
-                  title="CodeSystem/retina-conclusioncode-cs">Retina Conclusion</a>
+               <a href="CodeSystem-retina-conclusion-code-cs.html"
+                  title="CodeSystem/retina-conclusion-code-cs">Retina Conclusion</a>
             </td>
             <td>
 <p>Codes for the current or final conclusion of the grading process (1000-series).</p>
@@ -379,11 +418,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-retina-imagequality-cs.html"
-                  title="CodeSystem/retina-imagequality-cs">Retina Image Quality</a>
+               <a href="CodeSystem-retina-image-quality-cs.html"
+                  title="CodeSystem/retina-image-quality-cs">Retina Image Quality</a>
             </td>
             <td>
-<p>Image quality as asessed by AI solution (2000-series).</p>
+<p>Image quality as assessed by AI solution (2000-series).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-retina-image-view-cs.html"
+                  title="CodeSystem/retina-image-view-cs">Retina Image View</a>
+            </td>
+            <td>
+<p>Codes describing the centering used when capturing retinal images (6000-series).</p>
 </td>
          </tr>
       </tbody>
@@ -396,20 +444,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-retina-examination-id.html"
-                  title="NamingSystem/retina-examination-id">Retina Examination Id</a>
+               <a href="NamingSystem-retina-diagnostic-report-ns.html"
+                  title="NamingSystem/retina-diagnostic-report-ns">Retina DiagnosticReport Identifier System</a>
             </td>
             <td>
-<p>ID identifying an examination.</p>
+<p>IDs to identify retina diagnostic reports.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="NamingSystem-retina-observation-id.html"
-                  title="NamingSystem/retina-observation-id">Retina Observation Id</a>
+               <a href="NamingSystem-retina-imaging-study-ns.html"
+                  title="NamingSystem/retina-imaging-study-ns">Retina ImagingStudy Identifier System</a>
             </td>
             <td>
-<p>ID identifying an observation associated with an examination.</p>
+<p>IDs identifying imaging studies associated with a diagnostic report. Includes both internal GUIDs and Sectra image study IDs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-retina-observation-ns.html"
+                  title="NamingSystem/retina-observation-ns">Retina Observation Identifier System</a>
+            </td>
+            <td>
+<p>IDs identifying observations associated with a diagnostic report.</p>
 </td>
          </tr>
       </tbody>
@@ -422,11 +479,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-Bundle-SinglExamination-Example.html"
-                  title="Bundle/Bundle-SinglExamination-Example">Bundle-SinglExamination-Example</a>
+               <a href="Bundle-Bundle-SingleExamination-Example.html"
+                  title="Bundle/Bundle-SingleExamination-Example">Bundle-SingleExamination-Example</a>
             </td>
             <td>
-<p>Result of query for a specific examination idfentified by ID containing no AI result.</p>
+<p>A bundle containing a single DiagnosticReport with a single ImagingStudy awaiting AI result without any previous examination and without andy cautions.</p>
 </td>
          </tr>
          <tr>
@@ -435,7 +492,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Bundle/Bundle-TwoExaminations-Example">Bundle-TwoExaminations-Example</a>
             </td>
             <td>
-<p>Result of query for examinations between two dates, not containing AI result.</p>
+<p>A bundle containing two DiagnosticReports with their corresponding ImagingStudies and HbA1cObservations. One DiagnosticReport has a previous examination and cautions, while the other does not. One report has two ImagingStudies.</p>
 </td>
          </tr>
          <tr>
@@ -445,15 +502,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>AI device that performed the automated retina analysis.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-RetinaAIDevice-input.html"
-                  title="Device/RetinaAIDevice-input">RetinaAIDevice-input</a>
-            </td>
-            <td>
-<p>AI device used for this analysis.</p>
 </td>
          </tr>
          <tr>
@@ -476,11 +524,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-RetinaDiabeticMacularEdemaFinding-Example-left.html"
+                  title="Observation/RetinaDiabeticMacularEdemaFinding-Example-left">RetinaDiabeticMacularEdemaFinding-Example-left</a>
+            </td>
+            <td>
+<p>Left eye diabetic macular edema finding example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RetinaDiabeticMacularEdemaFinding-Example-right.html"
+                  title="Observation/RetinaDiabeticMacularEdemaFinding-Example-right">RetinaDiabeticMacularEdemaFinding-Example-right</a>
+            </td>
+            <td>
+<p>Right eye diabetic macular edema finding example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RetinaDiabeticRetinopathyFinding-Example-left.html"
+                  title="Observation/RetinaDiabeticRetinopathyFinding-Example-left">RetinaDiabeticRetinopathyFinding-Example-left</a>
+            </td>
+            <td>
+<p>Left eye diabetic retinopathy finding example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RetinaDiabeticRetinopathyFinding-Example-right.html"
+                  title="Observation/RetinaDiabeticRetinopathyFinding-Example-right">RetinaDiabeticRetinopathyFinding-Example-right</a>
+            </td>
+            <td>
+<p>Right eye diabetic retinopathy finding example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="DiagnosticReport-RetinaDiagnosticReport-Example.html"
                   title="DiagnosticReport/RetinaDiagnosticReport-Example">RetinaDiagnosticReport-Example</a>
             </td>
             <td>
-<p>Example after AI result is appended. Only one eye.</p>
+<p>Example after AI result is appended. Both eyes.</p>
 </td>
          </tr>
          <tr>
@@ -503,47 +587,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-RetinaEyeObservation-Example-left.html"
-                  title="Observation/RetinaEyeObservation-Example-left">RetinaEyeObservation-Example-left</a>
-            </td>
-            <td>
-<p>Left eye assessment with DR, DME and image quality components.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-RetinaEyeObservation-Example-right.html"
-                  title="Observation/RetinaEyeObservation-Example-right">RetinaEyeObservation-Example-right</a>
-            </td>
-            <td>
-<p>Right eye assessment with DR, DME and image quality components.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-RetinaEyeObservation-input-left.html"
-                  title="Observation/RetinaEyeObservation-input-left">RetinaEyeObservation-input-left</a>
-            </td>
-            <td>
-<p>Left eye assessment with DR and DME components.  TODO: Why is 'not-asked' used in this example?</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-RetinaEyeObservation-input-right.html"
-                  title="Observation/RetinaEyeObservation-input-right">RetinaEyeObservation-input-right</a>
-            </td>
-            <td>
-<p>Right eye assessment with DR and DME components.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Observation-RetinaHbA1cObservation-Example.html"
                   title="Observation/RetinaHbA1cObservation-Example">RetinaHbA1cObservation-Example</a>
             </td>
             <td>
 <p>HbA1c level observation example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RetinaImageQualityAssessment-Example-left.html"
+                  title="Observation/RetinaImageQualityAssessment-Example-left">RetinaImageQualityAssessment-Example-left</a>
+            </td>
+            <td>
+<p>Left eye image quality assessment example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-RetinaImageQualityAssessment-Example-right.html"
+                  title="Observation/RetinaImageQualityAssessment-Example-right">RetinaImageQualityAssessment-Example-right</a>
+            </td>
+            <td>
+<p>Right eye image quality assessment example.</p>
 </td>
          </tr>
          <tr>
@@ -584,7 +650,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 30, 2025 22:57+0100">2025-11-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 18, 2025 07:21+0100">2025-12-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

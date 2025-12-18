@@ -1,13 +1,17 @@
 @startuml component-diagram
 !theme plain
 
-component "DIPS EyeCare Retinopathy\nand RetinaIntegration API" as dips
-component "Sectra\nRegional Media Archive" as sectra
-component "Regional AI\nand Business Logic" as aibl
+' Use orthogonal lines for cleaner relationships
+'skinparam linetype ortho
+
+
 actor "Photographer" as photo
 actor "Grader" as grader1
 actor "Secondary Grader" as grader2
 
+component "DIPS EyeCare Retinopathy\nand RetinaIntegration API" as dips
+component "Sectra\nRegional Media Archive" as sectra
+component "Regional AI\nand Business Logic" as aibl
 
 () "Query API" as queryapi
 () "AddAIResultOperation" as addapi
@@ -15,13 +19,13 @@ actor "Secondary Grader" as grader2
 dips -up- queryapi 
 dips -up- addapi
 
-photo --> sectra : 1. store images\n(using camera)
-sectra --> dips : 2. CDA message\n(Sectra Study ID)
+photo -right-> sectra : 1. Store images\n(using camera)
+photo --> dips : 4. Save and\napprove form
+sectra -down-> dips : 2. CDA message with\nSectraStudyID
 sectra --> aibl : 3. AI grades images
-photo --> dips : 4. form saved\n(examination done)
-aibl --> queryapi : 5. get patient info & Sectra study IDs
-aibl --> addapi : 6. submit grading results
-grader1 --> dips : do grading
-grader2 --> dips : do secondary grading
+aibl --> queryapi : 5. Get patient info\n& Sectra study IDs
+aibl --> addapi : 6. Submit AI results
+grader1 --> dips : 7. Manual grading
+grader2 --> dips : 8. Secondary grading
 
 @enduml

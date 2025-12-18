@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "retina-image-view-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-image-view-cs</b></p><a name=\"retina-image-view-cs\"> </a><a name=\"hcretina-image-view-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">6001<a name=\"retina-image-view-cs-6001\"> </a></td><td>Macula centered</td><td>Retinal image centered on the macula.</td></tr><tr><td style=\"white-space:nowrap\">6002<a name=\"retina-image-view-cs-6002\"> </a></td><td>Optic disc centered</td><td>Retinal image centered on the optic disc.</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
+  "version" : "0.5.0",
+  "name" : "RetinaImageViewCodeSystem",
+  "title" : "Retina Image View",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-05",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "6001",
+    "display" : "Macula centered",
+    "definition" : "Retinal image centered on the macula."
+  },
+  {
+    "code" : "6002",
+    "display" : "Optic disc centered",
+    "definition" : "Retinal image centered on the optic disc."
+  }]
+}

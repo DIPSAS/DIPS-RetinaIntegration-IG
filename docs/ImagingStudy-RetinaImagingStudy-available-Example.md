@@ -1,4 +1,4 @@
-# RetinaImagingStudy-available-Example - RetinaIntegration v0.2.0
+# RetinaImagingStudy-available-Example - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,13 +8,11 @@
 
 Profile: [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
 
-**identifier**: `http://sectra.no/identifiers`/MMA94126079
+**identifier**: [RetinaImagingStudyIdentifierSystem](NamingSystem-retina-imaging-study-ns.md)/MMA94126079
 
 **status**: Available
 
 **subject**: Identifier: `urn:oid:2.16.578.1.12.4.1.4.1`/01015549145
-
-**procedureCode**: Fundusfotografi
 
 
 
@@ -31,7 +29,7 @@ Profile: [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
   },
   "identifier" : [
     {
-      "system" : "http://sectra.no/identifiers",
+      "system" : "http://dips.no/fhir/RetinaIntegration/sectra-image-study-id",
       "value" : "MMA94126079"
     }
   ],
@@ -41,18 +39,7 @@ Profile: [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
       "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
       "value" : "01015549145"
     }
-  },
-  "procedureCode" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
-          "code" : "CKDP10",
-          "display" : "Fundusfotografi"
-        }
-      ]
-    }
-  ]
+  }
 }
 
 ```

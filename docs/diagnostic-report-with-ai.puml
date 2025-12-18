@@ -5,9 +5,6 @@ skinparam backgroundColor #FFFFFF
 
 ' --- Skin Parameters for a Clean Look ---
 
-' Hides the circular 'C' icon in the class title
-hide class stereotype
-
 ' This is the correct command to hide all visibility markers (+, -, #)
 ' It's the standard way to achieve a diagram without these icons.
 hide circle
@@ -16,76 +13,106 @@ hide circle
 ' skinparam linetype ortho
 
 ' Add spacing between elements
-skinparam nodesep 120
-skinparam ranksep 120
+'skinparam nodesep 120
+'skinparam ranksep 120
 
 ' --- Define FHIR Resources as Classes ---
 
-class DiagnosticReport {
-  {field} id: MyEyeScreeningExaminationReport
-  {field} conclusionCode: 1000 series
-  {field} extension: initialInstructions: 1000 + 5000 series
-  {field} extension: previousExaminationConclusion: 1000 series
-  {field} extension: daysUntilNextExamination: integer
-  {field} imagingStudy: Reference(ImagingStudy)
-  {field} result: Reference(EyeObservation)[]
-  {field} subject: Reference(Patient)
-  {field} status: registered | partial | preliminary | final
+class rdr as "RetinaDiagnosticReport" <<DiagnosticReport>>{
+  imagingStudy: RetinaImagingStudy[]
+  result[hbA1cObservation]: HbA1cObservation
+  result[drFinding]: DiabeticRetinopathyFinding
+  result[dmeFinding]: DiabeticMacularEdemaFinding
+  result[imageQuality]: ImageQuality
+  ext[daysUntilNextExamination]: Integer
+  ext[cautions]: Codes from 5000 series
+  ext[previousExaminationConclusion]: Code from 1000 series
+  code: OCT and/or fundus photography
+  conclusionCode: Code from 1000 series
+  status: registered | partial | <b>preliminary | final</b>
 }
 
-class ImagingStudy {
-  {field} id: example-eye-study
-  {field} identifier: SectraStudyId
-  {field} procedureCode: FundusPhotography | OCT
-  {field} subject: Reference(Patient)
-  {field} status: registered | available
+class is as "ImagingStudy" <<ImagingStudy>> {
+  identifier: SectraStudyId
+  ' partOf: RetinaDiagnosticReport
+  status: registered | <b>available</b>
 }
 
-class EyeObservation {
-  {field} id
-  {field} subject: Reference(Patient)
-  {field} partOf: Reference(DiagnosticReport)
-  {field} derivedFrom: Reference(ImagingStudy)
-  {field} status
+class iss as "ImageSeries" <<ImagingStudy.Series>> {
+  bodySite: left eye | right eye
+  instance: ImageInstance[]
+  performer: CameraDevice
 }
 
-class Device {
-  id: MyAISystem
+class issi as "ImageInstance" <<ImagingStudy.Series.Instance>> {
+  ext[view]: Code for macula- or optic disc-centered
+}
+
+Class CameraDevice <<Device>> {
+  model-name: Camera Product Name
+  model-number: Camera Version
+  software: Camera Protocol
+}
+
+class AIDevice <<Device>> {
   model-name: AI Product Name
   model-number: AI Version
   software: AI Protocol
-}
+} 
 
-class DrComponent{
-  code : "Diabetic retinopathy"
+class drf as "DiabeticRetinopathyFinding" <<Observation>> {
+  code : http://snomed.info/sct#4855003\n "Diabetic retinopathy"
   value: Quantity : 0.0 - 5.0 
+  bodySite: left eye | right eye
+  derivedFrom: ImagingStudy
+  performer: AIDevice
+  ' partOf: RetinaDiagnosticReport
 }
 
-class DmeComponent{
-  code: "Diabetic macular edema"
+class dmef as "DiabeticMacularEdemaFinding" <<Observation>> {
+  code: http://snomed.info/sct#312912001\n "Diabetic macular edema"
   value: bool 
+  bodySite: left eye | right eye
+  derivedFrom: ImagingStudy
+  performer: AIDevice
+  ' partOf: RetinaDiagnosticReport
 }
 
-class ImageQualityComponent{
-  code: "2000 series"
-  status: "registered" | "available"
+class iqa as "ImageQualityAssessment" <<Observation>> {
+  code: http://snomed.info/sct#133887000\n "Computer assisted image analysis for image quality"
+  value: Code from 2000 series
+  bodySite: left eye | right eye
+  derivedFrom: ImagingStudy
+  performer: AIDevice
+  ' partOf: RetinaDiagnosticReport
 }
 
-class HbA1cObservation{
+class HbA1cObservation <<Observation>> {
   code: snomed "HbA1c"
   value: Quantity
+  'partOf: RetinaDiagnosticReport
 }
-
 
 ' --- Define the relationships ---
 
-DiagnosticReport --> ImagingStudy : "imagingStudy"
-DiagnosticReport o-- HbA1cObservation
-DiagnosticReport --> EyeObservation : "result 0..2\nleftEye, rigthEye"
-EyeObservation ..> DiagnosticReport : "partOf"
-EyeObservation -- Device : "aiDevice"
-EyeObservation --> ImagingStudy : "derived from"
-EyeObservation *-- DrComponent
-EyeObservation *-- DmeComponent
-EyeObservation *-- ImageQualityComponent
+rdr "0..1" o-- HbA1cObservation 
+rdr "0..2" o-- drf 
+rdr "0..2" o-- dmef
+rdr "0..2" o-- iqa
+rdr "0..*" o-- is
+iqa --> issi : "derived from"
+drf --> iss : "derived from"
+dmef --> iss : "derived from"
+iqa --> AIDevice : "performer"
+drf --> AIDevice : "performer"
+dmef --> AIDevice : "performer"
+' is ..> rdr : "partOf"
+is "0..*" o--> iss : "series"
+iss "0..*" o--> issi : "instance"
+iss --> CameraDevice : "performer"
+' iqa ..> rdr : "partOf"
+' dmef ..> rdr : "partOf"
+' drf ..> rdr : "partOf"
+' HbA1cObservation ..> rdr : "partOf"
+ 
 @enduml

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>\n</div></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2025-11-30T22:57:21+01:00",
+  "date" : "2025-12-18T07:21:20+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.0"
+    "version" : "7.0.1"
   },
   {
     "id" : "hl7ext",
@@ -358,7 +358,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
     },
     {
       "extension" : [{
@@ -674,10 +674,10 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/Bundle-SinglExamination-Example"
+        "reference" : "Bundle/Bundle-SingleExamination-Example"
       },
-      "name" : "Bundle-SinglExamination-Example",
-      "description" : "Result of query for a specific examination idfentified by ID containing no AI result.",
+      "name" : "Bundle-SingleExamination-Example",
+      "description" : "A bundle containing a single DiagnosticReport with a single ImagingStudy awaiting AI result without any previous examination and without andy cautions.",
       "exampleBoolean" : true
     },
     {
@@ -689,8 +689,20 @@
         "reference" : "Bundle/Bundle-TwoExaminations-Example"
       },
       "name" : "Bundle-TwoExaminations-Example",
-      "description" : "Result of query for examinations between two dates, not containing AI result.",
+      "description" : "A bundle containing two DiagnosticReports with their corresponding ImagingStudies and HbA1cObservations. One DiagnosticReport has a previous examination and cautions, while the other does not. One report has two ImagingStudies.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cautions-extension"
+      },
+      "name" : "Cautions",
+      "description" : "Special considerations or cautions for grading this examination (5000-series).",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -702,18 +714,6 @@
       },
       "name" : "Days Until Next Examination",
       "description" : "Number of days until next examination.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/initial-instructions-extension"
-      },
-      "name" : "Initial Instructions",
-      "description" : "Initial routing instruction and optional cautions for grading this examination (4000-series and 5000-series).",
       "exampleBoolean" : false
     },
     {
@@ -779,6 +779,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/retina-caution-vs"
+      },
+      "name" : "Retina Cautions",
+      "description" : "Special considerations or cautions for grading this examination (5000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -794,7 +806,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/retina-conclusioncode-vs"
+        "reference" : "ValueSet/retina-conclusion-code-vs"
       },
       "name" : "Retina Conclusion",
       "description" : "Codes describing the current or final conclusion of the examination (1000-series).",
@@ -806,10 +818,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/retina-conclusioncode-cs"
+        "reference" : "CodeSystem/retina-conclusion-code-cs"
       },
       "name" : "Retina Conclusion",
       "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/retina-diabetic-macular-edema-finding"
+      },
+      "name" : "Retina Diabetic Macular Edema Finding",
+      "description" : "Observation profile for documenting findings related to diabetic macular edema (DME) in retina examinations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/retina-diabetic-retinopathy-finding"
+      },
+      "name" : "Retina Diabetic Retinopathy Finding",
+      "description" : "Observation profile for documenting findings related to diabetic retinopathy (DR) in retina examinations.",
       "exampleBoolean" : false
     },
     {
@@ -830,22 +866,10 @@
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/retina-examination-id"
+        "reference" : "NamingSystem/retina-diagnostic-report-ns"
       },
-      "name" : "Retina Examination Id",
-      "description" : "ID identifying an examination.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/retina-eye-observation"
-      },
-      "name" : "Retina Eye Observation",
-      "description" : "The result of AI grading for one eye. The bodySite element identifies which eye (right or left).",
+      "name" : "Retina DiagnosticReport Identifier System",
+      "description" : "IDs to identify retina diagnostic reports.",
       "exampleBoolean" : false
     },
     {
@@ -866,7 +890,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/retina-imagequality-vs"
+        "reference" : "ValueSet/retina-image-quality-vs"
       },
       "name" : "Retina Image Quality",
       "description" : "Image quality as assessed by AI (2000-series).",
@@ -878,10 +902,46 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/retina-imagequality-cs"
+        "reference" : "CodeSystem/retina-image-quality-cs"
       },
       "name" : "Retina Image Quality",
-      "description" : "Image quality as asessed by AI solution (2000-series).",
+      "description" : "Image quality as assessed by AI solution (2000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/retina-image-quality-asessment"
+      },
+      "name" : "Retina Image Quality Assessment",
+      "description" : "The image quality as assesed by AI (2000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/retina-image-view-vs"
+      },
+      "name" : "Retina Image View",
+      "description" : "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/retina-image-view-cs"
+      },
+      "name" : "Retina Image View",
+      "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
       "exampleBoolean" : false
     },
     {
@@ -911,13 +971,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "ValueSet/retina-initial-instructions-vs"
+        "reference" : "NamingSystem/retina-imaging-study-ns"
       },
-      "name" : "Retina Initial Instructions",
-      "description" : "Initial routing decisions and cautions for grading this examination (1000-series and 5000-series).",
+      "name" : "Retina ImagingStudy Identifier System",
+      "description" : "IDs identifying imaging studies associated with a diagnostic report. Includes both internal GUIDs and Sectra image study IDs.",
       "exampleBoolean" : false
     },
     {
@@ -938,10 +998,10 @@
         "valueString" : "NamingSystem"
       }],
       "reference" : {
-        "reference" : "NamingSystem/retina-observation-id"
+        "reference" : "NamingSystem/retina-observation-ns"
       },
-      "name" : "Retina Observation Id",
-      "description" : "ID identifying an observation associated with an examination.",
+      "name" : "Retina Observation Identifier System",
+      "description" : "IDs identifying observations associated with a diagnostic report.",
       "exampleBoolean" : false
     },
     {
@@ -954,18 +1014,6 @@
       },
       "name" : "RetinaAIDevice-Example",
       "description" : "AI device that performed the automated retina analysis.",
-      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Device"
-      }],
-      "reference" : {
-        "reference" : "Device/RetinaAIDevice-input"
-      },
-      "name" : "RetinaAIDevice-input",
-      "description" : "AI device used for this analysis.",
       "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"
     },
     {
@@ -995,13 +1043,61 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RetinaDiabeticMacularEdemaFinding-Example-left"
+      },
+      "name" : "RetinaDiabeticMacularEdemaFinding-Example-left",
+      "description" : "Left eye diabetic macular edema finding example.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RetinaDiabeticMacularEdemaFinding-Example-right"
+      },
+      "name" : "RetinaDiabeticMacularEdemaFinding-Example-right",
+      "description" : "Right eye diabetic macular edema finding example.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RetinaDiabeticRetinopathyFinding-Example-left"
+      },
+      "name" : "RetinaDiabeticRetinopathyFinding-Example-left",
+      "description" : "Left eye diabetic retinopathy finding example.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RetinaDiabeticRetinopathyFinding-Example-right"
+      },
+      "name" : "RetinaDiabeticRetinopathyFinding-Example-right",
+      "description" : "Right eye diabetic retinopathy finding example.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DiagnosticReport"
       }],
       "reference" : {
         "reference" : "DiagnosticReport/RetinaDiagnosticReport-Example"
       },
       "name" : "RetinaDiagnosticReport-Example",
-      "description" : "Example after AI result is appended. Only one eye.",
+      "description" : "Example after AI result is appended. Both eyes.",
       "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"
     },
     {
@@ -1034,59 +1130,35 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/RetinaEyeObservation-Example-left"
-      },
-      "name" : "RetinaEyeObservation-Example-left",
-      "description" : "Left eye assessment with DR, DME and image quality components.",
-      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/RetinaEyeObservation-Example-right"
-      },
-      "name" : "RetinaEyeObservation-Example-right",
-      "description" : "Right eye assessment with DR, DME and image quality components.",
-      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/RetinaEyeObservation-input-left"
-      },
-      "name" : "RetinaEyeObservation-input-left",
-      "description" : "Left eye assessment with DR and DME components.  TODO: Why is 'not-asked' used in this example?",
-      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/RetinaEyeObservation-input-right"
-      },
-      "name" : "RetinaEyeObservation-input-right",
-      "description" : "Right eye assessment with DR and DME components.",
-      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/RetinaHbA1cObservation-Example"
       },
       "name" : "RetinaHbA1cObservation-Example",
       "description" : "HbA1c level observation example.",
       "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RetinaImageQualityAssessment-Example-left"
+      },
+      "name" : "RetinaImageQualityAssessment-Example-left",
+      "description" : "Left eye image quality assessment example.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RetinaImageQualityAssessment-Example-right"
+      },
+      "name" : "RetinaImageQualityAssessment-Example-right",
+      "description" : "Right eye image quality assessment example.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"
     },
     {
       "extension" : [{
@@ -1111,6 +1183,18 @@
       "name" : "RetinaImagingStudy-registered-Example",
       "description" : "A 'registered' ImagingStudy awaiting AI grading.",
       "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/retinal-image-view"
+      },
+      "name" : "Retinal Image View",
+      "description" : "The centering or anatomical focus of a retinal image.",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1127,6 +1211,24 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "changelog.html"
+        }],
+        "nameUrl" : "changelog.html",
+        "title" : "Changelog",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Issues-and-Enhancements.html"
+        }],
+        "nameUrl" : "Issues-and-Enhancements.html",
+        "title" : "Issues and Enhancements",
         "generation" : "markdown"
       }]
     },

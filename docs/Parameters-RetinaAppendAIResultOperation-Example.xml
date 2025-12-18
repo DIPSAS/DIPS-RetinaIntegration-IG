@@ -5,121 +5,15 @@
   <parameter>
     <name value="sectraStudyId"/>
     <valueIdentifier>
-      <system value="http://sectra.no/identifiers"/>
+      <system value="http://dips.no/fhir/RetinaIntegration/sectra-image-study-id"/>
       <value value="MMA94126079"/>
     </valueIdentifier>
-  </parameter>
-  <parameter>
-    <name value="rightEye"/>
-    <resource>
-      <Observation>
-        <id value="RetinaEyeObservation-input-right"/>
-        <meta>
-          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
-        </meta>
-        <status value="final"/>
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="134395001"/>
-            <display value="Diabetic retinopathy screening"/>
-          </coding>
-          <text value="Retinal examination"/>
-        </code>
-        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
-        <bodySite>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="5597008"/>
-            <display value="Retina of right eye"/>
-          </coding>
-          <text value="Høyre retina"/>
-        </bodySite>
-        <component>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="4855003"/>
-              <display value="Diabetic retinopathy"/>
-            </coding>
-          </code>
-          <valueQuantity>
-            <value value="5"/>
-          </valueQuantity>
-        </component>
-        <component>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="312912001"/>
-              <display value="Diabetic macular edema"/>
-            </coding>
-          </code>
-          <valueBoolean value="true"/>
-        </component>
-      </Observation>
-    </resource>
-  </parameter>
-  <parameter>
-    <name value="leftEye"/>
-    <resource>
-      <Observation>
-        <id value="RetinaEyeObservation-input-left"/>
-        <meta>
-          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
-        </meta>
-        <status value="final"/>
-        <code>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="134395001"/>
-            <display value="Diabetic retinopathy screening"/>
-          </coding>
-          <text value="Retinal examination"/>
-        </code>
-        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
-        <bodySite>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="58443009"/>
-            <display value="Retina of left eye"/>
-          </coding>
-          <text value="Venstre retina"/>
-        </bodySite>
-        <component>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="4855003"/>
-              <display value="Diabetic retinopathy"/>
-            </coding>
-          </code>
-          <dataAbsentReason>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
-              <code value="not-asked"/>
-              <display value="Not asked"/>
-            </coding>
-          </dataAbsentReason>
-        </component>
-        <component>
-          <code>
-            <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="312912001"/>
-              <display value="Diabetic macular edema"/>
-            </coding>
-          </code>
-          <valueBoolean value="true"/>
-        </component>
-      </Observation>
-    </resource>
   </parameter>
   <parameter>
     <name value="conclusion"/>
     <valueCodeableConcept>
       <coding>
-        <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
+        <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
         <code value="1004"/>
         <display value="Ny fotokontroll (primærgradering)"/>
       </coding>
@@ -128,10 +22,6 @@
   <parameter>
     <name value="daysUntilNextExamination"/>
     <valueInteger value="180"/>
-  </parameter>
-  <parameter>
-    <name value="effectiveTime"/>
-    <valueDateTime value="2025-09-30T12:00:00Z"/>
   </parameter>
   <parameter>
     <name value="aiDevice"/>
@@ -162,6 +52,190 @@
           <value value="Standard protocol"/>
         </version>
       </Device>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="rightDiabeticRetinopathyFinding"/>
+    <resource>
+      <Observation>
+        <id value="RetinaDiabeticRetinopathyFinding-Example-right-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="4855003"/>
+            <display value="Diabetic retinopathy"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+        <valueQuantity>
+          <value value="2"/>
+        </valueQuantity>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5597008"/>
+            <display value="Retina of right eye"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="rightDiabeticMacularEdemaFinding"/>
+    <resource>
+      <Observation>
+        <id value="RetinaDiabeticMacularEdemaFinding-Example-right-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="312912001"/>
+            <display value="Diabetic macular edema"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+        <valueBoolean value="false"/>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5597008"/>
+            <display value="Retina of right eye"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="rightImageQualityAssessment"/>
+    <resource>
+      <Observation>
+        <id value="RetinaImageQualityAssessment-Example-right-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="133887000"/>
+            <display value="Computer assisted image analysis for image quality"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2001"/>
+            <display value="Good"/>
+          </coding>
+        </valueCodeableConcept>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5597008"/>
+            <display value="Retina of right eye"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="leftDiabeticRetinopathyFinding"/>
+    <resource>
+      <Observation>
+        <id value="RetinaDiabeticRetinopathyFinding-Example-left-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="4855003"/>
+            <display value="Diabetic retinopathy"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+        <valueQuantity>
+          <value value="1"/>
+        </valueQuantity>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58443009"/>
+            <display value="Retina of left eye"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="leftDiabeticMacularEdemaFinding"/>
+    <resource>
+      <Observation>
+        <id value="RetinaDiabeticMacularEdemaFinding-Example-left-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="312912001"/>
+            <display value="Diabetic macular edema"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+        <valueBoolean value="true"/>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58443009"/>
+            <display value="Retina of left eye"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="leftImageQualityAssessment"/>
+    <resource>
+      <Observation>
+        <id value="RetinaImageQualityAssessment-Example-left-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="133887000"/>
+            <display value="Computer assisted image analysis for image quality"/>
+          </coding>
+        </code>
+        <effectiveDateTime value="2025-09-30T12:00:00Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2002"/>
+            <display value="Barely gradable"/>
+          </coding>
+        </valueCodeableConcept>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58443009"/>
+            <display value="Retina of left eye"/>
+          </coding>
+        </bodySite>
+      </Observation>
     </resource>
   </parameter>
   <parameter>

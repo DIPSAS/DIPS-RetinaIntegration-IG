@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="retina-image-view-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem retina-image-view-cs</b></p><a name="retina-image-view-cs"> </a><a name="hcretina-image-view-cs"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">6001<a name="retina-image-view-cs-6001"> </a></td><td>Macula centered</td><td>Retinal image centered on the macula.</td></tr><tr><td style="white-space:nowrap">6002<a name="retina-image-view-cs-6002"> </a></td><td>Optic disc centered</td><td>Retinal image centered on the optic disc.</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+  <version value="0.5.0"/>
+  <name value="RetinaImageViewCodeSystem"/>
+  <title value="Retina Image View"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-05"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes describing the centering used when capturing retinal images (6000-series)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="6001"/>
+    <display value="Macula centered"/>
+    <definition value="Retinal image centered on the macula."/>
+  </concept>
+  <concept>
+    <code value="6002"/>
+    <display value="Optic disc centered"/>
+    <definition value="Retinal image centered on the optic disc."/>
+  </concept>
+</CodeSystem>

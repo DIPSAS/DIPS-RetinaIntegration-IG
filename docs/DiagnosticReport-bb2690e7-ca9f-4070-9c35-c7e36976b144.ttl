@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport bb2690e7-ca9f-4070-9c35-c7e36976b144</b></p><a name=\"bb2690e7-ca9f-4070-9c35-c7e36976b144\"> </a><a name=\"hcbb2690e7-ca9f-4070-9c35-c7e36976b144\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-diagnostic-report.html\">Retina DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}\">Bildediagnostikk</span> </h2><table class=\"grid\"><tr><td>Identifier</td><td> <a href=\"NamingSystem-retina-examination-id.html\" title=\"A naming system for examination identifiers in RetinaIntegration.\">RetinaExaminationIdentifierSystem</a>/e72b0645-e761-4b50-abf9-1e9e2231273b</td></tr></table><p><b>Report Details</b></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport bb2690e7-ca9f-4070-9c35-c7e36976b144</b></p><a name=\"bb2690e7-ca9f-4070-9c35-c7e36976b144\"> </a><a name=\"hcbb2690e7-ca9f-4070-9c35-c7e36976b144\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-diagnostic-report.html\">Retina DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}, {http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">Fundusfotografi</span> </h2><table class=\"grid\"><tr><td>Identifier</td><td> <a href=\"NamingSystem-retina-diagnostic-report-ns.html\" title=\"A naming system for identifying Retina DiagnosticReports using GUIDs. An examination ID is used to uniquely identify the single Retina DiagnosticReport for that examination.\">RetinaDiagnosticReportIdentifierSystem</a>/e72b0645-e761-4b50-abf9-1e9e2231273b</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs 1001}\">KI-gradering (basert på nåværende bilder)</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
@@ -25,37 +25,19 @@
        fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension>
      ] ;
      fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs>
-         ] ;
-         fhir:code [ fhir:v "1004" ] ;
-         fhir:display [ fhir:v "Ny fotokontroll (primærgradering)" ]
-       ] )
-     ]
-  ] [
-     fhir:url [
-       fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension"^^xsd:anyURI ;
-       fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension>
-     ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs>
-         ] ;
-         fhir:code [ fhir:v "1001" ] ;
-         fhir:display [ fhir:v "KI-gradering (basert på nåværende bilder)" ]
-       ] )
+       a fhir:Coding ;
+       fhir:system [
+         fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs>
+       ] ;
+       fhir:code [ fhir:v "1004" ] ;
+       fhir:display [ fhir:v "Ny fotokontroll (primærgradering)" ]
      ]
   ] ) ; # 
   fhir:identifier ( [
      fhir:system [
-       fhir:v "http://dips.no/fhir/NamingSystem/retina-examination-id"^^xsd:anyURI ;
-       fhir:l <http://dips.no/fhir/NamingSystem/retina-examination-id>
+       fhir:v "http://dips.no/fhir/RetinaIntegration/examination-id"^^xsd:anyURI ;
+       fhir:l <http://dips.no/fhir/RetinaIntegration/examination-id>
      ] ;
      fhir:value [ fhir:v "e72b0645-e761-4b50-abf9-1e9e2231273b" ]
   ] ) ; # 
@@ -63,13 +45,30 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"^^xsd:anyURI ;
-         fhir:l <http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660>
+         fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"^^xsd:anyURI ;
+         fhir:l <http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275>
        ] ;
-       fhir:code [ fhir:v "B" ] ;
-       fhir:display [ fhir:v "Bildediagnostikk" ]
+       fhir:code [ fhir:v "CKDP10" ] ;
+       fhir:display [ fhir:v "Fundusfotografi" ]
+     ] [
+       fhir:system [
+         fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"^^xsd:anyURI ;
+         fhir:l <http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275>
+       ] ;
+       fhir:code [ fhir:v "CKFX16" ] ;
+       fhir:display [ fhir:v "Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk" ]
      ] )
-  ] . # 
+  ] ; # 
+  fhir:conclusionCode ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs>
+       ] ;
+       fhir:code [ fhir:v "1001" ] ;
+       fhir:display [ fhir:v "KI-gradering (basert på nåværende bilder)" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

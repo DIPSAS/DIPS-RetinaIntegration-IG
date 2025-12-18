@@ -1,4 +1,4 @@
-# RetinaDiagnosticReport-Example-PendingAI - RetinaIntegration v0.2.0
+# RetinaDiagnosticReport-Example-PendingAI - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,12 +8,12 @@
 
 Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 
-## Bildediagnostikk 
+## Fundusfotografi 
 
 | | |
 | :--- | :--- |
 | Subject | Unable to get Patient Details |
-| Identifier | [RetinaExaminationIdentifierSystem](NamingSystem-retina-examination-id.md)/6d2f4dbc-5f03-46e0-a302-606ae889df45 |
+| Identifier | [RetinaDiagnosticReportIdentifierSystem](NamingSystem-retina-diagnostic-report-ns.md)/6d2f4dbc-5f03-46e0-a302-606ae889df45 |
 
 **Report Details**
 
@@ -21,6 +21,10 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   * **Value**: 63.2
   * **Flags**: Final
   * **When For**: 2025-11-29 10:30:00+0000
+
+**Coded Conclusions:**
+
+* KI-gradering (basert på nåværende bilder)
 
 
 
@@ -35,23 +39,9 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
       "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"
     ]
   },
-  "extension" : [
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-            "code" : "1001",
-            "display" : "KI-gradering (basert på nåværende bilder)"
-          }
-        ]
-      }
-    }
-  ],
   "identifier" : [
     {
-      "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",
+      "system" : "http://dips.no/fhir/RetinaIntegration/examination-id",
       "value" : "6d2f4dbc-5f03-46e0-a302-606ae889df45"
     }
   ],
@@ -59,9 +49,9 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   "code" : {
     "coding" : [
       {
-        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
-        "code" : "B",
-        "display" : "Bildediagnostikk"
+        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+        "code" : "CKDP10",
+        "display" : "Fundusfotografi"
       }
     ]
   },
@@ -79,6 +69,17 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   "imagingStudy" : [
     {
       "reference" : "ImagingStudy/RetinaImagingStudy-registered-Example"
+    }
+  ],
+  "conclusionCode" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+          "code" : "1001",
+          "display" : "KI-gradering (basert på nåværende bilder)"
+        }
+      ]
     }
   ]
 }

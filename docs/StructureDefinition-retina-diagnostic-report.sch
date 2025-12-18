@@ -14,7 +14,6 @@
     <sch:rule context="f:DiagnosticReport">
       <sch:assert test="count(f:implicitRules) &lt;= 0">implicitRules: maximum cardinality of 'implicitRules' is 0</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension']) &lt;= 1">extension with URL = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension']) &gt;= 1">extension with URL = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension']) &lt;= 1">extension with URL = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:modifierExtension) &lt;= 0">modifierExtension: maximum cardinality of 'modifierExtension' is 0</sch:assert>
       <sch:assert test="count(f:performer) &lt;= 0">performer: maximum cardinality of 'performer' is 0</sch:assert>

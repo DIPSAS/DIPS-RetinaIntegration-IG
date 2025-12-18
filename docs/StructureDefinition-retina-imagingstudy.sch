@@ -14,7 +14,7 @@
     <sch:rule context="f:ImagingStudy">
       <sch:assert test="count(f:implicitRules) &lt;= 0">implicitRules: maximum cardinality of 'implicitRules' is 0</sch:assert>
       <sch:assert test="count(f:modifierExtension) &lt;= 0">modifierExtension: maximum cardinality of 'modifierExtension' is 0</sch:assert>
-      <sch:assert test="count(f:series) &lt;= 0">series: maximum cardinality of 'series' is 0</sch:assert>
+      <sch:assert test="count(f:procedureCode) &lt;= 1">procedureCode: maximum cardinality of 'procedureCode' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -28,6 +28,20 @@
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
       <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
       <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ImagingStudy/f:series</sch:title>
+    <sch:rule context="f:ImagingStudy/f:series">
+      <sch:assert test="count(f:bodySite) &gt;= 1">bodySite: minimum cardinality of 'bodySite' is 1</sch:assert>
+      <sch:assert test="count(f:instance) &gt;= 1">instance: minimum cardinality of 'instance' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ImagingStudy/f:series/f:instance</sch:title>
+    <sch:rule context="f:ImagingStudy/f:series/f:instance">
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view']) &gt;= 1">extension with URL = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view']) &lt;= 1">extension with URL = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "retina-conclusion-code-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-conclusion-code-cs</b></p><a name=\"retina-conclusion-code-cs\"> </a><a name=\"hcretina-conclusion-code-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"retina-conclusion-code-cs-1001\"> </a></td><td>KI-gradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by the AI system.</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"retina-conclusion-code-cs-1002\"> </a></td><td>Primærgradering (basert på nåværende bilder)</td><td>This examinations is waiting to be graded by a primary grader.</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"retina-conclusion-code-cs-1003\"> </a></td><td>Sekundærgradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by a secondary grader.</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"retina-conclusion-code-cs-1004\"> </a></td><td>Ny fotokontroll (primærgradering)</td><td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"retina-conclusion-code-cs-1005\"> </a></td><td>Ny fotokontroll (sekundærgradering)</td><td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"retina-conclusion-code-cs-1006\"> </a></td><td>Øyelegeundersøkelse (grunnet diabetisk retinopati)</td><td>Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"^^xsd:anyURI ;
+     fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "RetinaConclusionCodeSystem"] ; # 
+  fhir:title [ fhir:v "Retina Conclusion"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for the current or final conclusion of the grading process (1000-series)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1001" ] ;
+     fhir:display [ fhir:v "KI-gradering (basert på nåværende bilder)" ] ;
+     fhir:definition [ fhir:v "This examination is waiting to be graded by the AI system." ]
+  ] [
+     fhir:code [ fhir:v "1002" ] ;
+     fhir:display [ fhir:v "Primærgradering (basert på nåværende bilder)" ] ;
+     fhir:definition [ fhir:v "This examinations is waiting to be graded by a primary grader." ]
+  ] [
+     fhir:code [ fhir:v "1003" ] ;
+     fhir:display [ fhir:v "Sekundærgradering (basert på nåværende bilder)" ] ;
+     fhir:definition [ fhir:v "This examination is waiting to be graded by a secondary grader." ]
+  ] [
+     fhir:code [ fhir:v "1004" ] ;
+     fhir:display [ fhir:v "Ny fotokontroll (primærgradering)" ] ;
+     fhir:definition [ fhir:v "Patient should be scheduled for a new routine eye examination graded by primary grader or AI." ]
+  ] [
+     fhir:code [ fhir:v "1005" ] ;
+     fhir:display [ fhir:v "Ny fotokontroll (sekundærgradering)" ] ;
+     fhir:definition [ fhir:v "Patient should be scheduled for a new routine eye examination but graded by secondary grader." ]
+  ] [
+     fhir:code [ fhir:v "1006" ] ;
+     fhir:display [ fhir:v "Øyelegeundersøkelse (grunnet diabetisk retinopati)" ] ;
+     fhir:definition [ fhir:v "Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

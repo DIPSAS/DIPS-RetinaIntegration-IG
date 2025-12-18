@@ -1,4 +1,4 @@
-# RetinaDiagnosticReport-Example - RetinaIntegration v0.2.0
+# RetinaDiagnosticReport-Example - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,13 +8,13 @@
 
 Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 
-## Bildediagnostikk 
+## Fundusfotografi 
 
 | | |
 | :--- | :--- |
 | Subject | Unable to get Patient Details |
 | When For | 2025-09-30 12:00:00+0000 |
-| Identifier | [RetinaExaminationIdentifierSystem](NamingSystem-retina-examination-id.md)/a4ee3f25-405b-4b3a-85ff-f530aedbb5b9 |
+| Identifier | [RetinaDiagnosticReportIdentifierSystem](NamingSystem-retina-diagnostic-report-ns.md)/a4ee3f25-405b-4b3a-85ff-f530aedbb5b9 |
 
 **Report Details**
 
@@ -22,12 +22,28 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   * **Value**: 63.2
   * **Flags**: Final
   * **When For**: 2025-11-29 10:30:00+0000
-* **Code**: [Retinal examination](Observation-RetinaEyeObservation-Example-right.md)(Høyre retina)
-  * **Value**: 
+* **Code**: [Diabetic macular edema](Observation-RetinaDiabeticMacularEdemaFinding-Example-left.md)(Venstre retina)
+  * **Value**: false
   * **Flags**: Final
   * **When For**: 2025-11-30 10:21:00+0000
-* **Code**: [Retinal examination](Observation-RetinaEyeObservation-Example-left.md)(Venstre retina)
-  * **Value**: 
+* **Code**: [Diabetic macular edema](Observation-RetinaDiabeticMacularEdemaFinding-Example-right.md)(Høyre retina)
+  * **Value**: true
+  * **Flags**: Final
+  * **When For**: 2025-11-30 10:21:00+0000
+* **Code**: [Diabetic retinopathy](Observation-RetinaDiabeticRetinopathyFinding-Example-left.md)(Venstre retina)
+  * **Value**: 3
+  * **Flags**: Final
+  * **When For**: 2025-11-30 10:21:00+0000
+* **Code**: [Diabetic retinopathy](Observation-RetinaDiabeticRetinopathyFinding-Example-right.md)(Høyre retina)
+  * **Value**: 4
+  * **Flags**: Final
+  * **When For**: 2025-11-30 10:21:00+0000
+* **Code**: [Computer assisted image analysis for image quality](Observation-RetinaImageQualityAssessment-Example-left.md)(Venstre retina)
+  * **Value**: Barely gradable
+  * **Flags**: Final
+  * **When For**: 2025-11-30 10:21:00+0000
+* **Code**: [Computer assisted image analysis for image quality](Observation-RetinaImageQualityAssessment-Example-right.md)(Høyre retina)
+  * **Value**: Good
   * **Flags**: Final
   * **When For**: 2025-11-30 10:21:00+0000
 
@@ -50,27 +66,11 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   },
   "extension" : [
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-            "code" : "1001",
-            "display" : "KI-gradering (basert på nåværende bilder)"
-          }
-        ]
-      }
-    },
-    {
       "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-            "code" : "1004",
-            "display" : "Ny fotokontroll (primærgradering)"
-          }
-        ]
+      "valueCoding" : {
+        "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+        "code" : "1004",
+        "display" : "Ny fotokontroll (primærgradering)"
       }
     },
     {
@@ -80,7 +80,7 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   ],
   "identifier" : [
     {
-      "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",
+      "system" : "http://dips.no/fhir/RetinaIntegration/examination-id",
       "value" : "a4ee3f25-405b-4b3a-85ff-f530aedbb5b9"
     }
   ],
@@ -88,9 +88,9 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   "code" : {
     "coding" : [
       {
-        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
-        "code" : "B",
-        "display" : "Bildediagnostikk"
+        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+        "code" : "CKDP10",
+        "display" : "Fundusfotografi"
       }
     ]
   },
@@ -106,10 +106,22 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
       "reference" : "Observation/RetinaHbA1cObservation-Example"
     },
     {
-      "reference" : "Observation/RetinaEyeObservation-Example-right"
+      "reference" : "Observation/RetinaDiabeticMacularEdemaFinding-Example-left"
     },
     {
-      "reference" : "Observation/RetinaEyeObservation-Example-left"
+      "reference" : "Observation/RetinaDiabeticMacularEdemaFinding-Example-right"
+    },
+    {
+      "reference" : "Observation/RetinaDiabeticRetinopathyFinding-Example-left"
+    },
+    {
+      "reference" : "Observation/RetinaDiabeticRetinopathyFinding-Example-right"
+    },
+    {
+      "reference" : "Observation/RetinaImageQualityAssessment-Example-left"
+    },
+    {
+      "reference" : "Observation/RetinaImageQualityAssessment-Example-right"
     }
   ],
   "imagingStudy" : [
@@ -121,7 +133,7 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
     {
       "coding" : [
         {
-          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
           "code" : "1004",
           "display" : "Ny fotokontroll (primærgradering)"
         }

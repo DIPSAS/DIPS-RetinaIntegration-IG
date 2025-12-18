@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "retina-image-view-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-image-view-vs</b></p><a name=\"retina-image-view-vs\"> </a><a name=\"hcretina-image-view-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-image-view-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs"^^xsd:anyURI ;
+     fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "RetinaImageViewValueSet"] ; # 
+  fhir:title [ fhir:v "Retina Image View"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-05"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series)."] ; # 
+  fhir:purpose [ fhir:v "We have discussed including the actual DICOM codes from the camera, or another standard code system, but have not yet identified suitable codes for this purpose. Therefore, we have created our own code system and value set for the centering of retinal images."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

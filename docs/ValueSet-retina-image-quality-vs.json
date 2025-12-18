@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "retina-image-quality-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-image-quality-vs</b></p><a name=\"retina-image-quality-vs\"> </a><a name=\"hcretina-image-quality-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-image-quality-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.0</span></li></ul></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
+  "version" : "0.5.0",
+  "name" : "RetinaImageQualityValueSet",
+  "title" : "Retina Image Quality",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-05",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Image quality as assessed by AI (2000-series).",
+  "purpose" : "For documentation of image quality as assessed by an AI solution.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"
+    }]
+  }
+}

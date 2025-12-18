@@ -1,15 +1,15 @@
-# Retina Imaging Procedures - RetinaIntegration v0.2.0
+# Retina Imaging Procedures - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Retina Imaging Procedures**
 
-## ValueSet: Retina Imaging Procedures (Experimental) 
+## ValueSet: Retina Imaging Procedures 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaImagingProcedureValueSet |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs | *Version*:0.5.0 |
+| Draft as of 2025-12-02 | *Computable Name*:RetinaImagingProcedureValueSet |
 
  
 Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique. 
@@ -19,6 +19,7 @@ This ValueSet constrains the procedureCode element in RetinaImagingStudy to only
 
  **References** 
 
+* [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
 
 ### Logical Definition (CLD)
@@ -51,12 +52,12 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "retina-imaging-procedure-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaImagingProcedureValueSet",
   "title" : "Retina Imaging Procedures",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : false,
+  "date" : "2025-12-02",
   "publisher" : "DIPS AS",
   "contact" : [
     {

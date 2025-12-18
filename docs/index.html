@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - RetinaIntegration v0.2.0</title>
+    <title>Home - RetinaIntegration v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -84,6 +84,9 @@
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -117,7 +120,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -132,7 +135,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration|0.2.0"/></span>
+      <span class="copy-text">0.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration|0.5.0"/></span>
       </td>
     </tr>
 
@@ -148,7 +151,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-11-30
+            as of 2025-12-18
           
         
       </td>
@@ -174,54 +177,126 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#retinaintegration-api" id="markdown-toc-retinaintegration-api">RetinaIntegration API</a>    <ul>
-      <li><a href="#workflow-integration" id="markdown-toc-workflow-integration">Workflow Integration</a></li>
-      <li><a href="#system-components" id="markdown-toc-system-components">System Components</a></li>
-    </ul>
-  </li>
-  <li><a href="#retina-diagnosticreport-model" id="markdown-toc-retina-diagnosticreport-model">Retina DiagnosticReport Model</a>    <ul>
-      <li><a href="#queries" id="markdown-toc-queries">Queries</a></li>
-      <li><a href="#operations" id="markdown-toc-operations">Operations</a></li>
-    </ul>
-  </li>
+  <li><a href="#retinaintegration-api" id="markdown-toc-retinaintegration-api">RetinaIntegration API</a></li>
+  <li><a href="#system-components-and-interactions" id="markdown-toc-system-components-and-interactions">System Components and Interactions</a></li>
+  <li><a href="#retina-diagnosticreport-model" id="markdown-toc-retina-diagnosticreport-model">Retina DiagnosticReport Model</a></li>
+  <li><a href="#queries" id="markdown-toc-queries">Queries</a></li>
+  <li><a href="#operations" id="markdown-toc-operations">Operations</a></li>
 </ul>
 
 </div>
-<h2 id="retinaintegration-api">RetinaIntegration API</h2>
+<h3 id="retinaintegration-api">RetinaIntegration API</h3>
 
 <p>RetinaIntegration is an API for integrating with the DIPS EyeCare-retinopathy application which is used in the retinopathy screening of diabetic patients.</p>
 
 <p>The purpose of the API is to for an AI solution to discover examinations that is waiting for grading, get the details about those examinations, and report back any AI findings concerning those findings and what the next step should be.</p>
 
-<h3 id="workflow-integration">Workflow Integration</h3>
+<h3 id="system-components-and-interactions">System Components and Interactions</h3>
+
+<p>The following diagram shows some of the components and their interactions. The regional system, the client, consists of a media archive, an integration platform with some business logic, and an AI system. For the purpose of this discussion we consider the AI system and the integration platform as one system.</p>
+
+<p>The DIPS system consist of the EyeCare application and the Retina Integration API, among other things.</p>
 
 <ol>
-  <li>DIPS creates a DiagnosticReport for a new retina examination</li>
-  <li>External AI system queries for DiagnosticReports pending grading
+  <li>Photographer starts taking retina pictures.</li>
+  <li>The media archive sends a message to DIPS with the new SectraStudyId.
     <ul>
-      <li>DiagnosticReport.status = TODO</li>
-      <li>DiagnosticReport have ImagingStudy with status = registered</li>
+      <li>A ImagingStudy is added to the report.</li>
+      <li>The status of the imaging study will be <code class="language-plaintext highlighter-rouge">registered</code></li>
+      <li>The status of the diagnostic report will be <code class="language-plaintext highlighter-rouge">partial</code></li>
     </ul>
   </li>
-  <li>AI system analyses the retinal images</li>
-  <li>AI system calls this operation to append results</li>
-  <li>DIPS updates the DiagnosticReport with the AI findings
+  <li>When image series is completed the AI system grades the images.</li>
+  <li>When photographer stores and approves the photographer form in EyeCare DIPS creates a DiagnosticReport for a new retina examination.
     <ul>
-      <li>ImagingStudy will get status available</li>
-      <li>DiagnosticReport.status will be partial or final depending on what the next step is.</li>
+      <li>The report status is <code class="language-plaintext highlighter-rouge">registered</code></li>
+      <li>If there is a SectraStudyId that matches the examination the status will be <code class="language-plaintext highlighter-rouge">partial</code></li>
+    </ul>
+  </li>
+  <li>AI system queries for DiagnosticReports that is pending grading:
+    <ul>
+      <li>DiagnosticReport have ImagingStudy with status <code class="language-plaintext highlighter-rouge">registered</code></li>
+    </ul>
+  </li>
+  <li>AI system calls operation to append image information, findings and conclusions
+    <ul>
+      <li>Imaging study will be <code class="language-plaintext highlighter-rouge">available</code></li>
+      <li>Diagnostic report status will be <code class="language-plaintext highlighter-rouge">partial</code> or <code class="language-plaintext highlighter-rouge">final</code> depending on the conclusion</li>
+    </ul>
+  </li>
+  <li>Manual grader optionally examines the pictures reaches a conclusion
+    <ul>
+      <li>The report status will be <code class="language-plaintext highlighter-rouge">partial</code>or <code class="language-plaintext highlighter-rouge">final</code> depending on conclusion</li>
+    </ul>
+  </li>
+  <li>Secondary grader optionally examines the pictures
+    <ul>
+      <li>The report status will be <code class="language-plaintext highlighter-rouge">partial</code>or <code class="language-plaintext highlighter-rouge">final</code> depending on conclusion</li>
     </ul>
   </li>
 </ol>
 
-<h3 id="system-components">System Components</h3>
+<p>The numbers indicates one possible sequence of the signals and actions. There may be many variations of this sequences.</p>
 
-<p>The following diagram shows the components and workflow of the RetinaIntegration system:</p>
+<p>TODO: Handle appending of AI grading when the report is in final state, possible because it is already graded by a manual grader or that it was already graded by AI with another image study. Report will be in state <code class="language-plaintext highlighter-rouge">appended</code>.</p>
 
 <p><img src="component-diagram.svg" alt="Component Diagram" /></p>
 
 <div style="clear: both;"></div>
 
-<h2 id="retina-diagnosticreport-model">Retina DiagnosticReport Model</h2>
+<h3 id="retina-diagnosticreport-model">Retina DiagnosticReport Model</h3>
+
+<p>The diagnostic report goes through phases as the grading process progress. These phases are reflected in the <code class="language-plaintext highlighter-rouge">DiagnosticReport.status</code> field.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">registered</code>: The report exists but it does not contain any information about images. It may contain information about HbA1c.</li>
+  <li><code class="language-plaintext highlighter-rouge">partial</code>: The report has information about <code class="language-plaintext highlighter-rouge">ImagingStudy</code>,  one or more SectraStudyIDs are connected to the examination.</li>
+  <li><code class="language-plaintext highlighter-rouge">preliminary</code>: AI system has added information an possible conclusions about an ImagingStudy but the grading process is not finished.</li>
+  <li><code class="language-plaintext highlighter-rouge">final</code>: The grading process has reached a conclusion.</li>
+</ol>
+
+<h4 id="diagnosticreportstatus--registered">DiagnosticReport.status = registered</h4>
+
+<p>The report will be in <code class="language-plaintext highlighter-rouge">registered</code>state after the photographer has saved and approved the photographer form in EyeCare and before any imaging studies are connected to the examination.</p>
+
+<p>Available information in the <code class="language-plaintext highlighter-rouge">registered</code> state is:</p>
+
+<ul>
+  <li>hbA1cObservation result containing the blood sugar value reported by the patient.</li>
+  <li>cautions extension : optional codes from the 5000-series (if any), e.g. 5001 "Patient does not want an AI based grading result."</li>
+  <li>previousExaminationConclusion : conclusionCode from previous examination (if any), from the 1000 series.</li>
+  <li>code : Type of imaging ordered, fundus photography and/or OCT from RetinaImagingProcedureValueSet.</li>
+</ul>
+
+<p><img src="diagnostic-report-registered.svg" alt="DiagnosticReport in registered state" /></p>
+
+<div style="clear: both;"></div>
+
+<p>Many of the objects in the model will contain a subject identifier for the patient. Many objects will also have <code class="language-plaintext highlighter-rouge">partOf</code>references back to the diagnostic report. These references are for simplicity omitted from this overview.</p>
+
+<h4 id="diagnosticreportstatus--partial">DiagnosticReport.status = partial</h4>
+
+<p>When a Sectra imaging study is mapped to the examination a <code class="language-plaintext highlighter-rouge">ImagingStudy</code> is added to the report. The status of the ImagingStudy will be <code class="language-plaintext highlighter-rouge">registered</code> and the status of the diagnostic report will be <code class="language-plaintext highlighter-rouge">partial</code> meaning there is data available.</p>
+
+<p>The diagnostic report may contain zero, one or several imaging studies.</p>
+
+<p>One imaging study will contain one and exactly on sectraStudyId identifier.</p>
+
+<p><img src="diagnostic-report-partial.svg" alt="DiagnosticReport in partial state" /></p>
+
+<div style="clear: both;"></div>
+
+<h4 id="diagnosticreportstatus--preliminary--final">DiagnosticReport.status = preliminary | final</h4>
+
+<p>The AI system will add information about the images and a result of the AI grading of the pictures.</p>
+
+<p>AI will add two image series to the imaging study, on for each eye. The ImagingSeries.bodySite will have snomed codes for retina left or right eye.</p>
+
+<p>AI will add assessment of the image quality for each image in the study.</p>
+
+<p>For each picture the AI will report the <code class="language-plaintext highlighter-rouge">view</code> which is macular centered or optical disc centered. This information originates in the camera system and is not assessed by the AI system. It is therefor not an observation or evaluation, but a property of the image.</p>
+
+<p>The AI system will add evaluations (observations) about possible diabetic retinopathy finding and diabetic macular edema finding.</p>
 
 <p>A DiagnosticReport after AI result is added.</p>
 
@@ -231,24 +306,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="queries">Queries</h3>
 
-<h4 id="query-for-a-specific-examination-identified-by-the-id">Query for a specific examination identified by the ID</h4>
+<h5 id="query-for-a-specific-examination-identified-by-the-id">Query for a specific examination identified by the ID</h5>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{baseurl}/DiagnosticReport?_profile=RetinaDiagnosticReport&amp;_id=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee&amp;_include=DiagnosticReport:result
 </code></pre></div></div>
 
-<h4 id="query-for-getting-examinations-in-a-given-time-interval">Query for getting examinations in a given time interval</h4>
+<h5 id="query-for-getting-examinations-in-a-given-time-interval">Query for getting examinations in a given time interval</h5>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{baseurl}/DiagnosticReport?_profile=RetinaDiagnosticReport&amp;status=preliminary&amp;date=ge2025-10-02&amp;date=le2025-10-03&amp;_include=DiagnosticReport:result
 </code></pre></div></div>
 
-<h4 id="find-examinations-waiting-for-ai-grading-diagnosticreports-with-registered-imaging-studies">Find examinations waiting for AI grading (DiagnosticReports with registered imaging studies)</h4>
+<h5 id="find-examinations-waiting-for-ai-grading-diagnosticreports-with-registered-imaging-studies">Find examinations waiting for AI grading (DiagnosticReports with registered imaging studies)</h5>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET {baseUrl}/DiagnosticReport?_profile=RetinaDiagnosticReport&amp;imagingStudy.status=registered&amp;_include=DiagnosticReport:imaging-study
 </code></pre></div></div>
 
 <h3 id="operations">Operations</h3>
 
-<h4 id="append-ai-result">Append AI result</h4>
+<h5 id="append-ai-result">Append AI result</h5>
 
 <p>Add ai result to an examination using the following operation:</p>
 
@@ -278,7 +353,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 30, 2025 22:57+0100">2025-11-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 18, 2025 07:21+0100">2025-12-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

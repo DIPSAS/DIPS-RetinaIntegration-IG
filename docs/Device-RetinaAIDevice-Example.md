@@ -1,4 +1,4 @@
-# RetinaAIDevice-Example - RetinaIntegration v0.2.0
+# RetinaAIDevice-Example - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

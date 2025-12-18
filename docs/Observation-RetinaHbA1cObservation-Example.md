@@ -1,4 +1,4 @@
-# RetinaHbA1cObservation-Example - RetinaIntegration v0.2.0
+# RetinaHbA1cObservation-Example - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation.md)
 
-**identifier**: [RetinaObservationIdentifierSystem](NamingSystem-retina-observation-id.md)/a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42
+**identifier**: [RetinaObservationIdentifierSystem](NamingSystem-retina-observation-ns.md)/a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42
 
 **status**: Final
 
@@ -33,7 +33,7 @@ Profile: [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation
   },
   "identifier" : [
     {
-      "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+      "system" : "http://dips.no/fhir/RetinaIntegration/observation-id",
       "value" : "a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42"
     }
   ],

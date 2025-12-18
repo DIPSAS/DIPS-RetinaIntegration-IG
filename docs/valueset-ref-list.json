@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
-      "version" : "0.2.0",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RetinaBodySiteValueSet",
       "title" : "Retina Body Site",
@@ -10,17 +10,34 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-retina-eye-observation.html" : "Retina Eye Observation"
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment",
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-      "version" : "0.2.0",
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
+      "version" : "0.5.0",
+      "status" : "draft",
+      "name" : "RetinaCautionValueSet",
+      "title" : "Retina Cautions",
+      "description" : "Special considerations or cautions for grading this examination (5000-series).",
+      "systems" : [
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cautions-extension.html" : "Cautions"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
       "title" : "Retina Conclusion",
       "description" : "Codes describing the current or final conclusion of the examination (1000-series).",
       "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"
       ],
       "uses" : {
       },
@@ -28,22 +45,36 @@
       "StructureDefinition-previous-examination-conclusion-extension.html" : "Previous Examination Conclusion"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-      "version" : "0.2.0",
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RetinaImageQualityValueSet",
       "title" : "Retina Image Quality",
       "description" : "Image quality as assessed by AI (2000-series).",
       "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-retina-eye-observation.html" : "Retina Eye Observation"
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
+      "version" : "0.5.0",
+      "status" : "draft",
+      "name" : "RetinaImageViewValueSet",
+      "title" : "Retina Image View",
+      "description" : "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series).",
+      "systems" : [
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-retinal-image-view.html" : "Retinal Image View"
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
-      "version" : "0.2.0",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RetinaImagingProcedureValueSet",
       "title" : "Retina Imaging Procedures",
@@ -51,22 +82,8 @@
       "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"],
       "uses" : {
       },
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport",
       "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
-    },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-initial-instructions-vs",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "InitialInstructionsValueSet",
-      "title" : "Retina Initial Instructions",
-      "description" : "Initial routing decisions and cautions for grading this examination (1000-series and 5000-series).",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-initial-instructions-extension.html" : "Initial Instructions"
     }
   ]
 }

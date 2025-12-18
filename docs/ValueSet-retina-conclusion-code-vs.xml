@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="retina-conclusion-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-conclusion-code-vs</b></p><a name="retina-conclusion-code-vs"> </a><a name="hcretina-conclusion-code-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-retina-conclusion-code-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.5.0</span></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"/>
+  <version value="0.5.0"/>
+  <name value="RetinaDiagnosticReportConclusionCodeValueSet"/>
+  <title value="Retina Conclusion"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-05"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes describing the current or final conclusion of the examination (1000-series)."/>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+    </include>
+  </compose>
+</ValueSet>

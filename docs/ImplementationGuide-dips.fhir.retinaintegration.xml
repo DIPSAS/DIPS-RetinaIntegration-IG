@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"/>
-  <version value="0.2.0"/>
+  <version value="0.5.0"/>
   <name value="RetinaIntegration"/>
   <title value="RetinaIntegration"/>
   <status value="draft"/>
-  <date value="2025-11-30T22:57:21+01:00"/>
+  <date value="2025-12-18T07:21:20+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.0"/>
+    <version value="7.0.1"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -270,7 +270,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -501,10 +501,10 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/Bundle-SinglExamination-Example"/>
+        <reference value="Bundle/Bundle-SingleExamination-Example"/>
       </reference>
-      <name value="Bundle-SinglExamination-Example"/>
-      <description value="Result of query for a specific examination idfentified by ID containing no AI result."/>
+      <name value="Bundle-SingleExamination-Example"/>
+      <description value="A bundle containing a single DiagnosticReport with a single ImagingStudy awaiting AI result without any previous examination and without andy cautions."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -515,8 +515,19 @@
         <reference value="Bundle/Bundle-TwoExaminations-Example"/>
       </reference>
       <name value="Bundle-TwoExaminations-Example"/>
-      <description value="Result of query for examinations between two dates, not containing AI result."/>
+      <description value="A bundle containing two DiagnosticReports with their corresponding ImagingStudies and HbA1cObservations. One DiagnosticReport has a previous examination and cautions, while the other does not. One report has two ImagingStudies."/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cautions-extension"/>
+      </reference>
+      <name value="Cautions"/>
+      <description value="Special considerations or cautions for grading this examination (5000-series)."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -527,17 +538,6 @@
       </reference>
       <name value="Days Until Next Examination"/>
       <description value="Number of days until next examination."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/initial-instructions-extension"/>
-      </reference>
-      <name value="Initial Instructions"/>
-      <description value="Initial routing instruction and optional cautions for grading this examination (4000-series and 5000-series)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -597,6 +597,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/retina-caution-vs"/>
+      </reference>
+      <name value="Retina Cautions"/>
+      <description value="Special considerations or cautions for grading this examination (5000-series)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -611,7 +622,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/retina-conclusioncode-vs"/>
+        <reference value="ValueSet/retina-conclusion-code-vs"/>
       </reference>
       <name value="Retina Conclusion"/>
       <description value="Codes describing the current or final conclusion of the examination (1000-series)."/>
@@ -622,10 +633,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/retina-conclusioncode-cs"/>
+        <reference value="CodeSystem/retina-conclusion-code-cs"/>
       </reference>
       <name value="Retina Conclusion"/>
       <description value="Codes for the current or final conclusion of the grading process (1000-series)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/retina-diabetic-macular-edema-finding"/>
+      </reference>
+      <name value="Retina Diabetic Macular Edema Finding"/>
+      <description value="Observation profile for documenting findings related to diabetic macular edema (DME) in retina examinations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/retina-diabetic-retinopathy-finding"/>
+      </reference>
+      <name value="Retina Diabetic Retinopathy Finding"/>
+      <description value="Observation profile for documenting findings related to diabetic retinopathy (DR) in retina examinations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -644,21 +677,10 @@
         <valueString value="NamingSystem"/>
       </extension>
       <reference>
-        <reference value="NamingSystem/retina-examination-id"/>
+        <reference value="NamingSystem/retina-diagnostic-report-ns"/>
       </reference>
-      <name value="Retina Examination Id"/>
-      <description value="ID identifying an examination."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/retina-eye-observation"/>
-      </reference>
-      <name value="Retina Eye Observation"/>
-      <description value="The result of AI grading for one eye. The bodySite element identifies which eye (right or left)."/>
+      <name value="Retina DiagnosticReport Identifier System"/>
+      <description value="IDs to identify retina diagnostic reports."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -677,7 +699,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/retina-imagequality-vs"/>
+        <reference value="ValueSet/retina-image-quality-vs"/>
       </reference>
       <name value="Retina Image Quality"/>
       <description value="Image quality as assessed by AI (2000-series)."/>
@@ -688,10 +710,43 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/retina-imagequality-cs"/>
+        <reference value="CodeSystem/retina-image-quality-cs"/>
       </reference>
       <name value="Retina Image Quality"/>
-      <description value="Image quality as asessed by AI solution (2000-series)."/>
+      <description value="Image quality as assessed by AI solution (2000-series)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/retina-image-quality-asessment"/>
+      </reference>
+      <name value="Retina Image Quality Assessment"/>
+      <description value="The image quality as assesed by AI (2000-series)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/retina-image-view-vs"/>
+      </reference>
+      <name value="Retina Image View"/>
+      <description value="Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/retina-image-view-cs"/>
+      </reference>
+      <name value="Retina Image View"/>
+      <description value="Codes describing the centering used when capturing retinal images (6000-series)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -718,13 +773,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="NamingSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/retina-initial-instructions-vs"/>
+        <reference value="NamingSystem/retina-imaging-study-ns"/>
       </reference>
-      <name value="Retina Initial Instructions"/>
-      <description value="Initial routing decisions and cautions for grading this examination (1000-series and 5000-series)."/>
+      <name value="Retina ImagingStudy Identifier System"/>
+      <description value="IDs identifying imaging studies associated with a diagnostic report. Includes both internal GUIDs and Sectra image study IDs."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -743,10 +798,10 @@
         <valueString value="NamingSystem"/>
       </extension>
       <reference>
-        <reference value="NamingSystem/retina-observation-id"/>
+        <reference value="NamingSystem/retina-observation-ns"/>
       </reference>
-      <name value="Retina Observation Id"/>
-      <description value="ID identifying an observation associated with an examination."/>
+      <name value="Retina Observation Identifier System"/>
+      <description value="IDs identifying observations associated with a diagnostic report."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -758,17 +813,6 @@
       </reference>
       <name value="RetinaAIDevice-Example"/>
       <description value="AI device that performed the automated retina analysis."/>
-      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/RetinaAIDevice-input"/>
-      </reference>
-      <name value="RetinaAIDevice-input"/>
-      <description value="AI device used for this analysis."/>
       <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"/>
     </resource>
     <resource>
@@ -795,13 +839,57 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RetinaDiabeticMacularEdemaFinding-Example-left"/>
+      </reference>
+      <name value="RetinaDiabeticMacularEdemaFinding-Example-left"/>
+      <description value="Left eye diabetic macular edema finding example."/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RetinaDiabeticMacularEdemaFinding-Example-right"/>
+      </reference>
+      <name value="RetinaDiabeticMacularEdemaFinding-Example-right"/>
+      <description value="Right eye diabetic macular edema finding example."/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RetinaDiabeticRetinopathyFinding-Example-left"/>
+      </reference>
+      <name value="RetinaDiabeticRetinopathyFinding-Example-left"/>
+      <description value="Left eye diabetic retinopathy finding example."/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RetinaDiabeticRetinopathyFinding-Example-right"/>
+      </reference>
+      <name value="RetinaDiabeticRetinopathyFinding-Example-right"/>
+      <description value="Right eye diabetic retinopathy finding example."/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
         <reference value="DiagnosticReport/RetinaDiagnosticReport-Example"/>
       </reference>
       <name value="RetinaDiagnosticReport-Example"/>
-      <description value="Example after AI result is appended. Only one eye."/>
+      <description value="Example after AI result is appended. Both eyes."/>
       <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"/>
     </resource>
     <resource>
@@ -831,55 +919,33 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/RetinaEyeObservation-Example-left"/>
-      </reference>
-      <name value="RetinaEyeObservation-Example-left"/>
-      <description value="Left eye assessment with DR, DME and image quality components."/>
-      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/RetinaEyeObservation-Example-right"/>
-      </reference>
-      <name value="RetinaEyeObservation-Example-right"/>
-      <description value="Right eye assessment with DR, DME and image quality components."/>
-      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/RetinaEyeObservation-input-left"/>
-      </reference>
-      <name value="RetinaEyeObservation-input-left"/>
-      <description value="Left eye assessment with DR and DME components.  TODO: Why is 'not-asked' used in this example?"/>
-      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/RetinaEyeObservation-input-right"/>
-      </reference>
-      <name value="RetinaEyeObservation-input-right"/>
-      <description value="Right eye assessment with DR and DME components."/>
-      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/RetinaHbA1cObservation-Example"/>
       </reference>
       <name value="RetinaHbA1cObservation-Example"/>
       <description value="HbA1c level observation example."/>
       <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RetinaImageQualityAssessment-Example-left"/>
+      </reference>
+      <name value="RetinaImageQualityAssessment-Example-left"/>
+      <description value="Left eye image quality assessment example."/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RetinaImageQualityAssessment-Example-right"/>
+      </reference>
+      <name value="RetinaImageQualityAssessment-Example-right"/>
+      <description value="Right eye image quality assessment example."/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -903,6 +969,17 @@
       <description value="A 'registered' ImagingStudy awaiting AI grading."/>
       <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/retinal-image-view"/>
+      </reference>
+      <name value="Retinal Image View"/>
+      <description value="The centering or anatomical focus of a retinal image."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -916,6 +993,22 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changelog.html"/>
+        </extension>
+        <nameUrl value="changelog.html"/>
+        <title value="Changelog"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Issues-and-Enhancements.html"/>
+        </extension>
+        <nameUrl value="Issues-and-Enhancements.html"/>
+        <title value="Issues and Enhancements"/>
         <generation value="markdown"/>
       </page>
     </page>

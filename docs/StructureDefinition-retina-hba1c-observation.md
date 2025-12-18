@@ -1,15 +1,15 @@
-# Retina HbA1c Observation - RetinaIntegration v0.2.0
+# Retina HbA1c Observation - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Retina HbA1c Observation**
 
-## Resource Profile: Retina HbA1c Observation 
+## Resource Profile: Retina HbA1c Observation ( Experimental ) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaHbA1cObservation |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation | *Version*:0.5.0 |
+| Draft as of 2025-12-02 | *Computable Name*:RetinaHbA1cObservation |
 
  
 HbA1c level as reported by patient prior to retina examination. 
@@ -38,11 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-retina-hba1c-observa
   "resourceType" : "StructureDefinition",
   "id" : "retina-hba1c-observation",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaHbA1cObservation",
   "title" : "Retina HbA1c Observation",
   "status" : "draft",
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : true,
+  "date" : "2025-12-02",
   "publisher" : "DIPS AS",
   "contact" : [
     {

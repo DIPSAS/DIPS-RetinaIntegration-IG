@@ -1,4 +1,4 @@
-# Previous Examination Conclusion - RetinaIntegration v0.2.0
+# Previous Examination Conclusion - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension | *Version*:0.2.0 |
-| Active as of 2025-11-30 | *Computable Name*:PreviousExaminationConclusionExtension |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension | *Version*:0.5.0 |
+| Active as of 2025-12-18 | *Computable Name*:PreviousExaminationConclusionExtension |
 
 The conclusion from the previous examination (1000 series). If this is the first examination, this extension is not present.
 
@@ -45,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-previous-examination
   "resourceType" : "StructureDefinition",
   "id" : "previous-examination-conclusion-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "PreviousExaminationConclusionExtension",
   "title" : "Previous Examination Conclusion",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-11-30T22:57:21+01:00",
+  "date" : "2025-12-18T07:21:20+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -110,12 +110,12 @@ Other representations of profile: [CSV](StructureDefinition-previous-examination
         "path" : "Extension.value[x]",
         "type" : [
           {
-            "code" : "CodeableConcept"
+            "code" : "Coding"
           }
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"
+          "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"
         }
       }
     ]

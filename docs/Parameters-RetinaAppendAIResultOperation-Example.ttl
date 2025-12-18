@@ -15,173 +15,19 @@
      fhir:value [
        a fhir:Identifier ;
        fhir:system [
-         fhir:v "http://sectra.no/identifiers"^^xsd:anyURI ;
-         fhir:l <http://sectra.no/identifiers>
+         fhir:v "http://dips.no/fhir/RetinaIntegration/sectra-image-study-id"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/sectra-image-study-id>
        ] ;
        fhir:value [ fhir:v "MMA94126079" ]
      ]
-  ] [
-     fhir:name [ fhir:v "rightEye" ] ;
-     fhir:Parameters.parameter.resource ( [
-       a fhir:Observation ;
-       fhir:id [ fhir:v "RetinaEyeObservation-input-right" ] ;
-       fhir:meta [
-         fhir:profile ( [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation>
-         ] )
-       ] ;
-       fhir:status [ fhir:v "final" ] ;
-       fhir:code [
-         fhir:coding ( [
-           a sct:134395001 ;
-           fhir:system [
-             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-             fhir:l <http://snomed.info/sct>
-           ] ;
-           fhir:code [ fhir:v "134395001" ] ;
-           fhir:display [ fhir:v "Diabetic retinopathy screening" ]
-         ] ) ;
-         fhir:text [ fhir:v "Retinal examination" ]
-       ] ;
-       fhir:effective [
-         a fhir:DateTime ;
-         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
-       ] ;
-       fhir:bodySite [
-         fhir:coding ( [
-           a sct:5597008 ;
-           fhir:system [
-             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-             fhir:l <http://snomed.info/sct>
-           ] ;
-           fhir:code [ fhir:v "5597008" ] ;
-           fhir:display [ fhir:v "Retina of right eye" ]
-         ] ) ;
-         fhir:text [ fhir:v "Høyre retina" ]
-       ] ;
-       fhir:component ( [
-         fhir:code [
-           fhir:coding ( [
-             a sct:4855003 ;
-             fhir:system [
-               fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-               fhir:l <http://snomed.info/sct>
-             ] ;
-             fhir:code [ fhir:v "4855003" ] ;
-             fhir:display [ fhir:v "Diabetic retinopathy" ]
-           ] )
-         ] ;
-         fhir:value [
-           a fhir:Quantity ;
-           fhir:value [ fhir:v "5"^^xsd:decimal ]
-         ]
-       ] [
-         fhir:code [
-           fhir:coding ( [
-             a sct:312912001 ;
-             fhir:system [
-               fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-               fhir:l <http://snomed.info/sct>
-             ] ;
-             fhir:code [ fhir:v "312912001" ] ;
-             fhir:display [ fhir:v "Diabetic macular edema" ]
-           ] )
-         ] ;
-         fhir:value [
-           a fhir:Boolean ;
-           fhir:v true
-         ]
-       ] )
-     ] )
-  ] [
-     fhir:name [ fhir:v "leftEye" ] ;
-     fhir:Parameters.parameter.resource ( [
-       a fhir:Observation ;
-       fhir:id [ fhir:v "RetinaEyeObservation-input-left" ] ;
-       fhir:meta [
-         fhir:profile ( [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation>
-         ] )
-       ] ;
-       fhir:status [ fhir:v "final" ] ;
-       fhir:code [
-         fhir:coding ( [
-           a sct:134395001 ;
-           fhir:system [
-             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-             fhir:l <http://snomed.info/sct>
-           ] ;
-           fhir:code [ fhir:v "134395001" ] ;
-           fhir:display [ fhir:v "Diabetic retinopathy screening" ]
-         ] ) ;
-         fhir:text [ fhir:v "Retinal examination" ]
-       ] ;
-       fhir:effective [
-         a fhir:DateTime ;
-         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
-       ] ;
-       fhir:bodySite [
-         fhir:coding ( [
-           a sct:58443009 ;
-           fhir:system [
-             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-             fhir:l <http://snomed.info/sct>
-           ] ;
-           fhir:code [ fhir:v "58443009" ] ;
-           fhir:display [ fhir:v "Retina of left eye" ]
-         ] ) ;
-         fhir:text [ fhir:v "Venstre retina" ]
-       ] ;
-       fhir:component ( [
-         fhir:code [
-           fhir:coding ( [
-             a sct:4855003 ;
-             fhir:system [
-               fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-               fhir:l <http://snomed.info/sct>
-             ] ;
-             fhir:code [ fhir:v "4855003" ] ;
-             fhir:display [ fhir:v "Diabetic retinopathy" ]
-           ] )
-         ] ;
-         fhir:dataAbsentReason [
-           fhir:coding ( [
-             fhir:system [
-               fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ;
-               fhir:l <http://terminology.hl7.org/CodeSystem/data-absent-reason>
-             ] ;
-             fhir:code [ fhir:v "not-asked" ] ;
-             fhir:display [ fhir:v "Not asked" ]
-           ] )
-         ]
-       ] [
-         fhir:code [
-           fhir:coding ( [
-             a sct:312912001 ;
-             fhir:system [
-               fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-               fhir:l <http://snomed.info/sct>
-             ] ;
-             fhir:code [ fhir:v "312912001" ] ;
-             fhir:display [ fhir:v "Diabetic macular edema" ]
-           ] )
-         ] ;
-         fhir:value [
-           a fhir:Boolean ;
-           fhir:v true
-         ]
-       ] )
-     ] )
   ] [
      fhir:name [ fhir:v "conclusion" ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"^^xsd:anyURI ;
-           fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs>
+           fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs>
          ] ;
          fhir:code [ fhir:v "1004" ] ;
          fhir:display [ fhir:v "Ny fotokontroll (primærgradering)" ]
@@ -192,12 +38,6 @@
      fhir:value [
        a fhir:Integer ;
        fhir:v 180
-     ]
-  ] [
-     fhir:name [ fhir:v "effectiveTime" ] ;
-     fhir:value [
-       a fhir:DateTime ;
-       fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
      ]
   ] [
      fhir:name [ fhir:v "aiDevice" ] ;
@@ -229,6 +69,278 @@
          ] ;
          fhir:value [ fhir:v "Standard protocol" ]
        ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "rightDiabeticRetinopathyFinding" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaDiabeticRetinopathyFinding-Example-right-input" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:4855003 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "4855003" ] ;
+           fhir:display [ fhir:v "Diabetic retinopathy" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "2"^^xsd:decimal ]
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:5597008 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "5597008" ] ;
+           fhir:display [ fhir:v "Retina of right eye" ]
+         ] )
+       ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "rightDiabeticMacularEdemaFinding" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaDiabeticMacularEdemaFinding-Example-right-input" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:312912001 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "312912001" ] ;
+           fhir:display [ fhir:v "Diabetic macular edema" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:5597008 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "5597008" ] ;
+           fhir:display [ fhir:v "Retina of right eye" ]
+         ] )
+       ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "rightImageQualityAssessment" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaImageQualityAssessment-Example-right-input" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:133887000 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "133887000" ] ;
+           fhir:display [ fhir:v "Computer assisted image analysis for image quality" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"^^xsd:anyURI ;
+             fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs>
+           ] ;
+           fhir:code [ fhir:v "2001" ] ;
+           fhir:display [ fhir:v "Good" ]
+         ] )
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:5597008 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "5597008" ] ;
+           fhir:display [ fhir:v "Retina of right eye" ]
+         ] )
+       ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "leftDiabeticRetinopathyFinding" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaDiabeticRetinopathyFinding-Example-left-input" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:4855003 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "4855003" ] ;
+           fhir:display [ fhir:v "Diabetic retinopathy" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ]
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:58443009 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "58443009" ] ;
+           fhir:display [ fhir:v "Retina of left eye" ]
+         ] )
+       ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "leftDiabeticMacularEdemaFinding" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaDiabeticMacularEdemaFinding-Example-left-input" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:312912001 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "312912001" ] ;
+           fhir:display [ fhir:v "Diabetic macular edema" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:Boolean ;
+         fhir:v true
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:58443009 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "58443009" ] ;
+           fhir:display [ fhir:v "Retina of left eye" ]
+         ] )
+       ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "leftImageQualityAssessment" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "RetinaImageQualityAssessment-Example-left-input" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"^^xsd:anyURI ;
+           fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:133887000 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "133887000" ] ;
+           fhir:display [ fhir:v "Computer assisted image analysis for image quality" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:DateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"^^xsd:anyURI ;
+             fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs>
+           ] ;
+           fhir:code [ fhir:v "2002" ] ;
+           fhir:display [ fhir:v "Barely gradable" ]
+         ] )
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:58443009 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "58443009" ] ;
+           fhir:display [ fhir:v "Retina of left eye" ]
+         ] )
+       ]
      ] )
   ] [
      fhir:name [ fhir:v "fullReport" ] ;

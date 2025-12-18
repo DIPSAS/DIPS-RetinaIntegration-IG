@@ -1,22 +1,22 @@
-# Retina Cautions - RetinaIntegration v0.2.0
+# Retina Cautions - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Retina Cautions**
 
-## CodeSystem: Retina Cautions (Experimental) 
+## CodeSystem: Retina Cautions 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaCautionCodeSystem |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs | *Version*:0.5.0 |
+| Draft as of 2025-12-02 | *Computable Name*:RetinaCautionCodeSystem |
 
  
 Cautions to consider when grading examinations (5000-series). 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [InitialInstructionsValueSet](ValueSet-retina-initial-instructions-vs.md)
+* [RetinaCautionValueSet](ValueSet-retina-caution-vs.md)
 
 
 
@@ -27,12 +27,12 @@ Cautions to consider when grading examinations (5000-series).
   "resourceType" : "CodeSystem",
   "id" : "retina-caution-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaCautionCodeSystem",
   "title" : "Retina Cautions",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : false,
+  "date" : "2025-12-02",
   "publisher" : "DIPS AS",
   "contact" : [
     {

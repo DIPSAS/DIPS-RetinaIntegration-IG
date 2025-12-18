@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="retina-conclusion-code-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem retina-conclusion-code-cs</b></p><a name="retina-conclusion-code-cs"> </a><a name="hcretina-conclusion-code-cs"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1001<a name="retina-conclusion-code-cs-1001"> </a></td><td>KI-gradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by the AI system.</td></tr><tr><td style="white-space:nowrap">1002<a name="retina-conclusion-code-cs-1002"> </a></td><td>Primærgradering (basert på nåværende bilder)</td><td>This examinations is waiting to be graded by a primary grader.</td></tr><tr><td style="white-space:nowrap">1003<a name="retina-conclusion-code-cs-1003"> </a></td><td>Sekundærgradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by a secondary grader.</td></tr><tr><td style="white-space:nowrap">1004<a name="retina-conclusion-code-cs-1004"> </a></td><td>Ny fotokontroll (primærgradering)</td><td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td></tr><tr><td style="white-space:nowrap">1005<a name="retina-conclusion-code-cs-1005"> </a></td><td>Ny fotokontroll (sekundærgradering)</td><td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td></tr><tr><td style="white-space:nowrap">1006<a name="retina-conclusion-code-cs-1006"> </a></td><td>Øyelegeundersøkelse (grunnet diabetisk retinopati)</td><td>Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy.</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+  <version value="0.5.0"/>
+  <name value="RetinaConclusionCodeSystem"/>
+  <title value="Retina Conclusion"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-02"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Codes for the current or final conclusion of the grading process (1000-series)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1001"/>
+    <display value="KI-gradering (basert på nåværende bilder)"/>
+    <definition value="This examination is waiting to be graded by the AI system."/>
+  </concept>
+  <concept>
+    <code value="1002"/>
+    <display value="Primærgradering (basert på nåværende bilder)"/>
+    <definition value="This examinations is waiting to be graded by a primary grader."/>
+  </concept>
+  <concept>
+    <code value="1003"/>
+    <display value="Sekundærgradering (basert på nåværende bilder)"/>
+    <definition value="This examination is waiting to be graded by a secondary grader."/>
+  </concept>
+  <concept>
+    <code value="1004"/>
+    <display value="Ny fotokontroll (primærgradering)"/>
+    <definition value="Patient should be scheduled for a new routine eye examination graded by primary grader or AI."/>
+  </concept>
+  <concept>
+    <code value="1005"/>
+    <display value="Ny fotokontroll (sekundærgradering)"/>
+    <definition value="Patient should be scheduled for a new routine eye examination but graded by secondary grader."/>
+  </concept>
+  <concept>
+    <code value="1006"/>
+    <display value="Øyelegeundersøkelse (grunnet diabetisk retinopati)"/>
+    <definition value="Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy."/>
+  </concept>
+</CodeSystem>

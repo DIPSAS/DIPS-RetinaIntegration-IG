@@ -1,4 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs,0.2.0,draft,,RetinaCautionCodeSystem,Retina Cautions,"Cautions to consider when grading examinations (5000-series).",
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs,0.2.0,draft,,RetinaConclusionCodesystem,Retina Conclusion,"Codes for the current or final conclusion of the grading process (1000-series).",
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs,0.2.0,draft,,RetinaImageQualityCodesystem,Retina Image Quality,"Image quality as asessed by AI solution (2000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs,0.5.0,draft,,RetinaCautionCodeSystem,Retina Cautions,"Cautions to consider when grading examinations (5000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs,0.5.0,draft,,RetinaConclusionCodeSystem,Retina Conclusion,"Codes for the current or final conclusion of the grading process (1000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs,0.5.0,draft,,RetinaImageQualityCodeSystem,Retina Image Quality,"Image quality as assessed by AI solution (2000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs,0.5.0,draft,,RetinaImageViewCodeSystem,Retina Image View,"Codes describing the centering used when capturing retinal images (6000-series).",

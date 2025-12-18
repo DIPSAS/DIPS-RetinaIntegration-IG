@@ -1,15 +1,15 @@
-# Retina AI Device - RetinaIntegration v0.2.0
+# Retina AI Device - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Retina AI Device**
 
-## Resource Profile: Retina AI Device ( Experimental ) 
+## Resource Profile: Retina AI Device 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaAIDevice |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device | *Version*:0.5.0 |
+| Draft as of 2025-12-02 | *Computable Name*:RetinaAIDevice |
 
  
 AI device/software system used for automated retina screening analysis. 
@@ -19,8 +19,7 @@ The AI system that performs grading of the images.
 
 **Usages:**
 
-* Refer to this Profile: [Retina Eye Observation](StructureDefinition-retina-eye-observation.md)
-* Examples for this Profile: [Device/RetinaAIDevice-Example](Device-RetinaAIDevice-Example.md) and [Device/RetinaAIDevice-input](Device-RetinaAIDevice-input.md)
+* Examples for this Profile: [Device/RetinaAIDevice-Example](Device-RetinaAIDevice-Example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-ai-device)
 
@@ -41,12 +40,12 @@ Other representations of profile: [CSV](StructureDefinition-retina-ai-device.csv
   "resourceType" : "StructureDefinition",
   "id" : "retina-ai-device",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaAIDevice",
   "title" : "Retina AI Device",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : false,
+  "date" : "2025-12-02",
   "publisher" : "DIPS AS",
   "contact" : [
     {

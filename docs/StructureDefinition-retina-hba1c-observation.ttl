@@ -18,11 +18,12 @@
      fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"^^xsd:anyURI ;
      fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation>
   ] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
   fhir:name [ fhir:v "RetinaHbA1cObservation"] ; # 
   fhir:title [ fhir:v "Retina HbA1c Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-30T22:57:21+01:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-02"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -98,7 +99,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "0.2.0"
+         fhir:v "0.5.0"
        ]
      ] ) ;
      fhir:element ( [
@@ -615,8 +616,8 @@
          fhir:value [
            a fhir:Identifier ;
            fhir:system [
-             fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ;
-             fhir:l <http://dips.no/fhir/NamingSystem/retina-observation-id>
+             fhir:v "http://dips.no/fhir/RetinaIntegration/observation-id"^^xsd:anyURI ;
+             fhir:l <http://dips.no/fhir/RetinaIntegration/observation-id>
            ] ;
            fhir:value [ fhir:v "8367e10c-ee7f-4a42-8bdd-44f628ab0a6f" ]
          ]
@@ -877,8 +878,8 @@
        ] ) ;
        fhir:pattern [
          a fhir:Uri ;
-         fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ;
-         fhir:l <http://dips.no/fhir/NamingSystem/retina-observation-id>
+         fhir:v "http://dips.no/fhir/RetinaIntegration/observation-id"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/observation-id>
        ] ;
        fhir:example ( [
          fhir:label [ fhir:v "General" ] ;

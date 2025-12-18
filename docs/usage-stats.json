@@ -1,8 +1,15 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "fhirVersion": "4.0.1",
   "extensions": [
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/cautions-extension",
+      "title": "Cautions",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension",
       "title": "Days Until Next Examination",
@@ -11,15 +18,15 @@
       ]
     },
     {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension",
-      "title": "Initial Instructions",
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
+      "title": "Previous Examination Conclusion",
       "types": [
-        "CodeableConcept"
+        "Coding"
       ]
     },
     {
-      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
-      "title": "Previous Examination Conclusion",
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view",
+      "title": "Retinal Image View",
       "types": [
         "CodeableConcept"
       ]
@@ -32,16 +39,16 @@
         "title": "Retina AI Device"
       }
     ],
-    "DiagnosticReport": [
-      {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
-        "title": "Retina DiagnosticReport"
-      }
-    ],
     "Observation": [
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation",
         "title": "Retina Observation"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
+        "title": "Retina DiagnosticReport"
       }
     ],
     "ImagingStudy": [
@@ -52,16 +59,19 @@
     ]
   },
   "usage": {
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension": [
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/cautions-extension": [
+      "Bundle.entry.resource",
       "DiagnosticReport"
     ],
-    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension": [
-      "Bundle.entry.resource",
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension": [
       "DiagnosticReport"
     ],
     "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension": [
       "Bundle.entry.resource",
       "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view": [
+      "ImagingStudy.series.instance"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
       "NamingSystem"

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Retina Append AI Result Operation - RetinaIntegration v0.2.0</title>
+    <title>Retina Append AI Result Operation - RetinaIntegration v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.2"}
-    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -85,6 +85,9 @@
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -110,7 +113,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -152,7 +155,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result|0.2.0"/></span>
+      <span class="copy-text">0.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result|0.5.0"/></span>
       </td>
     </tr>
 
@@ -168,7 +171,7 @@
         
           Draft
           
-            as of 2025-11-30
+            as of 2025-12-18
           
         
       </td>
@@ -223,14 +226,17 @@
   <li><strong>sectraStudyId</strong> (1..1): The image study that was input for the AI system</li>
 </ul>
 
-<h4 id="observation-resources-01-each">Observation Resources (0..1 each)</h4>
+<h4 id="observation-resources">Observation Resources</h4>
 
-<p>These observations contain the AI's clinical findings:</p>
+<p>These observations contain the AI's clinical findings.</p>
+
+<p>There are three observations for each eye.</p>
+
+<p>The effectiveTime is repeated in each observation, because that is FHIR best practice.</p>
 
 <ul>
-  <li><strong>rightEye</strong>: Combined observation for the right eye with DR and DME as components.</li>
-  <li><strong>leftEye</strong>: Combined observation for the left eye with DR and DME as components.</li>
-  <li><strong>imageDescriptions</strong> (1..*): ImagingStudy resources describing the analyzed images</li>
+  <li><strong>rightDiabeticRetinopathyFinding</strong>, <strong>rightDiabeticMacularEdemaFinding</strong>, <strong>rightImageQualityAssessment</strong></li>
+  <li><strong>leftDiabeticRetinopathyFinding</strong>, <strong>leftDiabeticMacularEdemaFinding</strong>, <strong>leftImageQualityAssessment</strong></li>
 </ul>
 
 <h4 id="conclusion">Conclusion</h4>
@@ -245,8 +251,7 @@
 <p>Required information about the AI system and analysis:</p>
 
 <ul>
-  <li><strong>aiDevice</strong> (1..1):  The AI device that performed the analysis in the <code class="language-plaintext highlighter-rouge">device</code> element. We assume that alle the observations (the EyeObservations gradings) are performed by the same AI device. (TODO: Verify this assumption.)</li>
-  <li><strong>effectiveTime</strong> (1..1): When the AI analysis was performed</li>
+  <li><strong>aiDevice</strong> (1..1):  The AI device that performed the analysis in the <code class="language-plaintext highlighter-rouge">device</code> element. We assume that alle the observations are performed by the same AI device. (TODO: Verify this assumption.)</li>
   <li><strong>fullReport</strong> (1..1): Complete report of AI and supporting system an Attachment.</li>
   <li><strong>metaTags</strong> (0..*): Workflow tags, such as <code class="language-plaintext highlighter-rouge">VALIDATION</code> to indicate data for validation review</li>
 </ul>
@@ -268,13 +273,16 @@
   
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="append-retina-ai-result"> </a><a name="hcappend-retina-ai-result"> </a><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>sectraStudyId</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)</p>
-</div></td></tr><tr><td>IN</td><td>rightEye</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.</p>
-</div></td></tr><tr><td>IN</td><td>leftEye</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.</p>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="append-retina-ai-result"> </a><a name="hcappend-retina-ai-result"> </a><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>sectraStudyId</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Sectra study identifier for the retinal images that were analyzed. System: http://dips.no/fhir/RetinaIntegration/sectra-image-study-id</p>
 </div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode. MUST use codes from RetinaDiagnosticReportConclusionCodeValueSet (http://dips.no/fhir/RetinaIntegration/ValueSet/retina-diagnosticreport-conclusioncode-vs)</p>
 </div></td></tr><tr><td>IN</td><td>daysUntilNextExamination</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/days-until-next-examination-extension</p>
-</div></td></tr><tr><td>IN</td><td>effectiveTime</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td/><td><div><p>Time when the AI analysis was performed</p>
 </div></td></tr><tr><td>IN</td><td>aiDevice</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/device.html">Device</a></td><td/><td><div><p>AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.</p>
+</div></td></tr><tr><td>IN</td><td>rightDiabeticRetinopathyFinding</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Right eye diabetic retinopathy finding. MUST conform to RetinaDiabeticRetinopathyFinding profile with bodySite set to right eye (SNOMED CT: 5597008).</p>
+</div></td></tr><tr><td>IN</td><td>rightDiabeticMacularEdemaFinding</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Right eye diabetic macular edema finding. MUST conform to RetinaDiabeticMacularEdemaFinding profile with bodySite set to right eye (SNOMED CT: 5597008).</p>
+</div></td></tr><tr><td>IN</td><td>rightImageQualityAssessment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Right eye image quality assessment. MUST conform to RetinaImageQualityAssessment profile with bodySite set to right eye (SNOMED CT: 5597008).</p>
+</div></td></tr><tr><td>IN</td><td>leftDiabeticRetinopathyFinding</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Left eye diabetic retinopathy finding. MUST conform to RetinaDiabeticRetinopathyFinding profile with bodySite set to left eye (SNOMED CT: 58443009).</p>
+</div></td></tr><tr><td>IN</td><td>leftDiabeticMacularEdemaFinding</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Left eye diabetic macular edema finding. MUST conform to RetinaDiabeticMacularEdemaFinding profile with bodySite set to left eye (SNOMED CT: 58443009).</p>
+</div></td></tr><tr><td>IN</td><td>leftImageQualityAssessment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td><td/><td><div><p>Left eye image quality assessment. MUST conform to RetinaImageQualityAssessment profile with bodySite set to left eye (SNOMED CT: 58443009).</p>
 </div></td></tr><tr><td>IN</td><td>fullReport</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></td><td/><td><div><p>Technical details for further reference about the AI grading, stored in DiagnosticReport.presentedForm</p>
 </div></td></tr><tr><td>IN</td><td>metaTags</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Workflow tags.
 Add code http://terminology.hl7.org/CodeSystem/v3-ActReason#VALIDATION when data is for validation purposes only
@@ -304,7 +312,7 @@ and the result from the AI analysis will not be used in clinical decision making
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 30, 2025 22:57+0100">2025-11-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 18, 2025 07:21+0100">2025-12-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

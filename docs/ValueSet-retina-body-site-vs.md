@@ -1,32 +1,31 @@
-# Retina Body Site - RetinaIntegration v0.2.0
+# Retina Body Site - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Retina Body Site**
 
-## ValueSet: Retina Body Site (Experimental) 
+## ValueSet: Retina Body Site 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaBodySiteValueSet |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs | *Version*:0.5.0 |
+| Draft as of 2025-12-02 | *Computable Name*:RetinaBodySiteValueSet |
 
  
 Body site codes for retinal observations (right or left retina). 
 
  **References** 
 
-* [Retina Eye Observation](StructureDefinition-retina-eye-observation.md)
+* [Retina Diabetic Macular Edema Finding](StructureDefinition-retina-diabetic-macular-edema-finding.md)
+* [Retina Diabetic Retinopathy Finding](StructureDefinition-retina-diabetic-retinopathy-finding.md)
+* [Retina Image Quality Assessment](StructureDefinition-retina-image-quality-asessment.md)
+* [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
 
 ### Logical Definition (CLD)
 
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-feb. 2025
-
-This value set contains 2 concepts
 
 -------
 
@@ -50,12 +49,12 @@ This value set contains 2 concepts
   "resourceType" : "ValueSet",
   "id" : "retina-body-site-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaBodySiteValueSet",
   "title" : "Retina Body Site",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : false,
+  "date" : "2025-12-02",
   "publisher" : "DIPS AS",
   "contact" : [
     {

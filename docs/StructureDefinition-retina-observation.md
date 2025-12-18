@@ -1,4 +1,4 @@
-# Retina Observation - RetinaIntegration v0.2.0
+# Retina Observation - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaObservation |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation | *Version*:0.5.0 |
+| Draft as of 2025-12-02 | *Computable Name*:RetinaObservation |
 
  
 Base observation profile for observations connected to RetinaDiagnosticReport. 
@@ -19,7 +19,7 @@ This profile is not to be instantiated directly. It is a base profile for other 
 
 **Usages:**
 
-* Derived from this Profile: [Retina Eye Observation](StructureDefinition-retina-eye-observation.md) and [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation.md)
+* Derived from this Profile: [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-observation)
 
@@ -40,11 +40,12 @@ Other representations of profile: [CSV](StructureDefinition-retina-observation.c
   "resourceType" : "StructureDefinition",
   "id" : "retina-observation",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaObservation",
   "title" : "Retina Observation",
   "status" : "draft",
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : false,
+  "date" : "2025-12-02",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -132,7 +133,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-observation.c
           {
             "label" : "UUID Identifier",
             "valueIdentifier" : {
-              "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+              "system" : "http://dips.no/fhir/RetinaIntegration/observation-id",
               "value" : "8367e10c-ee7f-4a42-8bdd-44f628ab0a6f"
             }
           }
@@ -142,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-observation.c
         "id" : "Observation.identifier:retinaObservationId.system",
         "path" : "Observation.identifier.system",
         "min" : 1,
-        "patternUri" : "http://dips.no/fhir/NamingSystem/retina-observation-id"
+        "patternUri" : "http://dips.no/fhir/RetinaIntegration/observation-id"
       },
       {
         "id" : "Observation.identifier:retinaObservationId.value",

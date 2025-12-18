@@ -1,4 +1,4 @@
-# Retina Append AI Result Operation - RetinaIntegration v0.2.0
+# Retina Append AI Result Operation - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:AppendRetinaAIResult |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.5.0 |
+| Draft as of 2025-12-18 | *Computable Name*:AppendRetinaAIResult |
 
  
 OperationDefinition for appending retina AI results to an existing DiagnosticReport. 
@@ -38,13 +38,16 @@ The operation accepts multiple types of parameters organized into logical groups
 
 * **sectraStudyId** (1..1): The image study that was input for the AI system
 
-#### Observation Resources (0..1 each)
+#### Observation Resources
 
-These observations contain the AI's clinical findings:
+These observations contain the AI's clinical findings.
 
-* **rightEye**: Combined observation for the right eye with DR and DME as components.
-* **leftEye**: Combined observation for the left eye with DR and DME as components.
-* **imageDescriptions** (1..*): ImagingStudy resources describing the analyzed images
+There are three observations for each eye.
+
+The effectiveTime is repeated in each observation, because that is FHIR best practice.
+
+* **rightDiabeticRetinopathyFinding**, **rightDiabeticMacularEdemaFinding**, **rightImageQualityAssessment**
+* **leftDiabeticRetinopathyFinding**, **leftDiabeticMacularEdemaFinding**, **leftImageQualityAssessment**
 
 #### Conclusion
 
@@ -55,82 +58,13 @@ These observations contain the AI's clinical findings:
 
 Required information about the AI system and analysis:
 
-* **aiDevice** (1..1): The AI device that performed the analysis in the `device` element. We assume that alle the observations (the EyeObservations gradings) are performed by the same AI device. (TODO: Verify this assumption.)
-* **effectiveTime** (1..1): When the AI analysis was performed
+* **aiDevice** (1..1): The AI device that performed the analysis in the `device` element. We assume that alle the observations are performed by the same AI device. (TODO: Verify this assumption.)
 * **fullReport** (1..1): Complete report of AI and supporting system an Attachment.
 * **metaTags** (0..*): Workflow tags, such as `VALIDATION` to indicate data for validation review
 
 ### Example
 
 See [RetinaAppendAIResultOperation-Example](Parameters-RetinaAppendAIResultOperation-Example.md) for a complete example of the operation parameters.
-
-URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
-
-### Parameters
-
-* **Use**: IN
-  * **Name**: sectraStudyId
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [Identifier](http://hl7.org/fhir/R4/datatypes.html#Identifier)
-  * **Binding**: 
-  * **Documentation**: Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)
-* **Use**: IN
-  * **Name**: rightEye
-  * **Scope**: 
-  * **Cardinality**: 0..1
-  * **Type**: [Observation](http://hl7.org/fhir/R4/observation.html)
-  * **Binding**: 
-  * **Documentation**: Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.
-* **Use**: IN
-  * **Name**: leftEye
-  * **Scope**: 
-  * **Cardinality**: 0..1
-  * **Type**: [Observation](http://hl7.org/fhir/R4/observation.html)
-  * **Binding**: 
-  * **Documentation**: Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.
-* **Use**: IN
-  * **Name**: conclusion
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [CodeableConcept](http://hl7.org/fhir/R4/datatypes.html#CodeableConcept)
-  * **Binding**: 
-  * **Documentation**: Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode. MUST use codes from RetinaDiagnosticReportConclusionCodeValueSet (http://dips.no/fhir/RetinaIntegration/ValueSet/retina-diagnosticreport-conclusioncode-vs)
-* **Use**: IN
-  * **Name**: daysUntilNextExamination
-  * **Scope**: 
-  * **Cardinality**: 0..1
-  * **Type**: [integer](http://hl7.org/fhir/R4/datatypes.html#integer)
-  * **Binding**: 
-  * **Documentation**: Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/days-until-next-examination-extension
-* **Use**: IN
-  * **Name**: effectiveTime
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [dateTime](http://hl7.org/fhir/R4/datatypes.html#dateTime)
-  * **Binding**: 
-  * **Documentation**: Time when the AI analysis was performed
-* **Use**: IN
-  * **Name**: aiDevice
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [Device](http://hl7.org/fhir/R4/device.html)
-  * **Binding**: 
-  * **Documentation**: AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.
-* **Use**: IN
-  * **Name**: fullReport
-  * **Scope**: 
-  * **Cardinality**: 1..1
-  * **Type**: [Attachment](http://hl7.org/fhir/R4/datatypes.html#Attachment)
-  * **Binding**: 
-  * **Documentation**: Technical details for further reference about the AI grading, stored in DiagnosticReport.presentedForm
-* **Use**: IN
-  * **Name**: metaTags
-  * **Scope**: 
-  * **Cardinality**: 0..*
-  * **Type**: [Coding](http://hl7.org/fhir/R4/datatypes.html#Coding)
-  * **Binding**: 
-  * **Documentation**: Workflow tags. Add code http://terminology.hl7.org/CodeSystem/v3-ActReason#VALIDATION when data is for validation purposes only and the result from the AI analysis will not be used in clinical decision making.
 
 
 
@@ -141,12 +75,12 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "AppendRetinaAIResult",
   "title" : "Retina Append AI Result Operation",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-11-30T22:57:21+01:00",
+  "date" : "2025-12-18T07:21:20+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -176,24 +110,8 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
       "use" : "in",
       "min" : 1,
       "max" : "1",
-      "documentation" : "Sectra study identifier for the retinal images that were analyzed. System: http://sectra.no/identifiers (TODO: Is there a more global standard to use for Sectra studyID system?)",
+      "documentation" : "Sectra study identifier for the retinal images that were analyzed. System: http://dips.no/fhir/RetinaIntegration/sectra-image-study-id",
       "type" : "Identifier"
-    },
-    {
-      "name" : "rightEye",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Right eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.",
-      "type" : "Observation"
-    },
-    {
-      "name" : "leftEye",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Left eye observation with DR, DME and image quality components. MUST conform to RetinaEyeObservation profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation). BodySite and AI device will be added.",
-      "type" : "Observation"
     },
     {
       "name" : "conclusion",
@@ -212,20 +130,60 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
       "type" : "integer"
     },
     {
-      "name" : "effectiveTime",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Time when the AI analysis was performed",
-      "type" : "dateTime"
-    },
-    {
       "name" : "aiDevice",
       "use" : "in",
       "min" : 1,
       "max" : "1",
       "documentation" : "AI Device that performed the analysis. MUST conform to RetinaAIDevice profile (http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device). Should include deviceName with AI product name, and version elements for algorithm version and protocol.",
       "type" : "Device"
+    },
+    {
+      "name" : "rightDiabeticRetinopathyFinding",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Right eye diabetic retinopathy finding. MUST conform to RetinaDiabeticRetinopathyFinding profile with bodySite set to right eye (SNOMED CT: 5597008).",
+      "type" : "Observation"
+    },
+    {
+      "name" : "rightDiabeticMacularEdemaFinding",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Right eye diabetic macular edema finding. MUST conform to RetinaDiabeticMacularEdemaFinding profile with bodySite set to right eye (SNOMED CT: 5597008).",
+      "type" : "Observation"
+    },
+    {
+      "name" : "rightImageQualityAssessment",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Right eye image quality assessment. MUST conform to RetinaImageQualityAssessment profile with bodySite set to right eye (SNOMED CT: 5597008).",
+      "type" : "Observation"
+    },
+    {
+      "name" : "leftDiabeticRetinopathyFinding",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Left eye diabetic retinopathy finding. MUST conform to RetinaDiabeticRetinopathyFinding profile with bodySite set to left eye (SNOMED CT: 58443009).",
+      "type" : "Observation"
+    },
+    {
+      "name" : "leftDiabeticMacularEdemaFinding",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Left eye diabetic macular edema finding. MUST conform to RetinaDiabeticMacularEdemaFinding profile with bodySite set to left eye (SNOMED CT: 58443009).",
+      "type" : "Observation"
+    },
+    {
+      "name" : "leftImageQualityAssessment",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Left eye image quality assessment. MUST conform to RetinaImageQualityAssessment profile with bodySite set to left eye (SNOMED CT: 58443009).",
+      "type" : "Observation"
     },
     {
       "name" : "fullReport",

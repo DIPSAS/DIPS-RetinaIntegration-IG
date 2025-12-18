@@ -1,15 +1,15 @@
-# Retina DiagnosticReport - RetinaIntegration v0.2.0
+# Retina DiagnosticReport - RetinaIntegration v0.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Retina DiagnosticReport**
 
-## Resource Profile: Retina DiagnosticReport ( Experimental ) 
+## Resource Profile: Retina DiagnosticReport 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report | *Version*:0.2.0 |
-| Draft as of 2025-11-30 | *Computable Name*:RetinaDiagnosticReport |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report | *Version*:0.5.0 |
+| Draft as of 2025-12-08 | *Computable Name*:RetinaDiagnosticReport |
 
  
 Diagnostic report for the grading process of a single examination which is part of a screening program. 
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
   "resourceType" : "StructureDefinition",
   "id" : "retina-diagnostic-report",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
-  "version" : "0.2.0",
+  "version" : "0.5.0",
   "name" : "RetinaDiagnosticReport",
   "title" : "Retina DiagnosticReport",
   "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-11-30T22:57:21+01:00",
+  "experimental" : false,
+  "date" : "2025-12-08",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -116,8 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "min" : 1
+        }
       },
       {
         "id" : "DiagnosticReport.extension:daysUntilNextExamination",
@@ -135,16 +134,16 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
         ]
       },
       {
-        "id" : "DiagnosticReport.extension:initialInstructions",
+        "id" : "DiagnosticReport.extension:cautions",
         "path" : "DiagnosticReport.extension",
-        "sliceName" : "initialInstructions",
-        "min" : 1,
+        "sliceName" : "cautions",
+        "min" : 0,
         "max" : "*",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension"
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/cautions-extension"
             ]
           }
         ]
@@ -195,7 +194,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
           {
             "label" : "UUID Identifier",
             "valueIdentifier" : {
-              "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",
+              "system" : "http://dips.no/fhir/RetinaIntegration/examination-id",
               "value" : "550e8400-e29b-41d4-a716-446655440000"
             }
           }
@@ -210,7 +209,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
         "id" : "DiagnosticReport.identifier:retinaExaminationId.system",
         "path" : "DiagnosticReport.identifier.system",
         "min" : 1,
-        "patternUri" : "http://dips.no/fhir/NamingSystem/retina-examination-id"
+        "patternUri" : "http://dips.no/fhir/RetinaIntegration/examination-id"
       },
       {
         "id" : "DiagnosticReport.identifier:retinaExaminationId.value",
@@ -227,16 +226,55 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
       {
         "id" : "DiagnosticReport.code",
         "path" : "DiagnosticReport.code",
-        "short" : "Fixed code: Bildediagnostikk",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
-              "code" : "B",
-              "display" : "Bildediagnostikk"
-            }
-          ]
+        "short" : "Retina imaging procedure(s) performed: fundus photography and/or OCT",
+        "definition" : "The type(s) of retinal imaging procedure(s) the photographer has indicated shall be performed.",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs"
         }
+      },
+      {
+        "id" : "DiagnosticReport.subject",
+        "path" : "DiagnosticReport.subject",
+        "short" : "Reference to the patient",
+        "definition" : "A reference to the patient. The patient's identifier MUST be one of the official Norwegian patient identifier systems: Fødselsnummer (urn:oid:2.16.578.1.12.4.1.4.1), D-nummer (urn:oid:2.16.578.1.12.4.1.4.2), or Felles hjelpenummer (urn:oid:2.16.578.1.12.4.1.4.3).",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+          }
+        ],
+        "example" : [
+          {
+            "label" : "Patient with Fødselsnummer",
+            "valueReference" : {
+              "reference" : "Patient/cdp1000807",
+              "identifier" : {
+                "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+                "value" : "15076500565"
+              }
+            }
+          },
+          {
+            "label" : "Patient with D-nummer",
+            "valueReference" : {
+              "reference" : "Patient/cdp1004445",
+              "identifier" : {
+                "system" : "urn:oid:2.16.578.1.12.4.1.4.2",
+                "value" : "41018512345"
+              }
+            }
+          },
+          {
+            "label" : "Patient with Felles Hjelpenummer",
+            "valueReference" : {
+              "identifier" : {
+                "system" : "urn:oid:2.16.578.1.12.4.1.4.3",
+                "value" : "11223344556"
+              }
+            }
+          }
+        ]
       },
       {
         "id" : "DiagnosticReport.performer",
@@ -266,9 +304,6 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
         "path" : "DiagnosticReport.result",
         "sliceName" : "hbA1cObservation",
         "short" : "Optional HbA1c Laboratory Result",
-        "definition" : "An optional observation containing HbA1c laboratory results. This observation provides important context for diabetic retinopathy assessment by documenting the patient's glycemic control status at the time of retinal examination. This value is reported by the user before the examination begins.",
-        "comment" : "This slice is used to include HbA1c laboratory values that provide clinical context for retinal screening. The observation should use the SNOMED CT code 167491000202108 for HbA1c.",
-        "requirements" : "HbA1c values provide essential clinical context for interpreting retinal screening results and determining appropriate follow-up intervals in diabetic retinopathy management.",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -281,20 +316,49 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
         ]
       },
       {
-        "id" : "DiagnosticReport.result:eyeObservation",
+        "id" : "DiagnosticReport.result:dmeFinding",
         "path" : "DiagnosticReport.result",
-        "sliceName" : "eyeObservation",
-        "short" : "Optional Eye Assessment (Right or Left)",
-        "definition" : "An optional observation containing diabetic retinopathy and macular edema assessment results for one eye. This observation uses components to document both DR severity and DME presence. The bodySite element identifies which eye (right or left).",
-        "comment" : "This slice contains a multi-component observation for one eye with DR severity and DME presence as separate components. Up to two instances can be present (one for each eye).",
-        "requirements" : "Essential for tracking diabetic retinopathy and macular edema for appropriate clinical decision making and follow-up scheduling.",
+        "sliceName" : "dmeFinding",
+        "short" : "Optional DME Findings (up to 2: left and/or right eye). Use bodySite element to distinguish left vs right eye.",
         "min" : 0,
         "max" : "2",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "DiagnosticReport.result:drFinding",
+        "path" : "DiagnosticReport.result",
+        "sliceName" : "drFinding",
+        "short" : "Optional DR Findings (up to 2: left and/or right eye). Use bodySite element to distinguish left vs right eye.",
+        "min" : 0,
+        "max" : "2",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "DiagnosticReport.result:imageQuality",
+        "path" : "DiagnosticReport.result",
+        "sliceName" : "imageQuality",
+        "short" : "Optional Image Quality Observations (up to 2: left and/or right eye). Use bodySite element to distinguish left vs right eye.",
+        "min" : 0,
+        "max" : "2",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"
             ]
           }
         ]
@@ -324,7 +388,7 @@ Other representations of profile: [CSV](StructureDefinition-retina-diagnostic-re
         "short" : "Conclusion codes summarizing the findings of the retina examination.",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"
+          "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"
         }
       }
     ]

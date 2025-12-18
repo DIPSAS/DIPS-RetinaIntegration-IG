@@ -17,11 +17,11 @@
      fhir:v "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"^^xsd:anyURI ;
      fhir:l <http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration>
   ] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
   fhir:name [ fhir:v "RetinaIntegration"] ; # 
   fhir:title [ fhir:v "RetinaIntegration"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-30T22:57:21+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-18T07:21:20+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -54,7 +54,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.0" ]
+     fhir:version [ fhir:v "7.0.1" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -754,7 +754,7 @@
        ] ;
        fhir:value [
          a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
        ]
      ] [
        fhir:extension ( [
@@ -1441,11 +1441,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/Bundle/Bundle-SinglExamination-Example> ;
-         fhir:reference [ fhir:v "Bundle/Bundle-SinglExamination-Example" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Bundle/Bundle-SingleExamination-Example> ;
+         fhir:reference [ fhir:v "Bundle/Bundle-SingleExamination-Example" ]
        ] ;
-       fhir:name [ fhir:v "Bundle-SinglExamination-Example" ] ;
-       fhir:description [ fhir:v "Result of query for a specific examination idfentified by ID containing no AI result." ] ;
+       fhir:name [ fhir:v "Bundle-SingleExamination-Example" ] ;
+       fhir:description [ fhir:v "A bundle containing a single DiagnosticReport with a single ImagingStudy awaiting AI result without any previous examination and without andy cautions." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -1466,10 +1466,31 @@
          fhir:reference [ fhir:v "Bundle/Bundle-TwoExaminations-Example" ]
        ] ;
        fhir:name [ fhir:v "Bundle-TwoExaminations-Example" ] ;
-       fhir:description [ fhir:v "Result of query for examinations between two dates, not containing AI result." ] ;
+       fhir:description [ fhir:v "A bundle containing two DiagnosticReports with their corresponding ImagingStudies and HbA1cObservations. One DiagnosticReport has a previous examination and cautions, while the other does not. One report has two ImagingStudies." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/cautions-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/cautions-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Cautions" ] ;
+       fhir:description [ fhir:v "Special considerations or cautions for grading this examination (5000-series)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1488,27 +1509,6 @@
        ] ;
        fhir:name [ fhir:v "Days Until Next Examination" ] ;
        fhir:description [ fhir:v "Number of days until next examination." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/initial-instructions-extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/initial-instructions-extension" ]
-       ] ;
-       fhir:name [ fhir:v "Initial Instructions" ] ;
-       fhir:description [ fhir:v "Initial routing instruction and optional cautions for grading this examination (4000-series and 5000-series)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1626,6 +1626,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs> ;
+         fhir:reference [ fhir:v "ValueSet/retina-caution-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Retina Cautions" ] ;
+       fhir:description [ fhir:v "Special considerations or cautions for grading this examination (5000-series)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1651,8 +1672,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs> ;
-         fhir:reference [ fhir:v "ValueSet/retina-conclusioncode-vs" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/retina-conclusion-code-vs" ]
        ] ;
        fhir:name [ fhir:v "Retina Conclusion" ] ;
        fhir:description [ fhir:v "Codes describing the current or final conclusion of the examination (1000-series)." ] ;
@@ -1672,11 +1693,53 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/retina-conclusioncode-cs" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/retina-conclusion-code-cs" ]
        ] ;
        fhir:name [ fhir:v "Retina Conclusion" ] ;
        fhir:description [ fhir:v "Codes for the current or final conclusion of the grading process (1000-series)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding> ;
+         fhir:reference [ fhir:v "StructureDefinition/retina-diabetic-macular-edema-finding" ]
+       ] ;
+       fhir:name [ fhir:v "Retina Diabetic Macular Edema Finding" ] ;
+       fhir:description [ fhir:v "Observation profile for documenting findings related to diabetic macular edema (DME) in retina examinations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding> ;
+         fhir:reference [ fhir:v "StructureDefinition/retina-diabetic-retinopathy-finding" ]
+       ] ;
+       fhir:name [ fhir:v "Retina Diabetic Retinopathy Finding" ] ;
+       fhir:description [ fhir:v "Observation profile for documenting findings related to diabetic retinopathy (DR) in retina examinations." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1714,32 +1777,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-examination-id> ;
-         fhir:reference [ fhir:v "NamingSystem/retina-examination-id" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-diagnostic-report-ns> ;
+         fhir:reference [ fhir:v "NamingSystem/retina-diagnostic-report-ns" ]
        ] ;
-       fhir:name [ fhir:v "Retina Examination Id" ] ;
-       fhir:description [ fhir:v "ID identifying an examination." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/retina-eye-observation" ]
-       ] ;
-       fhir:name [ fhir:v "Retina Eye Observation" ] ;
-       fhir:description [ fhir:v "The result of AI grading for one eye. The bodySite element identifies which eye (right or left)." ] ;
+       fhir:name [ fhir:v "Retina DiagnosticReport Identifier System" ] ;
+       fhir:description [ fhir:v "IDs to identify retina diagnostic reports." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1777,8 +1819,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs> ;
-         fhir:reference [ fhir:v "ValueSet/retina-imagequality-vs" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs> ;
+         fhir:reference [ fhir:v "ValueSet/retina-image-quality-vs" ]
        ] ;
        fhir:name [ fhir:v "Retina Image Quality" ] ;
        fhir:description [ fhir:v "Image quality as assessed by AI (2000-series)." ] ;
@@ -1798,11 +1840,74 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/retina-imagequality-cs" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/retina-image-quality-cs" ]
        ] ;
        fhir:name [ fhir:v "Retina Image Quality" ] ;
-       fhir:description [ fhir:v "Image quality as asessed by AI solution (2000-series)." ] ;
+       fhir:description [ fhir:v "Image quality as assessed by AI solution (2000-series)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/retina-image-quality-asessment" ]
+       ] ;
+       fhir:name [ fhir:v "Retina Image Quality Assessment" ] ;
+       fhir:description [ fhir:v "The image quality as assesed by AI (2000-series)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs> ;
+         fhir:reference [ fhir:v "ValueSet/retina-image-view-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Retina Image View" ] ;
+       fhir:description [ fhir:v "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/retina-image-view-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Retina Image View" ] ;
+       fhir:description [ fhir:v "Codes describing the centering used when capturing retinal images (6000-series)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1857,15 +1962,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "ValueSet"
+           fhir:v "NamingSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-initial-instructions-vs> ;
-         fhir:reference [ fhir:v "ValueSet/retina-initial-instructions-vs" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-imaging-study-ns> ;
+         fhir:reference [ fhir:v "NamingSystem/retina-imaging-study-ns" ]
        ] ;
-       fhir:name [ fhir:v "Retina Initial Instructions" ] ;
-       fhir:description [ fhir:v "Initial routing decisions and cautions for grading this examination (1000-series and 5000-series)." ] ;
+       fhir:name [ fhir:v "Retina ImagingStudy Identifier System" ] ;
+       fhir:description [ fhir:v "IDs identifying imaging studies associated with a diagnostic report. Includes both internal GUIDs and Sectra image study IDs." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1903,11 +2008,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-id> ;
-         fhir:reference [ fhir:v "NamingSystem/retina-observation-id" ]
+         fhir:l <http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns> ;
+         fhir:reference [ fhir:v "NamingSystem/retina-observation-ns" ]
        ] ;
-       fhir:name [ fhir:v "Retina Observation Id" ] ;
-       fhir:description [ fhir:v "ID identifying an observation associated with an examination." ] ;
+       fhir:name [ fhir:v "Retina Observation Identifier System" ] ;
+       fhir:description [ fhir:v "IDs identifying observations associated with a diagnostic report." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1929,28 +2034,6 @@
        ] ;
        fhir:name [ fhir:v "RetinaAIDevice-Example" ] ;
        fhir:description [ fhir:v "AI device that performed the automated retina analysis." ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"^^xsd:anyURI ;
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Device"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/Device/RetinaAIDevice-input> ;
-         fhir:reference [ fhir:v "Device/RetinaAIDevice-input" ]
-       ] ;
-       fhir:name [ fhir:v "RetinaAIDevice-input" ] ;
-       fhir:description [ fhir:v "AI device used for this analysis." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"^^xsd:anyURI ;
@@ -2006,6 +2089,94 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaDiabeticMacularEdemaFinding-Example-left> ;
+         fhir:reference [ fhir:v "Observation/RetinaDiabeticMacularEdemaFinding-Example-left" ]
+       ] ;
+       fhir:name [ fhir:v "RetinaDiabeticMacularEdemaFinding-Example-left" ] ;
+       fhir:description [ fhir:v "Left eye diabetic macular edema finding example." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaDiabeticMacularEdemaFinding-Example-right> ;
+         fhir:reference [ fhir:v "Observation/RetinaDiabeticMacularEdemaFinding-Example-right" ]
+       ] ;
+       fhir:name [ fhir:v "RetinaDiabeticMacularEdemaFinding-Example-right" ] ;
+       fhir:description [ fhir:v "Right eye diabetic macular edema finding example." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaDiabeticRetinopathyFinding-Example-left> ;
+         fhir:reference [ fhir:v "Observation/RetinaDiabeticRetinopathyFinding-Example-left" ]
+       ] ;
+       fhir:name [ fhir:v "RetinaDiabeticRetinopathyFinding-Example-left" ] ;
+       fhir:description [ fhir:v "Left eye diabetic retinopathy finding example." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaDiabeticRetinopathyFinding-Example-right> ;
+         fhir:reference [ fhir:v "Observation/RetinaDiabeticRetinopathyFinding-Example-right" ]
+       ] ;
+       fhir:name [ fhir:v "RetinaDiabeticRetinopathyFinding-Example-right" ] ;
+       fhir:description [ fhir:v "Right eye diabetic retinopathy finding example." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "DiagnosticReport"
          ]
        ] ) ;
@@ -2014,7 +2185,7 @@
          fhir:reference [ fhir:v "DiagnosticReport/RetinaDiagnosticReport-Example" ]
        ] ;
        fhir:name [ fhir:v "RetinaDiagnosticReport-Example" ] ;
-       fhir:description [ fhir:v "Example after AI result is appended. Only one eye." ] ;
+       fhir:description [ fhir:v "Example after AI result is appended. Both eyes." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"^^xsd:anyURI ;
@@ -2076,94 +2247,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaEyeObservation-Example-left> ;
-         fhir:reference [ fhir:v "Observation/RetinaEyeObservation-Example-left" ]
-       ] ;
-       fhir:name [ fhir:v "RetinaEyeObservation-Example-left" ] ;
-       fhir:description [ fhir:v "Left eye assessment with DR, DME and image quality components." ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"^^xsd:anyURI ;
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaEyeObservation-Example-right> ;
-         fhir:reference [ fhir:v "Observation/RetinaEyeObservation-Example-right" ]
-       ] ;
-       fhir:name [ fhir:v "RetinaEyeObservation-Example-right" ] ;
-       fhir:description [ fhir:v "Right eye assessment with DR, DME and image quality components." ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"^^xsd:anyURI ;
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaEyeObservation-input-left> ;
-         fhir:reference [ fhir:v "Observation/RetinaEyeObservation-input-left" ]
-       ] ;
-       fhir:name [ fhir:v "RetinaEyeObservation-input-left" ] ;
-       fhir:description [ fhir:v "Left eye assessment with DR and DME components.  TODO: Why is 'not-asked' used in this example?" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"^^xsd:anyURI ;
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaEyeObservation-input-right> ;
-         fhir:reference [ fhir:v "Observation/RetinaEyeObservation-input-right" ]
-       ] ;
-       fhir:name [ fhir:v "RetinaEyeObservation-input-right" ] ;
-       fhir:description [ fhir:v "Right eye assessment with DR and DME components." ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation"^^xsd:anyURI ;
-         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-eye-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaHbA1cObservation-Example> ;
          fhir:reference [ fhir:v "Observation/RetinaHbA1cObservation-Example" ]
        ] ;
@@ -2173,6 +2256,50 @@
          a fhir:Canonical ;
          fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"^^xsd:anyURI ;
          fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaImageQualityAssessment-Example-left> ;
+         fhir:reference [ fhir:v "Observation/RetinaImageQualityAssessment-Example-left" ]
+       ] ;
+       fhir:name [ fhir:v "RetinaImageQualityAssessment-Example-left" ] ;
+       fhir:description [ fhir:v "Left eye image quality assessment example." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/Observation/RetinaImageQualityAssessment-Example-right> ;
+         fhir:reference [ fhir:v "Observation/RetinaImageQualityAssessment-Example-right" ]
+       ] ;
+       fhir:name [ fhir:v "RetinaImageQualityAssessment-Example-right" ] ;
+       fhir:description [ fhir:v "Right eye image quality assessment example." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"^^xsd:anyURI ;
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment>
        ]
      ] [
        fhir:extension ( [
@@ -2218,6 +2345,27 @@
          fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy"^^xsd:anyURI ;
          fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view> ;
+         fhir:reference [ fhir:v "StructureDefinition/retinal-image-view" ]
+       ] ;
+       fhir:name [ fhir:v "Retinal Image View" ] ;
+       fhir:description [ fhir:v "The centering or anatomical focus of a retinal image." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -2256,6 +2404,44 @@
            fhir:l fhir:index.html
          ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "changelog.html"^^xsd:anyURI ;
+             fhir:l fhir:changelog.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "changelog.html"^^xsd:anyURI ;
+           fhir:l fhir:changelog.html
+         ] ;
+         fhir:title [ fhir:v "Changelog" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Issues-and-Enhancements.html"^^xsd:anyURI ;
+             fhir:l fhir:Issues-and-Enhancements.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Issues-and-Enhancements.html"^^xsd:anyURI ;
+           fhir:l fhir:Issues-and-Enhancements.html
+         ] ;
+         fhir:title [ fhir:v "Issues and Enhancements" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
