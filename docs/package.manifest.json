@@ -1,0 +1,6 @@
+{
+  "version" : "0.6.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20260203095713",
+  "name" : "dips.fhir.retinaintegration"
+}

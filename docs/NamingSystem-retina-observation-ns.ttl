@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "retina-observation-ns"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem retina-observation-ns</b></p><a name=\"retina-observation-ns\"> </a><a name=\"hcretina-observation-ns\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns</td></tr><tr><td>Version</td><td>0.6.0</td></tr><tr><td>Name</td><td>RetinaObservationIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>A naming system for observation identifiers in RetinaIntegration using GUIDs.</p>\n</div></td></tr><tr><td>Publisher</td><td>DIPS AS</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://dips.no/fhir/RetinaIntegration/observation-id</td><td>true</td><td>The observation ID will uniquely identify observations. Identifier values are GUIDs in the format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url>
+     ] ;
+     fhir:value [
+       a fhir:Uri ;
+       fhir:v "http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns"^^xsd:anyURI ;
+       fhir:l <http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "0.6.0"
+     ]
+  ] ) ; # 
+  fhir:name [ fhir:v "RetinaObservationIdentifierSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "identifier"] ; # 
+  fhir:date [ fhir:v "2025-12-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A naming system for observation identifiers in RetinaIntegration using GUIDs."] ; # 
+  fhir:uniqueId ( [
+     fhir:type [ fhir:v "uri" ] ;
+     fhir:value [ fhir:v "http://dips.no/fhir/RetinaIntegration/observation-id" ] ;
+     fhir:preferred [ fhir:v true ] ;
+     fhir:comment [ fhir:v "The observation ID will uniquely identify observations. Identifier values are GUIDs in the format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

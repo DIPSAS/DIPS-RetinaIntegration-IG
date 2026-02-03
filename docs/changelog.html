@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Changelog - RetinaIntegration v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="Model.html">Model</a>
+  </li>
+  <li>
+    <a href="OperationDefinition-retina-by-date.html">Query</a>
+  </li>
+  <li>
+    <a href="OperationDefinition-append-retina-ai-result.html">Append</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Changelog</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Changelog</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#change-log" id="markdown-toc-change-log">Change Log</a></li>
+  <li><a href="#version-060-ci-2026-02-03" id="markdown-toc-version-060-ci-2026-02-03">Version 0.6.0-CI (2026-02-03)</a></li>
+  <li><a href="#version-050-ci-2025-12-18" id="markdown-toc-version-050-ci-2025-12-18">Version 0.5.0-CI (2025-12-18)</a></li>
+  <li><a href="#version-040-ci-release-2025-12-08" id="markdown-toc-version-040-ci-release-2025-12-08">Version 0.4.0-CI (Release 2025-12-08)</a></li>
+  <li><a href="#version-030-ci-release-2025-12-02" id="markdown-toc-version-030-ci-release-2025-12-02">Version 0.3.0-CI (Release 2025-12-02)</a></li>
+  <li><a href="#version-020-ci-release-2025-12-01" id="markdown-toc-version-020-ci-release-2025-12-01">Version 0.2.0-CI (Release 2025-12-01)</a></li>
+  <li><a href="#version-013-ci-released-2025-11-16" id="markdown-toc-version-013-ci-released-2025-11-16">Version 0.1.3-CI (Released 2025-11-16)</a></li>
+  <li><a href="#version-013-ci-released-2025-11-11" id="markdown-toc-version-013-ci-released-2025-11-11">Version 0.1.3-CI (Released 2025-11-11)</a></li>
+  <li><a href="#version-013-ci-released-2025-11-08" id="markdown-toc-version-013-ci-released-2025-11-08">Version 0.1.3-CI (Released 2025-11-08)</a></li>
+  <li><a href="#version-013-ci-released-2025-10-31" id="markdown-toc-version-013-ci-released-2025-10-31">Version 0.1.3-CI (Released 2025-10-31)</a></li>
+  <li><a href="#version-012-ci-release-2025-10-19" id="markdown-toc-version-012-ci-release-2025-10-19">Version 0.1.2-CI (Release 2025-10-19)</a></li>
+  <li><a href="#version-011-ci-release-2025-10-07" id="markdown-toc-version-011-ci-release-2025-10-07">Version 0.1.1-CI (Release 2025-10-07)</a></li>
+</ul>
+
+</div>
+<h3 id="change-log">Change Log</h3>
+
+<p>The changelog gives an overview of the change history of this implementation guide.</p>
+
+<h3 id="version-060-ci-2026-02-03">Version 0.6.0-CI (2026-02-03)</h3>
+<ul>
+  <li>Added query operation <code class="language-plaintext highlighter-rouge">retina-by-date</code>
+    <ul>
+      <li>Parameters <code class="language-plaintext highlighter-rouge">start</code>, <code class="language-plaintext highlighter-rouge">end</code> and <code class="language-plaintext highlighter-rouge">pendingAI</code></li>
+    </ul>
+  </li>
+  <li>Changes in append operation <code class="language-plaintext highlighter-rouge">append-retina-ai-result</code>
+    <ul>
+      <li>Simplified API using primitive data types</li>
+      <li>Added profile RetinaImageParameter for describing images</li>
+    </ul>
+  </li>
+  <li>
+    <p>Added Patient identifier examples to RetinaDiagnosticReport</p>
+  </li>
+  <li>Restructured documentation
+    <ul>
+      <li>Data in a separate page</li>
+      <li>Added report lifecycle state diagram</li>
+      <li>Added operations to main menu</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-050-ci-2025-12-18">Version 0.5.0-CI (2025-12-18)</h3>
+
+<ul>
+  <li>Changed DiagnosticReport previousExaminationConclusion extension to only take one Coding, not a CodeableConcept
+    <ul>
+      <li>Structure of extension is simplified. See examples.</li>
+    </ul>
+  </li>
+  <li>Correct confusion between naming system ID and the IDs defined by the naming system.
+    <ul>
+      <li>In observation identifiers, system <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/NamingSystem/retina-observation-id</code> is replaced with "http://dips.no/fhir/RetinaIntegration/observation-id`</li>
+    </ul>
+  </li>
+  <li>Add naming system for ImagingStudy.
+    <ul>
+      <li>In all ImagingStudy identifiers, system <code class="language-plaintext highlighter-rouge">http://sectra.no/identifiers</code> is replaced by <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/RetinaIntegration/sectra-image-study-id</code></li>
+    </ul>
+  </li>
+  <li>Add patient identifier OID examples to DiagnosticReport profile.
+    <ul>
+      <li>The OID is different for Fødeselsnummer, D-nummer and Felles hjelpenummer.</li>
+    </ul>
+  </li>
+  <li>Add subject references Patient to alle examples.</li>
+</ul>
+
+<h3 id="version-040-ci-release-2025-12-08">Version 0.4.0-CI (Release 2025-12-08)</h3>
+
+<ul>
+  <li>Organize images for left and right eye in two series specified by ImagingStudy.Series.bodySite</li>
+  <li>Add extension to image instance for specifying 'view', macular or optical disc centring, 6000 series</li>
+  <li>Add terminology for image view, macular or optical disc centring, used in image instances (6000 series)</li>
+  <li>Let DiagnosticReport.code be the retina imaging procedure(s) requested: fundus photography and/or OCT.</li>
+  <li>Add extension 'cautions' for the 5000-series codes to diagnostic report.</li>
+  <li>Remove extension 'initialInstructions' as conclusionCode contains the initial workflow step.</li>
+  <li>Change id for retina-image-quality value system  and code system for consistency.</li>
+  <li>Change name to CodeSystem with capital S (best practice).</li>
+  <li>Rename and change ID of RetinaConclusionCode code and value system for consistency (best practice).</li>
+  <li>Add changelog and specify version on all profiles</li>
+  <li>Fix bundle examples for diagnostic reports in <code class="language-plaintext highlighter-rouge">partial</code> state</li>
+</ul>
+
+<h3 id="version-030-ci-release-2025-12-02">Version 0.3.0-CI (Release 2025-12-02)</h3>
+
+<h4 id="drivers-for-making-changes">Drivers for making changes</h4>
+
+<ul>
+  <li>Missing description of image quality. This is an Observation base on a the images in an image series</li>
+  <li>Need to cluster AI device information into a single object, both in model and in parameter</li>
+</ul>
+
+<h4 id="model-changes">Model changes</h4>
+
+<ul>
+  <li>Added device RetinaAIDevice</li>
+  <li>Replace meta tag MLTRAINING with VALIDATION</li>
+  <li>Added ImagingStudy profile</li>
+  <li>Moved sectraIDs from DiagnosticReport to ImagingStudy</li>
+  <li>Add optional procedure codes for OCT and Fundus to ImagingStudy</li>
+  <li>Remove OCT and Fundus as separate observations</li>
+  <li>Replace left and right specific profiles with profiles where bodySite has to be specified</li>
+  <li>Add ImageQuality as separate observation (evaluation by AI system)</li>
+  <li>Renamed <code class="language-plaintext highlighter-rouge">videreForløp</code> extension to <code class="language-plaintext highlighter-rouge">initialInstruction</code></li>
+  <li>Rename RetinaTiltaksstausForrigeUndersokelseExtension to PreviousExaminationConclusionCode</li>
+  <li>Rename kiFristNesteUndersokelse to daysUntilNextExamination</li>
+  <li>Resource IDs are renamed for consistency</li>
+  <li>Consolidated terminology: removed code systems 3000 and 4000 series. Previous conclusion and initial instruction now use 1000 series.</li>
+  <li>All ID's are kebab-case</li>
+</ul>
+
+<h4 id="operation-changes">Operation changes</h4>
+
+<ul>
+  <li>Added AIDevice, replacing KI product name, version algorithm and protocol</li>
+  <li>Rename all parameter names to pascal case (FHIR best practice)</li>
+</ul>
+
+<h4 id="documentation">Documentation</h4>
+
+<ul>
+  <li>Added diagram of FHIR model</li>
+  <li>Added diagram of systems and users</li>
+  <li>Added more examples</li>
+  <li>Added camera device example for use in later version</li>
+  <li>Added more documentation in english</li>
+  <li>Spelling corrected</li>
+</ul>
+
+<h4 id="internal-changes">Internal changes</h4>
+
+<ul>
+  <li>Reorganized FHIR shorthand files (split large files)</li>
+</ul>
+
+<h3 id="version-020-ci-release-2025-12-01">Version 0.2.0-CI (Release 2025-12-01)</h3>
+
+<p>This version was withdrawn. It bundled together all observation of an eye as components in a single observation EyeObservation. This goes against the grain of the FHIR modelling philosophy that the model should be flat. It would severely limit our ability to expand the model in the future.</p>
+
+<h3 id="version-013-ci-released-2025-11-16">Version 0.1.3-CI (Released 2025-11-16)</h3>
+
+<ul>
+  <li>Add code system grading-caution-cs (5000 series)</li>
+</ul>
+
+<h3 id="version-013-ci-released-2025-11-11">Version 0.1.3-CI (Released 2025-11-11)</h3>
+
+<ul>
+  <li>Add videre-forlop-extension with cods from videre-forlop-cs to examples. Chagnge some titles.</li>
+</ul>
+
+<h3 id="version-013-ci-released-2025-11-08">Version 0.1.3-CI (Released 2025-11-08)</h3>
+
+<p>Version 0.1.3 released on new url https://dipsas.github.io/DIPS-RetinaIntegration-IG/</p>
+
+<h3 id="version-013-ci-released-2025-10-31">Version 0.1.3-CI (Released 2025-10-31)</h3>
+
+<h3 id="version-012-ci-release-2025-10-19">Version 0.1.2-CI (Release 2025-10-19)</h3>
+
+<h3 id="version-011-ci-release-2025-10-07">Version 0.1.1-CI (Release 2025-10-07)</h3>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 3, 2026 09:57+0100">2026-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="retina-caution-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-caution-vs</b></p><a name="retina-caution-vs"> </a><a name="hcretina-caution-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-retina-caution-cs.html"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.6.0</span></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs"/>
+  <version value="0.6.0"/>
+  <name value="RetinaCautionValueSet"/>
+  <title value="Retina Cautions"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-07"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Special considerations or cautions for grading this examination (5000-series)."/>
+  <compose>
+    <include>
+      <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"/>
+    </include>
+  </compose>
+</ValueSet>

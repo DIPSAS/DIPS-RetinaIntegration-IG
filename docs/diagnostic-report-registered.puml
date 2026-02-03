@@ -1,0 +1,41 @@
+@startuml diagnostic-report-registered
+
+!theme plain
+skinparam backgroundColor #FFFFFF
+
+' --- Skin Parameters for a Clean Look ---
+
+' This is the correct command to hide all visibility markers (+, -, #)
+' It's the standard way to achieve a diagram without these icons.
+hide circle
+
+' Use orthogonal lines for cleaner relationships
+skinparam linetype ortho
+
+' Add spacing between elements
+'skinparam nodesep 120
+'skinparam ranksep 120
+
+' --- Define FHIR Resources as Classes ---
+
+class rdr as "RetinaDiagnosticReport" <<DiagnosticReport>>{
+  result[hbA1cObservation]: HbA1cObservation
+  ext[cautions]: Codes from 5000 series
+  ext[previousExaminationConclusion]: Code from 1000 series
+  code: OCT and/or fundus photography
+  conclusionCode: Code from 1000 series
+  status: <b>registered</b> | partial | preliminary | final
+}
+
+class HbA1cObservation <<Observation>> {
+  code: snomed "HbA1c"
+  value: Quantity
+  partOf: RetinaDiagnosticReport
+}
+
+' --- Define the relationships ---
+
+rdr "0..1" o-- HbA1cObservation 
+' HbA1cObservation ..> rdr : "partOf"
+ 
+@enduml

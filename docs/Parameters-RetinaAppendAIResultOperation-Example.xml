@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="RetinaAppendAIResultOperation-Example"/>
+  <parameter>
+    <name value="sectraStudyId"/>
+    <valueString value="MMA94126079"/>
+  </parameter>
+  <parameter>
+    <name value="conclusion"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+        <code value="1004"/>
+        <display value="Ny fotokontroll (primærgradering)"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="daysUntilNextExamination"/>
+    <valueInteger value="180"/>
+  </parameter>
+  <parameter>
+    <name value="rightDiabeticRetinopathy"/>
+    <valueDecimal value="0"/>
+  </parameter>
+  <parameter>
+    <name value="rightDiabeticMacularEdema"/>
+    <valueBoolean value="false"/>
+  </parameter>
+  <parameter>
+    <name value="leftDiabeticRetinopathy"/>
+    <valueDecimal value="1"/>
+  </parameter>
+  <parameter>
+    <name value="leftDiabeticMacularEdema"/>
+    <valueBoolean value="false"/>
+  </parameter>
+  <parameter>
+    <name value="rightEyeImage"/>
+    <resource>
+      <Observation>
+        <id value="RetinaImageParameter-Example-right-input-1"/>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6001"/>
+            <display value="Macula centered"/>
+          </coding>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2001"/>
+            <display value="Good"/>
+          </coding>
+        </code>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="rightEyeImage"/>
+    <resource>
+      <Observation>
+        <id value="RetinaImageParameter-Example-right-input-2"/>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6002"/>
+            <display value="Optic disc centered"/>
+          </coding>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2002"/>
+            <display value="Barely gradable"/>
+          </coding>
+        </code>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="leftEyeImage"/>
+    <resource>
+      <Observation>
+        <id value="RetinaImageParameter-Example-left-input-1"/>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6001"/>
+            <display value="Macula centered"/>
+          </coding>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2003"/>
+            <display value="Not gradable"/>
+          </coding>
+        </code>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="leftEyeImage"/>
+    <resource>
+      <Observation>
+        <id value="RetinaImageParameter-Example-left-input-2"/>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6002"/>
+            <display value="Optic disc centered"/>
+          </coding>
+          <coding>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2004"/>
+            <display value="Missing"/>
+          </coding>
+        </code>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="aiDevice"/>
+    <resource>
+      <Device>
+        <id value="RetinaAIDevice-input"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"/>
+        </meta>
+        <deviceName>
+          <name value="AwesomeAI for Retina"/>
+          <type value="model-name"/>
+        </deviceName>
+        <version>
+          <type>
+            <coding>
+              <code value="model-number"/>
+            </coding>
+          </type>
+          <value value="v2.1.0"/>
+        </version>
+        <version>
+          <type>
+            <coding>
+              <code value="software"/>
+            </coding>
+          </type>
+          <value value="Standard protocol"/>
+        </version>
+      </Device>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="fullReport"/>
+    <valueAttachment>
+      <contentType value="text/plain"/>
+      <data value="SGVsbG8sIEZISVIhIFRoaXMgZmlsZSBjb250YWlucyB0aGUgZnVsbCByZXBvcnQgb2YgdGhlIEFpIGFuYWx5c2lzLg=="/>
+      <title value="Full report"/>
+    </valueAttachment>
+  </parameter>
+  <parameter>
+    <name value="validation"/>
+    <valueBoolean value="true"/>
+  </parameter>
+</Parameters>

@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "append-retina-ai-result"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition append-retina-ai-result</b></p><a name=\"append-retina-ai-result\"> </a><a name=\"hcappend-retina-ai-result\"> </a><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>sectraStudyId</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Sectra study ID for the retinal images that were analyzed.</p>\n</div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.</p>\n</div></td></tr><tr><td>IN</td><td>daysUntilNextExamination</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Number of days until next examination. Only included if the conclusion code indicates that the next step is a new examination.</p>\n</div></td></tr><tr><td>IN</td><td>leftDiabeticRetinopathy</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Left eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0</p>\n</div></td></tr><tr><td>IN</td><td>leftDiabeticMacularEdema</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Left eye diabetic macular edema evaluation. True if diabetic macular edema is present.</p>\n</div></td></tr><tr><td>IN</td><td>rightDiabeticRetinopathy</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Right eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0</p>\n</div></td></tr><tr><td>IN</td><td>rightDiabeticMacularEdema</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Right eye diabetic macular edema evaluation. True if diabetic macular edema is present.</p>\n</div></td></tr><tr><td>IN</td><td>rightEyeImage</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> (<a href=\"StructureDefinition-retina-image-parameter.html\" title=\"http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter\">Retina Image Parameter</a>)</td><td/><td><div><p>Right eye images used in the AI analysis. MUST conform to RetinaImageParameter profile.</p>\n</div></td></tr><tr><td>IN</td><td>leftEyeImage</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> (<a href=\"StructureDefinition-retina-image-parameter.html\" title=\"http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter\">Retina Image Parameter</a>)</td><td/><td><div><p>Left eye images used in the AI analysis. MUST conform to RetinaImageParameter profile.</p>\n</div></td></tr><tr><td>IN</td><td>aiDevice</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a> (<a href=\"StructureDefinition-retina-ai-device.html\" title=\"http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device\">Retina AI Device</a>)</td><td/><td><div><p>AI Device that performed the analysis. Includes AI product name, algorithm version and protocol version.</p>\n</div></td></tr><tr><td>IN</td><td>fullReport</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Attachment\">Attachment</a></td><td/><td><div><p>Technical details for further reference about the AI grading.</p>\n</div></td></tr><tr><td>IN</td><td>validation</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Set true if the AI result is for validation purposes only and will not be used in clinical decision making.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result"^^xsd:anyURI ;
+     fhir:l <http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "AppendRetinaAIResult"] ; # 
+  fhir:title [ fhir:v "Retina Append AI Result Operation"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2026-02-03T09:57:13+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "OperationDefinition for appending retina AI results to an existing DiagnosticReport."] ; # 
+  fhir:purpose [ fhir:v "Append results from AI analysis of retina images to a existing DiagnosticReport"] ; # 
+  fhir:code [ fhir:v "append-retina-ai-result"] ; # 
+  fhir:resource ( [ fhir:v "DiagnosticReport"] ) ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v true] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "sectraStudyId" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Sectra study ID for the retinal images that were analyzed." ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:name [ fhir:v "conclusion" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading." ] ;
+     fhir:type [ fhir:v "CodeableConcept" ]
+  ] [
+     fhir:name [ fhir:v "daysUntilNextExamination" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Number of days until next examination. Only included if the conclusion code indicates that the next step is a new examination." ] ;
+     fhir:type [ fhir:v "integer" ]
+  ] [
+     fhir:name [ fhir:v "leftDiabeticRetinopathy" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Left eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:name [ fhir:v "leftDiabeticMacularEdema" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Left eye diabetic macular edema evaluation. True if diabetic macular edema is present." ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:name [ fhir:v "rightDiabeticRetinopathy" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Right eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:name [ fhir:v "rightDiabeticMacularEdema" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Right eye diabetic macular edema evaluation. True if diabetic macular edema is present." ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:name [ fhir:v "rightEyeImage" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Right eye images used in the AI analysis. MUST conform to RetinaImageParameter profile." ] ;
+     fhir:type [ fhir:v "Observation" ] ;
+     fhir:targetProfile ( [
+       fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter"^^xsd:anyURI ;
+       fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter>
+     ] )
+  ] [
+     fhir:name [ fhir:v "leftEyeImage" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Left eye images used in the AI analysis. MUST conform to RetinaImageParameter profile." ] ;
+     fhir:type [ fhir:v "Observation" ] ;
+     fhir:targetProfile ( [
+       fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter"^^xsd:anyURI ;
+       fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter>
+     ] )
+  ] [
+     fhir:name [ fhir:v "aiDevice" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "AI Device that performed the analysis. Includes AI product name, algorithm version and protocol version." ] ;
+     fhir:type [ fhir:v "Device" ] ;
+     fhir:targetProfile ( [
+       fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"^^xsd:anyURI ;
+       fhir:l <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device>
+     ] )
+  ] [
+     fhir:name [ fhir:v "fullReport" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Technical details for further reference about the AI grading." ] ;
+     fhir:type [ fhir:v "Attachment" ]
+  ] [
+     fhir:name [ fhir:v "validation" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Set true if the AI result is for validation purposes only and will not be used in clinical decision making." ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

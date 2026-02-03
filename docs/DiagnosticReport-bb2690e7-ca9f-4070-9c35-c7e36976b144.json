@@ -1,0 +1,43 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "bb2690e7-ca9f-4070-9c35-c7e36976b144",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport bb2690e7-ca9f-4070-9c35-c7e36976b144</b></p><a name=\"bb2690e7-ca9f-4070-9c35-c7e36976b144\"> </a><a name=\"hcbb2690e7-ca9f-4070-9c35-c7e36976b144\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-diagnostic-report.html\">Retina DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}, {http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">Fundusfotografi</span> </h2><table class=\"grid\"><tr><td>Identifier</td><td> <a href=\"NamingSystem-retina-diagnostic-report-ns.html\" title=\"A naming system for identifying Retina DiagnosticReports using GUIDs. An examination ID is used to uniquely identify the single Retina DiagnosticReport for that examination.\">RetinaDiagnosticReportIdentifierSystem</a>/e72b0645-e761-4b50-abf9-1e9e2231273b</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs 1001}\">KI-gradering (basert på nåværende bilder)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
+    "valueCoding" : {
+      "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+      "code" : "1004",
+      "display" : "Ny fotokontroll (primærgradering)"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/RetinaIntegration/examination-id",
+    "value" : "e72b0645-e761-4b50-abf9-1e9e2231273b"
+  }],
+  "status" : "preliminary",
+  "code" : {
+    "coding" : [{
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+      "code" : "CKDP10",
+      "display" : "Fundusfotografi"
+    },
+    {
+      "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+      "code" : "CKFX16",
+      "display" : "Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"
+    }]
+  },
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+      "code" : "1001",
+      "display" : "KI-gradering (basert på nåværende bilder)"
+    }]
+  }]
+}

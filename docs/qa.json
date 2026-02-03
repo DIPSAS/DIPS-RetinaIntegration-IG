@@ -1,0 +1,19 @@
+{
+  "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
+  "name" : "RetinaIntegration",
+  "title" : "RetinaIntegration",
+  "description" : "RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system",
+  "status" : "draft",
+  "package-id" : "dips.fhir.retinaintegration",
+  "ig-ver" : "0.6.0",
+  "date" : "Tue, 03 Feb, 2026 09:57:13 +0100",
+  "dateISO8601" : "2026-02-03T09:57:13+01:00",
+  "errs" : 58,
+  "warnings" : 8,
+  "hints" : 22,
+  "suppressed-hints" : 70,
+  "suppressed-warnings" : 82,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2498287736
+}

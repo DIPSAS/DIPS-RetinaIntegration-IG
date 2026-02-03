@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="2f316445-d4a5-4750-825b-18b5cd0ce2d2"/>
+  <meta>
+    <lastUpdated value="2026-02-03T09:57:13.776+01:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-5597008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/5597008">5597008</a>
+                </td>
+                <td>Retina of right eye</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;5597008&quot;, &quot;display&quot;: &quot;Retina of right eye&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;5597008&quot;&gt;&lt;display value=&quot;Retina of right eye&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-58443009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/58443009">58443009</a>
+                </td>
+                <td>Retina of left eye</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;58443009&quot;, &quot;display&quot;: &quot;Retina of left eye&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;58443009&quot;&gt;&lt;display value=&quot;Retina of left eye&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs"/>
+        <version value="0.6.0"/>
+        <name value="RetinaBodySiteValueSet"/>
+        <title value="Retina Body Site"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-12-02"/>
+        <expansion>
+          <identifier value="urn:uuid:ad97380b-5441-4168-a1f5-1154a678524c"/>
+          <timestamp value="2026-02-03T09:58:05+01:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="5597008"/>
+            <display value="Retina of right eye"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="58443009"/>
+            <display value="Retina of left eye"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-retina-caution-cs.html">codesystem Retina Cautions v0.6.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs-5001"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-caution-cs.html#retina-caution-cs-5001">5001</a>
+                </td>
+                <td>Ønsker ikke KI-svar</td>
+                <td>Patient has told photographer that they do not want an AI-based grading result.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;5001&quot;, &quot;display&quot;: &quot;Ønsker ikke KI-svar&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;5001&quot;&gt;&lt;display value=&quot;Ønsker ikke KI-svar&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs"/>
+        <version value="0.6.0"/>
+        <name value="RetinaCautionValueSet"/>
+        <title value="Retina Cautions"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-12-07"/>
+        <expansion>
+          <identifier value="urn:uuid:1c38d83f-c6f0-41bf-97ac-1821aad8551c"/>
+          <timestamp value="2026-02-03T09:58:09+01:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs|0.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"/>
+            <code value="5001"/>
+            <display value="Ønsker ikke KI-svar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-retina-conclusion-code-cs.html">codesystem Retina Conclusion v0.6.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs-1001"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1001">1001</a>
+                </td>
+                <td>KI-gradering (basert på nåværende bilder)</td>
+                <td>This examination is waiting to be graded by the AI system.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;1001&quot;, &quot;display&quot;: &quot;KI-gradering (basert på nåværende bilder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;1001&quot;&gt;&lt;display value=&quot;KI-gradering (basert på nåværende bilder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs-1002"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1002">1002</a>
+                </td>
+                <td>Primærgradering (basert på nåværende bilder)</td>
+                <td>This examinations is waiting to be graded by a primary grader.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;1002&quot;, &quot;display&quot;: &quot;Primærgradering (basert på nåværende bilder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;1002&quot;&gt;&lt;display value=&quot;Primærgradering (basert på nåværende bilder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs-1003"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1003">1003</a>
+                </td>
+                <td>Sekundærgradering (basert på nåværende bilder)</td>
+                <td>This examination is waiting to be graded by a secondary grader.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;1003&quot;, &quot;display&quot;: &quot;Sekundærgradering (basert på nåværende bilder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;1003&quot;&gt;&lt;display value=&quot;Sekundærgradering (basert på nåværende bilder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs-1004"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1004">1004</a>
+                </td>
+                <td>Ny fotokontroll (primærgradering)</td>
+                <td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;1004&quot;, &quot;display&quot;: &quot;Ny fotokontroll (primærgradering)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;1004&quot;&gt;&lt;display value=&quot;Ny fotokontroll (primærgradering)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs-1005"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1005">1005</a>
+                </td>
+                <td>Ny fotokontroll (sekundærgradering)</td>
+                <td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;1005&quot;, &quot;display&quot;: &quot;Ny fotokontroll (sekundærgradering)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;1005&quot;&gt;&lt;display value=&quot;Ny fotokontroll (sekundærgradering)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs-1006"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1006">1006</a>
+                </td>
+                <td>Øyelegeundersøkelse (grunnet diabetisk retinopati)</td>
+                <td>Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;1006&quot;, &quot;display&quot;: &quot;Øyelegeundersøkelse (grunnet diabetisk retinopati)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;1006&quot;&gt;&lt;display value=&quot;Øyelegeundersøkelse (grunnet diabetisk retinopati)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"/>
+        <version value="0.6.0"/>
+        <name value="RetinaDiagnosticReportConclusionCodeValueSet"/>
+        <title value="Retina Conclusion"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-12-05"/>
+        <expansion>
+          <identifier value="urn:uuid:3da50902-8d67-4267-89d9-3ba155f86e81"/>
+          <timestamp value="2026-02-03T09:58:09+01:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+            <code value="1001"/>
+            <display value="KI-gradering (basert på nåværende bilder)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+            <code value="1002"/>
+            <display value="Primærgradering (basert på nåværende bilder)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+            <code value="1003"/>
+            <display value="Sekundærgradering (basert på nåværende bilder)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+            <code value="1004"/>
+            <display value="Ny fotokontroll (primærgradering)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+            <code value="1005"/>
+            <display value="Ny fotokontroll (sekundærgradering)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/>
+            <code value="1006"/>
+            <display value="Øyelegeundersøkelse (grunnet diabetisk retinopati)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-retina-image-quality-cs.html">codesystem Retina Image Quality v0.6.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-retina-image-view-cs.html">codesystem Retina Image View v0.6.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="ValueSet-retina-image-quality-vs.html">valueset Retina Image Quality v0.6.0 (ValueSet)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="ValueSet-retina-image-view-vs.html">valueset Retina Image View v0.6.0 (ValueSet)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2001"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2001">2001</a>
+                </td>
+                <td>Good</td>
+                <td>This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return eye-level results if a sufficient amount and types of images of that eye are present.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2001&quot;, &quot;display&quot;: &quot;Good&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2001&quot;&gt;&lt;display value=&quot;Good&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2002"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2002">2002</a>
+                </td>
+                <td>Barely gradable</td>
+                <td>This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return patient-level results indicating possibly presence of DR if a sufficient amount and types of images of the patient's eye(s) are present. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'barely gradable'. The API will then return no value together with a dataAbsentReason.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2002&quot;, &quot;display&quot;: &quot;Barely gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2002&quot;&gt;&lt;display value=&quot;Barely gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2003"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2003">2003</a>
+                </td>
+                <td>Not gradable</td>
+                <td>This means that the AI solution has not been able to extract sufficient information from an image so it can be used in an automated assessment for DR. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'not gradable'. The API will then return no value together with a dataAbsentReason.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2003&quot;, &quot;display&quot;: &quot;Not gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2003&quot;&gt;&lt;display value=&quot;Not gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2004"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2004">2004</a>
+                </td>
+                <td>Missing</td>
+                <td>This may come from the absence of expected images or other reasons. This value will for instance be returned on an expected image with optic disc centering if the AI solution does not return any image documentation of this category. Use: This can be used by a receiving system for documentation or use in other business logics.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2004&quot;, &quot;display&quot;: &quot;Missing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2004&quot;&gt;&lt;display value=&quot;Missing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs-6001"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-view-cs.html#retina-image-view-cs-6001">6001</a>
+                </td>
+                <td>Macula centered</td>
+                <td>Retinal image centered on the macula.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;6001&quot;, &quot;display&quot;: &quot;Macula centered&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;6001&quot;&gt;&lt;display value=&quot;Macula centered&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs-6002"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-view-cs.html#retina-image-view-cs-6002">6002</a>
+                </td>
+                <td>Optic disc centered</td>
+                <td>Retinal image centered on the optic disc.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;6002&quot;, &quot;display&quot;: &quot;Optic disc centered&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;6002&quot;&gt;&lt;display value=&quot;Optic disc centered&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs"/>
+        <version value="0.6.0"/>
+        <name value="RetinaImageParameterValueSet"/>
+        <title value="Retina Image Parameter ValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-01-20"/>
+        <expansion>
+          <identifier value="urn:uuid:bda980a7-9ec8-4280-824a-f056a203b7ec"/>
+          <timestamp value="2026-02-03T09:58:07+01:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs|0.6.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.6.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs|0.6.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2001"/>
+            <display value="Good"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2002"/>
+            <display value="Barely gradable"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2003"/>
+            <display value="Not gradable"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2004"/>
+            <display value="Missing"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6001"/>
+            <display value="Macula centered"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6002"/>
+            <display value="Optic disc centered"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-retina-image-quality-cs.html">codesystem Retina Image Quality v0.6.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2001"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2001">2001</a>
+                </td>
+                <td>Good</td>
+                <td>This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return eye-level results if a sufficient amount and types of images of that eye are present.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2001&quot;, &quot;display&quot;: &quot;Good&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2001&quot;&gt;&lt;display value=&quot;Good&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2002"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2002">2002</a>
+                </td>
+                <td>Barely gradable</td>
+                <td>This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return patient-level results indicating possibly presence of DR if a sufficient amount and types of images of the patient's eye(s) are present. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'barely gradable'. The API will then return no value together with a dataAbsentReason.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2002&quot;, &quot;display&quot;: &quot;Barely gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2002&quot;&gt;&lt;display value=&quot;Barely gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2003"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2003">2003</a>
+                </td>
+                <td>Not gradable</td>
+                <td>This means that the AI solution has not been able to extract sufficient information from an image so it can be used in an automated assessment for DR. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'not gradable'. The API will then return no value together with a dataAbsentReason.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2003&quot;, &quot;display&quot;: &quot;Not gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2003&quot;&gt;&lt;display value=&quot;Not gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs-2004"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-quality-cs.html#retina-image-quality-cs-2004">2004</a>
+                </td>
+                <td>Missing</td>
+                <td>This may come from the absence of expected images or other reasons. This value will for instance be returned on an expected image with optic disc centering if the AI solution does not return any image documentation of this category. Use: This can be used by a receiving system for documentation or use in other business logics.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;2004&quot;, &quot;display&quot;: &quot;Missing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;2004&quot;&gt;&lt;display value=&quot;Missing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs"/>
+        <version value="0.6.0"/>
+        <name value="RetinaImageQualityValueSet"/>
+        <title value="Retina Image Quality"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-12-05"/>
+        <expansion>
+          <identifier value="urn:uuid:e93538fc-942d-4ab5-b453-16ecc5d875ab"/>
+          <timestamp value="2026-02-03T09:58:08+01:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2001"/>
+            <display value="Good"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2002"/>
+            <display value="Barely gradable"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2003"/>
+            <display value="Not gradable"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+            <code value="2004"/>
+            <display value="Missing"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-retina-image-view-cs.html">codesystem Retina Image View v0.6.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs-6001"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-view-cs.html#retina-image-view-cs-6001">6001</a>
+                </td>
+                <td>Macula centered</td>
+                <td>Retinal image centered on the macula.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;6001&quot;, &quot;display&quot;: &quot;Macula centered&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;6001&quot;&gt;&lt;display value=&quot;Macula centered&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs-6002"> </a>
+                  <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-retina-image-view-cs.html#retina-image-view-cs-6002">6002</a>
+                </td>
+                <td>Optic disc centered</td>
+                <td>Retinal image centered on the optic disc.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;, &quot;version&quot;: &quot;0.6.0&quot;, &quot;code&quot;: &quot;6002&quot;, &quot;display&quot;: &quot;Optic disc centered&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs&quot;&gt;&lt;version value=&quot;0.6.0&quot;&gt;&lt;code value=&quot;6002&quot;&gt;&lt;display value=&quot;Optic disc centered&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs"/>
+        <version value="0.6.0"/>
+        <name value="RetinaImageViewValueSet"/>
+        <title value="Retina Image View"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-12-05"/>
+        <expansion>
+          <identifier value="urn:uuid:be5b1ea0-482e-4f3b-9935-95fdd85edaa1"/>
+          <timestamp value="2026-02-03T09:58:09+01:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6001"/>
+            <display value="Macula centered"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"/>
+            <code value="6002"/>
+            <display value="Optic disc centered"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

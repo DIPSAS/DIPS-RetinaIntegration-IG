@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "retina-caution-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-caution-cs</b></p><a name=\"retina-caution-cs\"> </a><a name=\"hcretina-caution-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">5001<a name=\"retina-caution-cs-5001\"> </a></td><td>Ønsker ikke KI-svar</td><td>Patient has told photographer that they do not want an AI-based grading result.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"^^xsd:anyURI ;
+     fhir:l <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "RetinaCautionCodeSystem"] ; # 
+  fhir:title [ fhir:v "Retina Cautions"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cautions to consider when grading examinations (5000-series)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "5001" ] ;
+     fhir:display [ fhir:v "Ønsker ikke KI-svar" ] ;
+     fhir:definition [ fhir:v "Patient has told photographer that they do not want an AI-based grading result." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
