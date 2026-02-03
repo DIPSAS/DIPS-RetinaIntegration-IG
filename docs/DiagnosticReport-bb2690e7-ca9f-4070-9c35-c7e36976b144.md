@@ -1,20 +1,24 @@
-# Notification From DIPS - RetinaIntegration v0.1.3
+# RetinaDiagnosticReport-Notification-Example - RetinaIntegration v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Notification From DIPS**
+* **RetinaDiagnosticReport-Notification-Example**
 
-## Example DiagnosticReport: Notification From DIPS
+## Example DiagnosticReport: RetinaDiagnosticReport-Notification-Example
 
-Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md)
+Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 
-## Bildediagnostikk 
+## Fundusfotografi 
 
 | | |
 | :--- | :--- |
-| Identifiers | [RetinaExaminationIdentifierSystem](NamingSystem-retina-examination-id.md)/e72b0645-e761-4b50-abf9-1e9e2231273b`http://sectra.no/identifiers`/MMA94126079 |
+| Identifier | [RetinaDiagnosticReportIdentifierSystem](NamingSystem-retina-diagnostic-report-ns.md)/e72b0645-e761-4b50-abf9-1e9e2231273b |
 
 **Report Details**
+
+**Coded Conclusions:**
+
+* KI-gradering (basert på nåværende bilder)
 
 
 
@@ -26,43 +30,51 @@ Profile: [Retina DiagnosticReport](StructureDefinition-RetinaDiagnosticReport.md
   "id" : "bb2690e7-ca9f-4070-9c35-c7e36976b144",
   "meta" : {
     "profile" : [
-      "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"
+      "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"
     ]
   },
   "extension" : [
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-            "code" : "3002",
-            "display" : "Ny fotokontroll (sekundærgradering)"
-          }
-        ]
+      "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
+      "valueCoding" : {
+        "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+        "code" : "1004",
+        "display" : "Ny fotokontroll (primærgradering)"
       }
     }
   ],
   "identifier" : [
     {
-      "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",
+      "system" : "http://dips.no/fhir/RetinaIntegration/examination-id",
       "value" : "e72b0645-e761-4b50-abf9-1e9e2231273b"
-    },
-    {
-      "system" : "http://sectra.no/identifiers",
-      "value" : "MMA94126079"
     }
   ],
   "status" : "preliminary",
   "code" : {
     "coding" : [
       {
-        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
-        "code" : "B",
-        "display" : "Bildediagnostikk"
+        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+        "code" : "CKDP10",
+        "display" : "Fundusfotografi"
+      },
+      {
+        "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+        "code" : "CKFX16",
+        "display" : "Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"
       }
     ]
-  }
+  },
+  "conclusionCode" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+          "code" : "1001",
+          "display" : "KI-gradering (basert på nåværende bilder)"
+        }
+      ]
+    }
+  ]
 }
 
 ```

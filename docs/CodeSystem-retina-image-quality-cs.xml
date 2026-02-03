@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="retina-image-quality-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem retina-image-quality-cs</b></p><a name="retina-image-quality-cs"> </a><a name="hcretina-image-quality-cs"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">2001<a name="retina-image-quality-cs-2001"> </a></td><td>Good</td><td>This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return eye-level results if a sufficient amount and types of images of that eye are present.</td></tr><tr><td style="white-space:nowrap">2002<a name="retina-image-quality-cs-2002"> </a></td><td>Barely gradable</td><td>This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return patient-level results indicating possibly presence of DR if a sufficient amount and types of images of the patient's eye(s) are present. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'barely gradable'. The API will then return no value together with a dataAbsentReason.</td></tr><tr><td style="white-space:nowrap">2003<a name="retina-image-quality-cs-2003"> </a></td><td>Not gradable</td><td>This means that the AI solution has not been able to extract sufficient information from an image so it can be used in an automated assessment for DR. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'not gradable'. The API will then return no value together with a dataAbsentReason.</td></tr><tr><td style="white-space:nowrap">2004<a name="retina-image-quality-cs-2004"> </a></td><td>Missing</td><td>This may come from the absence of expected images or other reasons. This value will for instance be returned on an expected image with optic disc centering if the AI solution does not return any image documentation of this category. Use: This can be used by a receiving system for documentation or use in other business logics.</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"/>
+  <version value="0.6.0"/>
+  <name value="RetinaImageQualityCodeSystem"/>
+  <title value="Retina Image Quality"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-02"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Image quality as assessed by AI solution (2000-series)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="2001"/>
+    <display value="Good"/>
+    <definition value="This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return eye-level results if a sufficient amount and types of images of that eye are present."/>
+  </concept>
+  <concept>
+    <code value="2002"/>
+    <display value="Barely gradable"/>
+    <definition value="This means that the AI solution has been able to extract sufficient information from an image so it can be used in an automated assessment for DR that may return patient-level results indicating possibly presence of DR if a sufficient amount and types of images of the patient's eye(s) are present. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'barely gradable'. The API will then return no value together with a dataAbsentReason."/>
+  </concept>
+  <concept>
+    <code value="2003"/>
+    <display value="Not gradable"/>
+    <definition value="This means that the AI solution has not been able to extract sufficient information from an image so it can be used in an automated assessment for DR. In the implementation in HSØ, DR and DME values will never be returned in the API from examinations based on image quality where at least one image has the label 'not gradable'. The API will then return no value together with a dataAbsentReason."/>
+  </concept>
+  <concept>
+    <code value="2004"/>
+    <display value="Missing"/>
+    <definition value="This may come from the absence of expected images or other reasons. This value will for instance be returned on an expected image with optic disc centering if the AI solution does not return any image documentation of this category. Use: This can be used by a receiving system for documentation or use in other business logics."/>
+  </concept>
+</CodeSystem>

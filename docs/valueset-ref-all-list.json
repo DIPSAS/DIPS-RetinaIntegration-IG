@@ -1,61 +1,120 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-      "version" : "0.1.3",
+      "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+      "version" : "2025.3.20250714",
+      "status" : "active",
+      "name" : "AcquisitionModality",
+      "title" : null,
+      "description" : "Transitive closure of CID 29 AcquisitionModality",
+      "systems" : ["http://dicom.nema.org/resources/ontology/DCM"],
+      "oids" : ["1.2.840.10008.6.1.19"],
+      "sources" : ["1.2.840.10008.6.1.19"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "RetinaConclusionCodeValueset",
-      "title" : "Grading Conclusion",
-      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
+      "name" : "RetinaBodySiteValueSet",
+      "title" : "Retina Body Site",
+      "description" : "Body site codes for retinal observations (right or left retina).",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
+      "version" : "0.6.0",
+      "status" : "draft",
+      "name" : "RetinaCautionValueSet",
+      "title" : "Retina Cautions",
+      "description" : "Special considerations or cautions for grading this examination (5000-series).",
       "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
+      "StructureDefinition-cautions-extension.html" : "Cautions"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
+      "version" : "0.6.0",
+      "status" : "draft",
+      "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
+      "title" : "Retina Conclusion",
+      "description" : "Codes describing the current or final conclusion of the examination (1000-series).",
+      "systems" : [
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-previous-examination-conclusion-extension.html" : "Previous Examination Conclusion",
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
+      "version" : "0.6.0",
+      "status" : "draft",
+      "name" : "RetinaImageParameterValueSet",
+      "title" : "Retina Image Parameter ValueSet",
+      "description" : "Includes codes for both image quality and image view.",
+      "systems" : [
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
+      "version" : "0.6.0",
       "status" : "draft",
       "name" : "RetinaImageQualityValueSet",
-      "title" : "Image Quality",
-      "description" : "Image quality as interpreted by an AI solution. (2000-series)",
+      "title" : "Retina Image Quality",
+      "description" : "Image quality as assessed by AI (2000-series).",
       "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-retina-imagequality-extension.html" : "Image Quality"
+      "ValueSet-retina-image-parameter-vs.html" : "Retina Image Parameter ValueSet",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "TiltaksstatusForrigeUndersokelseValueSet",
-      "title" : "Next Examination",
-      "description" : "Next step for this patient is a new examination. (3000-series)",
+      "name" : "RetinaImageViewValueSet",
+      "title" : "Retina Image View",
+      "description" : "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series).",
       "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"
+        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"
       ],
       "uses" : {
       },
-      "StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.html" : "Next Examination Previous Examination"
+      "ValueSet-retina-image-parameter-vs.html" : "Retina Image Parameter ValueSet",
+      "StructureDefinition-retinal-image-view.html" : "Retinal Image View"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "VidereForlopValueSet",
-      "title" : "Grading Pending",
-      "description" : "Next step in grading this examination. (4000-series and 5000-series)",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs",
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"
-      ],
+      "name" : "RetinaImagingProcedureValueSet",
+      "title" : "Retina Imaging Procedures",
+      "description" : "Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique.",
+      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"],
       "uses" : {
       },
-      "StructureDefinition-videre-forlop-extension.html" : "Grading Pending"
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -69,14 +128,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodysite-laterality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Laterality",
+      "description" : "Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.287"],
+      "sources" : ["2.16.840.1.113883.4.642.3.287"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -90,14 +158,68 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceNameType",
+      "title" : "DeviceNameType",
+      "description" : "The type of name the device is referred by.",
+      "systems" : ["http://hl7.org/fhir/device-nametype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-ai-device.html" : "Retina AI Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatus",
+      "title" : "FHIRDeviceStatus",
+      "description" : "The availability status of the device.",
+      "systems" : ["http://hl7.org/fhir/device-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.209"],
+      "sources" : ["2.16.840.1.113883.4.642.3.209"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-ai-device.html" : "Retina AI Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatusReason",
+      "title" : "FHIRDeviceStatusReason",
+      "description" : "The availability status reason of the device.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/device-status-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1081"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1081"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-ai-device.html" : "Retina AI Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceType",
+      "title" : "Device Type",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-ai-device.html" : "Retina AI Device"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -111,7 +233,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.235"],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
@@ -125,7 +247,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.234"],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -139,7 +261,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -153,7 +278,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/imagingstudy-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImagingStudyStatus",
+      "title" : "ImagingStudyStatus",
+      "description" : "The status of the ImagingStudy.",
+      "systems" : ["http://hl7.org/fhir/imagingstudy-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.990"],
+      "sources" : ["2.16.840.1.113883.4.642.3.990"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -167,15 +309,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-ai-device.html" : "Retina AI Device",
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment",
+      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -189,14 +331,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -210,14 +350,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -233,14 +371,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -254,14 +390,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -275,14 +409,26 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -299,14 +445,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -322,28 +466,40 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-dme-right-eye-observation.html" : "Diabetic Macular Edema Right Eye Observation",
-      "StructureDefinition-dr-left-eye-observation.html" : "Diabetic Retinopathy Left Eye Observation",
-      "StructureDefinition-dme-left-eye-observation.html" : "Diabetic Macular Edema Left Eye Observation",
-      "StructureDefinition-RetinaObservation.html" : "Retina Observation",
-      "StructureDefinition-oct-observation.html" : "OCT Observation",
-      "StructureDefinition-fundus-foto-observation.html" : "Fundus Photography Observation",
-      "StructureDefinition-dr-right-eye-observation.html" : "Diabetic Retinopathy Right Eye Observation",
-      "StructureDefinition-hba1c-observation.html" : "HbA1c Observation"
+      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+      "StructureDefinition-retina-hba1c-observation.html" : "Retina HbA1c Observation",
+      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter",
+      "StructureDefinition-retina-observation.html" : "Retina Observation",
+      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+      "url" : "http://hl7.org/fhir/ValueSet/series-performer-function",
       "version" : "4.0.1",
       "status" : "draft",
-      "name" : "LOINCDiagnosticReportCodes",
-      "title" : "LOINC Diagnostic Report Codes",
-      "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
-      "systems" : ["http://loinc.org"],
-      "oids" : ["2.16.840.1.113883.4.642.3.233"],
-      "sources" : ["2.16.840.1.113883.4.642.3.233"],
+      "name" : "ImagingStudySeriesPerformerFunction",
+      "title" : "ImagingStudy series performer function",
+      "description" : "Performer function of an agent in an imaging study series",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+      "oids" : ["2.16.840.1.113883.4.642.3.989"],
+      "sources" : ["2.16.840.1.113883.4.642.3.989"],
       "uses" : {
       },
-      "StructureDefinition-RetinaDiagnosticReport.html" : "Retina DiagnosticReport"
+      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "UDIEntryType",
+      "title" : "UDIEntryType",
+      "description" : "Codes to identify how UDI data was entered.",
+      "systems" : ["http://hl7.org/fhir/udi-entry-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.211"],
+      "sources" : ["2.16.840.1.113883.4.642.3.211"],
+      "uses" : {
+      },
+      "StructureDefinition-retina-ai-device.html" : "Retina AI Device"
     }
   ]
 }

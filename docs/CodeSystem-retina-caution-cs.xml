@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="retina-caution-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem retina-caution-cs</b></p><a name="retina-caution-cs"> </a><a name="hcretina-caution-cs"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">5001<a name="retina-caution-cs-5001"> </a></td><td>Ønsker ikke KI-svar</td><td>Patient has told photographer that they do not want an AI-based grading result.</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"/>
+  <version value="0.6.0"/>
+  <name value="RetinaCautionCodeSystem"/>
+  <title value="Retina Cautions"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-02"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Cautions to consider when grading examinations (5000-series)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="5001"/>
+    <display value="Ønsker ikke KI-svar"/>
+    <definition value="Patient has told photographer that they do not want an AI-based grading result."/>
+  </concept>
+</CodeSystem>

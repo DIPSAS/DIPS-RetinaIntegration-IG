@@ -1,59 +1,84 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs",
-      "version" : "0.1.3",
-      "status" : "draft",
-      "name" : "GradingCautionCodeSystem",
-      "title" : "Grading Cautions",
-      "description" : "Cautions to consider when grading examinations. (5000-series)",
-      "uses" : {
-      },
-      "ValueSet-videre-forlop-vs.html" : "Grading Pending"
-    },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-      "version" : "0.1.3",
-      "status" : "draft",
-      "name" : "RetinaConclusionCodesystem",
-      "title" : "Grading Conclusion",
-      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)",
-      "uses" : {
-      },
-      "ValueSet-retina-conclusioncode-vs.html" : "Grading Conclusion"
-    },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-      "version" : "0.1.3",
+      "url" : "http://dicom.nema.org/resources/ontology/DCM",
+      "version" : "01",
       "status" : "active",
-      "name" : "RetinaImageQualityCodesystem",
-      "title" : "Image Quality",
-      "description" : "Image quality as interpreted by an AI solution. (2000-series)",
+      "name" : "DICOM Controlled Terminology Definitions",
+      "title" : null,
+      "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+      "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "ValueSet-retina-imagequality-vs.html" : "Image Quality"
+      "http://tx.fhir.org/r4/ValueSet/dicom-cid-29-AcquisitionModality" : "AcquisitionModality"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
-      "title" : "Next Examination",
-      "description" : "Next step for this patient is a new examination. (3000-series)",
+      "name" : "RetinaCautionCodeSystem",
+      "title" : "Retina Cautions",
+      "description" : "Cautions to consider when grading examinations (5000-series).",
       "uses" : {
       },
-      "ValueSet-tiltaksstatus-forrigeUndersokelse-vs.html" : "Next Examination"
+      "ValueSet-retina-caution-vs.html" : "Retina Cautions"
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "VidereForlopCodeSystem",
-      "title" : "Grading Pending",
-      "description" : "Next step in grading this examination. (4000-series)",
+      "name" : "RetinaConclusionCodeSystem",
+      "title" : "Retina Conclusion",
+      "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
       "uses" : {
       },
-      "ValueSet-videre-forlop-vs.html" : "Grading Pending"
+      "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
+      "version" : "0.6.0",
+      "status" : "draft",
+      "name" : "RetinaImageQualityCodeSystem",
+      "title" : "Retina Image Quality",
+      "description" : "Image quality as assessed by AI solution (2000-series).",
+      "uses" : {
+      },
+      "ValueSet-retina-image-quality-vs.html" : "Retina Image Quality"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
+      "version" : "0.6.0",
+      "status" : "draft",
+      "name" : "RetinaImageViewCodeSystem",
+      "title" : "Retina Image View",
+      "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
+      "uses" : {
+      },
+      "ValueSet-retina-image-view-vs.html" : "Retina Image View"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-nametype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceNameType",
+      "title" : "DeviceNameType",
+      "description" : "The type of name the device is referred by.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1084"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatus",
+      "title" : "FHIRDeviceStatus",
+      "description" : "The availability status of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.4.210"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-device-status.html" : "FHIRDeviceStatus"
     },
     {
       "url" : "http://hl7.org/fhir/diagnostic-report-status",
@@ -80,6 +105,18 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
+      "url" : "http://hl7.org/fhir/imagingstudy-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImagingStudyStatus",
+      "title" : "ImagingStudyStatus",
+      "description" : "The status of the ImagingStudy.",
+      "oids" : ["2.16.840.1.113883.4.642.4.991"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-imagingstudy-status.html" : "ImagingStudyStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/observation-status",
       "version" : "4.0.1",
       "status" : "active",
@@ -92,6 +129,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/udi-entry-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "UDIEntryType",
+      "title" : "UDIEntryType",
+      "description" : "Codes to identify how UDI data was entered.",
+      "oids" : ["2.16.840.1.113883.4.642.4.212"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -102,8 +151,12 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-bodysite-laterality.html" : "Laterality",
+      "ValueSet-retina-body-site-vs.html" : "Retina Body Site",
+      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -116,6 +169,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatusReason",
+      "title" : "FHIRDeviceStatusReason",
+      "description" : "The availability status reason of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1082"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -143,7 +208,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "DiagnosticServiceSectionId",
       "title" : "diagnosticServiceSectionId",
@@ -176,6 +241,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-series-performer-function.html" : "ImagingStudy series performer function"
     }
   ]
 }

@@ -1,0 +1,40 @@
+@startuml component-diagram
+!theme plain
+
+' Use orthogonal lines for cleaner relationships
+'skinparam linetype ortho
+
+
+actor "Photographer" as photo
+actor "Primary Grader" as grader1
+actor "Secondary Grader" as grader2
+
+package "Helseregionen" {
+  component "Sectra\nRegional Media Archive" as sectra
+  component "EyeArt\nAI Eye Screening System" as ai
+  component "Integration Platform" as ip
+}
+
+sectra --> ai : Imaging study\nfor AI analysis
+ai --> ip : AI results
+
+package "DIPS" {
+  component "fhirr4-service" as fhirr4
+  component "RetinaIntegration API" as rint
+  component "EyeCare Retinopathy\nGUI in Arena" as eyecare
+  component "MessageBroker\nDocumentManager" as docmgr
+}
+
+rint <-up-> eyecare
+docmgr --> rint
+fhirr4 -right-> rint 
+
+photo -left-> sectra : 1. Store images\n(using camera)
+sectra --> docmgr : 2. CDA message with\nSectraStudyID
+photo --> eyecare : 3. Save form
+ip -right-> fhirr4 : 4. Query reports
+ip -right-> fhirr4 : 5. Post AI results
+grader1 --> eyecare : 6. Manual\ngrading
+grader2 --> eyecare : 7. Secondary\ngrading
+
+@enduml

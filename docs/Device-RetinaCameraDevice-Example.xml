@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="RetinaCameraDevice-Example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device RetinaCameraDevice-Example</b></p><a name="RetinaCameraDevice-Example"> </a><a name="hcRetinaCameraDevice-Example"> </a><p><b>identifier</b>: <code>http://helse-sorost.no/fhir/NamingSystem/device-ids</code>/TPNW35634798</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>AK_TOPCON_2</td><td>Model name</td></tr></table><p><b>modelNumber</b>: NW500</p></div>
+  </text>
+  <identifier>
+    <system value="http://helse-sorost.no/fhir/NamingSystem/device-ids"/>
+    <value value="TPNW35634798"/>
+  </identifier>
+  <deviceName>
+    <name value="AK_TOPCON_2"/>
+    <type value="model-name"/>
+  </deviceName>
+  <modelNumber value="NW500"/>
+</Device>

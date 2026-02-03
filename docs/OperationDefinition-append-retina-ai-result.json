@@ -3,14 +3,15 @@
   "id" : "append-retina-ai-result",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition append-retina-ai-result</b></p><a name=\"append-retina-ai-result\"> </a><a name=\"hcappend-retina-ai-result\"> </a><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>dme-right-eye</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td/><td><div><p>Diabetisk makulaødem høyre øye</p>\n</div></td></tr><tr><td>IN</td><td>dr-right-eye</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td/><td><div><p>Diabetisk retinopati høyre øye</p>\n</div></td></tr><tr><td>IN</td><td>dme-left-eye</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td/><td><div><p>Diabetisk makulaødem venstre øye</p>\n</div></td></tr><tr><td>IN</td><td>dr-left-eye</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td/><td><div><p>Diabetisk retinopati venstre øye</p>\n</div></td></tr><tr><td>IN</td><td>days-until-next-examination</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/frist-nesteundersokelse-extension</p>\n</div></td></tr><tr><td>IN</td><td>ki-product-name</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Name of the AI product, stored in extension http://dips.no/fhir/StructureDefinition/ki-productname-extension</p>\n</div></td></tr><tr><td>IN</td><td>ki-version-algorithm</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Version of the AI algorithm, stored in extension http://dips.no/fhir/StructureDefinition/ki-versjon-algoritme-extension</p>\n</div></td></tr><tr><td>IN</td><td>ki-protocol</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Protocol of the AI analysis, stored in extension http://dips.no/fhir/StructureDefinition/ki-protokoll-extension</p>\n</div></td></tr><tr><td>IN</td><td>effectiveTime</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Time when the AI analysis was performed</p>\n</div></td></tr><tr><td>IN</td><td>full-ki-report</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Attachment\">Attachment</a></td><td/><td><div><p>Full report from the AI analysis, stored in presentedForm of the DiagnosticReport</p>\n</div></td></tr><tr><td>IN</td><td>imageDescriptions</td><td/><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/imagingstudy.html\">ImagingStudy</a></td><td/><td><div><p>Descriptions of the images, diagnosticreport.imagingStudy</p>\n</div></td></tr><tr><td>IN</td><td>conclusionCode</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode</p>\n</div></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition append-retina-ai-result</b></p><a name=\"append-retina-ai-result\"> </a><a name=\"hcappend-retina-ai-result\"> </a><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>sectraStudyId</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Sectra study ID for the retinal images that were analyzed.</p>\n</div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.</p>\n</div></td></tr><tr><td>IN</td><td>daysUntilNextExamination</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Number of days until next examination. Only included if the conclusion code indicates that the next step is a new examination.</p>\n</div></td></tr><tr><td>IN</td><td>leftDiabeticRetinopathy</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Left eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0</p>\n</div></td></tr><tr><td>IN</td><td>leftDiabeticMacularEdema</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Left eye diabetic macular edema evaluation. True if diabetic macular edema is present.</p>\n</div></td></tr><tr><td>IN</td><td>rightDiabeticRetinopathy</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Right eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0</p>\n</div></td></tr><tr><td>IN</td><td>rightDiabeticMacularEdema</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Right eye diabetic macular edema evaluation. True if diabetic macular edema is present.</p>\n</div></td></tr><tr><td>IN</td><td>rightEyeImage</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> (<a href=\"StructureDefinition-retina-image-parameter.html\" title=\"http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter\">Retina Image Parameter</a>)</td><td/><td><div><p>Right eye images used in the AI analysis. MUST conform to RetinaImageParameter profile.</p>\n</div></td></tr><tr><td>IN</td><td>leftEyeImage</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> (<a href=\"StructureDefinition-retina-image-parameter.html\" title=\"http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter\">Retina Image Parameter</a>)</td><td/><td><div><p>Left eye images used in the AI analysis. MUST conform to RetinaImageParameter profile.</p>\n</div></td></tr><tr><td>IN</td><td>aiDevice</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a> (<a href=\"StructureDefinition-retina-ai-device.html\" title=\"http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device\">Retina AI Device</a>)</td><td/><td><div><p>AI Device that performed the analysis. Includes AI product name, algorithm version and protocol version.</p>\n</div></td></tr><tr><td>IN</td><td>fullReport</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Attachment\">Attachment</a></td><td/><td><div><p>Technical details for further reference about the AI grading.</p>\n</div></td></tr><tr><td>IN</td><td>validation</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Set true if the AI result is for validation purposes only and will not be used in clinical decision making.</p>\n</div></td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.1.3",
+  "version" : "0.6.0",
   "name" : "AppendRetinaAIResult",
-  "status" : "active",
+  "title" : "Retina Append AI Result Operation",
+  "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-11-16T16:39:43+01:00",
+  "date" : "2026-02-03T09:57:13+01:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -23,7 +24,7 @@
       "value" : "teamsolsiden@dips.no"
     }]
   }],
-  "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport. See AddAIResultOperation for an example of the input parameters.",
+  "description" : "OperationDefinition for appending retina AI results to an existing DiagnosticReport.",
   "purpose" : "Append results from AI analysis of retina images to a existing DiagnosticReport",
   "code" : "append-retina-ai-result",
   "resource" : ["DiagnosticReport"],
@@ -31,99 +32,102 @@
   "type" : false,
   "instance" : true,
   "parameter" : [{
-    "name" : "dme-right-eye",
+    "name" : "sectraStudyId",
     "use" : "in",
-    "min" : 0,
+    "min" : 1,
     "max" : "1",
-    "documentation" : "Diabetisk makulaødem høyre øye",
-    "type" : "Observation"
+    "documentation" : "Sectra study ID for the retinal images that were analyzed.",
+    "type" : "string"
   },
   {
-    "name" : "dr-right-eye",
+    "name" : "conclusion",
     "use" : "in",
-    "min" : 0,
+    "min" : 1,
     "max" : "1",
-    "documentation" : "Diabetisk retinopati høyre øye",
-    "type" : "Observation"
+    "documentation" : "Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.",
+    "type" : "CodeableConcept"
   },
   {
-    "name" : "dme-left-eye",
+    "name" : "daysUntilNextExamination",
     "use" : "in",
     "min" : 0,
     "max" : "1",
-    "documentation" : "Diabetisk makulaødem venstre øye",
-    "type" : "Observation"
-  },
-  {
-    "name" : "dr-left-eye",
-    "use" : "in",
-    "min" : 0,
-    "max" : "1",
-    "documentation" : "Diabetisk retinopati venstre øye",
-    "type" : "Observation"
-  },
-  {
-    "name" : "days-until-next-examination",
-    "use" : "in",
-    "min" : 0,
-    "max" : "1",
-    "documentation" : "Number of days until next examination, stored in extension http://dips.no/fhir/StructureDefinition/frist-nesteundersokelse-extension",
+    "documentation" : "Number of days until next examination. Only included if the conclusion code indicates that the next step is a new examination.",
     "type" : "integer"
   },
   {
-    "name" : "ki-product-name",
+    "name" : "leftDiabeticRetinopathy",
     "use" : "in",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
-    "documentation" : "Name of the AI product, stored in extension http://dips.no/fhir/StructureDefinition/ki-productname-extension",
-    "type" : "string"
+    "documentation" : "Left eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0",
+    "type" : "decimal"
   },
   {
-    "name" : "ki-version-algorithm",
+    "name" : "leftDiabeticMacularEdema",
     "use" : "in",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
-    "documentation" : "Version of the AI algorithm, stored in extension http://dips.no/fhir/StructureDefinition/ki-versjon-algoritme-extension",
-    "type" : "string"
+    "documentation" : "Left eye diabetic macular edema evaluation. True if diabetic macular edema is present.",
+    "type" : "boolean"
   },
   {
-    "name" : "ki-protocol",
+    "name" : "rightDiabeticRetinopathy",
     "use" : "in",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
-    "documentation" : "Protocol of the AI analysis, stored in extension http://dips.no/fhir/StructureDefinition/ki-protokoll-extension",
-    "type" : "string"
+    "documentation" : "Right eye diabetic retinopathy evaluation, a decimal between 0.0 and 5.0",
+    "type" : "decimal"
   },
   {
-    "name" : "effectiveTime",
+    "name" : "rightDiabeticMacularEdema",
     "use" : "in",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
-    "documentation" : "Time when the AI analysis was performed",
-    "type" : "dateTime"
+    "documentation" : "Right eye diabetic macular edema evaluation. True if diabetic macular edema is present.",
+    "type" : "boolean"
   },
   {
-    "name" : "full-ki-report",
+    "name" : "rightEyeImage",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Right eye images used in the AI analysis. MUST conform to RetinaImageParameter profile.",
+    "type" : "Observation",
+    "targetProfile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter"]
+  },
+  {
+    "name" : "leftEyeImage",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Left eye images used in the AI analysis. MUST conform to RetinaImageParameter profile.",
+    "type" : "Observation",
+    "targetProfile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter"]
+  },
+  {
+    "name" : "aiDevice",
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Full report from the AI analysis, stored in presentedForm of the DiagnosticReport",
+    "documentation" : "AI Device that performed the analysis. Includes AI product name, algorithm version and protocol version.",
+    "type" : "Device",
+    "targetProfile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"]
+  },
+  {
+    "name" : "fullReport",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Technical details for further reference about the AI grading.",
     "type" : "Attachment"
   },
   {
-    "name" : "imageDescriptions",
-    "use" : "in",
-    "min" : 1,
-    "max" : "*",
-    "documentation" : "Descriptions of the images, diagnosticreport.imagingStudy",
-    "type" : "ImagingStudy"
-  },
-  {
-    "name" : "conclusionCode",
+    "name" : "validation",
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Conclusion code for the AI analysis, added to DiagnosticReport.conclusionCode",
-    "type" : "CodeableConcept"
+    "documentation" : "Set true if the AI result is for validation purposes only and will not be used in clinical decision making.",
+    "type" : "boolean"
   }]
 }

@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ImagingStudy",
+  "id" : "RetinaImagingStudy-registered-Example",
+  "meta" : {
+    "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy RetinaImagingStudy-registered-Example</b></p><a name=\"RetinaImagingStudy-registered-Example\"> </a><a name=\"hcRetinaImagingStudy-registered-Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-retina-imagingstudy.html\">Retina ImagingStudy</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-retina-imaging-study-ns.html\" title=\"A naming system for imaging study identifiers in RetinaIntegration using GUIDs for internally and external Sectra image studies.\">RetinaImagingStudyIdentifierSystem</a>/MMA94126079</p><p><b>status</b>: Registered</p><p><b>subject</b>: Identifier: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/01015549145</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://dips.no/fhir/RetinaIntegration/sectra-image-study-id",
+    "value" : "MMA94126079"
+  }],
+  "status" : "registered",
+  "subject" : {
+    "identifier" : {
+      "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+      "value" : "01015549145"
+    }
+  }
+}

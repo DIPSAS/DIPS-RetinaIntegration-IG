@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="retina-image-parameter-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet retina-image-parameter-vs</b></p><a name="retina-image-parameter-vs"> </a><a name="hcretina-image-parameter-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-retina-image-quality-vs.html">Retina Image Quality</a></li><li>Import all the codes that are contained in <a href="ValueSet-retina-image-view-vs.html">Retina Image View</a></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs"/>
+  <version value="0.6.0"/>
+  <name value="RetinaImageParameterValueSet"/>
+  <title value="Retina Image Parameter ValueSet"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-20"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Includes codes for both image quality and image view."/>
+  <compose>
+    <include>
+      <valueSet value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs"/>
+    </include>
+    <include>
+      <valueSet value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs"/>
+    </include>
+  </compose>
+</ValueSet>

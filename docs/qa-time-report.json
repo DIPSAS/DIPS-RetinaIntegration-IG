@@ -1,314 +1,260 @@
 {
-  "date" : "Sun, 16 Nov, 2025 16:39:43 +0100",
+  "date" : "Tue, 03 Feb, 2026 09:57:13 +0100",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "\\fsh-generated\\resources\\ImplementationGuide-dips.fhir.retinaintegration.json",
-      "size" : 11680,
+      "size" : 17987,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 25,
-          "length" : 4
+          "start" : 26,
+          "length" : 8
+        },
+        {
+          "activity" : "scan",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 26,
-          "length" : 10
+          "start" : 28,
+          "length" : 7
         },
         {
           "activity" : "generateNarratives",
-          "start" : 26,
-          "length" : 97
+          "start" : 28,
+          "length" : 85
         },
         {
           "activity" : "validate",
-          "start" : 35,
-          "length" : 4571
+          "start" : 34,
+          "length" : 5192
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 39,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 41,
-          "length" : 116
+          "start" : 42,
+          "length" : 108
         },
         {
           "activity" : "generate2",
           "start" : 48,
-          "length" : 131
+          "length" : 117
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 16
+          "start" : 87,
+          "length" : 8
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/Bundle-BundleWithSinglExamination-Example.json",
-      "size" : 5079,
+      "name" : "fsh-generated/resources/Bundle-Bundle-SingleExamination-Example.json",
+      "size" : 3558,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
-          "length" : 3
+          "start" : 26,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 25,
-          "length" : 16
+          "start" : 26,
+          "length" : 22
         },
         {
-          "activity" : "checkR4R4B",
+          "activity" : "load",
           "start" : 26,
-          "length" : 3
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 26,
-          "length" : 372
+          "start" : 28,
+          "length" : 363
         },
         {
           "activity" : "validate",
           "start" : 39,
-          "length" : 504
+          "length" : 1484
         },
         {
           "activity" : "generate1",
-          "start" : 41,
-          "length" : 44
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 44
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Bundle-BundleWithSingleExaminationAndAI-Example.json",
-      "size" : 11936,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 22
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 40,
-          "length" : 198
-        },
-        {
-          "activity" : "generate1",
-          "start" : 41,
-          "length" : 84
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 63
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Bundle-BundleWithTwoExaminations-Example.json",
-      "size" : 10420,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 7
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 10
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 13
-        },
-        {
-          "activity" : "validate",
-          "start" : 40,
-          "length" : 143
-        },
-        {
-          "activity" : "generate1",
-          "start" : 41,
-          "length" : 72
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 51
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CapabilityStatement-DIPSRetinaCapabilityStatement.json",
-      "size" : 1239,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 12
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 41,
+          "start" : 42,
           "length" : 26
         },
         {
           "activity" : "generate2",
           "start" : 48,
           "length" : 47
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-grading-caution-cs.json",
-      "size" : 568,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 2
         },
         {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 24
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 508
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-retina-conclusioncode-cs.json",
-      "size" : 704,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
+          "activity" : "generateExampleZip",
+          "start" : 86,
           "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
-        },
-        {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 32
-        },
-        {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 64
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/CodeSystem-retina-imagequality-cs.json",
-      "size" : 2308,
+      "name" : "fsh-generated/resources/Bundle-Bundle-TwoExaminations-Example.json",
+      "size" : 8918,
       "processes" : [
         {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 49
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 6
         },
         {
-          "activity" : "generate2",
-          "start" : 48,
-          "length" : 77
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-tiltakstatus-nesteundersokelse-cs.json",
-      "size" : 748,
-      "processes" : [
-        {
           "activity" : "load",
-          "start" : 25,
+          "start" : 26,
           "length" : 5
         },
         {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 159
+        },
+        {
           "activity" : "generate1",
           "start" : 42,
-          "length" : 28
+          "length" : 44
         },
         {
           "activity" : "generate2",
-          "start" : 49,
-          "length" : 59
+          "start" : 48,
+          "length" : 48
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/CodeSystem-videre-forlop-cs.json",
-      "size" : 873,
+      "name" : "fsh-generated/resources/CapabilityStatement-RetinaCapabilityStatement.json",
+      "size" : 1292,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
-          "length" : 9
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 25,
-          "length" : 2
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 27,
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 29
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 41
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 101,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-retina-caution-cs.json",
+      "size" : 645,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
           "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 525
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-retina-conclusion-code-cs.json",
+      "size" : 1763,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 7
         },
         {
           "activity" : "generate1",
@@ -318,23 +264,234 @@
         {
           "activity" : "generate2",
           "start" : 49,
-          "length" : 54
+          "length" : 61
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-retina-image-quality-cs.json",
+      "size" : 2356,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 40
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-retina-image-view-cs.json",
+      "size" : 766,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 44
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Device-RetinaAIDevice-Example.json",
+      "size" : 610,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Device-RetinaCameraDevice-Example.json",
+      "size" : 322,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.json",
+      "size" : 1206,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/DiagnosticReport-RetinaDiagnosticReport-Example.json",
+      "size" : 2415,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 78
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 30
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.json",
-      "size" : 1128,
+      "size" : 1430,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
-          "length" : 2
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 15
+          "start" : 41,
+          "length" : 8
         },
         {
           "activity" : "generate1",
@@ -344,168 +501,558 @@
         {
           "activity" : "generate2",
           "start" : 49,
-          "length" : 19
+          "length" : 16
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 87,
+          "length" : 2
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/NamingSystem-retina-examination-id.json",
-      "size" : 460,
+      "name" : "fsh-generated/resources/ImagingStudy-RetinaImagingStudy-available-Example.json",
+      "size" : 503,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
+          "start" : 26,
           "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 27,
-          "length" : 83
+          "start" : 41,
+          "length" : 3
         },
         {
           "activity" : "generate1",
           "start" : 42,
-          "length" : 15
+          "length" : 13
         },
         {
           "activity" : "generate2",
           "start" : 49,
-          "length" : 15
+          "length" : 14
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/NamingSystem-retina-observation-id.json",
-      "size" : 460,
+      "name" : "fsh-generated/resources/ImagingStudy-RetinaImagingStudy-registered-Example.json",
+      "size" : 505,
       "processes" : [
         {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 14
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 27,
-          "length" : 7
+          "start" : 41,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-retina-diagnostic-report-ns.json",
+      "size" : 751,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 55
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-retina-imaging-study-ns.json",
+      "size" : 919,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 21
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-retina-observation-ns.json",
+      "size" : 616,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaDiabeticMacularEdemaFinding-Example-left.json",
+      "size" : 865,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaDiabeticMacularEdemaFinding-Example-right.json",
+      "size" : 864,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 14
         },
         {
           "activity" : "generate2",
           "start" : 49,
           "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaDiabeticRetinopathyFinding-Example-left.json",
+      "size" : 874,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaDiabeticRetinopathyFinding-Example-right.json",
+      "size" : 874,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaHbA1cObservation-Example.json",
+      "size" : 643,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaImageParameter-Example.json",
+      "size" : 594,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaImageQualityAssessment-Example-left.json",
+      "size" : 1082,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 14
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-RetinaImageQualityAssessment-Example-right.json",
+      "size" : 1071,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 15
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/OperationDefinition-append-retina-ai-result.json",
-      "size" : 3358,
+      "size" : 3974,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
-          "length" : 3
+          "start" : 26,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 25,
-          "length" : 8
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 10
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 19
-        },
-        {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 48
-        },
-        {
-          "activity" : "generate2",
-          "start" : 49,
-          "length" : 31
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Parameters-AddAIResultOperation.json",
-      "size" : 5666,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 40,
-          "length" : 16
-        },
-        {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 31
-        },
-        {
-          "activity" : "generate2",
-          "start" : 49,
+          "start" : 26,
           "length" : 22
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Patient-cdp1123122.json",
-      "size" : 319,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 2
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 27,
+          "activity" : "checkR4R4B",
+          "start" : 28,
           "length" : 1
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 32
+        },
+        {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 5
+          "start" : 43,
+          "length" : 30
         },
         {
           "activity" : "generate2",
           "start" : 49,
           "length" : 26
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/Patient-cdp1123123.json",
-      "size" : 318,
+      "name" : "fsh-generated/resources/OperationDefinition-retina-by-date.json",
+      "size" : 1490,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
+          "start" : 26,
           "length" : 2
         },
         {
-          "activity" : "generateNarratives",
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
           "start" : 27,
           "length" : 1
         },
         {
+          "activity" : "loadDepInfo",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 3
+        },
+        {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 11
+          "start" : 43,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 26
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Parameters-RetinaAppendAIResultOperation-Example.json",
+      "size" : 4745,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 17
         },
         {
           "activity" : "generate2",
@@ -515,74 +1062,197 @@
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-RetinaDiagnosticReport.json",
-      "size" : 14700,
+      "name" : "fsh-generated/resources/Parameters-RetinaQueryByDate-Example.json",
+      "size" : 322,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
+          "start" : 26,
           "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 25,
-          "length" : 71
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 43
-        },
-        {
-          "activity" : "validate",
-          "start" : 27,
-          "length" : 1834
         },
         {
           "activity" : "generate1",
-          "start" : 42,
-          "length" : 449
+          "start" : 43,
+          "length" : 10
         },
         {
           "activity" : "generate2",
           "start" : 49,
-          "length" : 1936
-        },
-        {
-          "activity" : "generate2",
-          "start" : 67,
-          "length" : 603
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 12
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 127,
-          "length" : 16
+          "length" : 17
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-RetinaObservation.json",
-      "size" : 653,
+      "name" : "fsh-generated/resources/StructureDefinition-cautions-extension.json",
+      "size" : 1562,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 2662
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 52
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 986
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 257
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-days-until-next-examination-extension.json",
+      "size" : 2658,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 25,
-          "length" : 10
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 209
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 66
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-previous-examination-conclusion-extension.json",
+      "size" : 1790,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 43,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 181
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 62
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-retina-ai-device.json",
+      "size" : 4712,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
@@ -591,764 +1261,1053 @@
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
+          "start" : 28,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 29,
-          "length" : 194
-        },
-        {
-          "activity" : "generate1",
-          "start" : 42,
-          "length" : 276
-        },
-        {
-          "activity" : "generate2",
-          "start" : 51,
-          "length" : 1885
-        },
-        {
-          "activity" : "generate2",
-          "start" : 68,
-          "length" : 204
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 5
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-dme-left-eye-observation.json",
-      "size" : 1256,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 4
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 18
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 14
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 161
+          "start" : 32,
+          "length" : 332
         },
         {
           "activity" : "scanForUsageStats",
           "start" : 39,
-          "length" : 10
+          "length" : 1
         },
         {
           "activity" : "generate1",
           "start" : 43,
-          "length" : 311
+          "length" : 322
         },
         {
           "activity" : "generate2",
-          "start" : 53,
-          "length" : 1843
+          "start" : 51,
+          "length" : 548
         },
         {
           "activity" : "generate2",
-          "start" : 68,
-          "length" : 172
+          "start" : 56,
+          "length" : 283
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 6
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 101,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 101,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-dme-right-eye-observation.json",
-      "size" : 1261,
+      "name" : "fsh-generated/resources/StructureDefinition-retina-diabetic-macular-edema-finding.json",
+      "size" : 2273,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 24
+          "length" : 52
         },
         {
-          "activity" : "generateNarratives",
+          "activity" : "load-configure",
           "start" : 27,
-          "length" : 15
-        },
-        {
-          "activity" : "validate",
-          "start" : 29,
-          "length" : 247
-        },
-        {
-          "activity" : "generate1",
-          "start" : 43,
-          "length" : 321
-        },
-        {
-          "activity" : "generate2",
-          "start" : 54,
-          "length" : 1742
-        },
-        {
-          "activity" : "generate2",
-          "start" : 68,
-          "length" : 186
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 13
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-dr-left-eye-observation.json",
-      "size" : 1247,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 10
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 11
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 188
-        },
-        {
-          "activity" : "generate1",
-          "start" : 43,
-          "length" : 312
-        },
-        {
-          "activity" : "generate2",
-          "start" : 56,
-          "length" : 1633
-        },
-        {
-          "activity" : "generate2",
-          "start" : 68,
-          "length" : 129
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-dr-right-eye-observation.json",
-      "size" : 1252,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 29
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 168
-        },
-        {
-          "activity" : "generate1",
-          "start" : 43,
-          "length" : 315
-        },
-        {
-          "activity" : "generate2",
-          "start" : 58,
-          "length" : 1744
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 136
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 12
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-frist-nesteundersokelse-extension.json",
-      "size" : 2642,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 9
-        },
-        {
-          "activity" : "validate",
-          "start" : 30,
-          "length" : 3344
-        },
-        {
-          "activity" : "generate1",
-          "start" : 44,
-          "length" : 89
-        },
-        {
-          "activity" : "generate2",
-          "start" : 60,
-          "length" : 369
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 30
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-fundus-foto-observation.json",
-      "size" : 963,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 25,
-          "length" : 9
-        },
-        {
-          "activity" : "load",
-          "start" : 25,
           "length" : 1
         },
         {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 26
-        },
-        {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 17
         },
         {
           "activity" : "validate",
           "start" : 33,
-          "length" : 1104
+          "length" : 215
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 286
+          "start" : 43,
+          "length" : 227
         },
         {
           "activity" : "generate2",
-          "start" : 60,
-          "length" : 1591
+          "start" : 51,
+          "length" : 528
         },
         {
           "activity" : "generate2",
-          "start" : 69,
-          "length" : 124
+          "start" : 56,
+          "length" : 160
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 4
+          "start" : 87,
+          "length" : 6
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-hba1c-observation.json",
-      "size" : 883,
+      "name" : "fsh-generated/resources/StructureDefinition-retina-diabetic-retinopathy-finding.json",
+      "size" : 3071,
       "processes" : [
         {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
           "activity" : "load",
-          "start" : 25,
-          "length" : 4
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 18
+          "length" : 46
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
+          "start" : 28,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 34,
-          "length" : 186
+          "start" : 33,
+          "length" : 172
         },
         {
           "activity" : "scanForUsageStats",
           "start" : 39,
-          "length" : 3
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 308
+          "start" : 43,
+          "length" : 281
         },
         {
           "activity" : "generate2",
-          "start" : 62,
-          "length" : 1661
+          "start" : 52,
+          "length" : 518
         },
         {
           "activity" : "generate2",
-          "start" : 69,
-          "length" : 130
+          "start" : 56,
+          "length" : 97
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 101,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-ki-productname-extension.json",
-      "size" : 1566,
+      "name" : "fsh-generated/resources/StructureDefinition-retina-diagnostic-report.json",
+      "size" : 10948,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
-          "length" : 5
-        },
-        {
-          "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 13
+          "length" : 4
         },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 23
-        },
-        {
-          "activity" : "generate1",
-          "start" : 44,
-          "length" : 79
-        },
-        {
-          "activity" : "generate2",
-          "start" : 63,
-          "length" : 360
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 32
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-ki-protokoll-extension.json",
-      "size" : 1724,
-      "processes" : [
         {
           "activity" : "load",
-          "start" : 25,
+          "start" : 26,
           "length" : 7
         },
         {
           "activity" : "generateSnapshots",
           "start" : 26,
-          "length" : 6
+          "length" : 41
+        },
+        {
+          "activity" : "scan",
+          "start" : 28,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 18
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 8
-        },
-        {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 86
-        },
-        {
-          "activity" : "generate2",
-          "start" : 64,
-          "length" : 354
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 45
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-ki-versjon-algoritme-extension.json",
-      "size" : 1650,
-      "processes" : [
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 16
-        },
-        {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 77
-        },
-        {
-          "activity" : "generate2",
-          "start" : 64,
-          "length" : 359
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 27
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-oct-observation.json",
-      "size" : 928,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 8
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 47
-        },
-        {
-          "activity" : "loadInfo",
-          "start" : 26,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 13
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 101
-        },
-        {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 265
-        },
-        {
-          "activity" : "generate2",
-          "start" : 64,
-          "length" : 1553
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 133
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 16
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-retina-imagequality-extension.json",
-      "size" : 1595,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 35,
-          "length" : 24
-        },
-        {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 91
-        },
-        {
-          "activity" : "generate2",
-          "start" : 66,
-          "length" : 441
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 31
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-tiltaksstatus-forrige-undersokelse-extension.json",
-      "size" : 1759,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
-          "length" : 2
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 26,
-          "length" : 16
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 22
         },
         {
           "activity" : "validate",
-          "start" : 35,
-          "length" : 8
+          "start" : 33,
+          "length" : 218
         },
         {
           "activity" : "generate1",
-          "start" : 45,
-          "length" : 95
+          "start" : 44,
+          "length" : 280
         },
         {
           "activity" : "generate2",
-          "start" : 66,
-          "length" : 376
+          "start" : 52,
+          "length" : 414
         },
         {
           "activity" : "generate2",
-          "start" : 69,
-          "length" : 32
+          "start" : 56,
+          "length" : 91
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 104,
+          "start" : 87,
           "length" : 5
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-videre-forlop-extension.json",
-      "size" : 1549,
+      "name" : "fsh-generated/resources/StructureDefinition-retina-hba1c-observation.json",
+      "size" : 1015,
       "processes" : [
         {
-          "activity" : "generateSnapshots",
+          "activity" : "loadResources",
           "start" : 26,
-          "length" : 16
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 55
         },
         {
           "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 169
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 271
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 435
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 120
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 101,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-retina-image-parameter.json",
+      "size" : 1633,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
           "start" : 27,
+          "length" : 32
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 173
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 236
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 304
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 87
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-retina-image-quality-asessment.json",
+      "size" : 2420,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 185
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 220
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 330
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 121
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-retina-imagingstudy.json",
+      "size" : 5553,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 179
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 310
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 375
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 278
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 8
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 101,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 101,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-retina-observation.json",
+      "size" : 2151,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 154
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 221
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 333
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 101
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-retinal-image-view.json",
+      "size" : 1496,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 27,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 21
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 62
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 149
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 21
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 87,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-retina-body-site-vs.json",
+      "size" : 722,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 74
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 771
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 88
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-retina-caution-vs.json",
+      "size" : 541,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
           "length" : 5
         },
         {
           "activity" : "validate",
-          "start" : 35,
-          "length" : 28
+          "start" : 29,
+          "length" : 6
         },
         {
           "activity" : "generate1",
           "start" : 45,
-          "length" : 96
+          "length" : 18
         },
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 355
-        },
-        {
-          "activity" : "generate2",
-          "start" : 69,
-          "length" : 32
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 104,
-          "length" : 2
+          "start" : 55,
+          "length" : 76
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-retina-conclusioncode-vs.json",
-      "size" : 552,
+      "name" : "fsh-generated/resources/ValueSet-retina-conclusion-code-vs.json",
+      "size" : 594,
       "processes" : [
         {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
           "activity" : "load",
-          "start" : 25,
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 103
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-retina-image-parameter-vs.json",
+      "size" : 712,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
           "length" : 2
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
+          "start" : 28,
           "length" : 52
         },
         {
           "activity" : "validate",
-          "start" : 27,
-          "length" : 16
+          "start" : 29,
+          "length" : 6
         },
         {
           "activity" : "generate1",
           "start" : 45,
-          "length" : 32
+          "length" : 18
         },
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 80
+          "start" : 55,
+          "length" : 66
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-retina-imagequality-vs.json",
-      "size" : 645,
+      "name" : "fsh-generated/resources/ValueSet-retina-image-quality-vs.json",
+      "size" : 619,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 25,
-          "length" : 15
+          "start" : 26,
+          "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 25,
-          "length" : 2
+          "start" : 26,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 27,
-          "length" : 16
+          "start" : 28,
+          "length" : 4
         },
         {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 16
-        },
-        {
-          "activity" : "generate2",
-          "start" : 67,
-          "length" : 63
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/ValueSet-tiltaksstatus-forrigeUndersokelse-vs.json",
-      "size" : 552,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 25,
+          "activity" : "validate",
+          "start" : 29,
           "length" : 2
         },
         {
           "activity" : "generate1",
           "start" : 45,
-          "length" : 43
+          "length" : 15
         },
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 80
+          "start" : 55,
+          "length" : 62
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/ValueSet-videre-forlop-vs.json",
-      "size" : 585,
+      "name" : "fsh-generated/resources/ValueSet-retina-image-view-vs.json",
+      "size" : 880,
       "processes" : [
         {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 3
+        },
+        {
           "activity" : "load",
-          "start" : 25,
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 27,
-          "length" : 16
+          "start" : 29,
+          "length" : 4
         },
         {
           "activity" : "generate1",
           "start" : 45,
-          "length" : 30
+          "length" : 17
         },
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 68
+          "start" : 55,
+          "length" : 54
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-retina-imaging-procedure-vs.json",
+      "size" : 1273,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 276
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 42
         }
       ]
     },
     {
       "name" : "\\fsh-generated\\includes\\fsh-link-references.md",
-      "size" : 2691
-    },
-    {
-      "name" : "\\fsh-generated\\includes\\menu.xml",
-      "size" : 1061
-    },
-    {
-      "name" : "\\input\\pagecontent\\index.md",
-      "size" : 1053
-    },
-    {
-      "name" : "\\template\\config",
-      "size" : 0,
+      "size" : 3973,
       "processes" : [
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 6
+          "start" : 55,
+          "length" : 2
         }
       ]
     },
     {
+      "name" : "\\fsh-generated\\includes\\menu.xml",
+      "size" : 1349
+    },
+    {
+      "name" : "\\input\\pagecontent\\changelog.md",
+      "size" : 4985,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\index.md",
+      "size" : 2854,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\Issues-and-Enhancements.md",
+      "size" : 1337,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\Model.md",
+      "size" : 3245,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\OperationDefinition-append-retina-ai-result-intro.md",
+      "size" : 708,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\OperationDefinition-retina-by-date-intro.md",
+      "size" : 757
+    },
+    {
+      "name" : "\\input\\pagecontent\\OperationDefinition-retina-by-date-notes.md",
+      "size" : 332,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\StructureDefinition-retina-imagingstudy-intro.md",
+      "size" : 2370,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\template\\config",
+      "size" : 0
+    },
+    {
       "name" : "\\template\\config\\_config.yml",
-      "size" : 140
+      "size" : 140,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images",
+      "size" : 0
+    },
+    {
+      "name" : "\\input\\images\\component-diagram.puml",
+      "size" : 1099,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\component-diagram.svg",
+      "size" : 17237,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-lifecycle-state-diagram.puml",
+      "size" : 781,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-lifecycle-state-diagram.svg",
+      "size" : 8078
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-partial.puml",
+      "size" : 1342,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-partial.svg",
+      "size" : 7112,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-registered.puml",
+      "size" : 1101
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-registered.svg",
+      "size" : 5023,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-with-ai.puml",
+      "size" : 3354,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\diagnostic-report-with-ai.svg",
+      "size" : 26154,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\images\\imagingstudy-structure.puml",
+      "size" : 737
+    },
+    {
+      "name" : "\\input\\images\\imagingstudy-structure.svg",
+      "size" : 10793,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
     },
     {
       "name" : "\\temp\\pages\\_includes\\artifacts.xml",
-      "size" : 18508
+      "size" : 25495,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 1
+        }
+      ]
     }
   ]
 }

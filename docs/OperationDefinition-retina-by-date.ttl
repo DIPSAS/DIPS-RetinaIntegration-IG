@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/OperationDefinition/retina-by-date> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "retina-by-date"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition retina-by-date</b></p><a name=\"retina-by-date\"> </a><a name=\"hcretina-by-date\"> </a><p>URL: [base]/DiagnosticReport?_query=retina-by-date&amp;...</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>start</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Optional start of the date range for the query. If not provided, the query will return reports from the earliest available date up to the end date.</p>\n</div></td></tr><tr><td>IN</td><td>end</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Optional end of the date range for the query. If not provided, the query will return reports from the start date up to the latest available date.</p>\n</div></td></tr><tr><td>IN</td><td>pendingAI</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Optional parameter. If present, the query will only return reports that are pending AI analysis. In a GET request, the parameter can be provided without a value (e.g., <code>&amp;pendingAI</code>).</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://dips.no/fhir/RetinaIntegration/OperationDefinition/retina-by-date"^^xsd:anyURI ;
+     fhir:l <http://dips.no/fhir/RetinaIntegration/OperationDefinition/retina-by-date>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "RetinaQueryByDate"] ; # 
+  fhir:title [ fhir:v "Query By Date Operation"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "query"] ; # 
+  fhir:date [ fhir:v "2026-02-03T09:57:13+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DIPS AS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DIPS AS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Operation to query for retina diagnostic reports within a specified date range and optionally filter for reports pending AI analysis."] ; # 
+  fhir:affectsState [ fhir:v false] ; # 
+  fhir:code [ fhir:v "retina-by-date"] ; # 
+  fhir:resource ( [ fhir:v "DiagnosticReport"] ) ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v false] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "start" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Optional start of the date range for the query. If not provided, the query will return reports from the earliest available date up to the end date." ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:name [ fhir:v "end" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Optional end of the date range for the query. If not provided, the query will return reports from the start date up to the latest available date." ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:name [ fhir:v "pendingAI" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Optional parameter. If present, the query will only return reports that are pending AI analysis. In a GET request, the parameter can be provided without a value (e.g., `&pendingAI`)." ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

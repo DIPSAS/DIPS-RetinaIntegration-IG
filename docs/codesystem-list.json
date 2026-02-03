@@ -1,44 +1,36 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/grading-caution-cs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "GradingCautionCodeSystem",
-      "title" : "Grading Cautions",
-      "description" : "Cautions to consider when grading examinations. (5000-series)"
+      "name" : "RetinaCautionCodeSystem",
+      "title" : "Retina Cautions",
+      "description" : "Cautions to consider when grading examinations (5000-series)."
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "RetinaConclusionCodesystem",
-      "title" : "Grading Conclusion",
-      "description" : "Codes describing where the external client has landed in its assessment of the examination. (1000-series)"
+      "name" : "RetinaConclusionCodeSystem",
+      "title" : "Retina Conclusion",
+      "description" : "Codes for the current or final conclusion of the grading process (1000-series)."
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-      "version" : "0.1.3",
-      "status" : "active",
-      "name" : "RetinaImageQualityCodesystem",
-      "title" : "Image Quality",
-      "description" : "Image quality as interpreted by an AI solution. (2000-series)"
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
+      "version" : "0.6.0",
+      "status" : "draft",
+      "name" : "RetinaImageQualityCodeSystem",
+      "title" : "Retina Image Quality",
+      "description" : "Image quality as assessed by AI solution (2000-series)."
     },
     {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-      "version" : "0.1.3",
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
+      "version" : "0.6.0",
       "status" : "draft",
-      "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
-      "title" : "Next Examination",
-      "description" : "Next step for this patient is a new examination. (3000-series)"
-    },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
-      "version" : "0.1.3",
-      "status" : "draft",
-      "name" : "VidereForlopCodeSystem",
-      "title" : "Grading Pending",
-      "description" : "Next step in grading this examination. (4000-series)"
+      "name" : "RetinaImageViewCodeSystem",
+      "title" : "Retina Image View",
+      "description" : "Codes describing the centering used when capturing retinal images (6000-series)."
     }
   ]
 }
