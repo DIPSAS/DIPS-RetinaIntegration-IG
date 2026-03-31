@@ -1,258 +1,256 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://dicom.nema.org/resources/ontology/DCM",
-      "version" : "01",
-      "status" : "active",
-      "name" : "DICOM Controlled Terminology Definitions",
-      "title" : null,
-      "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
-      "oids" : ["1.2.840.10008.2.16.4"],
-      "uses" : {
-      },
-      "http://tx.fhir.org/r4/ValueSet/dicom-cid-29-AcquisitionModality" : "AcquisitionModality"
+  "codeSystems" : [{
+    "url" : "http://dicom.nema.org/resources/ontology/DCM",
+    "version" : "01",
+    "status" : "active",
+    "name" : "DICOM Controlled Terminology Definitions",
+    "title" : null,
+    "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+    "oids" : ["1.2.840.10008.2.16.4"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaCautionCodeSystem",
-      "title" : "Retina Cautions",
-      "description" : "Cautions to consider when grading examinations (5000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-caution-vs.html" : "Retina Cautions"
+    "http://tx.fhir.org/r4/ValueSet/dicom-cid-29-AcquisitionModality" : "AcquisitionModality"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaCautionCodeSystem",
+    "title" : "Retina Cautions",
+    "description" : "Cautions to consider when grading examinations (5000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaConclusionCodeSystem",
-      "title" : "Retina Conclusion",
-      "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion"
+    "ValueSet-retina-caution-vs.html" : "Retina Cautions"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaConclusionCodeSystem",
+    "title" : "Retina Conclusion",
+    "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageQualityCodeSystem",
-      "title" : "Retina Image Quality",
-      "description" : "Image quality as assessed by AI solution (2000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-image-quality-vs.html" : "Retina Image Quality"
+    "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageQualityCodeSystem",
+    "title" : "Retina Image Quality",
+    "description" : "Image quality as assessed by AI solution (2000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageViewCodeSystem",
-      "title" : "Retina Image View",
-      "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-image-view-vs.html" : "Retina Image View"
+    "ValueSet-retina-image-quality-vs.html" : "Retina Image Quality"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageViewCodeSystem",
+    "title" : "Retina Image View",
+    "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/device-nametype",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DeviceNameType",
-      "title" : "DeviceNameType",
-      "description" : "The type of name the device is referred by.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1084"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
+    "ValueSet-retina-image-view-vs.html" : "Retina Image View"
+  },
+  {
+    "url" : "http://hl7.org/fhir/device-nametype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceNameType",
+    "title" : "DeviceNameType",
+    "description" : "The type of name the device is referred by.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1084"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/device-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "FHIRDeviceStatus",
-      "title" : "FHIRDeviceStatus",
-      "description" : "The availability status of the device.",
-      "oids" : ["2.16.840.1.113883.4.642.4.210"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-device-status.html" : "FHIRDeviceStatus"
+    "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/device-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatus",
+    "title" : "FHIRDeviceStatus",
+    "description" : "The availability status of the device.",
+    "oids" : ["2.16.840.1.113883.4.642.4.210"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/diagnostic-report-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DiagnosticReportStatus",
-      "title" : "DiagnosticReportStatus",
-      "description" : "The status of the diagnostic report.",
-      "oids" : ["2.16.840.1.113883.4.642.4.236"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+    "http://hl7.org/fhir/R4/valueset-device-status.html" : "FHIRDeviceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.236"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/identifier-use",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "IdentifierUse",
-      "title" : "IdentifierUse",
-      "description" : "Identifies the purpose for this identifier, if known .",
-      "oids" : ["2.16.840.1.113883.4.642.4.58"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/imagingstudy-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ImagingStudyStatus",
-      "title" : "ImagingStudyStatus",
-      "description" : "The status of the ImagingStudy.",
-      "oids" : ["2.16.840.1.113883.4.642.4.991"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-imagingstudy-status.html" : "ImagingStudyStatus"
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/imagingstudy-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImagingStudyStatus",
+    "title" : "ImagingStudyStatus",
+    "description" : "The status of the ImagingStudy.",
+    "oids" : ["2.16.840.1.113883.4.642.4.991"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/observation-status",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ObservationStatus",
-      "title" : "ObservationStatus",
-      "description" : "Codes providing the status of an observation.",
-      "oids" : ["2.16.840.1.113883.4.642.4.401"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+    "http://hl7.org/fhir/R4/valueset-imagingstudy-status.html" : "ImagingStudyStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "ObservationStatus",
+    "description" : "Codes providing the status of an observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.401"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/udi-entry-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "UDIEntryType",
-      "title" : "UDIEntryType",
-      "description" : "Codes to identify how UDI data was entered.",
-      "oids" : ["2.16.840.1.113883.4.642.4.212"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
+    "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/udi-entry-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "UDIEntryType",
+    "title" : "UDIEntryType",
+    "description" : "Codes to identify how UDI data was entered.",
+    "oids" : ["2.16.840.1.113883.4.642.4.212"],
+    "uses" : {
     },
-    {
-      "url" : "http://snomed.info/sct",
-      "version" : null,
-      "status" : "active",
-      "name" : "SNOMED_CT",
-      "title" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "oids" : ["2.16.840.1.113883.6.96"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-bodysite-laterality.html" : "Laterality",
-      "ValueSet-retina-body-site-vs.html" : "Retina Body Site",
-      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
+    "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "DataAbsentReason",
-      "title" : "DataAbsentReason",
-      "description" : "Used to specify why the normally expected content of the data element is missing.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-bodysite-laterality.html" : "Laterality",
+    "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "ValueSet-retina-body-site-vs.html" : "Retina Body Site",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "FHIRDeviceStatusReason",
-      "title" : "FHIRDeviceStatusReason",
-      "description" : "The availability status reason of the device.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1082"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
+    "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "FHIRDeviceStatusReason",
+    "title" : "FHIRDeviceStatusReason",
+    "description" : "The availability status reason of the device.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1082"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "version" : "2.0.0",
-      "status" : "active",
-      "name" : "ObservationCategoryCodes",
-      "title" : "Observation Category Codes",
-      "description" : "Observation Category codes.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "ObservationReferenceRangeMeaningCodes",
-      "title" : "Observation Reference Range Meaning Codes",
-      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1124"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "DiagnosticServiceSectionId",
-      "title" : "diagnosticServiceSectionId",
-      "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
-      "oids" : ["2.16.840.1.113883.18.29"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+    "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+    "oids" : ["2.16.840.1.113883.18.29"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "IdentifierType",
-      "title" : "identifierType",
-      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
-      "oids" : ["2.16.840.1.113883.18.108"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+    "oids" : ["2.16.840.1.113883.18.108"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "ObservationInterpretation",
-      "title" : "ObservationInterpretation",
-      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
-      "oids" : ["2.16.840.1.113883.5.83"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "oids" : ["2.16.840.1.113883.5.83"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "ParticipationType",
-      "title" : "ParticipationType",
-      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
-      "oids" : ["2.16.840.1.113883.5.90"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-series-performer-function.html" : "ImagingStudy series performer function"
-    }
-  ]
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "version" : "6.0.0",
+    "status" : "active",
+    "name" : "ParticipationType",
+    "title" : "ParticipationType",
+    "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+    "oids" : ["2.16.840.1.113883.5.90"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-series-performer-function.html" : "ImagingStudy series performer function"
+  }]
 }

@@ -1,6 +1,7 @@
 {
   "resourceType" : "Bundle",
   "id" : "Bundle-SingleExamination-Example",
+  "language" : "en",
   "type" : "searchset",
   "total" : 3,
   "entry" : [{

@@ -1,60 +1,58 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaCautionCodeSystem",
-      "title" : "Retina Cautions",
-      "description" : "Cautions to consider when grading examinations (5000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-caution-vs.html" : "Retina Cautions"
+  "codeSystems" : [{
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaCautionCodeSystem",
+    "title" : "Retina Cautions",
+    "description" : "Cautions to consider when grading examinations (5000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaConclusionCodeSystem",
-      "title" : "Retina Conclusion",
-      "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion"
+    "ValueSet-retina-caution-vs.html" : "Retina Cautions"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaConclusionCodeSystem",
+    "title" : "Retina Conclusion",
+    "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageQualityCodeSystem",
-      "title" : "Retina Image Quality",
-      "description" : "Image quality as assessed by AI solution (2000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-image-quality-vs.html" : "Retina Image Quality"
+    "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageQualityCodeSystem",
+    "title" : "Retina Image Quality",
+    "description" : "Image quality as assessed by AI solution (2000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageViewCodeSystem",
-      "title" : "Retina Image View",
-      "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
-      "uses" : {
-      },
-      "ValueSet-retina-image-view-vs.html" : "Retina Image View"
+    "ValueSet-retina-image-quality-vs.html" : "Retina Image Quality"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageViewCodeSystem",
+    "title" : "Retina Image View",
+    "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
+    "uses" : {
     },
-    {
-      "url" : "http://snomed.info/sct",
-      "version" : null,
-      "status" : "active",
-      "name" : "SNOMED_CT",
-      "title" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "oids" : ["2.16.840.1.113883.6.96"],
-      "uses" : {
-      },
-      "ValueSet-retina-body-site-vs.html" : "Retina Body Site"
-    }
-  ]
+    "ValueSet-retina-image-view-vs.html" : "Retina Image View"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "ValueSet-retina-body-site-vs.html" : "Retina Body Site"
+  }]
 }

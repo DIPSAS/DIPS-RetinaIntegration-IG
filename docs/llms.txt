@@ -1,88 +1,89 @@
-# dips.fhir.retinaintegration#0.6.0: RetinaIntegration
+# dips.fhir.retinaintegration#0.7.0: RetinaIntegration(en)
 
 ## Pages
 
-* [Home](index.md)
-* [Artifacts Summary](artifacts.md)
-* [Changelog](changelog.md)
-* [Issues and Enhancements](Issues-and-Enhancements.md)
-* [Model](Model.md)
+* [Home](en/index.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Changelog](en/changelog.md)
+* [](en/Issues-and-Enhancements.md)
+* [Model](en/Model.md)
 
 ## Resources
 
 ### CodeSystems
 
-* [Retina Cautions](CodeSystem-retina-caution-cs.md)
-* [Retina Conclusion](CodeSystem-retina-conclusion-code-cs.md)
-* [Retina Image Quality](CodeSystem-retina-image-quality-cs.md)
-* [Retina Image View](CodeSystem-retina-image-view-cs.md)
+* [Retina Cautions](en/CodeSystem-retina-caution-cs.md)
+* [Retina Conclusion](en/CodeSystem-retina-conclusion-code-cs.md)
+* [Retina Image Quality](en/CodeSystem-retina-image-quality-cs.md)
+* [Retina Image View](en/CodeSystem-retina-image-view-cs.md)
 
 ### ValueSets
 
-* [Retina Body Site](ValueSet-retina-body-site-vs.md)
-* [Retina Cautions](ValueSet-retina-caution-vs.md)
-* [Retina Conclusion](ValueSet-retina-conclusion-code-vs.md)
-* [Retina Image Parameter ValueSet](ValueSet-retina-image-parameter-vs.md)
-* [Retina Image Quality](ValueSet-retina-image-quality-vs.md)
-* [Retina Image View](ValueSet-retina-image-view-vs.md)
-* [Retina Imaging Procedures](ValueSet-retina-imaging-procedure-vs.md)
+* [Retina Body Site](en/ValueSet-retina-body-site-vs.md)
+* [Retina Cautions](en/ValueSet-retina-caution-vs.md)
+* [Retina Conclusion](en/ValueSet-retina-conclusion-code-vs.md)
+* [Retina Image Parameter ValueSet](en/ValueSet-retina-image-parameter-vs.md)
+* [Retina Image Quality](en/ValueSet-retina-image-quality-vs.md)
+* [Retina Image View](en/ValueSet-retina-image-view-vs.md)
+* [Retina Imaging Procedures](en/ValueSet-retina-imaging-procedure-vs.md)
 
 ### Resource Profiles
 
-* [Retina AI Device](StructureDefinition-retina-ai-device.md)
-* [Retina Diabetic Macular Edema Finding](StructureDefinition-retina-diabetic-macular-edema-finding.md)
-* [Retina Diabetic Retinopathy Finding](StructureDefinition-retina-diabetic-retinopathy-finding.md)
-* [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
-* [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation.md)
-* [Retina Image Parameter](StructureDefinition-retina-image-parameter.md)
-* [Retina Image Quality Assessment](StructureDefinition-retina-image-quality-asessment.md)
-* [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
-* [Retina Observation](StructureDefinition-retina-observation.md)
+* [Retina AI Device](en/StructureDefinition-retina-ai-device.md)
+* [Retina Camera Device](en/StructureDefinition-retina-camera-device.md)
+* [Retina Diabetic Macular Edema Finding](en/StructureDefinition-retina-diabetic-macular-edema-finding.md)
+* [Retina Diabetic Retinopathy Finding](en/StructureDefinition-retina-diabetic-retinopathy-finding.md)
+* [Retina DiagnosticReport](en/StructureDefinition-retina-diagnostic-report.md)
+* [Retina HbA1c Observation](en/StructureDefinition-retina-hba1c-observation.md)
+* [Retina Image Parameter](en/StructureDefinition-retina-image-parameter.md)
+* [Retina Image Quality Assessment](en/StructureDefinition-retina-image-quality-asessment.md)
+* [Retina ImagingStudy](en/StructureDefinition-retina-imagingstudy.md)
+* [Retina Observation](en/StructureDefinition-retina-observation.md)
 
 ### Extensions
 
-* [Cautions](StructureDefinition-cautions-extension.md)
-* [Days Until Next Examination](StructureDefinition-days-until-next-examination-extension.md)
-* [Previous Examination Conclusion](StructureDefinition-previous-examination-conclusion-extension.md)
-* [Retinal Image View](StructureDefinition-retinal-image-view.md)
+* [Cautions](en/StructureDefinition-cautions-extension.md)
+* [Days Until Next Examination](en/StructureDefinition-days-until-next-examination-extension.md)
+* [Previous Examination Conclusion](en/StructureDefinition-previous-examination-conclusion-extension.md)
+* [Retinal Image View](en/StructureDefinition-retinal-image-view.md)
 
 ### CapabilityStatements
 
-* [Retina CapabilityStatement](CapabilityStatement-RetinaCapabilityStatement.md)
+* [Retina CapabilityStatement](en/CapabilityStatement-RetinaCapabilityStatement.md)
 
 ### ImplementationGuides
 
-* [RetinaIntegration](index.md)
+* [RetinaIntegration](en/ImplementationGuide-dips.fhir.retinaintegration.md)
 
 ### NamingSystems
 
-* [RetinaDiagnosticReportIdentifierSystem](NamingSystem-retina-diagnostic-report-ns.md)
-* [RetinaImagingStudyIdentifierSystem](NamingSystem-retina-imaging-study-ns.md)
-* [RetinaObservationIdentifierSystem](NamingSystem-retina-observation-ns.md)
+* [RetinaDiagnosticReportIdentifierSystem](en/NamingSystem-retina-diagnostic-report-ns.md)
+* [RetinaImagingStudyIdentifierSystem](en/NamingSystem-retina-imaging-study-ns.md)
+* [RetinaObservationIdentifierSystem](en/NamingSystem-retina-observation-ns.md)
 
 ### OperationDefinitions
 
-* [Retina Append AI Result Operation](OperationDefinition-append-retina-ai-result.md)
-* [Query By Date Operation](OperationDefinition-retina-by-date.md)
+* [Retina Append AI Result Operation](en/OperationDefinition-append-retina-ai-result.md)
+* [Query By Date Operation](en/OperationDefinition-retina-by-date.md)
 
 ### Examples
 
-* [Bundle-SingleExamination-Example (Bundle)](Bundle-Bundle-SingleExamination-Example.md)
-* [Bundle-TwoExaminations-Example (Bundle)](Bundle-Bundle-TwoExaminations-Example.md)
-* [RetinaAIDevice-Example (Device)](Device-RetinaAIDevice-Example.md)
-* [RetinaCameraDevice-Example (Device)](Device-RetinaCameraDevice-Example.md)
-* [RetinaDiagnosticReport-Example-PendingAI (DiagnosticReport)](DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.md)
-* [RetinaDiagnosticReport-Example (DiagnosticReport)](DiagnosticReport-RetinaDiagnosticReport-Example.md)
-* [bb2690e7-ca9f-4070-9c35-c7e36976b144 (DiagnosticReport)](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
-* [RetinaImagingStudy-available-Example (ImagingStudy)](ImagingStudy-RetinaImagingStudy-available-Example.md)
-* [RetinaImagingStudy-registered-Example (ImagingStudy)](ImagingStudy-RetinaImagingStudy-registered-Example.md)
-* [RetinaDiabeticMacularEdemaFinding-Example-left (Observation)](Observation-RetinaDiabeticMacularEdemaFinding-Example-left.md)
-* [RetinaDiabeticMacularEdemaFinding-Example-right (Observation)](Observation-RetinaDiabeticMacularEdemaFinding-Example-right.md)
-* [RetinaDiabeticRetinopathyFinding-Example-left (Observation)](Observation-RetinaDiabeticRetinopathyFinding-Example-left.md)
-* [RetinaDiabeticRetinopathyFinding-Example-right (Observation)](Observation-RetinaDiabeticRetinopathyFinding-Example-right.md)
-* [RetinaHbA1cObservation-Example (Observation)](Observation-RetinaHbA1cObservation-Example.md)
-* [RetinaImageParameter-Example (Observation)](Observation-RetinaImageParameter-Example.md)
-* [RetinaImageQualityAssessment-Example-left (Observation)](Observation-RetinaImageQualityAssessment-Example-left.md)
-* [RetinaImageQualityAssessment-Example-right (Observation)](Observation-RetinaImageQualityAssessment-Example-right.md)
-* [RetinaAppendAIResultOperation-Example (Parameters)](Parameters-RetinaAppendAIResultOperation-Example.md)
-* [RetinaQueryByDate-Example (Parameters)](Parameters-RetinaQueryByDate-Example.md)
+* [Bundle-SingleExamination-Example (Bundle)](en/Bundle-Bundle-SingleExamination-Example.md)
+* [Bundle-TwoExaminations-Example (Bundle)](en/Bundle-Bundle-TwoExaminations-Example.md)
+* [RetinaAIDevice-Example (Device)](en/Device-RetinaAIDevice-Example.md)
+* [RetinaCameraDevice-Example (Device)](en/Device-RetinaCameraDevice-Example.md)
+* [RetinaDiagnosticReport-Example-PendingAI (DiagnosticReport)](en/DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.md)
+* [RetinaDiagnosticReport-Example (DiagnosticReport)](en/DiagnosticReport-RetinaDiagnosticReport-Example.md)
+* [bb2690e7-ca9f-4070-9c35-c7e36976b144 (DiagnosticReport)](en/DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
+* [RetinaImagingStudy-available-Example (ImagingStudy)](en/ImagingStudy-RetinaImagingStudy-available-Example.md)
+* [RetinaImagingStudy-registered-Example (ImagingStudy)](en/ImagingStudy-RetinaImagingStudy-registered-Example.md)
+* [RetinaDiabeticMacularEdemaFinding-Example-left (Observation)](en/Observation-RetinaDiabeticMacularEdemaFinding-Example-left.md)
+* [RetinaDiabeticMacularEdemaFinding-Example-right (Observation)](en/Observation-RetinaDiabeticMacularEdemaFinding-Example-right.md)
+* [RetinaDiabeticRetinopathyFinding-Example-left (Observation)](en/Observation-RetinaDiabeticRetinopathyFinding-Example-left.md)
+* [RetinaDiabeticRetinopathyFinding-Example-right (Observation)](en/Observation-RetinaDiabeticRetinopathyFinding-Example-right.md)
+* [RetinaHbA1cObservation-Example (Observation)](en/Observation-RetinaHbA1cObservation-Example.md)
+* [RetinaImageParameter-Example (Observation)](en/Observation-RetinaImageParameter-Example.md)
+* [RetinaImageQualityAssessment-Example-left (Observation)](en/Observation-RetinaImageQualityAssessment-Example-left.md)
+* [RetinaImageQualityAssessment-Example-right (Observation)](en/Observation-RetinaImageQualityAssessment-Example-right.md)
+* [RetinaAppendAIResultOperation-Example (Parameters)](en/Parameters-RetinaAppendAIResultOperation-Example.md)
+* [RetinaQueryByDate-Example (Parameters)](en/Parameters-RetinaQueryByDate-Example.md)

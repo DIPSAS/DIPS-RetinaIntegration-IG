@@ -1,16 +1,17 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "dips.fhir.retinaintegration",
+  "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>\n</div></div>"
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>\n</div></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.6.0",
+  "version" : "0.7.0",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2026-02-03T09:57:13+01:00",
+  "date" : "2026-03-31T17:09:32+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -35,7 +36,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -357,8 +358,63 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "wantGen-ttl"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "wantGen-ttl-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "wantGen-xml"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "wantGen-xml-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -667,6 +723,61 @@
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "wantGen-ttl"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "wantGen-ttl-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "wantGen-xml"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "wantGen-xml-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
       "extension" : [{
@@ -774,6 +885,18 @@
       },
       "name" : "Retina Body Site",
       "description" : "Body site codes for retinal observations (right or left retina).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/retina-camera-device"
+      },
+      "name" : "Retina Camera Device",
+      "description" : "Description of the camera device used for taking retinal images.",
       "exampleBoolean" : false
     },
     {
@@ -1073,8 +1196,8 @@
         "reference" : "Device/RetinaCameraDevice-Example"
       },
       "name" : "RetinaCameraDevice-Example",
-      "description" : "TODO: Camera profile not defined yet. Camera device not used yet.",
-      "exampleBoolean" : true
+      "description" : "Example of a Topcon retina camera device.",
+      "exampleCanonical" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-camera-device"
     },
     {
       "extension" : [{
@@ -1285,15 +1408,6 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Issues-and-Enhancements.html"
-        }],
-        "nameUrl" : "Issues-and-Enhancements.html",
-        "title" : "Issues and Enhancements",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "Model.html"
         }],
         "nameUrl" : "Model.html",
@@ -1352,6 +1466,10 @@
     {
       "code" : "path-pages",
       "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/assets"
     },
     {
       "code" : "path-pages",

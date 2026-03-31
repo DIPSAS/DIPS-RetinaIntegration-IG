@@ -1,106 +1,94 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaBodySiteValueSet",
-      "title" : "Retina Body Site",
-      "description" : "Body site codes for retinal observations (right or left retina).",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
-      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
-      "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
-      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
+  "codeSystems" : [{
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaBodySiteValueSet",
+    "title" : "Retina Body Site",
+    "description" : "Body site codes for retinal observations (right or left retina).",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaCautionValueSet",
-      "title" : "Retina Cautions",
-      "description" : "Special considerations or cautions for grading this examination (5000-series).",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-cautions-extension.html" : "Cautions"
+    "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+    "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+    "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment",
+    "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaCautionValueSet",
+    "title" : "Retina Cautions",
+    "description" : "Special considerations or cautions for grading this examination (5000-series).",
+    "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
-      "title" : "Retina Conclusion",
-      "description" : "Codes describing the current or final conclusion of the examination (1000-series).",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-previous-examination-conclusion-extension.html" : "Previous Examination Conclusion",
-      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
+    "StructureDefinition-cautions-extension.html" : "Cautions"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
+    "title" : "Retina Conclusion",
+    "description" : "Codes describing the current or final conclusion of the examination (1000-series).",
+    "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageParameterValueSet",
-      "title" : "Retina Image Parameter ValueSet",
-      "description" : "Includes codes for both image quality and image view.",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter"
+    "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport",
+    "StructureDefinition-previous-examination-conclusion-extension.html" : "Previous Examination Conclusion"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageParameterValueSet",
+    "title" : "Retina Image Parameter ValueSet",
+    "description" : "Includes codes for both image quality and image view.",
+    "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
+    "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageQualityValueSet",
-      "title" : "Retina Image Quality",
-      "description" : "Image quality as assessed by AI (2000-series).",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"
-      ],
-      "uses" : {
-      },
-      "ValueSet-retina-image-parameter-vs.html" : "Retina Image Parameter ValueSet",
-      "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
+    "StructureDefinition-retina-image-parameter.html" : "Retina Image Parameter"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageQualityValueSet",
+    "title" : "Retina Image Quality",
+    "description" : "Image quality as assessed by AI (2000-series).",
+    "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImageViewValueSet",
-      "title" : "Retina Image View",
-      "description" : "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series).",
-      "systems" : [
-        "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"
-      ],
-      "uses" : {
-      },
-      "ValueSet-retina-image-parameter-vs.html" : "Retina Image Parameter ValueSet",
-      "StructureDefinition-retinal-image-view.html" : "Retinal Image View"
+    "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment",
+    "ValueSet-retina-image-parameter-vs.html" : "Retina Image Parameter ValueSet"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImageViewValueSet",
+    "title" : "Retina Image View",
+    "description" : "Codes describing the centering used when capturing retinal images, such as macula-centered or optic disc-centered (6000-series).",
+    "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs"],
+    "uses" : {
     },
-    {
-      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
-      "version" : "0.6.0",
-      "status" : "draft",
-      "name" : "RetinaImagingProcedureValueSet",
-      "title" : "Retina Imaging Procedures",
-      "description" : "Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique.",
-      "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"],
-      "uses" : {
-      },
-      "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
-      "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
-    }
-  ]
+    "ValueSet-retina-image-parameter-vs.html" : "Retina Image Parameter ValueSet",
+    "StructureDefinition-retinal-image-view.html" : "Retinal Image View"
+  },
+  {
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "RetinaImagingProcedureValueSet",
+    "title" : "Retina Imaging Procedures",
+    "description" : "Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique.",
+    "systems" : ["http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"],
+    "uses" : {
+    },
+    "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport",
+    "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy"
+  }]
 }

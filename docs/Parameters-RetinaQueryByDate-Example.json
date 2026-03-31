@@ -1,6 +1,7 @@
 {
   "resourceType" : "Parameters",
   "id" : "RetinaQueryByDate-Example",
+  "language" : "en",
   "parameter" : [{
     "name" : "start",
     "valueDateTime" : "2026-01-21T00:00:00Z"

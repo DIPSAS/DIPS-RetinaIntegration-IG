@@ -49,9 +49,9 @@ class issi as "ImageInstance" <<ImagingStudy.Series.Instance>> {
 }
 
 Class CameraDevice <<Device>> {
-  model-name: Camera Product Name
-  model-number: Camera Version
-  software: Camera Protocol
+  userFriendlyName: Given name
+  manufacturerName: Manufacturer name and model name
+  serialNumber: Serial number
 }
 
 class AIDevice <<Device>> {
@@ -82,7 +82,7 @@ class iqa as "ImageQualityAssessment" <<Observation>> {
   code: http://snomed.info/sct#133887000\n "Computer assisted image analysis for image quality"
   value: Code from 2000 series
   bodySite: left eye | right eye
-  derivedFrom: ImagingStudy
+  derivedFrom: ImageInstance
   performer: AIDevice
   ' partOf: RetinaDiagnosticReport
 }

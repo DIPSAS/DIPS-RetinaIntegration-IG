@@ -18,9 +18,9 @@ class issi as "ImageInstance" <<ImagingStudy.Series.Instance>> {
 }
 
 Class CameraDevice <<Device>> {
-  model-name: Camera Product Name
-  model-number: Camera Version
-  software: Camera Protocol
+  userFriendlyName: Given name
+  manufacturerName: Manufacturer name and model name
+  serialNumber: Serial number
 }
 
 is "0..*" o--> iss : "series"

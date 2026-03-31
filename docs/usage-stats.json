@@ -1,6 +1,6 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -37,6 +37,10 @@
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device",
         "title": "Retina AI Device"
+      },
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-camera-device",
+        "title": "Retina Camera Device"
       }
     ],
     "Observation": [
