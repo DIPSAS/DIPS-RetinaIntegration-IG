@@ -1,0 +1,28 @@
+# RetinaQueryByDate-Example - RetinaIntegration v0.7.0
+
+## Example Parameters: RetinaQueryByDate-Example
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "RetinaQueryByDate-Example",
+  "language" : "en",
+  "parameter" : [{
+    "name" : "start",
+    "valueDateTime" : "2026-01-21T00:00:00Z"
+  },
+  {
+    "name" : "end",
+    "valueDateTime" : "2026-01-22T00:00:00Z"
+  },
+  {
+    "name" : "pendingAI",
+    "valueBoolean" : true
+  }]
+}
+
+```

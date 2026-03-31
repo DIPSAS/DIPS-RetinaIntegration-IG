@@ -1,0 +1,30 @@
+@startuml imagingstudy-structure
+!theme plain
+
+class is as "ImagingStudy" <<ImagingStudy>> {
+  identifier: SectraStudyId
+  status: registered | available
+}
+
+class iss as "ImageSeries" <<ImagingStudy.Series>> {
+  bodySite: left eye | right eye
+  instance: ImageInstance[]
+  procedureCode: Code for fundus photography
+  performer: CameraDevice
+}
+
+class issi as "ImageInstance" <<ImagingStudy.Series.Instance>> {
+  ext[view]: Code for macula- or optic disc-centered
+}
+
+Class CameraDevice <<Device>> {
+  userFriendlyName: Given name
+  manufacturerName: Manufacturer name and model name
+  serialNumber: Serial number
+}
+
+is "0..*" o--> iss : "series"
+iss "0..*" o--> issi : "instance"
+iss -right-> CameraDevice : "performer"
+
+@enduml
