@@ -1,6 +1,6 @@
-# Retina Cautions - RetinaIntegration v0.7.0
+# Retina Caution Codes - RetinaIntegration v0.8.0
 
-## CodeSystem: Retina Cautions 
+## CodeSystem: Retina Caution Codes 
 
  
 Cautions to consider when grading examinations (5000-series). 
@@ -22,9 +22,9 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-caution-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaCautionCodeSystem",
-  "title" : "Retina Cautions",
+  "title" : "Retina Caution Codes",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-12-02",

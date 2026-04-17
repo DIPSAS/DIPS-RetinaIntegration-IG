@@ -17,8 +17,16 @@
     }
   },
   {
-    "name" : "daysUntilNextExamination",
-    "valueInteger" : 180
+    "name" : "monthsUntilNextExamination",
+    "valueInteger" : 6
+  },
+  {
+    "name" : "leftGradability",
+    "valueCode" : "good-gradability"
+  },
+  {
+    "name" : "rightGradability",
+    "valueCode" : "good-gradability"
   },
   {
     "name" : "rightDiabeticRetinopathy",

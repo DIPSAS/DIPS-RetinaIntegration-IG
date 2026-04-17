@@ -1,4 +1,4 @@
-# RetinaDiagnosticReport-Example-PendingAI - RetinaIntegration v0.7.0
+# RetinaDiagnosticReport-Example-PendingAI - RetinaIntegration v0.8.0
 
 ## Example DiagnosticReport: RetinaDiagnosticReport-Example-PendingAI
 

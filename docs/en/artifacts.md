@@ -1,4 +1,4 @@
-# Artifacts Summary - RetinaIntegration v0.7.0
+# Artifacts Summary - RetinaIntegration v0.8.0
 
 ## Artifacts Summary
 

@@ -1,4 +1,4 @@
-# RetinaHbA1cObservation-Example - RetinaIntegration v0.7.0
+# RetinaHbA1cObservation-Example - RetinaIntegration v0.8.0
 
 ## Example Observation: RetinaHbA1cObservation-Example
 

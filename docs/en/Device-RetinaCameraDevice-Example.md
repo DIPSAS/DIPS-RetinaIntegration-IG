@@ -1,4 +1,4 @@
-# RetinaCameraDevice-Example - RetinaIntegration v0.7.0
+# RetinaCameraDevice-Example - RetinaIntegration v0.8.0
 
 ## Example Device: RetinaCameraDevice-Example
 

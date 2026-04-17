@@ -1,6 +1,6 @@
-# Retina Conclusion - RetinaIntegration v0.7.0
+# Retina Conclusion Codes - RetinaIntegration v0.8.0
 
-## CodeSystem: Retina Conclusion 
+## CodeSystem: Retina Conclusion Codes 
 
  
 Codes for the current or final conclusion of the grading process (1000-series). 
@@ -22,9 +22,9 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-conclusion-code-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaConclusionCodeSystem",
-  "title" : "Retina Conclusion",
+  "title" : "Retina Conclusion Codes",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-12-02",

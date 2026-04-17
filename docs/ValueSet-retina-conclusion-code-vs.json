@@ -3,10 +3,10 @@
   "id" : "retina-conclusion-code-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-conclusion-code-vs</b></p><a name=\"retina-conclusion-code-vs\"> </a><a name=\"hcretina-conclusion-code-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-conclusion-code-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.7.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-conclusion-code-vs</b></p><a name=\"retina-conclusion-code-vs\"> </a><a name=\"hcretina-conclusion-code-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-conclusion-code-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.8.0</span></li></ul></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
   "title" : "Retina Conclusion",
   "status" : "draft",

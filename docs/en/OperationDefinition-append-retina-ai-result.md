@@ -1,4 +1,4 @@
-# Retina Append AI Result Operation - RetinaIntegration v0.7.0
+# Retina Append AI Result Operation - RetinaIntegration v0.8.0
 
 ## OperationDefinition: Retina Append AI Result Operation 
 
@@ -33,12 +33,12 @@ Add AI result to an examination using the following operation:
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "AppendRetinaAIResult",
   "title" : "Retina Append AI Result Operation",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-03-31T17:09:32+02:00",
+  "date" : "2026-04-17T16:52:07+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -75,12 +75,36 @@ Add AI result to an examination using the following operation:
     "type" : "CodeableConcept"
   },
   {
-    "name" : "daysUntilNextExamination",
+    "name" : "monthsUntilNextExamination",
     "use" : "in",
     "min" : 0,
     "max" : "1",
-    "documentation" : "Number of days until next examination. Only included if the conclusion code indicates that the next step is a new examination.",
+    "documentation" : "The recall interval in months until the patient's next examination. Only included if the conclusion is a new examination. Value must be a positive integer greater than 1",
     "type" : "integer"
+  },
+  {
+    "name" : "leftGradability",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Gradability of the left eye for AI analysis. Must be a single code from the Retina AI Gradability ValueSet.",
+    "type" : "code",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-ai-gradability-vs"
+    }
+  },
+  {
+    "name" : "rightGradability",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Gradability of the right eye for AI analysis. Must be a single code from the Retina AI Gradability ValueSet.",
+    "type" : "code",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-ai-gradability-vs"
+    }
   },
   {
     "name" : "leftDiabeticRetinopathy",

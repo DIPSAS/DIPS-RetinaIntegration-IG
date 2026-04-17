@@ -1,4 +1,4 @@
-# RetinaDiabeticRetinopathyFinding-Example-right - RetinaIntegration v0.7.0
+# RetinaDiabeticRetinopathyFinding-Example-right - RetinaIntegration v0.8.0
 
 ## Example Observation: RetinaDiabeticRetinopathyFinding-Example-right
 

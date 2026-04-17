@@ -1,6 +1,6 @@
 {
-  "version" : "0.7.0",
-  "date" : "20260331170932",
+  "version" : "0.8.0",
+  "date" : "20260417165207",
   "notForPublication" : true,
   "name" : "dips.fhir.retinaintegration.r4b"
 }

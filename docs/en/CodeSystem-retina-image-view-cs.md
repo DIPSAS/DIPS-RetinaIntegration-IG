@@ -1,6 +1,6 @@
-# Retina Image View - RetinaIntegration v0.7.0
+# Retina Image View Codes - RetinaIntegration v0.8.0
 
-## CodeSystem: Retina Image View 
+## CodeSystem: Retina Image View Codes 
 
  
 Codes describing the centering used when capturing retinal images (6000-series). 
@@ -22,9 +22,9 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-image-view-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaImageViewCodeSystem",
-  "title" : "Retina Image View",
+  "title" : "Retina Image View Codes",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-12-05",

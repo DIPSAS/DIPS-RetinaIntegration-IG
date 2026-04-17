@@ -7,7 +7,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-image-parameter-vs</b></p><a name=\"retina-image-parameter-vs\"> </a><a name=\"hcretina-image-parameter-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-retina-image-quality-vs.html\">Retina Image Quality</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-retina-image-view-vs.html\">Retina Image View</a></li></ul></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaImageParameterValueSet",
   "title" : "Retina Image Parameter ValueSet",
   "status" : "draft",

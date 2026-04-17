@@ -14,15 +14,15 @@ access-control-allow-methods:GET, POST, PUT, DELETE, OPTIONS
 access-control-allow-origin:*
 access-control-allow-origin:*
 connection:keep-alive
-content-length:3933
+content-length:4261
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:09:49 GMT
-etag:W/&quot;f5d-K0HUDm0T9lyhWj5k3FjY6hdfRU4&quot;
+date:Fri, 17 Apr 2026 14:52:24 GMT
+etag:W/&quot;10a5-OOptITNSF2x+z7EgqnKE4rEln9Q&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346485
+x-request-id:tx-433430
 
-{&quot;resourceType&quot;:&quot;CapabilityStatement&quot;,&quot;id&quot;:&quot;FhirServer&quot;,&quot;extension&quot;:[{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;1.8.0&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;name&quot;,&quot;valueCode&quot;:&quot;mode&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;tx.fhir.org&quot;}],&quot;url&quot;:&quot;qualifier&quot;}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueBoolean&quot;:true}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot;:&quot;https://node.tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot;:&quot;4.0.1-0.8.2&quot;,&quot;name&quot;:&quot;FHIRTerminologyServer&quot;,&quot;title&quot;:&quot;FHIR Terminology Server&quot;,&quot;status&quot;:&quot;active&quot;,&quot;date&quot;:&quot;2026-03-31T15:09:49.655Z&quot;,&quot;contact&quot;:[{&quot;telecom&quot;:[{&quot;system&quot;:&quot;other&quot;,&quot;value&quot;:&quot;http://example.org/&quot;}]}],&quot;description&quot;:&quot;FHIR Terminology Server&quot;,&quot;kind&quot;:&quot;instance&quot;,&quot;instantiates&quot;:[&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot;:{&quot;name&quot;:&quot;FHIRsmith&quot;,&quot;version&quot;:&quot;0.8.2&quot;,&quot;releaseDate&quot;:&quot;2026-03-31T15:09:49.655Z&quot;},&quot;implementation&quot;:{&quot;description&quot;:&quot;FHIR Server running at https://node.tx.fhir.org/r4&quot;,&quot;url&quot;:&quot;https://node.tx.fhir.org/r4&quot;},&quot;fhirVersion&quot;:&quot;4.0.1&quot;,&quot;format&quot;:[&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot;:[{&quot;mode&quot;:&quot;server&quot;,&quot;security&quot;:{&quot;cors&quot;:true},&quot;resource&quot;:[{&quot;type&quot;:&quot;CodeSystem&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a code system&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the code systems&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;}]},{&quot;type&quot;:&quot;ValueSet&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ValueSet&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the value sets&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;}]},{&quot;type&quot;:&quot;ConceptMap&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ConceptMap&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the concept maps&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;}]}],&quot;interaction&quot;:[{&quot;code&quot;:&quot;transaction&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot;:&quot;versions&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/fhir-versions&quot;}]}]}
+{&quot;resourceType&quot;:&quot;CapabilityStatement&quot;,&quot;id&quot;:&quot;FhirServer&quot;,&quot;extension&quot;:[{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;1.9.1&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;name&quot;,&quot;valueCode&quot;:&quot;mode&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;tx.fhir.org&quot;}],&quot;url&quot;:&quot;qualifier&quot;}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueBoolean&quot;:true}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot;:&quot;https://node.tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot;:&quot;4.0.1-0.9.2&quot;,&quot;name&quot;:&quot;FHIRTerminologyServer&quot;,&quot;title&quot;:&quot;FHIR Terminology Server&quot;,&quot;status&quot;:&quot;active&quot;,&quot;date&quot;:&quot;2026-04-17T14:52:24.167Z&quot;,&quot;contact&quot;:[{&quot;telecom&quot;:[{&quot;system&quot;:&quot;other&quot;,&quot;value&quot;:&quot;http://example.org/&quot;}]}],&quot;description&quot;:&quot;FHIR Terminology Server&quot;,&quot;kind&quot;:&quot;instance&quot;,&quot;instantiates&quot;:[&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot;:{&quot;name&quot;:&quot;FHIRsmith&quot;,&quot;version&quot;:&quot;0.9.2&quot;,&quot;releaseDate&quot;:&quot;2026-04-17T14:52:24.167Z&quot;},&quot;implementation&quot;:{&quot;description&quot;:&quot;FHIR Server running at https://node.tx.fhir.org/r4&quot;,&quot;url&quot;:&quot;https://node.tx.fhir.org/r4&quot;},&quot;fhirVersion&quot;:&quot;4.0.1&quot;,&quot;format&quot;:[&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot;:[{&quot;mode&quot;:&quot;server&quot;,&quot;security&quot;:{&quot;cors&quot;:true},&quot;resource&quot;:[{&quot;type&quot;:&quot;CodeSystem&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a code system&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the code systems&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;}]},{&quot;type&quot;:&quot;ValueSet&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ValueSet&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the value sets&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot;:&quot;related&quot;,&quot;definition&quot;:&quot;https://raw.githubusercontent.com/HealthIntersections/FHIRsmith/refs/heads/main/tx/data/OperationDefinition-ValueSet-related.json&quot;}]},{&quot;type&quot;:&quot;ConceptMap&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ConceptMap&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the concept maps&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;}]}],&quot;interaction&quot;:[{&quot;code&quot;:&quot;transaction&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot;:&quot;related&quot;,&quot;definition&quot;:&quot;https://raw.githubusercontent.com/HealthIntersections/FHIRsmith/refs/heads/main/tx/data/OperationDefinition-ValueSet-related.json&quot;},{&quot;name&quot;:&quot;versions&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/fhir-versions&quot;}]}]}
 </pre>
 <hr/><a name="l2"> </a>
 <p>#2</p>
@@ -32,7 +32,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -45,13 +45,13 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:667
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:09:56 GMT
-etag:W/&quot;29b-ATj4kmPcPDtgE8AGG6g+kwHiZjk&quot;
+date:Fri, 17 Apr 2026 14:52:30 GMT
+etag:W/&quot;29b-PQDwQKNlA3/XCX/E0LZiIAni01w&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346539
+x-request-id:tx-433485
 
-{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;expansion&quot;:{&quot;timestamp&quot;:&quot;2026-03-31T15:09:56.160Z&quot;,&quot;identifier&quot;:&quot;urn:uuid:15979085-81ea-4761-bfb4-fe56c7a1984f&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;offset&quot;,&quot;valueInteger&quot;:0},{&quot;name&quot;:&quot;count&quot;,&quot;valueInteger&quot;:1000},{&quot;name&quot;:&quot;used-codesystem&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;offset&quot;:0,&quot;total&quot;:2,&quot;contains&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;},{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}]}}
+{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;expansion&quot;:{&quot;timestamp&quot;:&quot;2026-04-17T14:52:30.743Z&quot;,&quot;identifier&quot;:&quot;urn:uuid:d607313a-3a02-48ae-81ef-2328bf7e55fe&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;offset&quot;,&quot;valueInteger&quot;:0},{&quot;name&quot;:&quot;count&quot;,&quot;valueInteger&quot;:1000},{&quot;name&quot;:&quot;used-codesystem&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;offset&quot;:0,&quot;total&quot;:2,&quot;contains&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;},{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}]}}
 </pre>
 <hr/><a name="l3"> </a>
 <p>#3</p>
@@ -61,7 +61,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
 </pre>
 <pre>
 422
@@ -74,52 +74,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:467
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:09:57 GMT
+date:Fri, 17 Apr 2026 14:52:31 GMT
 etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346549
+x-request-id:tx-433495
 
 {&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
 </pre>
 <hr/><a name="l4"> </a>
 <p>#4</p>
 <pre>
-POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
-Accept: application/fhir+json; fhirVersion=4.0
-Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
-User-Agent: fhir/publisher
-
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"_limit","valueInteger":10000},{"name":"_incomplete","valueBoolean":true},{"name":"displayLanguage","valueCode":"en"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"valueSet","resource":{"resourceType":"ValueSet","url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs-inc-0","status":"active","compose":{"inactive":false,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
-</pre>
-<pre>
-422
-access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
-access-control-allow-headers:DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
-access-control-allow-methods:GET, POST, OPTIONS
-access-control-allow-methods:GET, POST, PUT, DELETE, OPTIONS
-access-control-allow-origin:*
-access-control-allow-origin:*
-connection:keep-alive
-content-length:467
-content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:09:57 GMT
-etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
-server:nginx
-x-powered-by:Express
-x-request-id:tx-346558
-
-{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
-</pre>
-<hr/><a name="l5"> </a>
-<p>#5</p>
-<pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"5597008","display":"Retina of right eye"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"5597008","display":"Retina of right eye"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -132,16 +103,16 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1282
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:09:58 GMT
+date:Fri, 17 Apr 2026 14:52:32 GMT
 etag:W/&quot;502-ein1Z7vHI8fctYEZghgVlrRxzVc&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346565
+x-request-id:tx-433501
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;5597008&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of right eye&quot;},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#5597008 (\&quot;Retina of right eye\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#5597008\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;5597008\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l6"> </a>
-<p>#6</p>
+<hr/><a name="l5"> </a>
+<p>#5</p>
 <pre>
 POST https://tx.fhir.org/r4/ValueSet/$batch-validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
@@ -161,23 +132,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:399
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:09:59 GMT
+date:Fri, 17 Apr 2026 14:52:33 GMT
 etag:W/&quot;18f-x0Cv/99Kie1oLA5sIQk4co395jg&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346573
+x-request-id:tx-433509
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;validation&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;58443009&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of left eye&quot;}]}}]}
 </pre>
-<hr/><a name="l7"> </a>
-<p>#7</p>
+<hr/><a name="l6"> </a>
+<p>#6</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"312912001","display":"Diabetic macular edema"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"312912001","display":"Diabetic macular edema"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -190,23 +161,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1468
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:02 GMT
+date:Fri, 17 Apr 2026 14:52:36 GMT
 etag:W/&quot;5bc-GuLesowNSkgDXWxZFFwS1t/1LjU&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346608
+x-request-id:tx-433533
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;312912001&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Diabetic macular edema&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;312912001&quot;,&quot;display&quot;:&quot;Diabetic macular edema&quot;}]}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#312912001 (\&quot;Diabetic macular edema\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#312912001\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;312912001\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l8"> </a>
-<p>#8</p>
+<hr/><a name="l7"> </a>
+<p>#7</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"4855003","display":"Diabetic retinopathy"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"4855003","display":"Diabetic retinopathy"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -219,23 +190,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1452
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:03 GMT
+date:Fri, 17 Apr 2026 14:52:37 GMT
 etag:W/&quot;5ac-6Q/52cFcoSV0ectYEaDyljQ+UOM&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346618
+x-request-id:tx-433541
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;4855003&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Diabetic retinopathy&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;4855003&quot;,&quot;display&quot;:&quot;Diabetic retinopathy&quot;}]}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#4855003 (\&quot;Diabetic retinopathy\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#4855003\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;4855003\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l9"> </a>
-<p>#9</p>
+<hr/><a name="l8"> </a>
+<p>#8</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"167491000202108","display":"HbA1c"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"167491000202108","display":"HbA1c"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -248,23 +219,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:2013
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:04 GMT
+date:Fri, 17 Apr 2026 14:52:38 GMT
 etag:W/&quot;7dd-Wi4vMncLGHk0SGcZBoK2CoHRmJ4&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346632
+x-request-id:tx-433549
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;167491000202108&quot;,&quot;display&quot;:&quot;HbA1c&quot;}]}},{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;code-invalid&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;invalid-code&quot;}]},&quot;expression&quot;:[&quot;CodeableConcept.coding[0].code&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;Unknown_Code_in_Version&quot;}]}]}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#167491000202108 (\&quot;HbA1c\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#167491000202108\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;167491000202108\&quot; not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined&quot;}]}
 </pre>
-<hr/><a name="l10"> </a>
-<p>#10</p>
+<hr/><a name="l9"> </a>
+<p>#9</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"133887000","display":"Computer assisted image analysis for image quality"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"133887000","display":"Computer assisted image analysis for image quality"}]}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -277,23 +248,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1524
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:05 GMT
+date:Fri, 17 Apr 2026 14:52:38 GMT
 etag:W/&quot;5f4-roRleTpDQUSTGtwnpRGGu2bfBK4&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346644
+x-request-id:tx-433556
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;133887000&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Image quality analysis&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;133887000&quot;,&quot;display&quot;:&quot;Computer assisted image analysis for image quality&quot;}]}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#133887000 (\&quot;Computer assisted image analysis for image quality\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#133887000\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;133887000\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l11"> </a>
-<p>#11</p>
+<hr/><a name="l10"> </a>
+<p>#10</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","code":"CKDP10","display":"Fundusfotografi"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","code":"CKDP10","display":"Fundusfotografi"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -306,23 +277,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:994
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:11 GMT
+date:Fri, 17 Apr 2026 14:52:44 GMT
 etag:W/&quot;3e2-yv3mtyLM2CIfbQ3M5jXlOlqQuhM&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346716
+x-request-id:tx-433610
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;CKDP10&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275&quot;}]}
 </pre>
-<hr/><a name="l12"> </a>
-<p>#12</p>
+<hr/><a name="l11"> </a>
+<p>#11</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"58443009","display":"Retina of left eye"}],"text":"Venstre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"58443009","display":"Retina of left eye"}],"text":"Venstre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -335,23 +306,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1475
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:13 GMT
+date:Fri, 17 Apr 2026 14:52:45 GMT
 etag:W/&quot;5c3-wDQkKNi1wXczDeYEibixMSehSrY&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346728
+x-request-id:tx-433617
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;58443009&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of left eye&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}],&quot;text&quot;:&quot;Venstre retina&quot;}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#58443009 (\&quot;Retina of left eye\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#58443009\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;58443009\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l13"> </a>
-<p>#13</p>
+<hr/><a name="l12"> </a>
+<p>#12</p>
 <pre>
 POST https://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"58443009","display":"Retina of left eye"}],"text":"Venstre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"retina-body-site-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs","version":"0.7.0","name":"RetinaBodySiteValueSet","title":"Retina Body Site","status":"draft","experimental":false,"date":"2025-12-02","publisher":"DIPS AS","contact":[{"name":"DIPS AS","telecom":[{"system":"url","value":"http://dips.no/"},{"system":"email","value":"teamsolsiden@dips.no"}]}],"description":"Body site codes for retinal observations (right or left retina).","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"58443009","display":"Retina of left eye"}],"text":"Venstre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"retina-body-site-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs","version":"0.8.0","name":"RetinaBodySiteValueSet","title":"Retina Body Site","status":"draft","experimental":false,"date":"2025-12-02","publisher":"DIPS AS","contact":[{"name":"DIPS AS","telecom":[{"system":"url","value":"http://dips.no/"},{"system":"email","value":"teamsolsiden@dips.no"}]}],"description":"Body site codes for retinal observations (right or left retina).","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -364,23 +335,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:2032
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:13 GMT
-etag:W/&quot;7f0-lj6O49ijjMVFKJ+eCSSv9VQfZp8&quot;
+date:Fri, 17 Apr 2026 14:52:45 GMT
+etag:W/&quot;7f0-KJMCWNTea+X9WU4U+JT0s2foe3c&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346744
+x-request-id:tx-433621
 
-{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;58443009&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of left eye&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}],&quot;text&quot;:&quot;Venstre retina&quot;}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Analysing http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0 for validation purposes\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Prepare include[0]: \&quot;(http://snomed.info/sct)(5597008,58443009)\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: CodeSystem found: \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Validate \&quot;[http://snomed.info/sct#58443009 (\&quot;Retina of left eye\&quot;)]\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Check \&quot;http://snomed.info/sct#58443009\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: check code in (http://snomed.info/sct)(5597008,58443009) at CodeableConcept.coding[0]\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Code \&quot;58443009\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;58443009&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of left eye&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}],&quot;text&quot;:&quot;Venstre retina&quot;}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Analysing http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0 for validation purposes\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Prepare include[0]: \&quot;(http://snomed.info/sct)(5597008,58443009)\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: CodeSystem found: \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Validate \&quot;[http://snomed.info/sct#58443009 (\&quot;Retina of left eye\&quot;)]\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Check \&quot;http://snomed.info/sct#58443009\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: check code in (http://snomed.info/sct)(5597008,58443009) at CodeableConcept.coding[0]\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Code \&quot;58443009\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l14"> </a>
-<p>#14</p>
+<hr/><a name="l13"> </a>
+<p>#13</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"5597008","display":"Retina of right eye"}],"text":"Høyre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"5597008","display":"Retina of right eye"}],"text":"Høyre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -393,23 +364,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1472
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:14 GMT
+date:Fri, 17 Apr 2026 14:52:46 GMT
 etag:W/&quot;5c0-URwwsF4Pz8d8i6CicCj5lMSStXI&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346753
+x-request-id:tx-433627
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;5597008&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of right eye&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;}],&quot;text&quot;:&quot;Høyre retina&quot;}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#5597008 (\&quot;Retina of right eye\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#5597008\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;5597008\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l15"> </a>
-<p>#15</p>
+<hr/><a name="l14"> </a>
+<p>#14</p>
 <pre>
 POST https://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"5597008","display":"Retina of right eye"}],"text":"Høyre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"retina-body-site-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs","version":"0.7.0","name":"RetinaBodySiteValueSet","title":"Retina Body Site","status":"draft","experimental":false,"date":"2025-12-02","publisher":"DIPS AS","contact":[{"name":"DIPS AS","telecom":[{"system":"url","value":"http://dips.no/"},{"system":"email","value":"teamsolsiden@dips.no"}]}],"description":"Body site codes for retinal observations (right or left retina).","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"5597008","display":"Retina of right eye"}],"text":"Høyre retina"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"retina-body-site-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs","version":"0.8.0","name":"RetinaBodySiteValueSet","title":"Retina Body Site","status":"draft","experimental":false,"date":"2025-12-02","publisher":"DIPS AS","contact":[{"name":"DIPS AS","telecom":[{"system":"url","value":"http://dips.no/"},{"system":"email","value":"teamsolsiden@dips.no"}]}],"description":"Body site codes for retinal observations (right or left retina).","compose":{"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -422,23 +393,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:2029
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:14 GMT
-etag:W/&quot;7ed-zqTDPjKwD6D0U+88OtTrHbkqseg&quot;
+date:Fri, 17 Apr 2026 14:52:46 GMT
+etag:W/&quot;7ed-6tXRsHHA6k0MDPhuFbufGLtSYEs&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346762
+x-request-id:tx-433634
 
-{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;5597008&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of right eye&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;}],&quot;text&quot;:&quot;Høyre retina&quot;}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Analysing http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0 for validation purposes\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Prepare include[0]: \&quot;(http://snomed.info/sct)(5597008,58443009)\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: CodeSystem found: \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Validate \&quot;[http://snomed.info/sct#5597008 (\&quot;Retina of right eye\&quot;)]\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Check \&quot;http://snomed.info/sct#5597008\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: check code in (http://snomed.info/sct)(5597008,58443009) at CodeableConcept.coding[0]\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.7.0: Code \&quot;5597008\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;5597008&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Retina of right eye&quot;},{&quot;name&quot;:&quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;}],&quot;text&quot;:&quot;Høyre retina&quot;}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Analysing http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0 for validation purposes\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Prepare include[0]: \&quot;(http://snomed.info/sct)(5597008,58443009)\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: CodeSystem found: \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Validate \&quot;[http://snomed.info/sct#5597008 (\&quot;Retina of right eye\&quot;)]\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Check \&quot;http://snomed.info/sct#5597008\&quot;\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: check code in (http://snomed.info/sct)(5597008,58443009) at CodeableConcept.coding[0]\n0ms http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs|0.8.0: Code \&quot;5597008\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l16"> </a>
-<p>#16</p>
+<hr/><a name="l15"> </a>
+<p>#15</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"312912001"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"312912001"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -451,23 +422,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1283
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:21 GMT
+date:Fri, 17 Apr 2026 14:52:52 GMT
 etag:W/&quot;503-7DBL3RMRKY0OKNwwpIIgIR22OKs&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346910
+x-request-id:tx-433688
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;312912001&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Diabetic macular edema&quot;},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#312912001 (\&quot;undefined\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#312912001\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;312912001\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l17"> </a>
-<p>#17</p>
+<hr/><a name="l16"> </a>
+<p>#16</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"4855003"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"4855003"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -480,23 +451,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1273
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:21 GMT
+date:Fri, 17 Apr 2026 14:52:53 GMT
 etag:W/&quot;4f9-jqf7UAn5mEB+ytqdxes0l64pWG0&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346914
+x-request-id:tx-433695
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;4855003&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Diabetic retinopathy&quot;},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#4855003 (\&quot;undefined\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#4855003\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;4855003\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l18"> </a>
-<p>#18</p>
+<hr/><a name="l17"> </a>
+<p>#17</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"167491000202108"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"167491000202108"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -509,23 +480,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1937
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:22 GMT
+date:Fri, 17 Apr 2026 14:52:54 GMT
 etag:W/&quot;791-mDlzrRLNjRq2CAycBDi+xA59ceY&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346918
+x-request-id:tx-433707
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;167491000202108&quot;},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;code-invalid&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;invalid-code&quot;}]},&quot;expression&quot;:[&quot;Coding.code&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;Unknown_Code_in_Version&quot;}]}]}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#167491000202108 (\&quot;undefined\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#167491000202108\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;167491000202108\&quot; not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined&quot;}]}
 </pre>
-<hr/><a name="l19"> </a>
-<p>#19</p>
+<hr/><a name="l18"> </a>
+<p>#18</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"133887000"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"133887000"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -538,23 +509,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:1283
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:22 GMT
+date:Fri, 17 Apr 2026 14:52:54 GMT
 etag:W/&quot;503-iV19bHFyS9PiDFI4BomGz6EfqKA&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346924
+x-request-id:tx-433714
 
 {&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;133887000&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;valueString&quot;:&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot;:&quot;display&quot;,&quot;valueString&quot;:&quot;Image quality analysis&quot;},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate \&quot;[http://snomed.info/sct#133887000 (\&quot;undefined\&quot;)]\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check \&quot;http://snomed.info/sct#133887000\&quot;\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at Coding\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code \&quot;133887000\&quot; found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}]}
 </pre>
-<hr/><a name="l20"> </a>
-<p>#20</p>
+<hr/><a name="l19"> </a>
+<p>#19</p>
 <pre>
 POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -567,13 +538,42 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:667
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:30 GMT
-etag:W/&quot;29b-xbb3uluBdPSd1PcZd15/zy73jTU&quot;
+date:Fri, 17 Apr 2026 14:53:02 GMT
+etag:W/&quot;29b-KUvGaJXBl1M/hshe/+T3OlHvQ10&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-346967
+x-request-id:tx-433784
 
-{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;expansion&quot;:{&quot;timestamp&quot;:&quot;2026-03-31T15:10:30.170Z&quot;,&quot;identifier&quot;:&quot;urn:uuid:6dd66f46-6291-46fe-a8fc-1481dbd9188a&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;offset&quot;,&quot;valueInteger&quot;:0},{&quot;name&quot;:&quot;count&quot;,&quot;valueInteger&quot;:1000},{&quot;name&quot;:&quot;used-codesystem&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;offset&quot;:0,&quot;total&quot;:2,&quot;contains&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;},{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}]}}
+{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;expansion&quot;:{&quot;timestamp&quot;:&quot;2026-04-17T14:53:02.407Z&quot;,&quot;identifier&quot;:&quot;urn:uuid:adfcc106-a476-4975-b00f-4353898d8108&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;offset&quot;,&quot;valueInteger&quot;:0},{&quot;name&quot;:&quot;count&quot;,&quot;valueInteger&quot;:1000},{&quot;name&quot;:&quot;used-codesystem&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;offset&quot;:0,&quot;total&quot;:2,&quot;contains&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;},{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}]}}
+</pre>
+<hr/><a name="l20"> </a>
+<p>#20</p>
+<pre>
+POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
+</pre>
+<pre>
+422
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-headers:DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-methods:GET, POST, PUT, DELETE, OPTIONS
+access-control-allow-origin:*
+access-control-allow-origin:*
+connection:keep-alive
+content-length:467
+content-type:application/fhir+json; charset=utf-8
+date:Fri, 17 Apr 2026 14:53:07 GMT
+etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-433824
+
+{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
 </pre>
 <hr/><a name="l21"> </a>
 <p>#21</p>
@@ -583,65 +583,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
-</pre>
-<pre>
-422
-access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
-access-control-allow-headers:DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
-access-control-allow-methods:GET, POST, OPTIONS
-access-control-allow-methods:GET, POST, PUT, DELETE, OPTIONS
-access-control-allow-origin:*
-access-control-allow-origin:*
-connection:keep-alive
-content-length:467
-content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:34 GMT
-etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
-server:nginx
-x-powered-by:Express
-x-request-id:tx-347118
-
-{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
-</pre>
-<hr/><a name="l22"> </a>
-<p>#22</p>
-<pre>
-POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
-Accept: application/fhir+json; fhirVersion=4.0
-Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
-User-Agent: fhir/publisher
-
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"_limit","valueInteger":10000},{"name":"_incomplete","valueBoolean":true},{"name":"displayLanguage","valueCode":"en"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"excludeNested","valueBoolean":false},{"name":"incomplete-ok","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"retina-imaging-procedure-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs","version":"0.7.0","name":"RetinaImagingProcedureValueSet","title":"Retina Imaging Procedures","status":"draft","experimental":false,"date":"2025-12-02","publisher":"DIPS AS","contact":[{"name":"DIPS AS","telecom":[{"system":"url","value":"http://dips.no/"},{"system":"email","value":"teamsolsiden@dips.no"}]}],"description":"Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique.","purpose":"This ValueSet constrains the procedureCode element in RetinaImagingStudy to only allow the two imaging modalities used in diabetic retinopathy screening programs: fundus photography for capturing retinal images and OCT for detailed structural examination of the retina and macula.","compose":{"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
-</pre>
-<pre>
-422
-access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
-access-control-allow-headers:DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
-access-control-allow-methods:GET, POST, OPTIONS
-access-control-allow-methods:GET, POST, PUT, DELETE, OPTIONS
-access-control-allow-origin:*
-access-control-allow-origin:*
-connection:keep-alive
-content-length:467
-content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:35 GMT
-etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
-server:nginx
-x-powered-by:Express
-x-request-id:tx-347140
-
-{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
-</pre>
-<hr/><a name="l23"> </a>
-<p>#23</p>
-<pre>
-POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
-Accept: application/fhir+json; fhirVersion=4.0
-Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
-User-Agent: fhir/publisher
-
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"5597008","display":"Retina of right eye"},{"code":"58443009","display":"Retina of left eye"}]}]}}}]}
 </pre>
 <pre>
 200
@@ -654,23 +596,23 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:666
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:58 GMT
-etag:W/&quot;29a-AVob/ip6wMT8hd5oP+J3Q8mruXI&quot;
+date:Fri, 17 Apr 2026 14:53:33 GMT
+etag:W/&quot;29a-qgFiKZti71vLxVnbghA63kueQn8&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-347606
+x-request-id:tx-434096
 
-{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;expansion&quot;:{&quot;timestamp&quot;:&quot;2026-03-31T15:10:58.279Z&quot;,&quot;identifier&quot;:&quot;urn:uuid:f99039c7-6f23-4ecb-97ef-d3aaa73625b3&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;offset&quot;,&quot;valueInteger&quot;:0},{&quot;name&quot;:&quot;count&quot;,&quot;valueInteger&quot;:1000},{&quot;name&quot;:&quot;used-codesystem&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;offset&quot;:0,&quot;total&quot;:2,&quot;contains&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;},{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}]}}
+{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;expansion&quot;:{&quot;timestamp&quot;:&quot;2026-04-17T14:53:33.403Z&quot;,&quot;identifier&quot;:&quot;urn:uuid:2f4f59d9-56f5-417f-80ba-dd3fcc70281f&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;offset&quot;,&quot;valueInteger&quot;:0},{&quot;name&quot;:&quot;count&quot;,&quot;valueInteger&quot;:1000},{&quot;name&quot;:&quot;used-codesystem&quot;,&quot;valueUri&quot;:&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201&quot;}],&quot;offset&quot;:0,&quot;total&quot;:2,&quot;contains&quot;:[{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;5597008&quot;,&quot;display&quot;:&quot;Retina of right eye&quot;},{&quot;system&quot;:&quot;http://snomed.info/sct&quot;,&quot;code&quot;:&quot;58443009&quot;,&quot;display&quot;:&quot;Retina of left eye&quot;}]}}
 </pre>
-<hr/><a name="l24"> </a>
-<p>#24</p>
+<hr/><a name="l22"> </a>
+<p>#22</p>
 <pre>
 POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":true},{"name":"cache-id","valueId":"147b38cb-0e1c-4cb1-add3-bc96f1fe531b"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
 </pre>
 <pre>
 422
@@ -683,40 +625,11 @@ access-control-allow-origin:*
 connection:keep-alive
 content-length:467
 content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:59 GMT
+date:Fri, 17 Apr 2026 14:53:34 GMT
 etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
 server:nginx
 x-powered-by:Express
-x-request-id:tx-347658
-
-{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
-</pre>
-<hr/><a name="l25"> </a>
-<p>#25</p>
-<pre>
-POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
-Accept: application/fhir+json; fhirVersion=4.0
-Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
-User-Agent: fhir/publisher
-
-{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en"},{"name":"_limit","valueInteger":10000},{"name":"_incomplete","valueBoolean":true},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"excludeNested","valueBoolean":true},{"name":"cache-id","valueId":"042c3069-82a1-4bbf-aaa2-bf89ac27bbf9"},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"retina-imaging-procedure-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs","version":"0.7.0","name":"RetinaImagingProcedureValueSet","title":"Retina Imaging Procedures","status":"draft","experimental":false,"date":"2025-12-02","publisher":"DIPS AS","contact":[{"name":"DIPS AS","telecom":[{"system":"url","value":"http://dips.no/"},{"system":"email","value":"teamsolsiden@dips.no"}]}],"description":"Valid procedure codes for Retina imaging studies. Contains two Norwegian procedure codes from no-kodeverk-7275: CKDP10 for fundus photography and CKFX16 for OCT imaging of the eye fundus using light-wave based technique.","purpose":"This ValueSet constrains the procedureCode element in RetinaImagingStudy to only allow the two imaging modalities used in diabetic retinopathy screening programs: fundus photography for capturing retinal images and OCT for detailed structural examination of the retina and macula.","compose":{"include":[{"system":"http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275","concept":[{"code":"CKDP10","display":"Fundusfotografi"},{"code":"CKFX16","display":"Undersøkelse av øyenbunnsstruktur med lysbølgebasert teknikk"}]}]}}}]}
-</pre>
-<pre>
-422
-access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
-access-control-allow-headers:DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
-access-control-allow-methods:GET, POST, OPTIONS
-access-control-allow-methods:GET, POST, PUT, DELETE, OPTIONS
-access-control-allow-origin:*
-access-control-allow-origin:*
-connection:keep-alive
-content-length:467
-content-type:application/fhir+json; charset=utf-8
-date:Tue, 31 Mar 2026 15:10:59 GMT
-etag:W/&quot;1d3-PgNB8bfx883trzPYpK2fn29OAeQ&quot;
-server:nginx
-x-powered-by:Express
-x-request-id:tx-347696
+x-request-id:tx-434104
 
 {&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275' could not be found, so the value set cannot be expanded&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM_EXP&quot;}]}]}
 </pre>

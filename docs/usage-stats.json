@@ -1,6 +1,6 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

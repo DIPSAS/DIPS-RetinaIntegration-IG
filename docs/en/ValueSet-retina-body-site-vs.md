@@ -1,4 +1,4 @@
-# Retina Body Site - RetinaIntegration v0.7.0
+# Retina Body Site - RetinaIntegration v0.8.0
 
 ## ValueSet: Retina Body Site 
 
@@ -31,7 +31,7 @@ Body site codes for retinal observations (right or left retina).
   "resourceType" : "ValueSet",
   "id" : "retina-body-site-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaBodySiteValueSet",
   "title" : "Retina Body Site",
   "status" : "draft",

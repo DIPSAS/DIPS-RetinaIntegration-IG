@@ -1,6 +1,6 @@
-# Retina Image Quality - RetinaIntegration v0.7.0
+# Retina Image Quality Codes - RetinaIntegration v0.8.0
 
-## CodeSystem: Retina Image Quality 
+## CodeSystem: Retina Image Quality Codes 
 
  
 Image quality as assessed by AI solution (2000-series). 
@@ -22,9 +22,9 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-image-quality-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaImageQualityCodeSystem",
-  "title" : "Retina Image Quality",
+  "title" : "Retina Image Quality Codes",
   "status" : "draft",
   "experimental" : false,
   "date" : "2025-12-02",

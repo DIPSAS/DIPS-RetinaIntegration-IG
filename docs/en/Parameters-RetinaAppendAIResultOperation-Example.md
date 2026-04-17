@@ -1,4 +1,4 @@
-# RetinaAppendAIResultOperation-Example - RetinaIntegration v0.7.0
+# RetinaAppendAIResultOperation-Example - RetinaIntegration v0.8.0
 
 ## Example Parameters: RetinaAppendAIResultOperation-Example
 
@@ -26,8 +26,16 @@
     }
   },
   {
-    "name" : "daysUntilNextExamination",
-    "valueInteger" : 180
+    "name" : "monthsUntilNextExamination",
+    "valueInteger" : 6
+  },
+  {
+    "name" : "leftGradability",
+    "valueCode" : "good-gradability"
+  },
+  {
+    "name" : "rightGradability",
+    "valueCode" : "good-gradability"
   },
   {
     "name" : "rightDiabeticRetinopathy",

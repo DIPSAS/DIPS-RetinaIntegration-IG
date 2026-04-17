@@ -1,10 +1,16 @@
-# Changelog - RetinaIntegration v0.7.0
+# Changelog - RetinaIntegration v0.8.0
 
 ## Changelog
 
 ### Change Log
 
 The changelog gives an overview of the change history of this implementation guide.
+
+### Version 0.8.0-CI (2026-04-17)
+
+* Renamed parameter `daysUntilNextExamination` to `monthsUntilNextExamination`
+* Add code system and value set for gradability
+* Add parameters leftGradability and rightGradability using gradability codes
 
 ### Version 0.7.0-CI (2026-03-31)
 

@@ -1,34 +1,42 @@
 {
   "codeSystems" : [{
+    "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
+    "version" : "0.8.0",
+    "status" : "draft",
+    "name" : "RetinaAIGradabilityCodeSystem",
+    "title" : "Retina AI Gradability Codes",
+    "description" : "A set of codes to indicate whether diagnostic data is suitable for automated AI grading."
+  },
+  {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaCautionCodeSystem",
-    "title" : "Retina Cautions",
+    "title" : "Retina Caution Codes",
     "description" : "Cautions to consider when grading examinations (5000-series)."
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaConclusionCodeSystem",
-    "title" : "Retina Conclusion",
+    "title" : "Retina Conclusion Codes",
     "description" : "Codes for the current or final conclusion of the grading process (1000-series)."
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaImageQualityCodeSystem",
-    "title" : "Retina Image Quality",
+    "title" : "Retina Image Quality Codes",
     "description" : "Image quality as assessed by AI solution (2000-series)."
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaImageViewCodeSystem",
-    "title" : "Retina Image View",
+    "title" : "Retina Image View Codes",
     "description" : "Codes describing the centering used when capturing retinal images (6000-series)."
   }]
 }

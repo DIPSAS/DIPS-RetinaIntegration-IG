@@ -1,4 +1,4 @@
-# RetinaImagingStudy-registered-Example - RetinaIntegration v0.7.0
+# RetinaImagingStudy-registered-Example - RetinaIntegration v0.8.0
 
 ## Example ImagingStudy: RetinaImagingStudy-registered-Example
 

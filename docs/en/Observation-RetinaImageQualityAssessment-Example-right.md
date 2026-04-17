@@ -1,4 +1,4 @@
-# RetinaImageQualityAssessment-Example-right - RetinaIntegration v0.7.0
+# RetinaImageQualityAssessment-Example-right - RetinaIntegration v0.8.0
 
 ## Example Observation: RetinaImageQualityAssessment-Example-right
 

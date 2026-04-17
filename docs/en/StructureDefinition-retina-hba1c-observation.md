@@ -1,4 +1,4 @@
-# Retina HbA1c Observation - RetinaIntegration v0.7.0
+# Retina HbA1c Observation - RetinaIntegration v0.8.0
 
 ## Resource Profile: Retina HbA1c Observation ( Experimental ) 
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-hba1c-obse
   "resourceType" : "StructureDefinition",
   "id" : "retina-hba1c-observation",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaHbA1cObservation",
   "title" : "Retina HbA1c Observation",
   "status" : "draft",

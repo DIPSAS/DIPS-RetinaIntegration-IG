@@ -1,4 +1,4 @@
-# dips.fhir.retinaintegration#0.7.0: RetinaIntegration(en)
+# dips.fhir.retinaintegration#0.8.0: RetinaIntegration(en)
 
 ## Pages
 
@@ -12,13 +12,15 @@
 
 ### CodeSystems
 
-* [Retina Cautions](en/CodeSystem-retina-caution-cs.md)
-* [Retina Conclusion](en/CodeSystem-retina-conclusion-code-cs.md)
-* [Retina Image Quality](en/CodeSystem-retina-image-quality-cs.md)
-* [Retina Image View](en/CodeSystem-retina-image-view-cs.md)
+* [Retina AI Gradability Codes](en/CodeSystem-retina-ai-gradability-cs.md)
+* [Retina Caution Codes](en/CodeSystem-retina-caution-cs.md)
+* [Retina Conclusion Codes](en/CodeSystem-retina-conclusion-code-cs.md)
+* [Retina Image Quality Codes](en/CodeSystem-retina-image-quality-cs.md)
+* [Retina Image View Codes](en/CodeSystem-retina-image-view-cs.md)
 
 ### ValueSets
 
+* [Retina AI Gradability](en/ValueSet-retina-ai-gradability-vs.md)
 * [Retina Body Site](en/ValueSet-retina-body-site-vs.md)
 * [Retina Cautions](en/ValueSet-retina-caution-vs.md)
 * [Retina Conclusion](en/ValueSet-retina-conclusion-code-vs.md)

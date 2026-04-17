@@ -1,7 +1,16 @@
 {
   "codeSystems" : [{
+    "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-ai-gradability-vs",
+    "version" : "0.8.0",
+    "status" : "draft",
+    "name" : "RetinaAIGradabilityValueSet",
+    "title" : "Retina AI Gradability",
+    "description" : "Codes indicating whether diagnostic data is suitable for automated AI grading.",
+    "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs"]
+  },
+  {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaBodySiteValueSet",
     "title" : "Retina Body Site",
@@ -10,7 +19,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaCautionValueSet",
     "title" : "Retina Cautions",
@@ -19,7 +28,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
     "title" : "Retina Conclusion",
@@ -28,7 +37,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaImageParameterValueSet",
     "title" : "Retina Image Parameter ValueSet",
@@ -38,7 +47,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaImageQualityValueSet",
     "title" : "Retina Image Quality",
@@ -47,7 +56,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaImageViewValueSet",
     "title" : "Retina Image View",
@@ -56,7 +65,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
-    "version" : "0.7.0",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "RetinaImagingProcedureValueSet",
     "title" : "Retina Imaging Procedures",

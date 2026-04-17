@@ -10,11 +10,11 @@
   "id" : "dips.fhir.retinaintegration",
   "language" : "en",
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2026-03-31T17:09:32+02:00",
+  "date" : "2026-04-17T16:52:07+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -869,6 +869,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/retina-ai-gradability-vs"
+      },
+      "name" : "Retina AI Gradability",
+      "description" : "Codes indicating whether diagnostic data is suitable for automated AI grading.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/retina-ai-gradability-cs"
+      },
+      "name" : "Retina AI Gradability Codes",
+      "description" : "A set of codes to indicate whether diagnostic data is suitable for automated AI grading.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
       }],
       "reference" : {
@@ -917,6 +941,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/retina-caution-cs"
+      },
+      "name" : "Retina Caution Codes",
+      "description" : "Cautions to consider when grading examinations (5000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -924,18 +960,6 @@
       },
       "name" : "Retina Cautions",
       "description" : "Special considerations or cautions for grading this examination (5000-series).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/retina-caution-cs"
-      },
-      "name" : "Retina Cautions",
-      "description" : "Cautions to consider when grading examinations (5000-series).",
       "exampleBoolean" : false
     },
     {
@@ -958,7 +982,7 @@
       "reference" : {
         "reference" : "CodeSystem/retina-conclusion-code-cs"
       },
-      "name" : "Retina Conclusion",
+      "name" : "Retina Conclusion Codes",
       "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
       "exampleBoolean" : false
     },
@@ -1061,18 +1085,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/retina-image-quality-cs"
-      },
-      "name" : "Retina Image Quality",
-      "description" : "Image quality as assessed by AI solution (2000-series).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1080,6 +1092,18 @@
       },
       "name" : "Retina Image Quality Assessment",
       "description" : "The image quality as assesed by AI (2000-series).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/retina-image-quality-cs"
+      },
+      "name" : "Retina Image Quality Codes",
+      "description" : "Image quality as assessed by AI solution (2000-series).",
       "exampleBoolean" : false
     },
     {
@@ -1102,7 +1126,7 @@
       "reference" : {
         "reference" : "CodeSystem/retina-image-view-cs"
       },
-      "name" : "Retina Image View",
+      "name" : "Retina Image View Codes",
       "description" : "Codes describing the centering used when capturing retinal images (6000-series).",
       "exampleBoolean" : false
     },

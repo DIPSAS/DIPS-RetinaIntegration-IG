@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "retina-ai-gradability-cs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-ai-gradability-cs</b></p><a name=\"retina-ai-gradability-cs\"> </a><a name=\"hcretina-ai-gradability-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">good-gradability<a name=\"retina-ai-gradability-cs-good-gradability\"> </a></td><td>Good</td><td>The data quality is sufficient for it to be processed by an AI grading algorithm.</td></tr><tr><td style=\"white-space:nowrap\">not-gradable<a name=\"retina-ai-gradability-cs-not-gradable\"> </a></td><td>Not gradable</td><td>The data quality is insufficient for it to be processed by an AI grading algorithm.</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
+  "version" : "0.8.0",
+  "name" : "RetinaAIGradabilityCodeSystem",
+  "title" : "Retina AI Gradability Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-04-17",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "A set of codes to indicate whether diagnostic data is suitable for automated AI grading.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "good-gradability",
+    "display" : "Good",
+    "definition" : "The data quality is sufficient for it to be processed by an AI grading algorithm."
+  },
+  {
+    "code" : "not-gradable",
+    "display" : "Not gradable",
+    "definition" : "The data quality is insufficient for it to be processed by an AI grading algorithm."
+  }]
+}

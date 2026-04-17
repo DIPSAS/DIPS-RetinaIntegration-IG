@@ -1,4 +1,4 @@
-# Retina Diabetic Retinopathy Finding - RetinaIntegration v0.7.0
+# Retina Diabetic Retinopathy Finding - RetinaIntegration v0.8.0
 
 ## Resource Profile: Retina Diabetic Retinopathy Finding ( Experimental ) 
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-diabetic-r
   "resourceType" : "StructureDefinition",
   "id" : "retina-diabetic-retinopathy-finding",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaDiabeticRetinopathyFinding",
   "title" : "Retina Diabetic Retinopathy Finding",
   "status" : "draft",

@@ -1,4 +1,4 @@
-# RetinaImagingStudy-available-Example - RetinaIntegration v0.7.0
+# RetinaImagingStudy-available-Example - RetinaIntegration v0.8.0
 
 ## Example ImagingStudy: RetinaImagingStudy-available-Example
 

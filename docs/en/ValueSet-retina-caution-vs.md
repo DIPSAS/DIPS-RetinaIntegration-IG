@@ -1,4 +1,4 @@
-# Retina Cautions - RetinaIntegration v0.7.0
+# Retina Cautions - RetinaIntegration v0.8.0
 
 ## ValueSet: Retina Cautions 
 
@@ -28,7 +28,7 @@ Special considerations or cautions for grading this examination (5000-series).
   "resourceType" : "ValueSet",
   "id" : "retina-caution-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaCautionValueSet",
   "title" : "Retina Cautions",
   "status" : "draft",

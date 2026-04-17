@@ -1,4 +1,4 @@
-# Retina ImagingStudy - RetinaIntegration v0.7.0
+# Retina ImagingStudy - RetinaIntegration v0.8.0
 
 ## Resource Profile: Retina ImagingStudy ( Experimental ) 
 
@@ -81,7 +81,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-imagingstu
   "resourceType" : "StructureDefinition",
   "id" : "retina-imagingstudy",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "name" : "RetinaImagingStudy",
   "title" : "Retina ImagingStudy",
   "status" : "draft",
