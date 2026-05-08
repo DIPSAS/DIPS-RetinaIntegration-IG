@@ -1,8 +1,6 @@
-# RetinaAIDevice-Example - RetinaIntegration v0.8.0
+# RetinaAIDevice-Example - RetinaIntegration v0.8.1
 
 ## Example Device: RetinaAIDevice-Example
-
-Language: en
 
 Profile: [Retina AI Device](StructureDefinition-retina-ai-device.md)
 
@@ -28,7 +26,6 @@ Profile: [Retina AI Device](StructureDefinition-retina-ai-device.md)
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device"]
   },
-  "language" : "en",
   "deviceName" : [{
     "name" : "ACME Retina AI",
     "type" : "model-name"

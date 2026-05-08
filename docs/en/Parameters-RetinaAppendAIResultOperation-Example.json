@@ -38,7 +38,7 @@
   },
   {
     "name" : "leftDiabeticRetinopathy",
-    "valueDecimal" : 1
+    "valueDecimal" : 1.4
   },
   {
     "name" : "leftDiabeticMacularEdema",

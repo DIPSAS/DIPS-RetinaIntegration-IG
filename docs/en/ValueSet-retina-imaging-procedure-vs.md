@@ -1,4 +1,4 @@
-# Retina Imaging Procedures - RetinaIntegration v0.8.0
+# Retina Imaging Procedures - RetinaIntegration v0.8.1
 
 ## ValueSet: Retina Imaging Procedures 
 
@@ -31,7 +31,7 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "retina-imaging-procedure-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaImagingProcedureValueSet",
   "title" : "Retina Imaging Procedures",
   "status" : "draft",

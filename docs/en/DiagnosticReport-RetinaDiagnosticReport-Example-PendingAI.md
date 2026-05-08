@@ -1,8 +1,6 @@
-# RetinaDiagnosticReport-Example-PendingAI - RetinaIntegration v0.8.0
+# RetinaDiagnosticReport-Example-PendingAI - RetinaIntegration v0.8.1
 
 ## Example DiagnosticReport: RetinaDiagnosticReport-Example-PendingAI
-
-Language: en
 
 Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 
@@ -35,7 +33,6 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "http://dips.no/fhir/RetinaIntegration/examination-id",
     "value" : "6d2f4dbc-5f03-46e0-a302-606ae889df45"

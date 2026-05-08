@@ -10,11 +10,11 @@
   "id" : "dips.fhir.retinaintegration",
   "language" : "en",
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2026-04-17T16:52:07+02:00",
+  "date" : "2026-05-08T13:22:39+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

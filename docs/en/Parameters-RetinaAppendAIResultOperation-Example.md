@@ -1,4 +1,4 @@
-# RetinaAppendAIResultOperation-Example - RetinaIntegration v0.8.0
+# RetinaAppendAIResultOperation-Example - RetinaIntegration v0.8.1
 
 ## Example Parameters: RetinaAppendAIResultOperation-Example
 
@@ -10,7 +10,6 @@
 {
   "resourceType" : "Parameters",
   "id" : "RetinaAppendAIResultOperation-Example",
-  "language" : "en",
   "parameter" : [{
     "name" : "sectraStudyId",
     "valueString" : "MMA94126079"
@@ -47,7 +46,7 @@
   },
   {
     "name" : "leftDiabeticRetinopathy",
-    "valueDecimal" : 1
+    "valueDecimal" : 1.4
   },
   {
     "name" : "leftDiabeticMacularEdema",

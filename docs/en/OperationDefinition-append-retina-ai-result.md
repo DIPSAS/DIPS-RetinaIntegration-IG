@@ -1,4 +1,4 @@
-# Retina Append AI Result Operation - RetinaIntegration v0.8.0
+# Retina Append AI Result Operation - RetinaIntegration v0.8.1
 
 ## OperationDefinition: Retina Append AI Result Operation 
 
@@ -7,11 +7,11 @@ OperationDefinition for appending retina AI results to an existing DiagnosticRep
 
 ### Overview
 
-The `$append-retina-ai-result` operation is used to add AI analysis results to an existing DiagnosticReport. This operation is invoked bye the regional integration platform after the AI system has analyzed retinal images.
+The `$append-retina-ai-result` operation is used to add AI analysis results to an existing DiagnosticReport. This operation is invoked by the regional integration platform after the AI system has analyzed retinal images.
 
 ### Example
 
-See [RetinaAppendAIResultOperation-Example](Parameters-RetinaAppendAIResultOperation-Example.json.md) for a an example of the parameters.
+See [RetinaAppendAIResultOperation-Example](Parameters-RetinaAppendAIResultOperation-Example.json.md) for an example of the parameters.
 
 ### Usage
 
@@ -24,6 +24,36 @@ Add AI result to an examination using the following operation:
 
 `[id]` is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a examination, to update.
 
+### Business rules
+
+`422 Unprocessable Entity` with a OperationOutcome of issue of type BusinessRule is returned if the request fails to comply with one of the following business rules.
+
+Many of the parameters are optional, but there are rules governing the combination of some of the parameters:
+
+1. If current status of the examination is not[1001](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1001)(Waiting to be graded by AI) the update is not allowed.
+1. If no eye evaluations are provided`conclusion`can only be[1002](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1002)(Primary grading based on current images) or[1003](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1002)(Secondary grading based on current images).
+1. If`conclusion`is[1004](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1004)(New examination primary grading) or[1005](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1005)(New examination secondary grading) then parameter`monthsUntilNextExamination`must be specified.
+
+### Conflict
+
+`409 Conflict` is returned in the following cases:
+
+1. The examination already has an AI grading
+1. The`sectraStudyId`is linked to another examination
+
+### HTTP response codes
+
+| | |
+| :--- | :--- |
+| 204 No Content | The operation completed successfully and the DiagnosticReport was updated. |
+| 400 Bad Request | The request was malformed or contained invalid parameters. |
+| 401 Unauthorized | The server was not able to authenticate the user so authorization could not be done. |
+| 403 Forbidden | The user is not authorized to use the API. |
+| 404 Not Found | No DiagnosticReport with the given`[id]`was found. |
+| 409 Conflict | DiagnosticReport`[id]`already has a grading, or`sectraStudyId`already used. |
+| 422 Unprocessable Entity | The request was well-formed but violated business rules (e.g. missing required parameter combinations). |
+| 500 Internal Server Error | An unexpected server-side error occurred. |
+
 
 
 ## Resource Content
@@ -33,12 +63,12 @@ Add AI result to an examination using the following operation:
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AppendRetinaAIResult",
   "title" : "Retina Append AI Result Operation",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-04-17T16:52:07+02:00",
+  "date" : "2026-05-08T13:22:39+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -72,7 +102,11 @@ Add AI result to an examination using the following operation:
     "min" : 1,
     "max" : "1",
     "documentation" : "Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.",
-    "type" : "CodeableConcept"
+    "type" : "CodeableConcept",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"
+    }
   },
   {
     "name" : "monthsUntilNextExamination",

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-ai-gradability-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaAIGradabilityValueSet",
     "title" : "Retina AI Gradability",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-body-site-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaBodySiteValueSet",
     "title" : "Retina Body Site",
@@ -21,14 +21,14 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
     "StructureDefinition-retina-imagingstudy.html" : "Retina ImagingStudy",
-    "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment",
-    "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding"
+    "StructureDefinition-retina-diabetic-retinopathy-finding.html" : "Retina Diabetic Retinopathy Finding",
+    "StructureDefinition-retina-diabetic-macular-edema-finding.html" : "Retina Diabetic Macular Edema Finding",
+    "StructureDefinition-retina-image-quality-asessment.html" : "Retina Image Quality Assessment"
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaCautionValueSet",
     "title" : "Retina Cautions",
@@ -40,7 +40,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
     "title" : "Retina Conclusion",
@@ -48,12 +48,13 @@
     "systems" : ["http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"],
     "uses" : {
     },
-    "StructureDefinition-previous-examination-conclusion-extension.html" : "Previous Examination Conclusion",
-    "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport"
+    "StructureDefinition-retina-diagnostic-report.html" : "Retina DiagnosticReport",
+    "OperationDefinition-append-retina-ai-result.html" : "Retina Append AI Result Operation",
+    "StructureDefinition-previous-examination-conclusion-extension.html" : "Previous Examination Conclusion"
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaImageParameterValueSet",
     "title" : "Retina Image Parameter ValueSet",
@@ -66,7 +67,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaImageQualityValueSet",
     "title" : "Retina Image Quality",
@@ -79,7 +80,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaImageViewValueSet",
     "title" : "Retina Image View",
@@ -92,7 +93,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imaging-procedure-vs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaImagingProcedureValueSet",
     "title" : "Retina Imaging Procedures",

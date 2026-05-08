@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-image-view-cs</b></p><a name=\"retina-image-view-cs\"> </a><a name=\"hcretina-image-view-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">6001<a name=\"retina-image-view-cs-6001\"> </a></td><td>Macula centered</td><td>Retinal image centered on the macula.</td></tr><tr><td style=\"white-space:nowrap\">6002<a name=\"retina-image-view-cs-6002\"> </a></td><td>Optic disc centered</td><td>Retinal image centered on the optic disc.</td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaImageViewCodeSystem",
   "title" : "Retina Image View Codes",
   "status" : "draft",

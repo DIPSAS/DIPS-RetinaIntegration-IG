@@ -13,7 +13,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaAIGradabilityCodeSystem",
     "title" : "Retina AI Gradability Codes",
@@ -24,7 +24,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaCautionCodeSystem",
     "title" : "Retina Caution Codes",
@@ -35,7 +35,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaConclusionCodeSystem",
     "title" : "Retina Conclusion Codes",
@@ -46,7 +46,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaImageQualityCodeSystem",
     "title" : "Retina Image Quality Codes",
@@ -57,7 +57,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-    "version" : "0.8.0",
+    "version" : "0.8.1",
     "status" : "draft",
     "name" : "RetinaImageViewCodeSystem",
     "title" : "Retina Image View Codes",
@@ -160,13 +160,13 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
     "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "ValueSet-retina-body-site-vs.html" : "Retina Body Site",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-bodysite-laterality.html" : "Laterality",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-bodysite-laterality.html" : "Laterality"
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",

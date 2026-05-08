@@ -1,4 +1,4 @@
-# Retina AI Gradability Codes - RetinaIntegration v0.8.0
+# Retina AI Gradability Codes - RetinaIntegration v0.8.1
 
 ## CodeSystem: Retina AI Gradability Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-ai-gradability-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaAIGradabilityCodeSystem",
   "title" : "Retina AI Gradability Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-17",
+  "date" : "2026-04-28",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -47,12 +47,20 @@ This Code system is referenced in the definition of the following value sets:
   "concept" : [{
     "code" : "good-gradability",
     "display" : "Good",
-    "definition" : "The data quality is sufficient for it to be processed by an AI grading algorithm."
+    "definition" : "The submitted set of images is sufficient for evaluation.",
+    "designation" : [{
+      "language" : "no",
+      "value" : "God graderbarhet. Bildesettet tilstrekkelig for vurdering."
+    }]
   },
   {
     "code" : "not-gradable",
     "display" : "Not gradable",
-    "definition" : "The data quality is insufficient for it to be processed by an AI grading algorithm."
+    "definition" : "The submitted set of images is insufficient for evaluation.",
+    "designation" : [{
+      "language" : "no",
+      "value" : "Ikke graderbar. Bildesettet ikke tilstrekkelig for vurdering."
+    }]
   }]
 }
 

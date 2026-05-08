@@ -1,10 +1,17 @@
-# Changelog - RetinaIntegration v0.8.0
+# Changelog - RetinaIntegration v0.8.1
 
 ## Changelog
 
 ### Change Log
 
 The changelog gives an overview of the change history of this implementation guide.
+
+### Version 0.8.1-CI (2026-05-08)
+
+* Document business rules and HTTP result codes in append operation
+* Add norwegian texts and adjust english text for codes system retina-ai-gradability-cs
+* Link `conclusion` parameter to documentation of value set retina-conclusion-code-vs
+* Use a decimal value in the leftDiabeticRetinopathy example
 
 ### Version 0.8.0-CI (2026-04-17)
 

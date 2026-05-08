@@ -3,15 +3,15 @@
   "id" : "retina-ai-gradability-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-ai-gradability-cs</b></p><a name=\"retina-ai-gradability-cs\"> </a><a name=\"hcretina-ai-gradability-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">good-gradability<a name=\"retina-ai-gradability-cs-good-gradability\"> </a></td><td>Good</td><td>The data quality is sufficient for it to be processed by an AI grading algorithm.</td></tr><tr><td style=\"white-space:nowrap\">not-gradable<a name=\"retina-ai-gradability-cs-not-gradable\"> </a></td><td>Not gradable</td><td>The data quality is insufficient for it to be processed by an AI grading algorithm.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-ai-gradability-cs</b></p><a name=\"retina-ai-gradability-cs\"> </a><a name=\"hcretina-ai-gradability-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Norwegian (no)</b></td></tr><tr><td style=\"white-space:nowrap\">good-gradability<a name=\"retina-ai-gradability-cs-good-gradability\"> </a></td><td>Good</td><td>The submitted set of images is sufficient for evaluation.</td><td>God graderbarhet. Bildesettet tilstrekkelig for vurdering.</td></tr><tr><td style=\"white-space:nowrap\">not-gradable<a name=\"retina-ai-gradability-cs-not-gradable\"> </a></td><td>Not gradable</td><td>The submitted set of images is insufficient for evaluation.</td><td>Ikke graderbar. Bildesettet ikke tilstrekkelig for vurdering.</td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaAIGradabilityCodeSystem",
   "title" : "Retina AI Gradability Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-17",
+  "date" : "2026-04-28",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -31,11 +31,19 @@
   "concept" : [{
     "code" : "good-gradability",
     "display" : "Good",
-    "definition" : "The data quality is sufficient for it to be processed by an AI grading algorithm."
+    "definition" : "The submitted set of images is sufficient for evaluation.",
+    "designation" : [{
+      "language" : "no",
+      "value" : "God graderbarhet. Bildesettet tilstrekkelig for vurdering."
+    }]
   },
   {
     "code" : "not-gradable",
     "display" : "Not gradable",
-    "definition" : "The data quality is insufficient for it to be processed by an AI grading algorithm."
+    "definition" : "The submitted set of images is insufficient for evaluation.",
+    "designation" : [{
+      "language" : "no",
+      "value" : "Ikke graderbar. Bildesettet ikke tilstrekkelig for vurdering."
+    }]
   }]
 }

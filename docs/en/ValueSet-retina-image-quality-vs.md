@@ -1,4 +1,4 @@
-# Retina Image Quality - RetinaIntegration v0.8.0
+# Retina Image Quality - RetinaIntegration v0.8.1
 
 ## ValueSet: Retina Image Quality 
 
@@ -29,7 +29,7 @@ Image quality as assessed by AI (2000-series).
   "resourceType" : "ValueSet",
   "id" : "retina-image-quality-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-quality-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaImageQualityValueSet",
   "title" : "Retina Image Quality",
   "status" : "draft",

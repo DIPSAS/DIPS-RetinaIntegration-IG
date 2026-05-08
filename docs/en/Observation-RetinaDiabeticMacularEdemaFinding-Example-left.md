@@ -1,8 +1,6 @@
-# RetinaDiabeticMacularEdemaFinding-Example-left - RetinaIntegration v0.8.0
+# RetinaDiabeticMacularEdemaFinding-Example-left - RetinaIntegration v0.8.1
 
 ## Example Observation: RetinaDiabeticMacularEdemaFinding-Example-left
-
-Language: en
 
 Profile: [Retina Diabetic Macular Edema Finding](StructureDefinition-retina-diabetic-macular-edema-finding.md)
 
@@ -29,7 +27,6 @@ Profile: [Retina Diabetic Macular Edema Finding](StructureDefinition-retina-diab
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "http://dips.no/fhir/RetinaIntegration/observation-id",
     "value" : "b1c2d3e4-f5a6-7890-abcd-ef1234567890"

@@ -4,10 +4,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Retina Append AI Result Operation - RetinaIntegration v0.8.0</title>
+    <title>Retina Append AI Result Operation - RetinaIntegration v0.8.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,7 +44,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.3"}
@@ -57,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.8.0 - ci-build
+            <span style="display:inline-block;">0.8.1 - ci-build
 
 
             </span>
@@ -135,7 +138,7 @@
 
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.8.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.8.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -180,7 +183,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.8.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result|0.8.0"/></span>
+      <span class="copy-text">0.8.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result|0.8.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -200,6 +203,14 @@
 
 
       <td colspan="5">
+        
+          Draft
+          
+
+            as of 
+2026-05-08
+
+          
         
       </td>
 
@@ -234,11 +245,11 @@
 
 <h3 id="overview">Overview</h3>
 
-<p>The <code class="language-plaintext highlighter-rouge">$append-retina-ai-result</code> operation is used to add AI analysis results to an existing DiagnosticReport. This operation is invoked bye the regional integration platform after the AI system has analyzed retinal images.</p>
+<p>The <code class="language-plaintext highlighter-rouge">$append-retina-ai-result</code> operation is used to add AI analysis results to an existing DiagnosticReport. This operation is invoked by the regional integration platform after the AI system has analyzed retinal images.</p>
 
 <h3 id="example">Example</h3>
 
-<p>See <a href="Parameters-RetinaAppendAIResultOperation-Example.json.html">RetinaAppendAIResultOperation-Example</a> for a an example of the parameters.</p>
+<p>See <a href="Parameters-RetinaAppendAIResultOperation-Example.json.html">RetinaAppendAIResultOperation-Example</a> for an example of the parameters.</p>
 
 <h3 id="usage">Usage</h3>
 
@@ -248,6 +259,72 @@
 </code></pre></div></div>
 
 <p><code class="language-plaintext highlighter-rouge">[id]</code> is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a examination, to update.</p>
+
+<h3 id="business-rules">Business rules</h3>
+
+<p><code class="language-plaintext highlighter-rouge">422 Unprocessable Entity</code> with a OperationOutcome of issue of type BusinessRule is returned if the request fails to comply with one of the following business rules.</p>
+
+<p>Many of the parameters are optional, but there are rules governing the combination of some of the parameters:</p>
+
+<ol>
+  <li>If current status of the examination is not <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1001">1001</a>(Waiting to be graded by AI) the update is not allowed.</li>
+  <li>If no eye evaluations are provided <code class="language-plaintext highlighter-rouge">conclusion</code> can only be <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1002">1002</a> (Primary grading based on current images) or <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1002">1003</a> (Secondary grading based on current images).</li>
+  <li>If <code class="language-plaintext highlighter-rouge">conclusion</code> is <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1004">1004</a> (New examination primary grading) or <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1005">1005</a> (New examination secondary grading) then parameter <code class="language-plaintext highlighter-rouge">monthsUntilNextExamination</code> must be specified.</li>
+</ol>
+
+<h3 id="conflict">Conflict</h3>
+
+<p><code class="language-plaintext highlighter-rouge">409 Conflict</code> is returned in the following cases:</p>
+
+<ol>
+  <li>The examination already has an AI grading</li>
+  <li>The <code class="language-plaintext highlighter-rouge">sectraStudyId</code> is linked to another examination</li>
+</ol>
+
+<h3 id="http-response-codes">HTTP response codes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>204 No Content</td>
+      <td>The operation completed successfully and the DiagnosticReport was updated.</td>
+    </tr>
+    <tr>
+      <td>400 Bad Request</td>
+      <td>The request was malformed or contained invalid parameters.</td>
+    </tr>
+    <tr>
+      <td>401 Unauthorized</td>
+      <td>The server was not able to authenticate the user so authorization could not be done.</td>
+    </tr>
+    <tr>
+      <td>403 Forbidden</td>
+      <td>The user is not authorized to use the API.</td>
+    </tr>
+    <tr>
+      <td>404 Not Found</td>
+      <td>No DiagnosticReport with the given <code class="language-plaintext highlighter-rouge">[id]</code> was found.</td>
+    </tr>
+    <tr>
+      <td>409 Conflict</td>
+      <td>DiagnosticReport <code class="language-plaintext highlighter-rouge">[id]</code> already has a grading, or <code class="language-plaintext highlighter-rouge">sectraStudyId</code> already used.</td>
+    </tr>
+    <tr>
+      <td>422 Unprocessable Entity</td>
+      <td>The request was well-formed but violated business rules (e.g. missing required parameter combinations).</td>
+    </tr>
+    <tr>
+      <td>500 Internal Server Error</td>
+      <td>An unexpected server-side error occurred.</td>
+    </tr>
+  </tbody>
+</table>
 
 
 </div>
@@ -263,7 +340,7 @@
 
 
   <div data-fhir="generated"><p class="res-header-id"/><a name="append-retina-ai-result"> </a><a name="hcappend-retina-ai-result"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>sectraStudyId</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Sectra study ID for the retinal images that were analyzed.</p>
-</div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.</p>
+</div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-retina-conclusion-code-vs.html">Retina Conclusion</a> (Required)</td><td><div><p>Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.</p>
 </div></td></tr><tr><td>IN</td><td>monthsUntilNextExamination</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>The recall interval in months until the patient's next examination. Only included if the conclusion is a new examination. Value must be a positive integer greater than 1</p>
 </div></td></tr><tr><td>IN</td><td>leftGradability</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td><a href="ValueSet-retina-ai-gradability-vs.html">Retina AI Gradability</a> (Required)</td><td><div><p>Gradability of the left eye for AI analysis. Must be a single code from the Retina AI Gradability ValueSet.</p>
 </div></td></tr><tr><td>IN</td><td>rightGradability</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td><a href="ValueSet-retina-ai-gradability-vs.html">Retina AI Gradability</a> (Required)</td><td><div><p>Gradability of the right eye for AI analysis. Must be a single code from the Retina AI Gradability ValueSet.</p>
@@ -310,10 +387,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  
-          Package dips.fhir.retinaintegration#0.8.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package dips.fhir.retinaintegration#0.8.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-17 16:52:00 +0200">
-    2026-04-17
+  <span title="2026-05-08 13:22:00 +0200">
+    2026-05-08
   </span>
 
           <br/>

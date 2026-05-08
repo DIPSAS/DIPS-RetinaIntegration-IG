@@ -1,8 +1,6 @@
-# RetinaHbA1cObservation-Example - RetinaIntegration v0.8.0
+# RetinaHbA1cObservation-Example - RetinaIntegration v0.8.1
 
 ## Example Observation: RetinaHbA1cObservation-Example
-
-Language: en
 
 Profile: [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation.md)
 
@@ -27,7 +25,6 @@ Profile: [Retina HbA1c Observation](StructureDefinition-retina-hba1c-observation
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "http://dips.no/fhir/RetinaIntegration/observation-id",
     "value" : "a7f3e821-9c4d-4f2a-b5e6-8d3c7a1f9b42"

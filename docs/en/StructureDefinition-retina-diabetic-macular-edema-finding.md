@@ -1,4 +1,4 @@
-# Retina Diabetic Macular Edema Finding - RetinaIntegration v0.8.0
+# Retina Diabetic Macular Edema Finding - RetinaIntegration v0.8.1
 
 ## Resource Profile: Retina Diabetic Macular Edema Finding ( Experimental ) 
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-diabetic-m
   "resourceType" : "StructureDefinition",
   "id" : "retina-diabetic-macular-edema-finding",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-macular-edema-finding",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaDiabeticMacularEdemaFinding",
   "title" : "Retina Diabetic Macular Edema Finding",
   "status" : "draft",

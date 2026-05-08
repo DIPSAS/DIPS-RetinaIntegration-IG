@@ -1,8 +1,6 @@
-# RetinaImageQualityAssessment-Example-right - RetinaIntegration v0.8.0
+# RetinaImageQualityAssessment-Example-right - RetinaIntegration v0.8.1
 
 ## Example Observation: RetinaImageQualityAssessment-Example-right
-
-Language: en
 
 Profile: [Retina Image Quality Assessment](StructureDefinition-retina-image-quality-asessment.md)
 
@@ -29,7 +27,6 @@ Profile: [Retina Image Quality Assessment](StructureDefinition-retina-image-qual
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "http://dips.no/fhir/RetinaIntegration/observation-id",
     "value" : "f1e2d3c4-b5a6-7890-abcd-ef1234567890"

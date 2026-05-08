@@ -1,8 +1,6 @@
-# RetinaImagingStudy-registered-Example - RetinaIntegration v0.8.0
+# RetinaImagingStudy-registered-Example - RetinaIntegration v0.8.1
 
 ## Example ImagingStudy: RetinaImagingStudy-registered-Example
-
-Language: en
 
 Profile: [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
 
@@ -23,7 +21,6 @@ Profile: [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "http://dips.no/fhir/RetinaIntegration/sectra-image-study-id",
     "value" : "MMA94126079"

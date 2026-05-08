@@ -1,4 +1,4 @@
-# RetinaQueryByDate-Example - RetinaIntegration v0.8.0
+# RetinaQueryByDate-Example - RetinaIntegration v0.8.1
 
 ## Example Parameters: RetinaQueryByDate-Example
 
@@ -10,7 +10,6 @@
 {
   "resourceType" : "Parameters",
   "id" : "RetinaQueryByDate-Example",
-  "language" : "en",
   "parameter" : [{
     "name" : "start",
     "valueDateTime" : "2026-01-21T00:00:00Z"

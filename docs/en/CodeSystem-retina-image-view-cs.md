@@ -1,4 +1,4 @@
-# Retina Image View Codes - RetinaIntegration v0.8.0
+# Retina Image View Codes - RetinaIntegration v0.8.1
 
 ## CodeSystem: Retina Image View Codes 
 
@@ -22,7 +22,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-image-view-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaImageViewCodeSystem",
   "title" : "Retina Image View Codes",
   "status" : "draft",

@@ -1,4 +1,4 @@
-# Bundle-SingleExamination-Example - RetinaIntegration v0.8.0
+# Bundle-SingleExamination-Example - RetinaIntegration v0.8.1
 
 ## Example Bundle: Bundle-SingleExamination-Example
 
@@ -10,7 +10,6 @@
 {
   "resourceType" : "Bundle",
   "id" : "Bundle-SingleExamination-Example",
-  "language" : "en",
   "type" : "searchset",
   "total" : 3,
   "entry" : [{

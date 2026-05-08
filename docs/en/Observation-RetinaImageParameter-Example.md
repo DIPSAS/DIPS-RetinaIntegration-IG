@@ -1,8 +1,6 @@
-# RetinaImageParameter-Example - RetinaIntegration v0.8.0
+# RetinaImageParameter-Example - RetinaIntegration v0.8.1
 
 ## Example Observation: RetinaImageParameter-Example
-
-Language: en
 
 Profile: [Retina Image Parameter](StructureDefinition-retina-image-parameter.md)
 
@@ -21,7 +19,6 @@ Profile: [Retina Image Parameter](StructureDefinition-retina-image-parameter.md)
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter"]
   },
-  "language" : "en",
   "status" : "final",
   "code" : {
     "coding" : [{

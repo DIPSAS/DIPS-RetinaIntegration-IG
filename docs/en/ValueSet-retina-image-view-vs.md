@@ -1,4 +1,4 @@
-# Retina Image View - RetinaIntegration v0.8.0
+# Retina Image View - RetinaIntegration v0.8.1
 
 ## ValueSet: Retina Image View 
 
@@ -29,7 +29,7 @@ Codes describing the centering used when capturing retinal images, such as macul
   "resourceType" : "ValueSet",
   "id" : "retina-image-view-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-view-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaImageViewValueSet",
   "title" : "Retina Image View",
   "status" : "draft",

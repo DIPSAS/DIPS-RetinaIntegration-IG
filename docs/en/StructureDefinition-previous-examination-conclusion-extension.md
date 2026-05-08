@@ -1,4 +1,4 @@
-# Previous Examination Conclusion - RetinaIntegration v0.8.0
+# Previous Examination Conclusion - RetinaIntegration v0.8.1
 
 ## Extension: Previous Examination Conclusion (Experimental) 
 
@@ -32,12 +32,12 @@ Other representations of profile: [CSV](../StructureDefinition-previous-examinat
   "resourceType" : "StructureDefinition",
   "id" : "previous-examination-conclusion-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "PreviousExaminationConclusionExtension",
   "title" : "Previous Examination Conclusion",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-04-17T16:52:07+02:00",
+  "date" : "2026-05-08T13:22:39+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

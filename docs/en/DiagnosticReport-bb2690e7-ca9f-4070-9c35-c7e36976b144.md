@@ -1,8 +1,6 @@
-# RetinaDiagnosticReport-Notification-Example - RetinaIntegration v0.8.0
+# RetinaDiagnosticReport-Notification-Example - RetinaIntegration v0.8.1
 
 ## Example DiagnosticReport: RetinaDiagnosticReport-Notification-Example
-
-Language: en
 
 Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 
@@ -29,7 +27,6 @@ Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report"]
   },
-  "language" : "en",
   "extension" : [{
     "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
     "valueCoding" : {

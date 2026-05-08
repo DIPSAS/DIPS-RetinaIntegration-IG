@@ -1,4 +1,4 @@
-# Retinal Image View - RetinaIntegration v0.8.0
+# Retinal Image View - RetinaIntegration v0.8.1
 
 ## Extension: Retinal Image View 
 
@@ -31,11 +31,11 @@ Other representations of profile: [CSV](../StructureDefinition-retinal-image-vie
   "resourceType" : "StructureDefinition",
   "id" : "retinal-image-view",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinalImageView",
   "title" : "Retinal Image View",
   "status" : "draft",
-  "date" : "2026-04-17T16:52:07+02:00",
+  "date" : "2026-05-08T13:22:39+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

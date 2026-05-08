@@ -1,4 +1,4 @@
-# Retina DiagnosticReport - RetinaIntegration v0.8.0
+# Retina DiagnosticReport - RetinaIntegration v0.8.1
 
 ## Resource Profile: Retina DiagnosticReport 
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-diagnostic
   "resourceType" : "StructureDefinition",
   "id" : "retina-diagnostic-report",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RetinaDiagnosticReport",
   "title" : "Retina DiagnosticReport",
   "status" : "draft",

@@ -1,4 +1,4 @@
-# Cautions - RetinaIntegration v0.8.0
+# Cautions - RetinaIntegration v0.8.1
 
 ## Extension: Cautions (Experimental) 
 
@@ -32,12 +32,12 @@ Other representations of profile: [CSV](../StructureDefinition-cautions-extensio
   "resourceType" : "StructureDefinition",
   "id" : "cautions-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/cautions-extension",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "CautionsExtension",
   "title" : "Cautions",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-04-17T16:52:07+02:00",
+  "date" : "2026-05-08T13:22:39+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

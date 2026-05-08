@@ -1,8 +1,6 @@
-# RetinaDiabeticRetinopathyFinding-Example-left - RetinaIntegration v0.8.0
+# RetinaDiabeticRetinopathyFinding-Example-left - RetinaIntegration v0.8.1
 
 ## Example Observation: RetinaDiabeticRetinopathyFinding-Example-left
-
-Language: en
 
 Profile: [Retina Diabetic Retinopathy Finding](StructureDefinition-retina-diabetic-retinopathy-finding.md)
 
@@ -29,7 +27,6 @@ Profile: [Retina Diabetic Retinopathy Finding](StructureDefinition-retina-diabet
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "http://dips.no/fhir/RetinaIntegration/observation-id",
     "value" : "d4e5f6a7-b8c9-0123-def4-567890abcdef"

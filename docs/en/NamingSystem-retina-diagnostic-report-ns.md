@@ -1,4 +1,4 @@
-# Retina DiagnosticReport Identifier System - RetinaIntegration v0.8.0
+# Retina DiagnosticReport Identifier System - RetinaIntegration v0.8.1
 
 ## NamingSystem: Retina DiagnosticReport Identifier System 
 
@@ -19,7 +19,7 @@ A naming system for identifying Retina DiagnosticReports using GUIDs. An examina
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.8.0"
+    "valueString" : "0.8.1"
   }],
   "name" : "RetinaDiagnosticReportIdentifierSystem",
   "status" : "active",

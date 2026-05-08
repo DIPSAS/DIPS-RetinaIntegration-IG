@@ -1,8 +1,6 @@
-# RetinaCameraDevice-Example - RetinaIntegration v0.8.0
+# RetinaCameraDevice-Example - RetinaIntegration v0.8.1
 
 ## Example Device: RetinaCameraDevice-Example
-
-Language: en
 
 Profile: [Retina Camera Device](StructureDefinition-retina-camera-device.md)
 
@@ -23,7 +21,6 @@ Profile: [Retina Camera Device](StructureDefinition-retina-camera-device.md)
   "meta" : {
     "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-camera-device"]
   },
-  "language" : "en",
   "serialNumber" : "SN123456789",
   "deviceName" : [{
     "name" : "AAK_TOPCON2",
