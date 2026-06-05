@@ -1,4 +1,4 @@
-# RetinaDiagnosticReport-Notification-Example - RetinaIntegration v0.8.1
+# RetinaDiagnosticReport-Notification-Example - RetinaIntegration v0.9.0
 
 ## Example DiagnosticReport: RetinaDiagnosticReport-Notification-Example
 

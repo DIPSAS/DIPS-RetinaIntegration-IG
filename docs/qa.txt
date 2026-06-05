@@ -1,16 +1,16 @@
 RetinaIntegration : Validation Results
 =========================================
 
-err = 57, warn = 7, info = 23
-IG Publisher Version: 2.2.7
-Generated Fri May 08 13:24:09 CEST 2026. FHIR version 4.0.1 for dips.fhir.retinaintegration#0.8.1 (canonical = http://dips.no/fhir/RetinaIntegration)
+err = 61, warn = 8, info = 31
+IG Publisher Version: 2.2.8
+Generated Fri Jun 05 15:49:19 CEST 2026. FHIR version 4.0.1 for dips.fhir.retinaintegration#0.9.0 (canonical = http://dips.no/fhir/RetinaIntegration)
  Build Errors : 0 / 4 / 0
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-Bundle-SingleExamination-Example : 15 / 7 / 10
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Bundle-Bundle-TwoExaminations-Example : 35 / 18 / 22
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CapabilityStatement-RetinaCapabilityStatement : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-ai-gradability-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-caution-cs : 0 / 0 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-conclusion-code-cs : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-conclusion-code-cs : 0 / 0 / 8
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-image-quality-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\CodeSystem-retina-image-view-cs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\Device-RetinaAIDevice-Example : 0 / 2 / 1
@@ -20,7 +20,7 @@ Generated Fri May 08 13:24:09 CEST 2026. FHIR version 4.0.1 for dips.fhir.retina
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144 : 0 / 2 / 2
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImagingStudy-RetinaImagingStudy-available-Example : 0 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImagingStudy-RetinaImagingStudy-registered-Example : 0 / 1 / 1
- C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration : 4 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-diagnostic-report-ns : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-imaging-study-ns : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\NamingSystem-retina-observation-ns : 0 / 0 / 1
@@ -51,6 +51,7 @@ Generated Fri May 08 13:24:09 CEST 2026. FHIR version 4.0.1 for dips.fhir.retina
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retina-observation : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\StructureDefinition-retinal-image-view : 0 / 1 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-ai-gradability-vs : 0 / 0 / 1
+ C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-append-ai-conclusion-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-body-site-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-caution-vs : 0 / 0 / 1
  C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ValueSet-retina-conclusion-code-vs : 0 / 0 / 1
@@ -70,8 +71,8 @@ ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*Diagno
 ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.subject: Unable to resolve resource with reference 'Patient/cdp1000807'
 ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.conclusionCode[0]: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1
-INFORMATION: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.8.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.conclusionCode[0]: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0
+INFORMATION: Bundle/Bundle-SingleExamination-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[1].resource/*Observation/HbA1cObservation-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[1]: Bundle entry missing fullUrl
 ERROR: Bundle/Bundle-SingleExamination-Example: Bundle.entry[1].resource/*Observation/HbA1cObservation-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -89,8 +90,8 @@ ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*Diagnost
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.subject: Unable to resolve resource with reference 'Patient/cdp1000807'
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.conclusionCode[0]: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1
-INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.8.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.conclusionCode[0]: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[0].resource/*DiagnosticReport/RetinaDiagnosticReport-1*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1].resource/*Observation/HbA1cObservation-1*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1]: Bundle entry missing fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1].resource/*Observation/HbA1cObservation-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -98,15 +99,15 @@ ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[1].resource/*Observat
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[2]: Bundle entry missing fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[2].resource/*ImagingStudy/RegisteredImagingStudy-1*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[2].resource/*ImagingStudy/RegisteredImagingStudy-1*/.subject: Unable to resolve resource with reference 'Patient/cdp1000807'
-INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1
-INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs|0.8.1
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs|0.9.0
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3]: Bundle entry missing fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.subject: Unable to resolve resource with reference 'Patient/cdp1000822'
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.imagingStudy[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.imagingStudy[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.8.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[3].resource/*DiagnosticReport/RetinaDiagnosticReport-2*/.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[4].resource/*Observation/RetinaHbA1cObservation-2*/.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[4]: Bundle entry missing fullUrl
 ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[4].resource/*Observation/RetinaHbA1cObservation-2*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -129,20 +130,32 @@ ERROR: Bundle/Bundle-TwoExaminations-Example: Bundle.entry[6]: Except for transa
 == fsh-generated\resources\CodeSystem-retina-ai-gradability-cs.json ==
 == fsh-generated\resources\CodeSystem-retina-caution-cs.json ==
 == fsh-generated\resources\CodeSystem-retina-conclusion-code-cs.json ==
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[0].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[1].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[2].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[3].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[4].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[5].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/retina-conclusion-code-cs: CodeSystem.concept[6].designation[0].language: The value provided ('x-eyecare') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'x-eyecare' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#x-eyecare' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
 == fsh-generated\resources\CodeSystem-retina-image-quality-cs.json ==
 == fsh-generated\resources\CodeSystem-retina-image-view-cs.json ==
 == fsh-generated\resources\Device-RetinaAIDevice-Example.json ==
 == fsh-generated\resources\Device-RetinaCameraDevice-Example.json ==
 == fsh-generated\resources\DiagnosticReport-RetinaDiagnosticReport-Example.json ==
-INFORMATION: DiagnosticReport/RetinaDiagnosticReport-Example: DiagnosticReport.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.8.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: DiagnosticReport/RetinaDiagnosticReport-Example: DiagnosticReport.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1
+INFORMATION: DiagnosticReport/RetinaDiagnosticReport-Example: DiagnosticReport.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DiagnosticReport/RetinaDiagnosticReport-Example: DiagnosticReport.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0
 == fsh-generated\resources\DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.json ==
-INFORMATION: DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI: DiagnosticReport.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.8.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI: DiagnosticReport.result[0]: This element does not match any known slice defined in the profile http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated\resources\DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.json ==
-INFORMATION: DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144: DiagnosticReport.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1
+INFORMATION: DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144: DiagnosticReport.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0
 == fsh-generated\resources\ImagingStudy-RetinaImagingStudy-available-Example.json ==
 == fsh-generated\resources\ImagingStudy-RetinaImagingStudy-registered-Example.json ==
 == fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration.json ==
+WARNING: C:\git\sol\RetinaIntegration-IG\fsh-generated\resources\ImplementationGuide-dips.fhir.retinaintegration: Unknown Parameters: [additional-language=x-eyecare]
+ERROR: ImplementationGuide/dips.fhir.retinaintegration: ImplementationGuide.definition.extension[5].extension[0].value.ofType(string): The System URI could not be determined for the code 'additional-language' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'
+ERROR: ImplementationGuide/dips.fhir.retinaintegration: ImplementationGuide.definition.extension[5].extension[0].value.ofType(string): The value provided ('additional-language') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2), and a code is required from this value set  (error message = The System URI could not be determined for the code 'additional-language' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'; The provided code '#additional-language' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2')
+ERROR: ImplementationGuide/dips.fhir.retinaintegration: ImplementationGuide.definition.extension[40].extension[0].value.ofType(code): The System URI could not be determined for the code 'additional-language' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'
+ERROR: ImplementationGuide/dips.fhir.retinaintegration: ImplementationGuide.definition.extension[40].extension[0].value.ofType(code): The value provided ('additional-language') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2), and a code is required from this value set  (error message = The System URI could not be determined for the code 'additional-language' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'; The provided code '#additional-language' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2')
 == fsh-generated\resources\NamingSystem-retina-diagnostic-report-ns.json ==
 == fsh-generated\resources\NamingSystem-retina-imaging-study-ns.json ==
 == fsh-generated\resources\NamingSystem-retina-observation-ns.json ==
@@ -154,26 +167,27 @@ INFORMATION: DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144: DiagnosticRe
 ERROR: Observation/RetinaHbA1cObservation-Example: Observation.code.coding[0].code: Unknown code '167491000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 == fsh-generated\resources\Observation-RetinaImageParameter-Example.json ==
 == fsh-generated\resources\Observation-RetinaImageQualityAssessment-Example-left.json ==
-INFORMATION: Observation/RetinaImageQualityAssessment-Example-left: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.8.1
+INFORMATION: Observation/RetinaImageQualityAssessment-Example-left: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.9.0
 == fsh-generated\resources\Observation-RetinaImageQualityAssessment-Example-right.json ==
-INFORMATION: Observation/RetinaImageQualityAssessment-Example-right: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.8.1
+INFORMATION: Observation/RetinaImageQualityAssessment-Example-right: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.9.0
 == fsh-generated\resources\OperationDefinition-append-retina-ai-result.json ==
 == fsh-generated\resources\OperationDefinition-retina-by-date.json ==
 == fsh-generated\resources\Parameters-RetinaAppendAIResultOperation-Example.json ==
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[9].resource/*Observation/RetinaImageParameter-Example-right-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[9].resource/*Observation/RetinaImageParameter-Example-right-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[10].resource/*Observation/RetinaImageParameter-Example-right-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[10].resource/*Observation/RetinaImageParameter-Example-right-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[11].resource/*Observation/RetinaImageParameter-Example-left-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[11].resource/*Observation/RetinaImageParameter-Example-left-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[12].resource/*Observation/RetinaImageParameter-Example-left-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.8.1
-INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[12].resource/*Observation/RetinaImageParameter-Example-left-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.8.1
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[9].resource/*Observation/RetinaImageParameter-Example-right-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[9].resource/*Observation/RetinaImageParameter-Example-right-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[10].resource/*Observation/RetinaImageParameter-Example-right-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[10].resource/*Observation/RetinaImageParameter-Example-right-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[11].resource/*Observation/RetinaImageParameter-Example-left-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[11].resource/*Observation/RetinaImageParameter-Example-left-input-1*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[12].resource/*Observation/RetinaImageParameter-Example-left-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs|0.9.0
+INFORMATION: Parameters/RetinaAppendAIResultOperation-Example: Parameters.parameter[12].resource/*Observation/RetinaImageParameter-Example-left-input-2*/.code: Reference to draft CodeSystem http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs|0.9.0
 == fsh-generated\resources\Parameters-RetinaQueryByDate-Example.json ==
 == fsh-generated\resources\StructureDefinition-cautions-extension.json ==
 == fsh-generated\resources\StructureDefinition-days-until-next-examination-extension.json ==
 == fsh-generated\resources\StructureDefinition-previous-examination-conclusion-extension.json ==
 == fsh-generated\resources\StructureDefinition-retina-ai-device.json ==
+INFORMATION: StructureDefinition/retina-ai-device: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 == fsh-generated\resources\StructureDefinition-retina-camera-device.json ==
 == fsh-generated\resources\StructureDefinition-retina-diabetic-macular-edema-finding.json ==
 == fsh-generated\resources\StructureDefinition-retina-diabetic-retinopathy-finding.json ==
@@ -192,6 +206,7 @@ ERROR: StructureDefinition/retina-hba1c-observation: StructureDefinition.differe
 == fsh-generated\resources\StructureDefinition-retinal-image-view.json ==
 WARNING: StructureDefinition.where(url = 'http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\ValueSet-retina-ai-gradability-vs.json ==
+== fsh-generated\resources\ValueSet-retina-append-ai-conclusion-vs.json ==
 == fsh-generated\resources\ValueSet-retina-body-site-vs.json ==
 == fsh-generated\resources\ValueSet-retina-caution-vs.json ==
 == fsh-generated\resources\ValueSet-retina-conclusion-code-vs.json ==

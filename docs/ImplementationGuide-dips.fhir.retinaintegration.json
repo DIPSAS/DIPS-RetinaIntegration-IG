@@ -7,11 +7,11 @@
     "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>\n</div></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2026-05-08T13:22:39+02:00",
+  "date" : "2026-06-05T15:47:27+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -46,7 +46,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   }],
   "definition" : {
     "extension" : [{
@@ -101,6 +101,17 @@
       {
         "url" : "value",
         "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "additional-language"
+      },
+      {
+        "url" : "value",
+        "valueString" : "x-eyecare"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -468,6 +479,17 @@
       {
         "url" : "value",
         "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "additional-language"
+      },
+      {
+        "url" : "value",
+        "valueString" : "x-eyecare"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -885,6 +907,18 @@
       },
       "name" : "Retina AI Gradability Codes",
       "description" : "A set of codes to indicate whether diagnostic data is suitable for automated AI grading.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/retina-append-ai-conclusion-vs"
+      },
+      "name" : "Retina AI Integration Conclusion",
+      "description" : "Goal states applicable for AI integration conclusions.",
       "exampleBoolean" : false
     },
     {

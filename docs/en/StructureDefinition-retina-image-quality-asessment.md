@@ -1,4 +1,4 @@
-# Retina Image Quality Assessment - RetinaIntegration v0.8.1
+# Retina Image Quality Assessment - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina Image Quality Assessment ( Experimental ) 
 
@@ -10,7 +10,7 @@ The image quality as assesed by AI (2000-series).
 * Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * Examples for this Profile: [Observation/RetinaImageQualityAssessment-Example-left](Observation-RetinaImageQualityAssessment-Example-left.md) and [Observation/RetinaImageQualityAssessment-Example-right](Observation-RetinaImageQualityAssessment-Example-right.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-image-quality-asessment)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-image-quality-asessment.json)
 
 ### Formal Views of Profile Content
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-image-qual
   "resourceType" : "StructureDefinition",
   "id" : "retina-image-quality-asessment",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaImageQualityAssessment",
   "title" : "Retina Image Quality Assessment",
   "status" : "draft",

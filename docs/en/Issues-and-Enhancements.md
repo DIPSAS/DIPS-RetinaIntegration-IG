@@ -1,4 +1,4 @@
-#  - RetinaIntegration v0.8.1
+#  - RetinaIntegration v0.9.0
 
 ## 
 

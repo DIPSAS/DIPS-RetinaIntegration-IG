@@ -1,4 +1,4 @@
-# Bundle-SingleExamination-Example - RetinaIntegration v0.8.1
+# Bundle-SingleExamination-Example - RetinaIntegration v0.9.0
 
 ## Example Bundle: Bundle-SingleExamination-Example
 

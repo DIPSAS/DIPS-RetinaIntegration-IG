@@ -1,4 +1,4 @@
-# Retinal Image View - RetinaIntegration v0.8.1
+# Retinal Image View - RetinaIntegration v0.9.0
 
 ## Extension: Retinal Image View 
 
@@ -12,7 +12,7 @@ The centering or anatomical focus of a retinal image.
 
 * Use this Extension: [Retina ImagingStudy](StructureDefinition-retina-imagingstudy.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retinal-image-view)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retinal-image-view.json)
 
 ### Formal Views of Extension Content
 
@@ -31,11 +31,11 @@ Other representations of profile: [CSV](../StructureDefinition-retinal-image-vie
   "resourceType" : "StructureDefinition",
   "id" : "retinal-image-view",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retinal-image-view",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinalImageView",
   "title" : "Retinal Image View",
   "status" : "draft",
-  "date" : "2026-05-08T13:22:39+02:00",
+  "date" : "2026-06-05T15:47:27+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

@@ -1,4 +1,4 @@
-# Previous Examination Conclusion - RetinaIntegration v0.8.1
+# Previous Examination Conclusion - RetinaIntegration v0.9.0
 
 ## Extension: Previous Examination Conclusion (Experimental) 
 
@@ -13,7 +13,7 @@ The conclusion from the previous examination (1000 series). If this is the first
 * Use this Extension: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * Examples for this Extension: [Bundle/Bundle-TwoExaminations-Example](Bundle-Bundle-TwoExaminations-Example.md), [DiagnosticReport/RetinaDiagnosticReport-Example](DiagnosticReport-RetinaDiagnosticReport-Example.md) and [DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/previous-examination-conclusion-extension)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-previous-examination-conclusion-extension.json)
 
 ### Formal Views of Extension Content
 
@@ -32,12 +32,12 @@ Other representations of profile: [CSV](../StructureDefinition-previous-examinat
   "resourceType" : "StructureDefinition",
   "id" : "previous-examination-conclusion-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/previous-examination-conclusion-extension",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "PreviousExaminationConclusionExtension",
   "title" : "Previous Examination Conclusion",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-05-08T13:22:39+02:00",
+  "date" : "2026-06-05T15:47:27+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

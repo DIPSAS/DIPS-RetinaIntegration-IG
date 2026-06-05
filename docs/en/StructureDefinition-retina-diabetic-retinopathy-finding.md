@@ -1,4 +1,4 @@
-# Retina Diabetic Retinopathy Finding - RetinaIntegration v0.8.1
+# Retina Diabetic Retinopathy Finding - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina Diabetic Retinopathy Finding ( Experimental ) 
 
@@ -10,7 +10,7 @@ Observation profile for documenting findings related to diabetic retinopathy (DR
 * Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * Examples for this Profile: [Observation/RetinaDiabeticRetinopathyFinding-Example-left](Observation-RetinaDiabeticRetinopathyFinding-Example-left.md) and [Observation/RetinaDiabeticRetinopathyFinding-Example-right](Observation-RetinaDiabeticRetinopathyFinding-Example-right.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-diabetic-retinopathy-finding)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-diabetic-retinopathy-finding.json)
 
 ### Formal Views of Profile Content
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-diabetic-r
   "resourceType" : "StructureDefinition",
   "id" : "retina-diabetic-retinopathy-finding",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diabetic-retinopathy-finding",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaDiabeticRetinopathyFinding",
   "title" : "Retina Diabetic Retinopathy Finding",
   "status" : "draft",

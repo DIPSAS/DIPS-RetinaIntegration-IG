@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition retina-by-date</b></p><a name=\"retina-by-date\"> </a><a name=\"hcretina-by-date\"> </a><p>URL: [base]/DiagnosticReport?_query=retina-by-date&amp;...</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>start</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Optional start of the date range for the query. If not provided, the query will return reports from the earliest available date up to the end date.</p>\n</div></td></tr><tr><td>IN</td><td>end</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Optional end of the date range for the query. If not provided, the query will return reports from the start date up to the latest available date.</p>\n</div></td></tr><tr><td>IN</td><td>pendingAI</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Optional parameter. If present, the query will only return reports that are pending AI analysis. In a GET request, the parameter can be provided without a value (e.g., <code>&amp;pendingAI</code>).</p>\n</div></td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/retina-by-date",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaQueryByDate",
   "title" : "Query By Date Operation",
   "status" : "draft",
   "kind" : "query",
-  "date" : "2026-05-08T13:22:39+02:00",
+  "date" : "2026-06-05T15:47:27+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

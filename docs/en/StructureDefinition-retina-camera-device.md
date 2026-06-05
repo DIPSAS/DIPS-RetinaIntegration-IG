@@ -1,4 +1,4 @@
-# Retina Camera Device - RetinaIntegration v0.8.1
+# Retina Camera Device - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina Camera Device ( Experimental ) 
 
@@ -26,7 +26,7 @@ The serial number from the manufacturer that is printed on the device. The seria
 
 * Examples for this Profile: [Device/RetinaCameraDevice-Example](Device-RetinaCameraDevice-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-camera-device)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-camera-device.json)
 
 ### Formal Views of Profile Content
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-camera-dev
   "resourceType" : "StructureDefinition",
   "id" : "retina-camera-device",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-camera-device",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaCameraDevice",
   "title" : "Retina Camera Device",
   "status" : "draft",

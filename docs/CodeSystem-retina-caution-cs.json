@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-caution-cs</b></p><a name=\"retina-caution-cs\"> </a><a name=\"hcretina-caution-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">5001<a name=\"retina-caution-cs-5001\"> </a></td><td>Ønsker ikke KI-svar</td><td>Patient has told photographer that they do not want an AI-based grading result.</td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaCautionCodeSystem",
   "title" : "Retina Caution Codes",
   "status" : "draft",

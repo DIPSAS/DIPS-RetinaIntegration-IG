@@ -1,4 +1,4 @@
-# Retina DiagnosticReport - RetinaIntegration v0.8.1
+# Retina DiagnosticReport - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina DiagnosticReport 
 
@@ -10,7 +10,7 @@ Diagnostic report for the grading process of a single examination which is part 
 * Examples for this Profile: [DiagnosticReport/RetinaDiagnosticReport-Example-PendingAI](DiagnosticReport-RetinaDiagnosticReport-Example-PendingAI.md), [DiagnosticReport/RetinaDiagnosticReport-Example](DiagnosticReport-RetinaDiagnosticReport-Example.md) and [DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
 * CapabilityStatements using this Profile: [Retina CapabilityStatement](CapabilityStatement-RetinaCapabilityStatement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-diagnostic-report)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-diagnostic-report.json)
 
 ### Formal Views of Profile Content
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-diagnostic
   "resourceType" : "StructureDefinition",
   "id" : "retina-diagnostic-report",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-diagnostic-report",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaDiagnosticReport",
   "title" : "Retina DiagnosticReport",
   "status" : "draft",

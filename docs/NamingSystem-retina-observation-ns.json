@@ -3,7 +3,7 @@
   "id" : "retina-observation-ns",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem retina-observation-ns</b></p><a name=\"retina-observation-ns\"> </a><a name=\"hcretina-observation-ns\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns</td></tr><tr><td>Version</td><td>0.8.1</td></tr><tr><td>Name</td><td>RetinaObservationIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>A naming system for observation identifiers in RetinaIntegration using GUIDs.</p>\n</div></td></tr><tr><td>Publisher</td><td>DIPS AS</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://dips.no/fhir/RetinaIntegration/observation-id</td><td>true</td><td>The observation ID will uniquely identify observations. Identifier values are GUIDs in the format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem retina-observation-ns</b></p><a name=\"retina-observation-ns\"> </a><a name=\"hcretina-observation-ns\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-observation-ns</td></tr><tr><td>Version</td><td>0.9.0</td></tr><tr><td>Name</td><td>RetinaObservationIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>A naming system for observation identifiers in RetinaIntegration using GUIDs.</p>\n</div></td></tr><tr><td>Publisher</td><td>DIPS AS</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://dips.no/fhir/RetinaIntegration/observation-id</td><td>true</td><td>The observation ID will uniquely identify observations. Identifier values are GUIDs in the format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
@@ -11,7 +11,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.8.1"
+    "valueString" : "0.9.0"
   }],
   "name" : "RetinaObservationIdentifierSystem",
   "status" : "active",

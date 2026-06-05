@@ -1,4 +1,4 @@
-# Model - RetinaIntegration v0.8.1
+# Model - RetinaIntegration v0.9.0
 
 ## Model
 
@@ -46,7 +46,7 @@ AI will add two image series to the imaging study, on for each eye. The ImagingS
 
 AI will add assessment of the image quality for each image in the study.
 
-For each picture the AI will report the `view` which is macular centered or optical disc centered. This information originates in the camera system and is not assessed by the AI system. It is therefor not an observation or evaluation, but a property of the image.
+For each picture the AI will report the `view` which is macular centred or optical disc centred. This information originates in the camera system and is not assessed by the AI system. It is therefor not an observation or evaluation, but a property of the image.
 
 The AI system will add evaluations (observations) about possible diabetic retinopathy finding and diabetic macular edema finding.
 

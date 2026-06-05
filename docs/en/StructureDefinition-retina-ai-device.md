@@ -1,4 +1,4 @@
-# Retina AI Device - RetinaIntegration v0.8.1
+# Retina AI Device - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina AI Device 
 
@@ -9,7 +9,7 @@ AI device/software system used for automated retina screening analysis.
 
 * Examples for this Profile: [Device/RetinaAIDevice-Example](Device-RetinaAIDevice-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-ai-device)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-ai-device.json)
 
 ### Formal Views of Profile Content
 
@@ -28,7 +28,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-ai-device.
   "resourceType" : "StructureDefinition",
   "id" : "retina-ai-device",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaAIDevice",
   "title" : "Retina AI Device",
   "status" : "draft",

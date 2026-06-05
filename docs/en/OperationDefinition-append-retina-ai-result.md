@@ -1,4 +1,4 @@
-# Retina Append AI Result Operation - RetinaIntegration v0.8.1
+# Retina Append AI Result Operation - RetinaIntegration v0.9.0
 
 ## OperationDefinition: Retina Append AI Result Operation 
 
@@ -7,7 +7,7 @@ OperationDefinition for appending retina AI results to an existing DiagnosticRep
 
 ### Overview
 
-The `$append-retina-ai-result` operation is used to add AI analysis results to an existing DiagnosticReport. This operation is invoked by the regional integration platform after the AI system has analyzed retinal images.
+The `$append-retina-ai-result` operation is used by the AI Integrator to add AI analysis results to an existing DiagnosticReport.
 
 ### Example
 
@@ -24,35 +24,103 @@ Add AI result to an examination using the following operation:
 
 `[id]` is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a examination, to update.
 
-### Business rules
+### States and state transitions
 
-`422 Unprocessable Entity` with a OperationOutcome of issue of type BusinessRule is returned if the request fails to comply with one of the following business rules.
+The **state** of an examination is determined by the `DiagnosticReport.conclusionCode` (1000 series).
 
-Many of the parameters are optional, but there are rules governing the combination of some of the parameters:
+These are the guard conditions for entering one state from another state:
 
-1. If current status of the examination is not[1001](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1001)(Waiting to be graded by AI) the update is not allowed.
-1. If no eye evaluations are provided`conclusion`can only be[1002](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1002)(Primary grading based on current images) or[1003](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1002)(Secondary grading based on current images).
-1. If`conclusion`is[1004](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1004)(New examination primary grading) or[1005](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1005)(New examination secondary grading) then parameter`monthsUntilNextExamination`must be specified.
+* ****Previous=1005**** If the previous examination concluded with [1005](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1005), the current examination should go to secondary grading.
+* ****Patient refused AI**** When patient refused AI-assisted grading the input from AI is not allowed to influence the grading process.
+* ****Validation only**** If the input is for validation only, the input should not influence the grading process.
+* ****No gradable grading**** A conclusion from the AI integrator that is based on AI grading requires at least one gradable eye grading result.
 
-### Conflict
+The API strives to be lenient on input. If input from AI integrator does not conform to these rules, the input will be persisted, but the status of the examination will be unchanged or set to the proper next process step.
 
-`409 Conflict` is returned in the following cases:
+If the desired new state is not achieved, the API will return 200 and explain the issue in Operation Outcome in the body of the response. (Marked as OK- in the table.)
 
-1. The examination already has an AI grading
-1. The`sectraStudyId`is linked to another examination
+#### State Transition Table
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1001 | 1002 | Previous=1005 | 1003 | OK- | Set 1003, not 1002, because the previous examination concluded with 1005. |
+| 1001 | 1002 | Validation only | 1002 | OK | OK to set 1002, because primary grading is correct also when validating. |
+| 1001 | 1002 | None | 1002 | OK | OK to set 1002, examination moved to primary grading. |
+| 1001 | 1003 | Previous=1005 | 1003 | OK | OK to set 1003, because the previous examination concluded with 1005. |
+| 1001 | 1003 | Validation only | 1002 | OK- | Set 1002, not 1003, because input was only for validation. |
+| 1001 | 1003 | Patient refused AI | 1002 | OK- | Set 1002, not 1003, because patient refused AI. |
+| 1001 | 1003 | No gradable grading | 1002 | OK- | Set 1002, not 1003, because the payload does not indicate successful grading. |
+| 1001 | 1003 | None | 1003 | OK | Skips primary grading and goes to secondary grading based on AI findings. |
+| 1001 | 1004 | Previous=1005 | 1003 | OK- | Set 1003, not 1004, because the previous examination concluded with 1005. |
+| 1001 | 1004 | Validation only | 1002 | OK- | Set 1002, not 1004, because input was only for validation. |
+| 1001 | 1004 | Patient refused AI | 1002 | OK- | Set 1002, not 1004, because the patient has refused AI. |
+| 1001 | 1004 | No gradable grading | 1002 | OK- | Set 1002, not 1004, because the payload does not indicate successful grading. |
+| 1001 | 1004 | None | 1004 | OK | Set 1004 New screening examination in X months. This is the happy case which will have most of the traffic. |
+| 1002 | 1002 | None | 1002 | OK | OK, no change. |
+| 1002 | 1003 | Patient refused AI | 1002 | OK- | Do not set 1003, because the patient has refused AI. |
+| 1002 | 1003 | Validation only | 1002 | OK | Do not set 1003, because input was only for validation. |
+| 1002 | 1003 | None | 1003 | OK | Examination was awaiting primary grading but AI integrator wants it to go to secondary grading. |
+| 1002 | 1004 | Previous=1005 | 1003 | OK- | Set 1003, not 1004, because previous examination concluded with 1005. |
+| 1002 | 1004 | Validation only | 1002 | OK- | Do not set 1004, because input was only for validation |
+| 1002 | 1004 | Patient refused AI | 1002 | OK- | Do not set 1004, because the patient has refused AI. |
+| 1002 | 1004 | No gradable grading | 1002 | OK- | Do not set 1004, because the payload does not indicate successful grading. |
+| 1002 | 1004 | None | 1004 | OK | AI Integrator handles an examination that was awaiting primary grading. |
+| 1003 | 1002 | Illegal transition | 1003 | OK- | Do not set 1002 because regression from secondary to primary grading is not allowed. |
+| 1003 | 1003 | None | 1003 | OK | OK, no change. |
+| 1003 | 1004 | Illegal transition | 1003 | OK- | Do not set 1004, because cannot finalize an examination awaiting secondary grading. |
+| 1004, 1005, 1006, 1007 | Same as current | None | Same as current | OK | State remains unchanged, as desired. |
+| 1004, 1005, 1006, 1007 | Different than current | None | Same as current | OK- | State remains unchanged because you cannot change a final state. |
+
+How to read the table:
+
+1. ****Current state****is the current state of the examination in EyeCare
+1. ****Desired state****is the desired new state received in the`conclusion`parameter in the API
+1. ****Guard Condition****are rules that may alter what the next state will be. Read from top and downward.
+1. ****Next State****is the actual next state after the append operation is executed. It may differ from the desired state depending on the guard rules.
+1. ****Result****is OK- if the outcome is not exactly what the AI integrator desired.
+1. ****Notes****are explanation of the outcome.
+
+#### State Catalog
+
+These are the states that an examination may be in, as determined by the conclusion code. Ref. [retina-conclusion-code-cs](CodeSystem-retina-conclusion-code-cs.md).
+
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| 1001 | Await AI | Retina photo is taken | Input from AI integrator is received, or manual grading is done. | No |
+| 1002 | Await primary grading | Photographer ordered primary grading | Primary grading is done | No |
+| 1003 | Await secondary grading | Ordered in EyeCare by primary grader or previous examination ordered directly to secondary grading (1005). | Secondary grading is done | No |
+| 1004 | New examination in X months | Ordered in EyeCare |   | Yes |
+| 1005 | New examination in X months directly to secondary grading | Ordered in EyeCare |   | Yes |
+| 1006 | Screening program is suspended for the patient. | Ordered in EyeCare |   | Yes |
+| 1007 | Patient is discharged from the screening program | Ordered in EyeCare |   | Yes |
+
+#### Event Catalog for the AI integrator
+
+These are the states the AI integrator is allowed to set as target state if it wants to change the state from current stat. Ref. [retina-append-ai-conclusion-vs](ValueSet-retina-append-ai-conclusion-vs.md)
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 1002 | Primary grading current examination | Optional AI grading | AI is not able to grade pictures |
+| 1003 | Secondary grading current examination | Optional AI grading | AI grading indicates that something is wrong. |
+| 1004 | New screening examination in X months | Gradable AI grading, recall interval | No need for further grading in this examination. |
+
+### Global Rules
+
+* The append operation is not idempotent. A given examination may only receive one successful AI integrator update. If the result is persisted, the result cannot be changed through API.
 
 ### HTTP response codes
 
-| | |
-| :--- | :--- |
-| 204 No Content | The operation completed successfully and the DiagnosticReport was updated. |
-| 400 Bad Request | The request was malformed or contained invalid parameters. |
-| 401 Unauthorized | The server was not able to authenticate the user so authorization could not be done. |
-| 403 Forbidden | The user is not authorized to use the API. |
-| 404 Not Found | No DiagnosticReport with the given`[id]`was found. |
-| 409 Conflict | DiagnosticReport`[id]`already has a grading, or`sectraStudyId`already used. |
-| 422 Unprocessable Entity | The request was well-formed but violated business rules (e.g. missing required parameter combinations). |
-| 500 Internal Server Error | An unexpected server-side error occurred. |
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 204 | Success | The operation completed successfully and the DiagnosticReport was updated with the desired state. | Yes |
+| 200 | Success But | The operation completed successfully but there are issues in Operation Outcome. | Yes |
+| 400 | Bad Request | The request was malformed or contained invalid parameters. | No |
+| 401 | Unauthorized | The server was not able to authenticate the user so authorization could not be done. | No |
+| 403 | Forbidden | The user is not authorized to use the API. | No |
+| 404 | Not Found | No DiagnosticReport with the given`[id]`was found. | No |
+| 409 | Conflict | DiagnosticReport`[id]`already has a grading, or`sectraStudyId`is linked to another examination. | No |
+| 422 | Unprocessable Entity | The request was well-formed but violated business rules (e.g. missing required parameter combinations). | No |
+| 500 | Internal Server Error | An unexpected server-side error occurred. | No |
 
 
 
@@ -63,12 +131,12 @@ Many of the parameters are optional, but there are rules governing the combinati
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "AppendRetinaAIResult",
   "title" : "Retina Append AI Result Operation",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-05-08T13:22:39+02:00",
+  "date" : "2026-06-05T15:47:27+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -105,7 +173,7 @@ Many of the parameters are optional, but there are rules governing the combinati
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"
+      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-append-ai-conclusion-vs"
     }
   },
   {
@@ -113,7 +181,7 @@ Many of the parameters are optional, but there are rules governing the combinati
     "use" : "in",
     "min" : 0,
     "max" : "1",
-    "documentation" : "The recall interval in months until the patient's next examination. Only included if the conclusion is a new examination. Value must be a positive integer greater than 1",
+    "documentation" : "The recall interval in months until the patient's next examination. Must be included if the conclusion is a 1004 or 1005. Value must be a positive integer greater than 1",
     "type" : "integer"
   },
   {

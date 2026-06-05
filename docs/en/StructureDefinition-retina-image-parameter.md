@@ -1,4 +1,4 @@
-# Retina Image Parameter - RetinaIntegration v0.8.1
+# Retina Image Parameter - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina Image Parameter 
 
@@ -9,7 +9,7 @@ A structure describing an image for use in a operation.
 
 * Examples for this Profile: [Observation/RetinaImageParameter-Example](Observation-RetinaImageParameter-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-image-parameter)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-image-parameter.json)
 
 ### Formal Views of Profile Content
 
@@ -28,7 +28,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-image-para
   "resourceType" : "StructureDefinition",
   "id" : "retina-image-parameter",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaImageParameter",
   "title" : "Retina Image Parameter",
   "status" : "draft",

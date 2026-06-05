@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - RetinaIntegration v0.8.1</title>
+    <title>Changelog - RetinaIntegration v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.8.1 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
             </span>
@@ -142,7 +142,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.8.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -162,6 +162,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#change-log" id="markdown-toc-change-log">Change Log</a></li>
+  <li><a href="#version-090-ci-2026-06-05" id="markdown-toc-version-090-ci-2026-06-05">Version 0.9.0-CI (2026-06-05)</a></li>
   <li><a href="#version-081-ci-2026-05-08" id="markdown-toc-version-081-ci-2026-05-08">Version 0.8.1-CI (2026-05-08)</a></li>
   <li><a href="#version-080-ci-2026-04-17" id="markdown-toc-version-080-ci-2026-04-17">Version 0.8.0-CI (2026-04-17)</a></li>
   <li><a href="#version-070-ci-2026-03-31" id="markdown-toc-version-070-ci-2026-03-31">Version 0.7.0-CI (2026-03-31)</a></li>
@@ -183,10 +184,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The changelog gives an overview of the change history of this implementation guide.</p>
 
+<h3 id="version-090-ci-2026-06-05">Version 0.9.0-CI (2026-06-05)</h3>
+<ul>
+  <li>Add state transition table and other documentation to the append-retina-ai-result operation</li>
+  <li>Change conclusion code 1006 description to 'pausing screening program for patient'</li>
+  <li>Add conclusion code 1007 for 'discharging patient from screening program'</li>
+  <li>Add value set retina-append-ai-conclusion-vs limiting changes by the append operation (1000 series)</li>
+</ul>
+
 <h3 id="version-081-ci-2026-05-08">Version 0.8.1-CI (2026-05-08)</h3>
 <ul>
   <li>Document business rules and HTTP result codes in append operation</li>
-  <li>Add norwegian texts and adjust english text for codes system retina-ai-gradability-cs</li>
+  <li>Add Norwegian texts and adjust English text for codes system retina-ai-gradability-cs</li>
   <li>Link <code class="language-plaintext highlighter-rouge">conclusion</code> parameter to documentation of value set retina-conclusion-code-vs</li>
   <li>Use a decimal value in the leftDiabeticRetinopathy example</li>
 </ul>
@@ -242,7 +251,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>Correct confusion between naming system ID and the IDs defined by the naming system.
     <ul>
-      <li>In observation identifiers, system <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/NamingSystem/retina-observation-id</code> is replaced with "http://dips.no/fhir/RetinaIntegration/observation-id`</li>
+      <li>In observation identifiers, system <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/NamingSystem/retina-observation-id</code> is replaced by <code class="language-plaintext highlighter-rouge">http://dips.no/fhir/RetinaIntegration/observation-id</code></li>
     </ul>
   </li>
   <li>Add naming system for ImagingStudy.
@@ -252,7 +261,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>Add patient identifier OID examples to DiagnosticReport profile.
     <ul>
-      <li>The OID is different for Fødeselsnummer, D-nummer and Felles hjelpenummer.</li>
+      <li>There are different OIDs for <code class="language-plaintext highlighter-rouge">Fødeselsnummer</code>, <code class="language-plaintext highlighter-rouge">D-nummer</code> and `Felles hjelpenummer.</li>
     </ul>
   </li>
   <li>Add subject references Patient to alle examples.</li>
@@ -378,10 +387,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  
-          Package dips.fhir.retinaintegration#0.8.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package dips.fhir.retinaintegration#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-08 13:22:00 +0200">
-    2026-05-08
+  <span title="2026-06-05 15:47:00 +0200">
+    2026-06-05
   </span>
 
           <br/>

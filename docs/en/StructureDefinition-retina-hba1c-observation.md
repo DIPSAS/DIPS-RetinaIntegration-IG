@@ -1,4 +1,4 @@
-# Retina HbA1c Observation - RetinaIntegration v0.8.1
+# Retina HbA1c Observation - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina HbA1c Observation ( Experimental ) 
 
@@ -10,7 +10,7 @@ HbA1c level as reported by patient prior to retina examination.
 * Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * Examples for this Profile: [Observation/RetinaHbA1cObservation-Example](Observation-RetinaHbA1cObservation-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-hba1c-observation)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-hba1c-observation.json)
 
 ### Formal Views of Profile Content
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-hba1c-obse
   "resourceType" : "StructureDefinition",
   "id" : "retina-hba1c-observation",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-hba1c-observation",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaHbA1cObservation",
   "title" : "Retina HbA1c Observation",
   "status" : "draft",

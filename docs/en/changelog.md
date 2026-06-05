@@ -1,4 +1,4 @@
-# Changelog - RetinaIntegration v0.8.1
+# Changelog - RetinaIntegration v0.9.0
 
 ## Changelog
 
@@ -6,10 +6,17 @@
 
 The changelog gives an overview of the change history of this implementation guide.
 
+### Version 0.9.0-CI (2026-06-05)
+
+* Add state transition table and other documentation to the append-retina-ai-result operation
+* Change conclusion code 1006 description to 'pausing screening program for patient'
+* Add conclusion code 1007 for 'discharging patient from screening program'
+* Add value set retina-append-ai-conclusion-vs limiting changes by the append operation (1000 series)
+
 ### Version 0.8.1-CI (2026-05-08)
 
 * Document business rules and HTTP result codes in append operation
-* Add norwegian texts and adjust english text for codes system retina-ai-gradability-cs
+* Add Norwegian texts and adjust English text for codes system retina-ai-gradability-cs
 * Link `conclusion` parameter to documentation of value set retina-conclusion-code-vs
 * Use a decimal value in the leftDiabeticRetinopathy example
 
@@ -49,13 +56,13 @@ The changelog gives an overview of the change history of this implementation gui
 * Structure of extension is simplified. See examples.
  
 * Correct confusion between naming system ID and the IDs defined by the naming system. 
-* In observation identifiers, system `http://dips.no/fhir/NamingSystem/retina-observation-id` is replaced with "http://dips.no/fhir/RetinaIntegration/observation-id`
+* In observation identifiers, system `http://dips.no/fhir/NamingSystem/retina-observation-id` is replaced by `http://dips.no/fhir/RetinaIntegration/observation-id`
  
 * Add naming system for ImagingStudy. 
 * In all ImagingStudy identifiers, system `http://sectra.no/identifiers` is replaced by `http://dips.no/fhir/RetinaIntegration/sectra-image-study-id`
  
 * Add patient identifier OID examples to DiagnosticReport profile. 
-* The OID is different for Fødeselsnummer, D-nummer and Felles hjelpenummer.
+* There are different OIDs for `Fødeselsnummer`, `D-nummer` and `Felles hjelpenummer.
  
 * Add subject references Patient to alle examples.
 

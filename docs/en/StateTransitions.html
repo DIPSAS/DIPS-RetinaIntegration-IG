@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title> - RetinaIntegration v0.9.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
+            <br/>
+            <span style="display:inline-block;">0.9.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">TOC</a>
+  </li>
+  <li>
+    <a href="OperationDefinition-retina-by-date.html">Query operation</a>
+  </li>
+  <li>
+    <a href="OperationDefinition-append-retina-ai-result.html">Append operation</a>
+  </li>
+  <li>
+    <a href="Model.html">Model</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2></h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="states-and-state-transitions">States and state transitions</h1>
+
+<p>The <em>state</em> of an examination is determined by the <code class="language-plaintext highlighter-rouge">DiagnosticReport.conclusionCode</code> (1000 series).</p>
+
+<ul>
+  <li>
+    <p>If the previous examination concluded with 1005, the current examination should go directly to secondary grading.</p>
+  </li>
+  <li>
+    <p>Patients are allowed to refuse AI-assisted grading.</p>
+  </li>
+  <li>
+    <p>A conclusion from the AI integrator that is based on AI grading requires at least one gradable eye grading result.</p>
+  </li>
+  <li>
+    <p>Validation only: If the update is for validation only, the state will be substituted with according to the process rules.</p>
+  </li>
+</ul>
+
+<p>If the AI integrator specifies a transition that does not conform to these rules, the API will ignore or substitute the status and return a warning.</p>
+
+<p>In addition to setting status, all input from the AI integrator is persisted in EyeCare.</p>
+
+<p>How to read the table:</p>
+<ol>
+  <li>The first column is the current state of the examination in EyeCare application</li>
+  <li>The next column is the desired new state received in the <code class="language-plaintext highlighter-rouge">conclusion</code> parameter</li>
+  <li>The Guard Condition column are rules that may alter what the next state will be, starting from top and going downward</li>
+  <li>The Next State column is the actual next state. It may be differen than the desired state depending on the guard rules.</li>
+  <li>A Warning in the Success / Warning column indicates that the outcome is not exactly what the AI integrator indicated.</li>
+  <li>The Notes column is a description that may be used in the API respons.</li>
+</ol>
+
+<h2 id="state-transition-table">State Transition Table</h2>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Current State</th>
+      <th>Desired State</th>
+      <th>Guard Condition</th>
+      <th>Next State</th>
+      <th>Success / Warning</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1001</td>
+      <td>1002</td>
+      <td>Previous examination is 1005</td>
+      <td>1003</td>
+      <td>Warning</td>
+      <td>Substitute 1002 with 1003 because the previous examination concluded with 1005.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1002</td>
+      <td>Valdiation only</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1002</td>
+      <td>None</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1003</td>
+      <td>Previous examination is 1005</td>
+      <td>1003</td>
+      <td>Success</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1003</td>
+      <td>Validation only</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td>Substitute 1003 with 1002 because input was only for validation.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1003</td>
+      <td>Patient refused AI</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1003 with 1002 because patient refused AI.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1003</td>
+      <td>No gradable grading</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1003 with 1002 because the payload does not indicate successful grading.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1003</td>
+      <td>None</td>
+      <td>1003</td>
+      <td>Success</td>
+      <td>Examinations skips primary grading and goes to secondary grading.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1004</td>
+      <td>Previous examination is 1005</td>
+      <td>1003</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1003 because the previous examination concluded with 1005.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1004</td>
+      <td>Validation only</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td>Substitute 1004 with 1002 because input was only for validation.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1004</td>
+      <td>Patient refused AI</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1002 because the patient has refused AI.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1004</td>
+      <td>No gradable grading</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1002 because the payload does not indicate successful grading.</td>
+    </tr>
+    <tr>
+      <td>1001</td>
+      <td>1004</td>
+      <td>None</td>
+      <td>1004</td>
+      <td>Success</td>
+      <td>New screening examination in X months. This is the happy case which will have most of the traffic.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1002</td>
+      <td>None</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1003</td>
+      <td>Patient refused AI</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1003 with 1002 because the patient has refused AI.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1003</td>
+      <td>Validation only</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td>Substitue 1003 with 1002 because input was only for validation.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1003</td>
+      <td>None</td>
+      <td>1003</td>
+      <td>Success</td>
+      <td>Examination was awaiting primary grading but AI integrator wants it to go to secondary grading.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1004</td>
+      <td>Previous examination is 1005</td>
+      <td>1003</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1003 because previous examination concluded with 1005.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1004</td>
+      <td>Validation only</td>
+      <td>1002</td>
+      <td>Success</td>
+      <td>Substitute 1004 with 1002 because input was only for validation</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1004</td>
+      <td>Patient refused AI</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1002 because the patient has refused AI.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1004</td>
+      <td>No gradable grading</td>
+      <td>1002</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1002 because the payload does not indicate successful grading.</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>1004</td>
+      <td>None</td>
+      <td>1004</td>
+      <td>Success</td>
+      <td>Transferred from primary grading to new screening examination in X months.</td>
+    </tr>
+    <tr>
+      <td>1003</td>
+      <td>1002</td>
+      <td>Illegal transition</td>
+      <td>1003</td>
+      <td>Warning</td>
+      <td>Substitute 1002 with 1003 because regression from secondary to primary grading is not allowed.</td>
+    </tr>
+    <tr>
+      <td>1003</td>
+      <td>1003</td>
+      <td>None</td>
+      <td>1003</td>
+      <td>Success</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1003</td>
+      <td>1004</td>
+      <td>Illegal transition</td>
+      <td>1003</td>
+      <td>Warning</td>
+      <td>Substitute 1004 with 1003 the examination  was awaiting secondary grading.</td>
+    </tr>
+    <tr>
+      <td>1004, 1005, 1006, 1007</td>
+      <td>Same as current</td>
+      <td>None</td>
+      <td>Same as current</td>
+      <td>Success</td>
+      <td>Storing result on finalized examination without changing state.</td>
+    </tr>
+    <tr>
+      <td>1004, 1005, 1006, 1007</td>
+      <td>Different than current</td>
+      <td>None</td>
+      <td>Same as current</td>
+      <td>Warning</td>
+      <td>Substituting desired state with current state because current state is final.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="state-catalog">State Catalog</h2>
+
+<p>These are the states that an examination may be in, as determined by the conclusion code.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Description</th>
+      <th>Entry Criteria</th>
+      <th>Exit Criteria</th>
+      <th>Terminal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1001</td>
+      <td>Await AI</td>
+      <td>Retina photo is taken</td>
+      <td>Input from AI integrator is received, or manual grading is done.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1002</td>
+      <td>Await primary grading</td>
+      <td>Photographer ordered primary grading</td>
+      <td>Primary grading is done</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1003</td>
+      <td>Await secondary grading</td>
+      <td>Ordered in EyeCare by primary grader</td>
+      <td>Secondary grading was done, or previous examination ordered directly to secondary grading.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1004</td>
+      <td>New examination in X months</td>
+      <td>Ordered in EyeCare</td>
+      <td> </td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1005</td>
+      <td>New examination in X months directly to secondary grading</td>
+      <td>Ordered in EyeCare</td>
+      <td> </td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1006</td>
+      <td>Pause screening program</td>
+      <td>Ordered in EyeCare</td>
+      <td> </td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1007</td>
+      <td>Terminate screening program</td>
+      <td>Ordered in EyeCare</td>
+      <td> </td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="event-catalog-for-the-ai-integrator">Event Catalog for the AI integrator</h2>
+
+<p>These are the states the AI integrator is allowed to set as target state if the desired state is different that the current state.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Description</th>
+      <th>Payload</th>
+      <th>Example of when to use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1002</td>
+      <td>Primary grading current examination</td>
+      <td>Optional AI evaluation</td>
+      <td>AI is not able to grade pictures</td>
+    </tr>
+    <tr>
+      <td>1003</td>
+      <td>Secondary grading current examination</td>
+      <td>Optional AI evaluation</td>
+      <td>AI grading indicates that something is wrong.</td>
+    </tr>
+    <tr>
+      <td>1004</td>
+      <td>New screening examination in X months</td>
+      <td>Gradable AI grading, recall interval</td>
+      <td>No need for further grading in this examination.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="global-rules">Global Rules</h2>
+
+<ul>
+  <li>The append operation is not idempotent. A given examination may only receive one successful AI integrator update.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  
+          Package dips.fhir.retinaintegration#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-06-05 15:47:00 +0200">
+    2026-06-05
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

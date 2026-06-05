@@ -1,4 +1,4 @@
-# Retina CapabilityStatement - RetinaIntegration v0.8.1
+# Retina CapabilityStatement - RetinaIntegration v0.9.0
 
 ## CapabilityStatement: Retina CapabilityStatement 
 
@@ -16,7 +16,7 @@ CapabilityStatement for DIPS Retina Integration FHIR API.
   "resourceType" : "CapabilityStatement",
   "id" : "RetinaCapabilityStatement",
   "url" : "http://dips.no/fhir/RetinaIntegration/CapabilityStatement/RetinaCapabilityStatement",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "title" : "Retina CapabilityStatement",
   "status" : "active",
   "date" : "2025-09-30T12:00:00Z",

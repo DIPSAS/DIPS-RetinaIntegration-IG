@@ -1,4 +1,4 @@
-# RetinaAIDevice-Example - RetinaIntegration v0.8.1
+# RetinaAIDevice-Example - RetinaIntegration v0.9.0
 
 ## Example Device: RetinaAIDevice-Example
 

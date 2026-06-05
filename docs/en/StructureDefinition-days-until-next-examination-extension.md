@@ -1,4 +1,4 @@
-# Days Until Next Examination - RetinaIntegration v0.8.1
+# Days Until Next Examination - RetinaIntegration v0.9.0
 
 ## Extension: Days Until Next Examination (Experimental) 
 
@@ -13,7 +13,7 @@ Number of days until next examination.
 * Use this Extension: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * Examples for this Extension: [DiagnosticReport/RetinaDiagnosticReport-Example](DiagnosticReport-RetinaDiagnosticReport-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/days-until-next-examination-extension)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-days-until-next-examination-extension.json)
 
 ### Formal Views of Extension Content
 
@@ -32,12 +32,12 @@ Other representations of profile: [CSV](../StructureDefinition-days-until-next-e
   "resourceType" : "StructureDefinition",
   "id" : "days-until-next-examination-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "DaysUntilNextExamination",
   "title" : "Days Until Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-05-08T13:22:39+02:00",
+  "date" : "2026-06-05T15:47:27+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

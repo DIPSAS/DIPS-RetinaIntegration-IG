@@ -10,7 +10,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Query By Date Operation - JSON Representation - RetinaIntegration v0.8.1</title>
+    <title>Query By Date Operation - JSON Representation - RetinaIntegration v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +62,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.8.1 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
             </span>
@@ -140,7 +140,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.8.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -188,7 +188,7 @@
           
 
             as of 
-2026-05-08
+2026-06-05
 
           
         
@@ -214,12 +214,12 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition retina-by-date&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;retina-by-date\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcretina-by-date\&quot;&gt; &lt;/a&gt;&lt;p&gt;URL: [base]/DiagnosticReport?_query=retina-by-date&amp;amp;...&lt;/p&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;start&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Optional start of the date range for the query. If not provided, the query will return reports from the earliest available date up to the end date.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;end&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Optional end of the date range for the query. If not provided, the query will return reports from the start date up to the latest available date.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;pendingAI&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Optional parameter. If present, the query will only return reports that are pending AI analysis. In a GET request, the parameter can be provided without a value (e.g., &lt;code&gt;&amp;amp;pendingAI&lt;/code&gt;).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">url</a>" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/retina-by-date",
-  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a>" : "0.8.1",
+  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a>" : "0.9.0",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">name</a>" : "RetinaQueryByDate",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">title</a>" : "Query By Date Operation",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">kind</a>" : "query",
-  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a>" : "2026-05-08T13:22:39+02:00",
+  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a>" : "2026-06-05T15:47:27+02:00",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">publisher</a>" : "DIPS AS",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">contact</a>" : [
     {
@@ -302,10 +302,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  
-          Package dips.fhir.retinaintegration#0.8.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package dips.fhir.retinaintegration#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-08 13:22:00 +0200">
-    2026-05-08
+  <span title="2026-06-05 15:47:00 +0200">
+    2026-06-05
   </span>
 
           <br/>

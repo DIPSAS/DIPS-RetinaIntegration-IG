@@ -1,4 +1,4 @@
-# Retina AI Gradability - RetinaIntegration v0.8.1
+# Retina AI Gradability - RetinaIntegration v0.9.0
 
 ## ValueSet: Retina AI Gradability 
 
@@ -28,7 +28,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "retina-ai-gradability-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-ai-gradability-vs",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaAIGradabilityValueSet",
   "title" : "Retina AI Gradability",
   "status" : "draft",

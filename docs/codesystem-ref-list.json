@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
-    "version" : "0.8.1",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "RetinaAIGradabilityCodeSystem",
     "title" : "Retina AI Gradability Codes",
@@ -12,7 +12,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-    "version" : "0.8.1",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "RetinaCautionCodeSystem",
     "title" : "Retina Caution Codes",
@@ -23,18 +23,19 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-    "version" : "0.8.1",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "RetinaConclusionCodeSystem",
     "title" : "Retina Conclusion Codes",
     "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
     "uses" : {
     },
-    "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion"
+    "ValueSet-retina-conclusion-code-vs.html" : "Retina Conclusion",
+    "ValueSet-retina-append-ai-conclusion-vs.html" : "Retina AI Integration Conclusion"
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-    "version" : "0.8.1",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "RetinaImageQualityCodeSystem",
     "title" : "Retina Image Quality Codes",
@@ -45,7 +46,7 @@
   },
   {
     "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs",
-    "version" : "0.8.1",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "RetinaImageViewCodeSystem",
     "title" : "Retina Image View Codes",

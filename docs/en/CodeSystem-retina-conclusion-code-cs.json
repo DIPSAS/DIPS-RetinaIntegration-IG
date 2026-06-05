@@ -4,15 +4,15 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-conclusion-code-cs</b></p><a name=\"retina-conclusion-code-cs\"> </a><a name=\"hcretina-conclusion-code-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"retina-conclusion-code-cs-1001\"> </a></td><td>KI-gradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by the AI system.</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"retina-conclusion-code-cs-1002\"> </a></td><td>Primærgradering (basert på nåværende bilder)</td><td>This examinations is waiting to be graded by a primary grader.</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"retina-conclusion-code-cs-1003\"> </a></td><td>Sekundærgradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by a secondary grader.</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"retina-conclusion-code-cs-1004\"> </a></td><td>Ny fotokontroll (primærgradering)</td><td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"retina-conclusion-code-cs-1005\"> </a></td><td>Ny fotokontroll (sekundærgradering)</td><td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"retina-conclusion-code-cs-1006\"> </a></td><td>Øyelegeundersøkelse (grunnet diabetisk retinopati)</td><td>Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-conclusion-code-cs</b></p><a name=\"retina-conclusion-code-cs\"> </a><a name=\"hcretina-conclusion-code-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>x</b></td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"retina-conclusion-code-cs-1001\"> </a></td><td>KI-gradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by the AI system.</td><td>EY12</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"retina-conclusion-code-cs-1002\"> </a></td><td>Primærgradering (basert på nåværende bilder)</td><td>This examinations is waiting to be graded by a primary grader.</td><td>EY11</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"retina-conclusion-code-cs-1003\"> </a></td><td>Sekundærgradering (basert på nåværende bilder)</td><td>This examination is waiting to be graded by a secondary grader.</td><td>EY01</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"retina-conclusion-code-cs-1004\"> </a></td><td>Ny fotokontroll (primærgradering)</td><td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td><td>EY02</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"retina-conclusion-code-cs-1005\"> </a></td><td>Ny fotokontroll (sekundærgradering)</td><td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td><td>EY04</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"retina-conclusion-code-cs-1006\"> </a></td><td>Oppfølging i programmet settes på vent</td><td>Participation in the screening program is put on hold.</td><td>EY24</td></tr><tr><td style=\"white-space:nowrap\">1007<a name=\"retina-conclusion-code-cs-1007\"> </a></td><td>Oppfølging i programmet avsluttes</td><td>Patient is discharged from the screening program.</td><td>EY25</td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaConclusionCodeSystem",
   "title" : "Retina Conclusion Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-02",
+  "date" : "2026-06-05",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -28,35 +28,68 @@
   "description" : "Codes for the current or final conclusion of the grading process (1000-series).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 6,
+  "count" : 7,
   "concept" : [{
     "code" : "1001",
     "display" : "KI-gradering (basert på nåværende bilder)",
-    "definition" : "This examination is waiting to be graded by the AI system."
+    "definition" : "This examination is waiting to be graded by the AI system.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY12"
+    }]
   },
   {
     "code" : "1002",
     "display" : "Primærgradering (basert på nåværende bilder)",
-    "definition" : "This examinations is waiting to be graded by a primary grader."
+    "definition" : "This examinations is waiting to be graded by a primary grader.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY11"
+    }]
   },
   {
     "code" : "1003",
     "display" : "Sekundærgradering (basert på nåværende bilder)",
-    "definition" : "This examination is waiting to be graded by a secondary grader."
+    "definition" : "This examination is waiting to be graded by a secondary grader.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY01"
+    }]
   },
   {
     "code" : "1004",
     "display" : "Ny fotokontroll (primærgradering)",
-    "definition" : "Patient should be scheduled for a new routine eye examination graded by primary grader or AI."
+    "definition" : "Patient should be scheduled for a new routine eye examination graded by primary grader or AI.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY02"
+    }]
   },
   {
     "code" : "1005",
     "display" : "Ny fotokontroll (sekundærgradering)",
-    "definition" : "Patient should be scheduled for a new routine eye examination but graded by secondary grader."
+    "definition" : "Patient should be scheduled for a new routine eye examination but graded by secondary grader.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY04"
+    }]
   },
   {
     "code" : "1006",
-    "display" : "Øyelegeundersøkelse (grunnet diabetisk retinopati)",
-    "definition" : "Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy."
+    "display" : "Oppfølging i programmet settes på vent",
+    "definition" : "Participation in the screening program is put on hold.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY24"
+    }]
+  },
+  {
+    "code" : "1007",
+    "display" : "Oppfølging i programmet avsluttes",
+    "definition" : "Patient is discharged from the screening program.",
+    "designation" : [{
+      "language" : "x-eyecare",
+      "value" : "EY25"
+    }]
   }]
 }

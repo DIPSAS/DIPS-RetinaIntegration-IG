@@ -1,4 +1,4 @@
-# Retina ImagingStudy - RetinaIntegration v0.8.1
+# Retina ImagingStudy - RetinaIntegration v0.9.0
 
 ## Resource Profile: Retina ImagingStudy ( Experimental ) 
 
@@ -62,7 +62,7 @@ Each series may also have a CameraDevice as `performer`.
 * Refer to this Profile: [Retina DiagnosticReport](StructureDefinition-retina-diagnostic-report.md)
 * Examples for this Profile: [ImagingStudy/RetinaImagingStudy-available-Example](ImagingStudy-RetinaImagingStudy-available-Example.md) and [ImagingStudy/RetinaImagingStudy-registered-Example](ImagingStudy-RetinaImagingStudy-registered-Example.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/retina-imagingstudy)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dips.fhir.retinaintegration|current/StructureDefinition/StructureDefinition-retina-imagingstudy.json)
 
 ### Formal Views of Profile Content
 
@@ -81,7 +81,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-imagingstu
   "resourceType" : "StructureDefinition",
   "id" : "retina-imagingstudy",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagingstudy",
-  "version" : "0.8.1",
+  "version" : "0.9.0",
   "name" : "RetinaImagingStudy",
   "title" : "Retina ImagingStudy",
   "status" : "draft",

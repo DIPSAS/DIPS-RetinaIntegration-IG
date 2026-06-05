@@ -8,7 +8,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Retina Conclusion Codes - RetinaIntegration v0.8.1</title>
+    <title>Retina Conclusion Codes - RetinaIntegration v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,8 +49,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.28"}
-    h3,h4,h5,h6{--heading-prefix:"4.28"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.29"}
+    h3,h4,h5,h6{--heading-prefix:"4.29"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -60,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.8.1 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
             </span>
@@ -138,7 +138,7 @@
 
 <!-- layouts\layout-codesystem -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.8.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -182,7 +182,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.8.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.8.1"/></span>
+      <span class="copy-text">0.9.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs|0.9.0"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -207,7 +207,7 @@
           
 
             as of 
-2025-12-02
+2026-06-05
 
           
         
@@ -237,30 +237,41 @@
 
   
 <ul>
+ <li><a href="ValueSet-retina-append-ai-conclusion-vs.html">RetinaAppendAIConlusionValueSet</a></li>
  <li><a href="ValueSet-retina-conclusion-code-vs.html">RetinaDiagnosticReportConclusionCodeValueSet</a></li>
 </ul>
 
 
   <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="retina-conclusion-code-cs"> </a><a name="hcretina-conclusion-code-cs"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs</code> defines the following codes:</p>
-<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>x</b></td></tr>
 <tr><td style="white-space:nowrap">1001<a name="retina-conclusion-code-cs-1001"> </a></td>
 <td>KI-gradering (basert på nåværende bilder)</td>
-<td>This examination is waiting to be graded by the AI system.</td></tr>
+<td>This examination is waiting to be graded by the AI system.</td>
+<td>EY12</td></tr>
 <tr><td style="white-space:nowrap">1002<a name="retina-conclusion-code-cs-1002"> </a></td>
 <td>Primærgradering (basert på nåværende bilder)</td>
-<td>This examinations is waiting to be graded by a primary grader.</td></tr>
+<td>This examinations is waiting to be graded by a primary grader.</td>
+<td>EY11</td></tr>
 <tr><td style="white-space:nowrap">1003<a name="retina-conclusion-code-cs-1003"> </a></td>
 <td>Sekundærgradering (basert på nåværende bilder)</td>
-<td>This examination is waiting to be graded by a secondary grader.</td></tr>
+<td>This examination is waiting to be graded by a secondary grader.</td>
+<td>EY01</td></tr>
 <tr><td style="white-space:nowrap">1004<a name="retina-conclusion-code-cs-1004"> </a></td>
 <td>Ny fotokontroll (primærgradering)</td>
-<td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td></tr>
+<td>Patient should be scheduled for a new routine eye examination graded by primary grader or AI.</td>
+<td>EY02</td></tr>
 <tr><td style="white-space:nowrap">1005<a name="retina-conclusion-code-cs-1005"> </a></td>
 <td>Ny fotokontroll (sekundærgradering)</td>
-<td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td></tr>
+<td>Patient should be scheduled for a new routine eye examination but graded by secondary grader.</td>
+<td>EY04</td></tr>
 <tr><td style="white-space:nowrap">1006<a name="retina-conclusion-code-cs-1006"> </a></td>
-<td>Øyelegeundersøkelse (grunnet diabetisk retinopati)</td>
-<td>Patient is leaving the screening program and should be referred to an ophthalmologist for further examination due to findings of diabetic retinopathy.</td></tr></table></div>
+<td>Oppfølging i programmet settes på vent</td>
+<td>Participation in the screening program is put on hold.</td>
+<td>EY24</td></tr>
+<tr><td style="white-space:nowrap">1007<a name="retina-conclusion-code-cs-1007"> </a></td>
+<td>Oppfølging i programmet avsluttes</td>
+<td>Patient is discharged from the screening program.</td>
+<td>EY25</td></tr></table></div>
 
   <hr/>
   <p>
@@ -298,10 +309,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  
-          Package dips.fhir.retinaintegration#0.8.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package dips.fhir.retinaintegration#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-08 13:22:00 +0200">
-    2026-05-08
+  <span title="2026-06-05 15:47:00 +0200">
+    2026-06-05
   </span>
 
           <br/>
