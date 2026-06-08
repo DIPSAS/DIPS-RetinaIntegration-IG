@@ -1,4 +1,4 @@
-# Retina Image Quality Assessment - RetinaIntegration v0.9.0
+# Retina Image Quality Assessment - RetinaIntegration v0.9.1
 
 ## Resource Profile: Retina Image Quality Assessment ( Experimental ) 
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-image-qual
   "resourceType" : "StructureDefinition",
   "id" : "retina-image-quality-asessment",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-quality-asessment",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaImageQualityAssessment",
   "title" : "Retina Image Quality Assessment",
   "status" : "draft",

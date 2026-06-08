@@ -1,6 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs,0.9.0,draft,,RetinaAIGradabilityCodeSystem,Retina AI Gradability Codes,"A set of codes to indicate whether diagnostic data is suitable for automated AI grading.",
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs,0.9.0,draft,,RetinaCautionCodeSystem,Retina Caution Codes,"Cautions to consider when grading examinations (5000-series).",
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs,0.9.0,draft,,RetinaConclusionCodeSystem,Retina Conclusion Codes,"Codes for the current or final conclusion of the grading process (1000-series).",
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs,0.9.0,draft,,RetinaImageQualityCodeSystem,Retina Image Quality Codes,"Image quality as assessed by AI solution (2000-series).",
-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs,0.9.0,draft,,RetinaImageViewCodeSystem,Retina Image View Codes,"Codes describing the centering used when capturing retinal images (6000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs,0.9.1,draft,,RetinaAIGradabilityCodeSystem,Retina AI Gradability Codes,"A set of codes to indicate whether diagnostic data is suitable for automated AI grading.",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs,0.9.1,draft,,RetinaCautionCodeSystem,Retina Caution Codes,"Cautions to consider when grading examinations (5000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs,0.9.1,draft,,RetinaConclusionCodeSystem,Retina Conclusion Codes,"Codes for the current or final conclusion of the grading process (1000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs,0.9.1,draft,,RetinaImageQualityCodeSystem,Retina Image Quality Codes,"Image quality as assessed by AI solution (2000-series).",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-view-cs,0.9.1,draft,,RetinaImageViewCodeSystem,Retina Image View Codes,"Codes describing the centering used when capturing retinal images (6000-series).",

@@ -1,4 +1,4 @@
-# Retina Image Parameter ValueSet - RetinaIntegration v0.9.0
+# Retina Image Parameter ValueSet - RetinaIntegration v0.9.1
 
 ## ValueSet: Retina Image Parameter ValueSet 
 
@@ -28,7 +28,7 @@ Includes codes for both image quality and image view.
   "resourceType" : "ValueSet",
   "id" : "retina-image-parameter-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-image-parameter-vs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaImageParameterValueSet",
   "title" : "Retina Image Parameter ValueSet",
   "status" : "draft",

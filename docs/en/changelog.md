@@ -1,10 +1,12 @@
-# Changelog - RetinaIntegration v0.9.0
+# Changelog - RetinaIntegration v0.9.1
 
 ## Changelog
 
-### Change Log
+### Version 0.9.1-CI (2026-06-08)
 
-The changelog gives an overview of the change history of this implementation guide.
+* Add a state transition diagram to the append operation documentation
+* Add rule that examination is not allowed to remain in the initial state
+* Document initial state and final states
 
 ### Version 0.9.0-CI (2026-06-05)
 

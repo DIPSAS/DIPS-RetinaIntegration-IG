@@ -1,4 +1,4 @@
-# Query By Date Operation - RetinaIntegration v0.9.0
+# Query By Date Operation - RetinaIntegration v0.9.1
 
 ## OperationDefinition: Query By Date Operation 
 
@@ -42,12 +42,12 @@ There is no need to specify the profile `_profile=RetinaDiagnosticReport` when u
   "resourceType" : "OperationDefinition",
   "id" : "retina-by-date",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/retina-by-date",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaQueryByDate",
   "title" : "Query By Date Operation",
   "status" : "draft",
   "kind" : "query",
-  "date" : "2026-06-05T15:47:27+02:00",
+  "date" : "2026-06-08T15:50:57+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

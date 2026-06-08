@@ -1,4 +1,4 @@
-# Retina AI Device - RetinaIntegration v0.9.0
+# Retina AI Device - RetinaIntegration v0.9.1
 
 ## Resource Profile: Retina AI Device 
 
@@ -28,7 +28,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-ai-device.
   "resourceType" : "StructureDefinition",
   "id" : "retina-ai-device",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-ai-device",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaAIDevice",
   "title" : "Retina AI Device",
   "status" : "draft",

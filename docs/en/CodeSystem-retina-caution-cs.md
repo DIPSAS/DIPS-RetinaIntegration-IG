@@ -1,4 +1,4 @@
-# Retina Caution Codes - RetinaIntegration v0.9.0
+# Retina Caution Codes - RetinaIntegration v0.9.1
 
 ## CodeSystem: Retina Caution Codes 
 
@@ -22,7 +22,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-caution-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaCautionCodeSystem",
   "title" : "Retina Caution Codes",
   "status" : "draft",

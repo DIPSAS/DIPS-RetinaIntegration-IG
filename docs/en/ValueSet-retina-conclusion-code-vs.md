@@ -1,4 +1,4 @@
-# Retina Conclusion - RetinaIntegration v0.9.0
+# Retina Conclusion - RetinaIntegration v0.9.1
 
 ## ValueSet: Retina Conclusion 
 
@@ -29,7 +29,7 @@ Codes describing the current or final conclusion of the examination (1000-series
   "resourceType" : "ValueSet",
   "id" : "retina-conclusion-code-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaDiagnosticReportConclusionCodeValueSet",
   "title" : "Retina Conclusion",
   "status" : "draft",

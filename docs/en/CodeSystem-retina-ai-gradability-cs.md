@@ -1,4 +1,4 @@
-# Retina AI Gradability Codes - RetinaIntegration v0.9.0
+# Retina AI Gradability Codes - RetinaIntegration v0.9.1
 
 ## CodeSystem: Retina AI Gradability Codes 
 
@@ -22,7 +22,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-ai-gradability-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaAIGradabilityCodeSystem",
   "title" : "Retina AI Gradability Codes",
   "status" : "draft",

@@ -1,0 +1,26 @@
+@startuml
+title State Transitions: $append-retina-ai-result
+
+state "1001: Await AI" as S1001
+state "1002: Await Primary Grading" as S1002
+state "1003: Await Secondary Grading" as S1003
+
+state "1004: New Exam in X Months" as S1004
+
+[*] --> S1001 : Retina photo taken
+
+S1001 --> S1002 : [Is initial state]\l[Validation only]\l[Patient refused AI]\l[No gradable grading]\lconclusion = 1002
+S1001 --> S1003 : [Previous exam = 1005]\lconclusion = 1003
+S1001 --> S1004 : conclusion = 1004
+
+S1002 --> S1002 : [Patient refused AI]\l[Validation only]\l[No gradable grading]\lconclusion = 1002
+S1002 --> S1003 : [Previous exam = 1005]\lconclusion = 1003
+S1002 --> S1004 : conclusion = 1004
+
+S1003 --> S1003 : conclusion = 1003
+
+S1004 --> S1004 : conclusion = 1004
+
+S1004 --> [*]
+
+@enduml

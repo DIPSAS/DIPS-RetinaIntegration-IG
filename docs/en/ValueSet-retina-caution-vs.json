@@ -4,10 +4,10 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-caution-vs</b></p><a name=\"retina-caution-vs\"> </a><a name=\"hcretina-caution-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-caution-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.9.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-caution-vs</b></p><a name=\"retina-caution-vs\"> </a><a name=\"hcretina-caution-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-caution-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-caution-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.9.1</span></li></ul></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-caution-vs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaCautionValueSet",
   "title" : "Retina Cautions",
   "status" : "draft",

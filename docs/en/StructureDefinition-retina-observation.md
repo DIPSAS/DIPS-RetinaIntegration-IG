@@ -1,4 +1,4 @@
-# Retina Observation - RetinaIntegration v0.9.0
+# Retina Observation - RetinaIntegration v0.9.1
 
 ## Resource Profile: Retina Observation ( Abstract ) 
 
@@ -28,7 +28,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-observatio
   "resourceType" : "StructureDefinition",
   "id" : "retina-observation",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-observation",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaObservation",
   "title" : "Retina Observation",
   "status" : "draft",

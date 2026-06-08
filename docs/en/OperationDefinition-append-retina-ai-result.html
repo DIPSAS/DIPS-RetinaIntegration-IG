@@ -8,7 +8,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Retina Append AI Result Operation - RetinaIntegration v0.9.0</title>
+    <title>Retina Append AI Result Operation - RetinaIntegration v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.9.0 - ci-build
+            <span style="display:inline-block;">0.9.1 - ci-build
 
 
             </span>
@@ -138,7 +138,7 @@
 
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.9.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -183,7 +183,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result|0.9.0"/></span>
+      <span class="copy-text">0.9.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result|0.9.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -208,7 +208,7 @@
           
 
             as of 
-2026-06-05
+2026-06-08
 
           
         
@@ -258,7 +258,7 @@
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[baseUrl]/DiagnosticReport/[id]/$append-retina-ai-result
 </code></pre></div></div>
 
-<p><code class="language-plaintext highlighter-rouge">[id]</code> is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a examination, to update.</p>
+<p><code class="language-plaintext highlighter-rouge">[id]</code> is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a. an examination, to update.</p>
 
 <h3 id="states-and-state-transitions">States and state transitions</h3>
 
@@ -268,12 +268,16 @@
 
 <ul>
   <li>
+    <p><strong><em>Is initial state</em></strong>
+The examination must exit the initial state.</p>
+  </li>
+  <li>
     <p><strong><em>Previous=1005</em></strong> 
-If the previous examination concluded with <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1005">1005</a>, the current examination should go to secondary grading.</p>
+If the previous examination concluded with <a href="CodeSystem-retina-conclusion-code-cs.html#retina-conclusion-code-cs-1005">1005</a>, the current examination shall go to secondary grading.</p>
   </li>
   <li>
     <p><strong><em>Patient refused AI</em></strong> 
-When patient refused AI-assisted grading the input from AI is not allowed to influence the grading process.</p>
+When a patient refuses AI-assisted grading, the input from AI is not allowed to influence the grading process.</p>
   </li>
   <li>
     <p><strong><em>Validation only</em></strong> 
@@ -286,15 +290,16 @@ A conclusion from the AI integrator that is based on AI grading requires at leas
 </ul>
 
 <p>The API strives to be lenient on input. 
-If input from AI integrator does not conform to these rules, the input will be persisted, but the status of the examination will be unchanged or set to the proper next process step.</p>
+If input from AI integrator does not conform to these rules, the input will be persisted, but the status of the examination will remain unchanged rather than being set to the proper next process step.</p>
 
-<p>If the desired new state is not achieved, the API will return 200 and explain the issue in Operation Outcome in the body of the response. (Marked as OK- in the table.)</p>
+<p>If the desired new state is not achieved, the API will return 200 and explain the issue in Operation Outcome in the body of the response. (Marked as OK-  in the table.)</p>
 
 <h4 id="state-transition-table">State Transition Table</h4>
 
 <table class="grid">
   <thead>
     <tr>
+      <th>Nr.</th>
       <th>Current State</th>
       <th>Desired State</th>
       <th>Guard Condition</th>
@@ -305,14 +310,25 @@ If input from AI integrator does not conform to these rules, the input will be p
   </thead>
   <tbody>
     <tr>
+      <td>1</td>
+      <td>1001</td>
+      <td>1001</td>
+      <td>Is initial state</td>
+      <td>1002</td>
+      <td>OK-</td>
+      <td>Set 1002 not 1001, because examination is not allowed to continue to await AI.</td>
+    </tr>
+    <tr>
+      <td>2</td>
       <td>1001</td>
       <td>1002</td>
       <td>Previous=1005</td>
       <td>1003</td>
       <td>OK-</td>
-      <td>Set 1003, not 1002, because the previous examination concluded with 1005.</td>
+      <td>Set 1003, not 1002, because the previous examination concluded with directly to secondary grading.</td>
     </tr>
     <tr>
+      <td>3</td>
       <td>1001</td>
       <td>1002</td>
       <td>Validation only</td>
@@ -321,6 +337,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>OK to set 1002, because primary grading is correct also when validating.</td>
     </tr>
     <tr>
+      <td>4</td>
       <td>1001</td>
       <td>1002</td>
       <td>None</td>
@@ -329,14 +346,16 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>OK to set 1002, examination moved to primary grading.</td>
     </tr>
     <tr>
+      <td>5</td>
       <td>1001</td>
       <td>1003</td>
       <td>Previous=1005</td>
       <td>1003</td>
       <td>OK</td>
-      <td>OK to set 1003, because the previous examination concluded with 1005.</td>
+      <td>OK to set 1003, because the previous examination concluded with directly to secondary grading.</td>
     </tr>
     <tr>
+      <td>6</td>
       <td>1001</td>
       <td>1003</td>
       <td>Validation only</td>
@@ -345,6 +364,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Set 1002, not 1003, because input was only for validation.</td>
     </tr>
     <tr>
+      <td>7</td>
       <td>1001</td>
       <td>1003</td>
       <td>Patient refused AI</td>
@@ -353,6 +373,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Set 1002, not 1003, because patient refused AI.</td>
     </tr>
     <tr>
+      <td>8</td>
       <td>1001</td>
       <td>1003</td>
       <td>No gradable grading</td>
@@ -361,6 +382,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Set 1002, not 1003, because the payload does not indicate successful grading.</td>
     </tr>
     <tr>
+      <td>9</td>
       <td>1001</td>
       <td>1003</td>
       <td>None</td>
@@ -369,14 +391,16 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Skips primary grading and goes to secondary grading based on AI findings.</td>
     </tr>
     <tr>
+      <td>10</td>
       <td>1001</td>
       <td>1004</td>
       <td>Previous=1005</td>
       <td>1003</td>
       <td>OK-</td>
-      <td>Set 1003, not 1004, because the previous examination concluded with 1005.</td>
+      <td>Set 1003, not 1004, because the previous examination concluded with directly to secondary grading.</td>
     </tr>
     <tr>
+      <td>11</td>
       <td>1001</td>
       <td>1004</td>
       <td>Validation only</td>
@@ -385,6 +409,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Set 1002, not 1004, because input was only for validation.</td>
     </tr>
     <tr>
+      <td>12</td>
       <td>1001</td>
       <td>1004</td>
       <td>Patient refused AI</td>
@@ -393,6 +418,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Set 1002, not 1004, because the patient has refused AI.</td>
     </tr>
     <tr>
+      <td>13</td>
       <td>1001</td>
       <td>1004</td>
       <td>No gradable grading</td>
@@ -401,14 +427,16 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Set 1002, not 1004, because the payload does not indicate successful grading.</td>
     </tr>
     <tr>
+      <td>14</td>
       <td>1001</td>
       <td>1004</td>
       <td>None</td>
       <td>1004</td>
       <td>OK</td>
-      <td>Set 1004 New screening examination in X months. This is the happy case which will have most of the traffic.</td>
+      <td>Set 1004: New screening examination in X months. This is the happy case which will have most of the traffic.</td>
     </tr>
     <tr>
+      <td>15</td>
       <td>1002</td>
       <td>1002</td>
       <td>None</td>
@@ -417,6 +445,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>OK, no change.</td>
     </tr>
     <tr>
+      <td>16</td>
       <td>1002</td>
       <td>1003</td>
       <td>Patient refused AI</td>
@@ -425,6 +454,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Do not set 1003, because the patient has refused AI.</td>
     </tr>
     <tr>
+      <td>17</td>
       <td>1002</td>
       <td>1003</td>
       <td>Validation only</td>
@@ -433,6 +463,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Do not set 1003, because input was only for validation.</td>
     </tr>
     <tr>
+      <td>18</td>
       <td>1002</td>
       <td>1003</td>
       <td>None</td>
@@ -441,22 +472,25 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Examination was awaiting primary grading but AI integrator wants it to go to secondary grading.</td>
     </tr>
     <tr>
+      <td>19</td>
       <td>1002</td>
       <td>1004</td>
       <td>Previous=1005</td>
       <td>1003</td>
       <td>OK-</td>
-      <td>Set 1003, not 1004, because previous examination concluded with 1005.</td>
+      <td>Set 1003, not 1004, because previous examination concluded with directly to secondary grading.</td>
     </tr>
     <tr>
+      <td>20</td>
       <td>1002</td>
       <td>1004</td>
       <td>Validation only</td>
       <td>1002</td>
       <td>OK-</td>
-      <td>Do not set 1004, because input was only for validation</td>
+      <td>Do not set 1004, because input was only for validation.</td>
     </tr>
     <tr>
+      <td>21</td>
       <td>1002</td>
       <td>1004</td>
       <td>Patient refused AI</td>
@@ -465,6 +499,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Do not set 1004, because the patient has refused AI.</td>
     </tr>
     <tr>
+      <td>22</td>
       <td>1002</td>
       <td>1004</td>
       <td>No gradable grading</td>
@@ -473,6 +508,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Do not set 1004, because the payload does not indicate successful grading.</td>
     </tr>
     <tr>
+      <td>23</td>
       <td>1002</td>
       <td>1004</td>
       <td>None</td>
@@ -481,6 +517,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>AI Integrator handles an examination that was awaiting primary grading.</td>
     </tr>
     <tr>
+      <td>24</td>
       <td>1003</td>
       <td>1002</td>
       <td>Illegal transition</td>
@@ -489,6 +526,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Do not set 1002 because regression from secondary to primary grading is not allowed.</td>
     </tr>
     <tr>
+      <td>25</td>
       <td>1003</td>
       <td>1003</td>
       <td>None</td>
@@ -497,6 +535,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>OK, no change.</td>
     </tr>
     <tr>
+      <td>26</td>
       <td>1003</td>
       <td>1004</td>
       <td>Illegal transition</td>
@@ -505,6 +544,7 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>Do not set 1004, because cannot finalize an examination awaiting secondary grading.</td>
     </tr>
     <tr>
+      <td>27</td>
       <td>1004, 1005, 1006, 1007</td>
       <td>Same as current</td>
       <td>None</td>
@@ -513,8 +553,9 @@ If input from AI integrator does not conform to these rules, the input will be p
       <td>State remains unchanged, as desired.</td>
     </tr>
     <tr>
+      <td>28</td>
       <td>1004, 1005, 1006, 1007</td>
-      <td>Different than current</td>
+      <td>Different from current</td>
       <td>None</td>
       <td>Same as current</td>
       <td>OK-</td>
@@ -527,9 +568,9 @@ If input from AI integrator does not conform to these rules, the input will be p
 <ol>
   <li><strong><em>Current state</em></strong> is the current state of the examination in EyeCare</li>
   <li><strong><em>Desired state</em></strong> is the desired new state received in the <code class="language-plaintext highlighter-rouge">conclusion</code> parameter in the API</li>
-  <li><strong><em>Guard Condition</em></strong> are rules that may alter what the next state will be. Read from top and downward.</li>
-  <li><strong><em>Next State</em></strong> is the actual next state after the append operation is executed. It may differ from the desired state depending on the guard rules.</li>
-  <li><strong><em>Result</em></strong> is OK- if the outcome is not exactly what the AI integrator desired.</li>
+  <li><strong><em>Guard Conditions</em></strong> are rules that dictates what the next state will be. Read from top and downward. Guard conditions take precedence over the desired next state from the API conclusion.</li>
+  <li><strong><em>Next State</em></strong> is the actual next state after the append operation is executed. It may differ from the desired state depending on the guard conditions.</li>
+  <li><strong><em>Result</em></strong> is OK- (OK minus) if the outcome is not exactly what the AI integrator desired.</li>
   <li><strong><em>Notes</em></strong> are explanation of the outcome.</li>
 </ol>
 
@@ -545,7 +586,7 @@ Ref. <a href="CodeSystem-retina-conclusion-code-cs.html">retina-conclusion-code-
       <th>Description</th>
       <th>Entry Criteria</th>
       <th>Exit Criteria</th>
-      <th>Terminal</th>
+      <th>StateType</th>
     </tr>
   </thead>
   <tbody>
@@ -554,56 +595,56 @@ Ref. <a href="CodeSystem-retina-conclusion-code-cs.html">retina-conclusion-code-
       <td>Await AI</td>
       <td>Retina photo is taken</td>
       <td>Input from AI integrator is received, or manual grading is done.</td>
-      <td>No</td>
+      <td>Initial</td>
     </tr>
     <tr>
       <td>1002</td>
       <td>Await primary grading</td>
       <td>Photographer ordered primary grading</td>
       <td>Primary grading is done</td>
-      <td>No</td>
+      <td> </td>
     </tr>
     <tr>
       <td>1003</td>
       <td>Await secondary grading</td>
       <td>Ordered in EyeCare by primary grader or previous examination ordered directly to secondary grading (1005).</td>
       <td>Secondary grading is done</td>
-      <td>No</td>
+      <td> </td>
     </tr>
     <tr>
       <td>1004</td>
       <td>New examination in X months</td>
       <td>Ordered in EyeCare</td>
       <td> </td>
-      <td>Yes</td>
+      <td>Final</td>
     </tr>
     <tr>
       <td>1005</td>
       <td>New examination in X months directly to secondary grading</td>
       <td>Ordered in EyeCare</td>
       <td> </td>
-      <td>Yes</td>
+      <td>Final</td>
     </tr>
     <tr>
       <td>1006</td>
       <td>Screening program is suspended for the patient.</td>
       <td>Ordered in EyeCare</td>
       <td> </td>
-      <td>Yes</td>
+      <td>Final</td>
     </tr>
     <tr>
       <td>1007</td>
       <td>Patient is discharged from the screening program</td>
       <td>Ordered in EyeCare</td>
       <td> </td>
-      <td>Yes</td>
+      <td>Final</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="event-catalog-for-the-ai-integrator">Event Catalog for the AI integrator</h4>
 
-<p>These are the states the AI integrator is allowed to set as target state if it wants to change the state from current stat.
+<p>These are the states the AI integrator is allowed to set as target state if it wants to change the state from current state.
 Ref. <a href="ValueSet-retina-append-ai-conclusion-vs.html">retina-append-ai-conclusion-vs</a></p>
 
 <table class="grid">
@@ -636,6 +677,23 @@ Ref. <a href="ValueSet-retina-append-ai-conclusion-vs.html">retina-append-ai-con
     </tr>
   </tbody>
 </table>
+
+<h3 id="state-transitions-instigated-by-the-append-operation">State transitions instigated by the append operation</h3>
+
+<p>This diagram shows the state transitions when AI integrator wants to change the state of an examination. 
+The guard conditions are represented in brackets [].
+The guard conditions always takes precedence over the desired conclusion coming in through the API operation.</p>
+
+<p><img src="append-retina-ai-result-state-machine.svg" alt="Append AI result stat machine" /></p>
+
+<div style="clear: both;"></div>
+
+<p>Example: The examination is in state 1001, awaiting AI grading.. 
+AI evaluates that the eyes are good and the integrator concludes that next state should be 1004. 
+The API service sees that the previous examination concluded with 1005 and therefore sets the next state to 1003.</p>
+
+<p>In summary, the AI integrator can only advance the state of an examination that is in state 1001 or 1002. 
+For all other states, the operation is accepted and the payload is persisted, but the conclusion code remains unchanged.</p>
 
 <h3 id="global-rules">Global Rules</h3>
 
@@ -726,7 +784,7 @@ Ref. <a href="ValueSet-retina-append-ai-conclusion-vs.html">retina-append-ai-con
 
 
   <div data-fhir="generated"><p class="res-header-id"/><a name="append-retina-ai-result"> </a><a name="hcappend-retina-ai-result"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result</p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>sectraStudyId</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Sectra study ID for the retinal images that were analyzed.</p>
-</div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-retina-append-ai-conclusion-vs.html">Retina AI Integration Conclusion</a> (Required)</td><td><div><p>Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.</p>
+</div></td></tr><tr><td>IN</td><td>conclusion</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-retina-conclusion-code-vs.html">Retina Conclusion</a> (Required)</td><td><div><p>Conclusion indicating the next step. It MUST be a single code from the 1000 series. To achieve a state change, the conclusion must be one of the <a href="ValueSet-retina-append-ai-conclusion-vs.html">goal states applicable for AI integration</a>: 1002 , 1003 or 1004. Refer to the state machine diagram for details.</p>
 </div></td></tr><tr><td>IN</td><td>monthsUntilNextExamination</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>The recall interval in months until the patient's next examination. Must be included if the conclusion is a 1004 or 1005. Value must be a positive integer greater than 1</p>
 </div></td></tr><tr><td>IN</td><td>leftGradability</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td><a href="ValueSet-retina-ai-gradability-vs.html">Retina AI Gradability</a> (Required)</td><td><div><p>Gradability of the left eye for AI analysis. Must be a single code from the Retina AI Gradability ValueSet.</p>
 </div></td></tr><tr><td>IN</td><td>rightGradability</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td><a href="ValueSet-retina-ai-gradability-vs.html">Retina AI Gradability</a> (Required)</td><td><div><p>Gradability of the right eye for AI analysis. Must be a single code from the Retina AI Gradability ValueSet.</p>
@@ -773,10 +831,10 @@ Ref. <a href="ValueSet-retina-append-ai-conclusion-vs.html">retina-append-ai-con
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  
-          Package dips.fhir.retinaintegration#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package dips.fhir.retinaintegration#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-05 15:47:00 +0200">
-    2026-06-05
+  <span title="2026-06-08 15:50:00 +0200">
+    2026-06-08
   </span>
 
           <br/>

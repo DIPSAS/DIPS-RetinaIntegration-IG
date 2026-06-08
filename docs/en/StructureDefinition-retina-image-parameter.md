@@ -1,4 +1,4 @@
-# Retina Image Parameter - RetinaIntegration v0.9.0
+# Retina Image Parameter - RetinaIntegration v0.9.1
 
 ## Resource Profile: Retina Image Parameter 
 
@@ -28,7 +28,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-image-para
   "resourceType" : "StructureDefinition",
   "id" : "retina-image-parameter",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-image-parameter",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaImageParameter",
   "title" : "Retina Image Parameter",
   "status" : "draft",

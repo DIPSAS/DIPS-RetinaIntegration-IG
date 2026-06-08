@@ -1,4 +1,4 @@
-# Retina Image Quality Codes - RetinaIntegration v0.9.0
+# Retina Image Quality Codes - RetinaIntegration v0.9.1
 
 ## CodeSystem: Retina Image Quality Codes 
 
@@ -22,7 +22,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-image-quality-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-image-quality-cs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaImageQualityCodeSystem",
   "title" : "Retina Image Quality Codes",
   "status" : "draft",

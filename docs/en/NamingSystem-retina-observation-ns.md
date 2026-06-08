@@ -1,4 +1,4 @@
-# Retina Observation Identifier System - RetinaIntegration v0.9.0
+# Retina Observation Identifier System - RetinaIntegration v0.9.1
 
 ## NamingSystem: Retina Observation Identifier System 
 
@@ -19,7 +19,7 @@ A naming system for observation identifiers in RetinaIntegration using GUIDs.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.9.0"
+    "valueString" : "0.9.1"
   }],
   "name" : "RetinaObservationIdentifierSystem",
   "status" : "active",

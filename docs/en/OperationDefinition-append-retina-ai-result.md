@@ -1,4 +1,4 @@
-# Retina Append AI Result Operation - RetinaIntegration v0.9.0
+# Retina Append AI Result Operation - RetinaIntegration v0.9.1
 
 ## OperationDefinition: Retina Append AI Result Operation 
 
@@ -22,7 +22,7 @@ Add AI result to an examination using the following operation:
 
 ```
 
-`[id]` is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a examination, to update.
+`[id]` is the identifier UUID (Universally Unique Identifier), sometimes referred to as a GUID, of the DiagnosticReport, a.k.a. an examination, to update.
 
 ### States and state transitions
 
@@ -30,54 +30,56 @@ The **state** of an examination is determined by the `DiagnosticReport.conclusio
 
 These are the guard conditions for entering one state from another state:
 
-* ****Previous=1005**** If the previous examination concluded with [1005](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1005), the current examination should go to secondary grading.
-* ****Patient refused AI**** When patient refused AI-assisted grading the input from AI is not allowed to influence the grading process.
+* ****Is initial state**** The examination must exit the initial state.
+* ****Previous=1005**** If the previous examination concluded with [1005](CodeSystem-retina-conclusion-code-cs.md#retina-conclusion-code-cs-1005), the current examination shall go to secondary grading.
+* ****Patient refused AI**** When a patient refuses AI-assisted grading, the input from AI is not allowed to influence the grading process.
 * ****Validation only**** If the input is for validation only, the input should not influence the grading process.
 * ****No gradable grading**** A conclusion from the AI integrator that is based on AI grading requires at least one gradable eye grading result.
 
-The API strives to be lenient on input. If input from AI integrator does not conform to these rules, the input will be persisted, but the status of the examination will be unchanged or set to the proper next process step.
+The API strives to be lenient on input. If input from AI integrator does not conform to these rules, the input will be persisted, but the status of the examination will remain unchanged rather than being set to the proper next process step.
 
 If the desired new state is not achieved, the API will return 200 and explain the issue in Operation Outcome in the body of the response. (Marked as OK- in the table.)
 
 #### State Transition Table
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1001 | 1002 | Previous=1005 | 1003 | OK- | Set 1003, not 1002, because the previous examination concluded with 1005. |
-| 1001 | 1002 | Validation only | 1002 | OK | OK to set 1002, because primary grading is correct also when validating. |
-| 1001 | 1002 | None | 1002 | OK | OK to set 1002, examination moved to primary grading. |
-| 1001 | 1003 | Previous=1005 | 1003 | OK | OK to set 1003, because the previous examination concluded with 1005. |
-| 1001 | 1003 | Validation only | 1002 | OK- | Set 1002, not 1003, because input was only for validation. |
-| 1001 | 1003 | Patient refused AI | 1002 | OK- | Set 1002, not 1003, because patient refused AI. |
-| 1001 | 1003 | No gradable grading | 1002 | OK- | Set 1002, not 1003, because the payload does not indicate successful grading. |
-| 1001 | 1003 | None | 1003 | OK | Skips primary grading and goes to secondary grading based on AI findings. |
-| 1001 | 1004 | Previous=1005 | 1003 | OK- | Set 1003, not 1004, because the previous examination concluded with 1005. |
-| 1001 | 1004 | Validation only | 1002 | OK- | Set 1002, not 1004, because input was only for validation. |
-| 1001 | 1004 | Patient refused AI | 1002 | OK- | Set 1002, not 1004, because the patient has refused AI. |
-| 1001 | 1004 | No gradable grading | 1002 | OK- | Set 1002, not 1004, because the payload does not indicate successful grading. |
-| 1001 | 1004 | None | 1004 | OK | Set 1004 New screening examination in X months. This is the happy case which will have most of the traffic. |
-| 1002 | 1002 | None | 1002 | OK | OK, no change. |
-| 1002 | 1003 | Patient refused AI | 1002 | OK- | Do not set 1003, because the patient has refused AI. |
-| 1002 | 1003 | Validation only | 1002 | OK | Do not set 1003, because input was only for validation. |
-| 1002 | 1003 | None | 1003 | OK | Examination was awaiting primary grading but AI integrator wants it to go to secondary grading. |
-| 1002 | 1004 | Previous=1005 | 1003 | OK- | Set 1003, not 1004, because previous examination concluded with 1005. |
-| 1002 | 1004 | Validation only | 1002 | OK- | Do not set 1004, because input was only for validation |
-| 1002 | 1004 | Patient refused AI | 1002 | OK- | Do not set 1004, because the patient has refused AI. |
-| 1002 | 1004 | No gradable grading | 1002 | OK- | Do not set 1004, because the payload does not indicate successful grading. |
-| 1002 | 1004 | None | 1004 | OK | AI Integrator handles an examination that was awaiting primary grading. |
-| 1003 | 1002 | Illegal transition | 1003 | OK- | Do not set 1002 because regression from secondary to primary grading is not allowed. |
-| 1003 | 1003 | None | 1003 | OK | OK, no change. |
-| 1003 | 1004 | Illegal transition | 1003 | OK- | Do not set 1004, because cannot finalize an examination awaiting secondary grading. |
-| 1004, 1005, 1006, 1007 | Same as current | None | Same as current | OK | State remains unchanged, as desired. |
-| 1004, 1005, 1006, 1007 | Different than current | None | Same as current | OK- | State remains unchanged because you cannot change a final state. |
+| | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | 1001 | 1001 | Is initial state | 1002 | OK- | Set 1002 not 1001, because examination is not allowed to continue to await AI. |
+| 2 | 1001 | 1002 | Previous=1005 | 1003 | OK- | Set 1003, not 1002, because the previous examination concluded with directly to secondary grading. |
+| 3 | 1001 | 1002 | Validation only | 1002 | OK | OK to set 1002, because primary grading is correct also when validating. |
+| 4 | 1001 | 1002 | None | 1002 | OK | OK to set 1002, examination moved to primary grading. |
+| 5 | 1001 | 1003 | Previous=1005 | 1003 | OK | OK to set 1003, because the previous examination concluded with directly to secondary grading. |
+| 6 | 1001 | 1003 | Validation only | 1002 | OK- | Set 1002, not 1003, because input was only for validation. |
+| 7 | 1001 | 1003 | Patient refused AI | 1002 | OK- | Set 1002, not 1003, because patient refused AI. |
+| 8 | 1001 | 1003 | No gradable grading | 1002 | OK- | Set 1002, not 1003, because the payload does not indicate successful grading. |
+| 9 | 1001 | 1003 | None | 1003 | OK | Skips primary grading and goes to secondary grading based on AI findings. |
+| 10 | 1001 | 1004 | Previous=1005 | 1003 | OK- | Set 1003, not 1004, because the previous examination concluded with directly to secondary grading. |
+| 11 | 1001 | 1004 | Validation only | 1002 | OK- | Set 1002, not 1004, because input was only for validation. |
+| 12 | 1001 | 1004 | Patient refused AI | 1002 | OK- | Set 1002, not 1004, because the patient has refused AI. |
+| 13 | 1001 | 1004 | No gradable grading | 1002 | OK- | Set 1002, not 1004, because the payload does not indicate successful grading. |
+| 14 | 1001 | 1004 | None | 1004 | OK | Set 1004: New screening examination in X months. This is the happy case which will have most of the traffic. |
+| 15 | 1002 | 1002 | None | 1002 | OK | OK, no change. |
+| 16 | 1002 | 1003 | Patient refused AI | 1002 | OK- | Do not set 1003, because the patient has refused AI. |
+| 17 | 1002 | 1003 | Validation only | 1002 | OK | Do not set 1003, because input was only for validation. |
+| 18 | 1002 | 1003 | None | 1003 | OK | Examination was awaiting primary grading but AI integrator wants it to go to secondary grading. |
+| 19 | 1002 | 1004 | Previous=1005 | 1003 | OK- | Set 1003, not 1004, because previous examination concluded with directly to secondary grading. |
+| 20 | 1002 | 1004 | Validation only | 1002 | OK- | Do not set 1004, because input was only for validation. |
+| 21 | 1002 | 1004 | Patient refused AI | 1002 | OK- | Do not set 1004, because the patient has refused AI. |
+| 22 | 1002 | 1004 | No gradable grading | 1002 | OK- | Do not set 1004, because the payload does not indicate successful grading. |
+| 23 | 1002 | 1004 | None | 1004 | OK | AI Integrator handles an examination that was awaiting primary grading. |
+| 24 | 1003 | 1002 | Illegal transition | 1003 | OK- | Do not set 1002 because regression from secondary to primary grading is not allowed. |
+| 25 | 1003 | 1003 | None | 1003 | OK | OK, no change. |
+| 26 | 1003 | 1004 | Illegal transition | 1003 | OK- | Do not set 1004, because cannot finalize an examination awaiting secondary grading. |
+| 27 | 1004, 1005, 1006, 1007 | Same as current | None | Same as current | OK | State remains unchanged, as desired. |
+| 28 | 1004, 1005, 1006, 1007 | Different from current | None | Same as current | OK- | State remains unchanged because you cannot change a final state. |
 
 How to read the table:
 
 1. ****Current state****is the current state of the examination in EyeCare
 1. ****Desired state****is the desired new state received in the`conclusion`parameter in the API
-1. ****Guard Condition****are rules that may alter what the next state will be. Read from top and downward.
-1. ****Next State****is the actual next state after the append operation is executed. It may differ from the desired state depending on the guard rules.
-1. ****Result****is OK- if the outcome is not exactly what the AI integrator desired.
+1. ****Guard Conditions****are rules that dictates what the next state will be. Read from top and downward. Guard conditions take precedence over the desired next state from the API conclusion.
+1. ****Next State****is the actual next state after the append operation is executed. It may differ from the desired state depending on the guard conditions.
+1. ****Result****is OK- (OK minus) if the outcome is not exactly what the AI integrator desired.
 1. ****Notes****are explanation of the outcome.
 
 #### State Catalog
@@ -86,23 +88,33 @@ These are the states that an examination may be in, as determined by the conclus
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
-| 1001 | Await AI | Retina photo is taken | Input from AI integrator is received, or manual grading is done. | No |
-| 1002 | Await primary grading | Photographer ordered primary grading | Primary grading is done | No |
-| 1003 | Await secondary grading | Ordered in EyeCare by primary grader or previous examination ordered directly to secondary grading (1005). | Secondary grading is done | No |
-| 1004 | New examination in X months | Ordered in EyeCare |   | Yes |
-| 1005 | New examination in X months directly to secondary grading | Ordered in EyeCare |   | Yes |
-| 1006 | Screening program is suspended for the patient. | Ordered in EyeCare |   | Yes |
-| 1007 | Patient is discharged from the screening program | Ordered in EyeCare |   | Yes |
+| 1001 | Await AI | Retina photo is taken | Input from AI integrator is received, or manual grading is done. | Initial |
+| 1002 | Await primary grading | Photographer ordered primary grading | Primary grading is done |   |
+| 1003 | Await secondary grading | Ordered in EyeCare by primary grader or previous examination ordered directly to secondary grading (1005). | Secondary grading is done |   |
+| 1004 | New examination in X months | Ordered in EyeCare |   | Final |
+| 1005 | New examination in X months directly to secondary grading | Ordered in EyeCare |   | Final |
+| 1006 | Screening program is suspended for the patient. | Ordered in EyeCare |   | Final |
+| 1007 | Patient is discharged from the screening program | Ordered in EyeCare |   | Final |
 
 #### Event Catalog for the AI integrator
 
-These are the states the AI integrator is allowed to set as target state if it wants to change the state from current stat. Ref. [retina-append-ai-conclusion-vs](ValueSet-retina-append-ai-conclusion-vs.md)
+These are the states the AI integrator is allowed to set as target state if it wants to change the state from current state. Ref. [retina-append-ai-conclusion-vs](ValueSet-retina-append-ai-conclusion-vs.md)
 
 | | | | |
 | :--- | :--- | :--- | :--- |
 | 1002 | Primary grading current examination | Optional AI grading | AI is not able to grade pictures |
 | 1003 | Secondary grading current examination | Optional AI grading | AI grading indicates that something is wrong. |
 | 1004 | New screening examination in X months | Gradable AI grading, recall interval | No need for further grading in this examination. |
+
+### State transitions instigated by the append operation
+
+This diagram shows the state transitions when AI integrator wants to change the state of an examination. The guard conditions are represented in brackets []. The guard conditions always takes precedence over the desired conclusion coming in through the API operation.
+
+![](append-retina-ai-result-state-machine.svg)
+
+Example: The examination is in state 1001, awaiting AI grading.. AI evaluates that the eyes are good and the integrator concludes that next state should be 1004. The API service sees that the previous examination concluded with 1005 and therefore sets the next state to 1003.
+
+In summary, the AI integrator can only advance the state of an examination that is in state 1001 or 1002. For all other states, the operation is accepted and the payload is persisted, but the conclusion code remains unchanged.
 
 ### Global Rules
 
@@ -131,12 +143,12 @@ These are the states the AI integrator is allowed to set as target state if it w
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "AppendRetinaAIResult",
   "title" : "Retina Append AI Result Operation",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-06-05T15:47:27+02:00",
+  "date" : "2026-06-08T15:50:57+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -169,11 +181,11 @@ These are the states the AI integrator is allowed to set as target state if it w
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Conclusion indicating the next step. MUST be a single code from the 1000 series. If the validation parameter is set to true, the next step will always be manual grading.",
+    "documentation" : "Conclusion indicating the next step. It MUST be a single code from the 1000 series. To achieve a state change, the conclusion must be one of the [goal states applicable for AI integration](ValueSet-retina-append-ai-conclusion-vs.html): 1002 , 1003 or 1004. Refer to the state machine diagram for details.",
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-append-ai-conclusion-vs"
+      "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusion-code-vs"
     }
   },
   {

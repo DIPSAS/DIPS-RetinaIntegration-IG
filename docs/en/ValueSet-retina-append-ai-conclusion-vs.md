@@ -1,4 +1,4 @@
-# Retina AI Integration Conclusion - RetinaIntegration v0.9.0
+# Retina AI Integration Conclusion - RetinaIntegration v0.9.1
 
 ## ValueSet: Retina AI Integration Conclusion 
 
@@ -28,7 +28,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "retina-append-ai-conclusion-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-append-ai-conclusion-vs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaAppendAIConlusionValueSet",
   "title" : "Retina AI Integration Conclusion",
   "status" : "draft",

@@ -1,4 +1,4 @@
-# Retina Conclusion Codes - RetinaIntegration v0.9.0
+# Retina Conclusion Codes - RetinaIntegration v0.9.1
 
 ## CodeSystem: Retina Conclusion Codes 
 
@@ -23,7 +23,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "retina-conclusion-code-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusion-code-cs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaConclusionCodeSystem",
   "title" : "Retina Conclusion Codes",
   "status" : "draft",

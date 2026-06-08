@@ -7,7 +7,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-ai-gradability-cs</b></p><a name=\"retina-ai-gradability-cs\"> </a><a name=\"hcretina-ai-gradability-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Norwegian (no)</b></td></tr><tr><td style=\"white-space:nowrap\">good-gradability<a name=\"retina-ai-gradability-cs-good-gradability\"> </a></td><td>Good</td><td>The submitted set of images is sufficient for evaluation.</td><td>God graderbarhet. Bildesettet tilstrekkelig for vurdering.</td></tr><tr><td style=\"white-space:nowrap\">not-gradable<a name=\"retina-ai-gradability-cs-not-gradable\"> </a></td><td>Not gradable</td><td>The submitted set of images is insufficient for evaluation.</td><td>Ikke graderbar. Bildesettet ikke tilstrekkelig for vurdering.</td></tr></table></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-ai-gradability-cs",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaAIGradabilityCodeSystem",
   "title" : "Retina AI Gradability Codes",
   "status" : "draft",

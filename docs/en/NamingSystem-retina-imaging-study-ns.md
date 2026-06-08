@@ -1,4 +1,4 @@
-# Retina ImagingStudy Identifier System - RetinaIntegration v0.9.0
+# Retina ImagingStudy Identifier System - RetinaIntegration v0.9.1
 
 ## NamingSystem: Retina ImagingStudy Identifier System 
 
@@ -19,7 +19,7 @@ A naming system for imaging study identifiers in RetinaIntegration using GUIDs f
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.9.0"
+    "valueString" : "0.9.1"
   }],
   "name" : "RetinaImagingStudyIdentifierSystem",
   "status" : "active",

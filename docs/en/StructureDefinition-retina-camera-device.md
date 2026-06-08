@@ -1,4 +1,4 @@
-# Retina Camera Device - RetinaIntegration v0.9.0
+# Retina Camera Device - RetinaIntegration v0.9.1
 
 ## Resource Profile: Retina Camera Device ( Experimental ) 
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-retina-camera-dev
   "resourceType" : "StructureDefinition",
   "id" : "retina-camera-device",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-camera-device",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "RetinaCameraDevice",
   "title" : "Retina Camera Device",
   "status" : "draft",

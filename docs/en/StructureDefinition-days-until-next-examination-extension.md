@@ -1,4 +1,4 @@
-# Days Until Next Examination - RetinaIntegration v0.9.0
+# Days Until Next Examination - RetinaIntegration v0.9.1
 
 ## Extension: Days Until Next Examination (Experimental) 
 
@@ -32,12 +32,12 @@ Other representations of profile: [CSV](../StructureDefinition-days-until-next-e
   "resourceType" : "StructureDefinition",
   "id" : "days-until-next-examination-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/days-until-next-examination-extension",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "name" : "DaysUntilNextExamination",
   "title" : "Days Until Next Examination",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-05T15:47:27+02:00",
+  "date" : "2026-06-08T15:50:57+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
